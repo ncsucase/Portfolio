@@ -1,0 +1,27 @@
+.site-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-5) var(--page-padding);
+  border-top: 1px solid var(--border);
+  font-family: var(--font-ui);
+  font-size: var(--font-size-sm);
+  color: var(--text-muted);
+  margin-top: auto;
+}
+
+.footer-link {
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.footer-link:hover {
+  color: var(--text-h);
+}
+
+@media (max-width: 640px) {
+  .site-footer {
+    padding: var(--space-4);
+  }
+}

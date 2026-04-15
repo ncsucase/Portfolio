@@ -1,0 +1,49 @@
+.story-renderer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.story-p {
+  font-family: var(--font-prose);
+  font-size: var(--font-size-xl);
+  line-height: 1.75;
+  color: var(--text);
+}
+
+.story-h2 {
+  font-family: var(--font-heading);
+  font-size: var(--heading-section);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--text-h);
+  margin-top: var(--space-4);
+}
+
+.story-h3 {
+  font-family: var(--font-heading);
+  font-size: var(--heading-3);
+  font-weight: 600;
+  color: var(--text-h);
+  margin-top: var(--space-3);
+}
+
+.story-figure {
+  margin: var(--space-3) 0;
+}
+
+.story-figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+}
+
+.story-figcaption {
+  font-family: var(--font-ui);
+  font-size: var(--font-size-sm);
+  color: var(--text-muted);
+  margin-top: var(--space-2);
+  text-align: center;
+}

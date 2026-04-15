@@ -1,0 +1,29 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.home-hero {
+  border-bottom: 1px solid var(--border);
+}
+
+.home-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-list > * + * {
+  border-top: 1px solid var(--border);
+}
+
+.home-empty {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-9) var(--page-padding);
+  font-family: var(--font-ui);
+  font-size: var(--font-size-md);
+  color: var(--text-muted);
+}

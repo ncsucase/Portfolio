@@ -26,7 +26,8 @@ src/
 
 ## Story Template Requirements
 Each story page should support:
-- Hero area: title + optional cover image
+- Hero area: title
+- Summary: full width container with constrained width (~65ch) text, high readability
 - Prose column: constrained width (~65ch), high readability
 - Inline visuals: images or media within the story body
 - Metadata: date, tags, role, outcome

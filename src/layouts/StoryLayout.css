@@ -1,0 +1,114 @@
+.story-layout {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header band */
+.story-header {
+  padding: var(--space-8) var(--page-padding);
+  border-bottom: 1px solid var(--border);
+}
+
+.story-header-inner {
+  max-width: var(--prose-width);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.story-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.story-title {
+  font-family: var(--font-heading);
+  font-size: var(--heading-1);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  color: var(--text-h);
+}
+
+/* Metadata row */
+.story-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-6);
+  margin: 0;
+  padding: 0;
+}
+
+.story-meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.story-meta-item--outcome {
+  flex: 1;
+  min-width: 200px;
+}
+
+.story-meta dt {
+  font-family: var(--font-ui);
+  font-size: var(--font-size-xs);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+}
+
+.story-meta dd {
+  font-family: var(--font-ui);
+  font-size: 14px;
+  color: var(--text-h);
+  margin: 0;
+}
+
+/* Summary band */
+.story-summary-band {
+  background: var(--surface);
+  padding: var(--space-7) var(--page-padding);
+  border-bottom: 1px solid var(--border);
+}
+
+.story-summary-text {
+  max-width: var(--prose-width);
+  margin: 0 auto;
+  font-family: var(--font-prose);
+  font-size: clamp(19px, 2.2vw, 22px);
+  line-height: 1.65;
+  color: var(--text-h);
+  font-style: italic;
+}
+
+/* Body */
+.story-body {
+  padding: var(--space-8) var(--page-padding);
+  max-width: var(--prose-width);
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .story-header {
+    padding: var(--space-6) var(--space-4);
+  }
+
+  .story-summary-band {
+    padding: var(--space-6) var(--space-4);
+  }
+
+  .story-body {
+    padding: var(--space-6) var(--space-4);
+  }
+
+  .story-meta {
+    gap: var(--space-4);
+  }
+}
