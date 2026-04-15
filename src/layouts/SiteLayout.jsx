@@ -3,6 +3,7 @@ import { Outlet, useLocation } from 'react-router-dom'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import './SiteLayout.css'
+import PasswordGate from '../components/PasswordGate'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -15,6 +16,10 @@ function ScrollToTop() {
 export default function SiteLayout() {
   const [theme, setTheme] = useState(() => {
     return localStorage.getItem('theme') ?? 'system'
+  })
+
+  const [authed, setAuthed] = useState(() => {
+    return sessionStorage.getItem('site-authed') === 'true'
   })
 
   useEffect(() => {
@@ -30,6 +35,15 @@ export default function SiteLayout() {
     }
     localStorage.setItem('theme', theme)
   }, [theme])
+
+  if (!authed) {
+    return (
+      <PasswordGate onSuccess={() => {
+        sessionStorage.setItem('site-authed', 'true')
+        setAuthed(true)
+      }} />
+    )
+  }
 
   return (
     <div className="site-layout">
