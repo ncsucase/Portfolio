@@ -1,4 +1,5 @@
-import timeline from '../assets/stories/redesigning-truist-digital/timeline.webp'
+import oldAccount from '../assets/stories/redesigning-truist-digital/old-account.webp'
+import oldDashboard from '../assets/stories/redesigning-truist-digital/old-dashboard.webp'
 
 export const meta = {
   title: 'Redesigning Truist Digital',
@@ -177,5 +178,35 @@ export const content = [
   {
     type: 'paragraph',
     text: `The lagging indicators — JD Power Visual Appeal rankings, VOC satisfaction scores — will take longer to move. But for the first time, Truist's digital products will have a visual foundation worth building on.`,
+  },
+  {
+    type: 'comparison',
+    layout: 'side-by-side',
+    before: {
+      src: oldDashboard,
+      alt: 'Image of the old dashboard screen.',
+      truncate: 500,
+    },
+    after: {
+      src: null,   // or null for placeholder
+      alt: 'Image of the new dashboard screen.',
+      truncate: 500,
+    },
+    caption: null,
+  },
+  {
+    type: 'comparison',
+    layout: 'side-by-side',
+    before: {
+      src: oldAccount,
+      alt: 'Image of the old checking account screen.',
+      truncate: 500,
+    },
+    after: {
+      src: null,   // or null for placeholder
+      alt: 'Image of the new checking account screen.',
+      truncate: 500,
+    },
+    caption: null,
   },
 ]

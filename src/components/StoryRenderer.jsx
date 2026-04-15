@@ -1,5 +1,6 @@
 import StatCard from './StatCard'
 import Timeline from './Timeline'
+import ComparisonBlock from './ComparisonBlock'
 import './StoryRenderer.css'
 
 export default function StoryRenderer({ blocks }) {
@@ -35,6 +36,9 @@ export default function StoryRenderer({ blocks }) {
 
           case 'timeline':
             return <Timeline key={i} block={block} />
+
+          case 'comparison':
+            return <ComparisonBlock key={i} block={block} />
 
           default:
             return null

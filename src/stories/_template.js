@@ -89,6 +89,29 @@ export const content = [
   //   ],
   // },
 
+  // Before/After comparison — side-by-side (default) or stacked layout.
+  // `layout: 'side-by-side'` shows images in two columns on desktop, stacks on mobile (<640px).
+  // `layout: 'stacked'` always shows images vertically.
+  // `truncate` clips the image at a max-height (px) with a gradient fade and a "Show more" button.
+  //   Set to a number for a specific height, or `true` for the 400px default.
+  // `after: null` (or omit `after`) renders a "Coming soon" placeholder.
+  // `label` on each side defaults to 'Before' / 'After'; set to `null` to hide the label.
+  // {
+  //   type: 'comparison',
+  //   layout: 'side-by-side',
+  //   before: {
+  //     src: importedImageVariable,
+  //     alt: 'Descriptive alt text',
+  //     truncate: 500,
+  //   },
+  //   after: {
+  //     src: importedImageVariable,   // or null for placeholder
+  //     alt: 'Descriptive alt text',
+  //     truncate: 500,
+  //   },
+  //   caption: 'Optional caption shown below the whole block.',
+  // },
+
   // Stat cards — label-first layout:
   // Bold label at top, large colored number in middle, muted description at bottom.
   // {
