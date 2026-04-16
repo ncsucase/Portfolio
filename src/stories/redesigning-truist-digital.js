@@ -1,3 +1,4 @@
+import heroImg from '../assets/stories/redesigning-truist-digital/hero.webp'
 import oldAccount from '../assets/stories/redesigning-truist-digital/old-account.webp'
 import oldDashboard from '../assets/stories/redesigning-truist-digital/old-dashboard.webp'
 
@@ -11,7 +12,7 @@ export const meta = {
   outcome: 'New visual foundation for Truist digital.',
   excerpt: 'No mandate. No top-down directive. Just a shared problem and a case worth making. How I convened five design teams across Truist to redesign the visual foundation of every digital product we own.',
   featured: true,
-  heroImage: null,
+  heroImage: heroImg,
 }
 
 export const content = [
@@ -184,12 +185,12 @@ export const content = [
     layout: 'side-by-side',
     before: {
       src: oldDashboard,
-      alt: 'Image of the old dashboard screen.',
+      alt: 'The old dashboard screen.',
       truncate: 500,
     },
     after: {
       src: null,   // or null for placeholder
-      alt: 'Image of the new dashboard screen.',
+      alt: 'The new dashboard screen.',
       truncate: 500,
     },
     caption: null,
@@ -199,12 +200,12 @@ export const content = [
     layout: 'side-by-side',
     before: {
       src: oldAccount,
-      alt: 'Image of the old checking account screen.',
+      alt: 'The old checking account screen.',
       truncate: 500,
     },
     after: {
       src: null,   // or null for placeholder
-      alt: 'Image of the new checking account screen.',
+      alt: 'The new checking account screen.',
       truncate: 500,
     },
     caption: null,

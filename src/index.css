@@ -1,21 +1,22 @@
 :root {
   /* Colors */
-  --text: #6b6375;
-  --text-h: #08060d;
-  --text-muted: #9b98a3;
+  --text: rgba(0, 0, 0, 0.7);
+  --text-h: #000;
+  --text-muted: rgba(0, 0, 0, 0.55);
   --bg: #fff;
   --surface: #f9f8f6;
-  --border: #e5e4e7;
+  --border: rgba(0, 0, 0, 0.2);
   --code-bg: #f4f3ec;
-  --accent: #aa3bff;
-  --accent-bg: rgba(170, 59, 255, 0.1);
-  --accent-border: rgba(170, 59, 255, 0.5);
+  --accent: rgb(175, 82, 222);
+  --accent-bg: rgba(175, 82, 222, 0.1);
+  --accent-border: rgba(175, 82, 222, 0.5);
 
   /* Status colors */
-  --color-error: #e03131;
-  --color-warning: #e67700;
-  --color-success: #2f9e44;
-  --color-info: #1971c2;
+  --color-error: #FF3B30;
+  --color-warning: #FF9500;
+  --color-caution: #FFCC00;
+  --color-success: #34C759;
+  --color-info: #00C7BE;
 
   --shadow:
     rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
@@ -81,22 +82,23 @@
 /* System dark mode (only when not manually overridden) */
 @media (prefers-color-scheme: dark) {
   :root:not(.light) {
-    --text: #9ca3af;
-    --text-h: #f3f4f6;
-    --text-muted: #6b7280;
+    --text: rgba(255, 255, 255, 0.8);
+    --text-h: #fff;
+    --text-muted: rgba(255, 255, 255, 0.6);
     --bg: #16171d;
     --surface: #1c1d24;
-    --border: #2e303a;
+    --border: rgba(255, 255, 255, 0.25);
     --code-bg: #1f2028;
-    --accent: #c084fc;
-    --accent-bg: rgba(192, 132, 252, 0.15);
-    --accent-border: rgba(192, 132, 252, 0.5);
+    --accent: rgb(191, 90, 242);
+    --accent-bg: rgba(191, 90, 242, 0.15);
+    --accent-border: rgba(191, 90, 242, 0.5);
 
     /* Status colors — softer for dark backgrounds */
-    --color-error: #ff6b6b;
-    --color-warning: #ffa94d;
-    --color-success: #69db7c;
-    --color-info: #74c0fc;
+    --color-error: #FF453A;
+    --color-warning: #FF9F0A;
+    --color-caution: #FFD60A;
+    --color-success: #30D158;
+    --color-info: #66D4CF;
 
     --shadow:
       rgba(0, 0, 0, 0.4) 0 10px 15px -3px,

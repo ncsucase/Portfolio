@@ -14,12 +14,6 @@ export default function Header({ theme, onThemeChange }) {
         >
           Work
         </NavLink>
-        <NavLink
-          to="/about"
-          className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
-        >
-          About
-        </NavLink>
       </nav>
       <ThemeToggle theme={theme} onChange={onThemeChange} />
     </header>

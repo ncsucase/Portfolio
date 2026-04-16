@@ -14,10 +14,10 @@
 //  summary => full-width band above the body
 
 export const meta = {
-  title: 'Story Title',
+  title: 'Solving Problems for Product',
   slug: 'story-slug',         // must match the filename and URL: /stories/story-slug
   date: '2024-01',            // YYYY or YYYY-MM format, used for sorting (optional, null skips it in the header)
-  status: 'in progress',      // `in progress` | `complete` (optional)
+  status: 'complete',      // `in progress` | `completed` (optional)
   tags: ['Tag One', 'Tag Two'],
   role: 'Design Director',
   outcome: 'One sentence describing measurable impact.',

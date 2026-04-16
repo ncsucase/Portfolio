@@ -5,15 +5,24 @@
 }
 
 .home-hero {
-  border-bottom: 1px solid var(--border);
+  border-top: 1px solid var(--border);
 }
 
 .home-list {
   display: flex;
   flex-direction: column;
+  margin: 0 var(--space-5);
 }
 
-.home-list > * + * {
+.home-list-heading {
+  padding: var(--space-6) var(--page-padding) var(--space-4);
+  font-size: var(--heading-2);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text-h);
+}
+
+.home-list > .story-card--compact + .story-card--compact {
   border-top: 1px solid var(--border);
 }
 
@@ -26,4 +35,110 @@
   font-family: var(--font-ui);
   font-size: var(--font-size-md);
   color: var(--text-muted);
+}
+
+/* ── Bio ─────────────────────────────────────────────────── */
+.home-bio {
+  padding: var(--space-8) var(--page-padding);
+  max-width: var(--prose-width);
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom: 1px solid var(--border);
+}
+
+.home-bio h1 {
+  padding-bottom: var(--space-5);
+}
+
+.home-bio p {
+  font-family: var(--font-prose);
+  font-size: var(--font-size-xl);
+  line-height: 1.75;
+  color: var(--text);
+}
+
+.home-bio p + p {
+  margin-top: 1.4em;
+}
+
+/* ── Generic section (What I do, Get in touch) ───────────── */
+.home-section {
+  padding: var(--space-8) var(--page-padding);
+  max-width: var(--prose-width);
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.home-section h2 {
+  font-family: var(--font-heading);
+  font-size: var(--heading-3);
+  font-weight: 600;
+  color: var(--text-h);
+  margin-bottom: var(--space-4);
+}
+
+/* ── Skills list ─────────────────────────────────────────── */
+.home-skills {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.home-skills li {
+  font-family: var(--font-ui);
+  font-size: var(--font-size-md);
+  color: var(--text);
+  padding-left: var(--space-4);
+  position: relative;
+}
+
+.home-skills li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--text-muted);
+}
+
+/* ── Contact ─────────────────────────────────────────────── */
+.home-contact {
+  border-bottom: none;
+}
+
+.home-links {
+  display: flex;
+  gap: var(--space-5);
+}
+
+.home-link {
+  font-family: var(--font-ui);
+  font-size: var(--font-size-md);
+  font-weight: 500;
+  color: var(--accent);
+  text-decoration: none;
+  transition: opacity 0.15s;
+}
+
+.home-link:hover {
+  opacity: 0.75;
+}
+
+/* ── Mobile ──────────────────────────────────────────────── */
+@media (max-width: 640px) {
+  .home-bio,
+  .home-section {
+    padding-inline: var(--space-4);
+  }
+
+  .home-list-heading {
+    padding: var(--space-3) 0 var(--space-1) 0;
+  }
+
+  .home-list {
+    margin: 0 var(--space-4);
+  }
 }
