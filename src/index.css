@@ -14,10 +14,20 @@
 
   /* Status colors */
   --color-error: #FF3B30;
+  --text-on-error: rgba(0, 0, 0, 0.8);
+  --bg-error: rgba(255, 59, 48, 0.15);
   --color-warning: #FF9500;
+  --text-on-warning: rgba(0, 0, 0, 0.8);
+  --bg-warning: rgba(255, 149, 0, 0.15);
   --color-caution: #FFCC00;
+  --text-on-caution: rgba(0, 0, 0, 0.8);
+  --bg-caution: rgba(255, 204, 0, 0.15);
   --color-success: #34C759;
+  --text-on-success: rgba(0, 0, 0, 0.8);
+  --bg-success: rgba(52, 199, 89, 0.15);
   --color-info: #00C7BE;
+  --text-on-info: rgba(0, 0, 0, 0.8);
+  --bg-info: rgba(0, 199, 190, 0.15);
 
   --shadow:
     rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
@@ -80,58 +90,34 @@
   }
 }
 
-/* System dark mode (only when not manually overridden) */
-@media (prefers-color-scheme: dark) {
-  :root:not(.light) {
-    --text: rgba(255, 255, 255, 0.8);
-    --text-h: #fff;
-    --text-muted: rgba(255, 255, 255, 0.6);
-    --bg: #141415;
-    --bg-deep: #0A0A0B;
-    --surface: #232324;
-    --border: rgba(255, 255, 255, 0.25);
-    --code-bg: #1f2028;
-    --accent: rgb(191, 90, 242);
-    --accent-bg: rgba(191, 90, 242, 0.15);
-    --accent-border: rgba(191, 90, 242, 0.5);
-
-    /* Status colors — softer for dark backgrounds */
-    --color-error: #FF453A;
-    --color-warning: #FF9F0A;
-    --color-caution: #FFD60A;
-    --color-success: #30D158;
-    --color-info: #66D4CF;
-
-    --shadow:
-      rgba(0, 0, 0, 0.4) 0 10px 15px -3px,
-      rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
-  }
-}
-
-/* Manual dark mode toggle */
 html.dark {
   --text: rgba(255, 255, 255, 0.8);
-    --text-h: #fff;
-    --text-muted: rgba(255, 255, 255, 0.6);
-    --bg: #141415;
-    --bg-deep: #0A0A0B;
-    --surface: #232324;
-    --border: rgba(255, 255, 255, 0.25);
-    --code-bg: #1f2028;
-    --accent: rgb(191, 90, 242);
-    --accent-bg: rgba(191, 90, 242, 0.15);
-    --accent-border: rgba(191, 90, 242, 0.5);
+  --text-h: #fff;
+  --text-muted: rgba(255, 255, 255, 0.6);
+  --bg: #141415;
+  --bg-deep: #0A0A0B;
+  --surface: #232324;
+  --border: rgba(255, 255, 255, 0.25);
+  --code-bg: #1f2028;
+  --accent: rgb(191, 90, 242);
+  --accent-bg: rgba(191, 90, 242, 0.15);
+  --accent-border: rgba(191, 90, 242, 0.5);
 
-    /* Status colors — softer for dark backgrounds */
-    --color-error: #FF453A;
-    --color-warning: #FF9F0A;
-    --color-caution: #FFD60A;
-    --color-success: #30D158;
-    --color-info: #66D4CF;
+  /* Status colors — softer for dark backgrounds */
+  --color-error: #FF453A;
+  --bg-error: rgba(255, 69, 58, 0.15);
+  --color-warning: #FF9F0A;
+  --bg-warning: rgba(255, 159, 10, 0.15);
+  --color-caution: #FFD60A;
+  --bg-caution: rgba(255, 214, 10, 0.15);
+  --color-success: #30D158;
+  --bg-success: rgba(48, 209, 88, 0.15);
+  --color-info: #66D4CF;
+  --bg-info: rgba(102, 212, 207, 0.15);
 
-    --shadow:
-      rgba(0, 0, 0, 0.4) 0 10px 15px -3px,
-      rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
+  --shadow:
+    rgba(0, 0, 0, 0.4) 0 10px 15px -3px,
+    rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
 }
 
 body {

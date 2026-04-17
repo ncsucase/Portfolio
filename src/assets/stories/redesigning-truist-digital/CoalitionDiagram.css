@@ -1,0 +1,6 @@
+.coalition-diagram .coalition-v { display: none; }
+
+@media (max-width: 600px) {
+  .coalition-diagram .coalition-h { display: none; }
+  .coalition-diagram .coalition-v { display: block; width: 100%; height: auto; }
+}

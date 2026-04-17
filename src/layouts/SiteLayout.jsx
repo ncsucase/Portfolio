@@ -15,8 +15,14 @@ function ScrollToTop() {
 
 export default function SiteLayout() {
   const [theme, setTheme] = useState(() => {
-    return localStorage.getItem('theme') ?? 'system'
+    return localStorage.getItem('theme') ??
+      (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
   })
+
+  const handleThemeChange = (newTheme) => {
+    setTheme(newTheme)
+    localStorage.setItem('theme', newTheme)
+  }
 
   const [authed, setAuthed] = useState(() => {
     return sessionStorage.getItem('site-authed') === 'true'
@@ -24,16 +30,8 @@ export default function SiteLayout() {
 
   useEffect(() => {
     const root = document.documentElement
-    if (theme === 'dark') {
-      root.classList.add('dark')
-      root.classList.remove('light')
-    } else if (theme === 'light') {
-      root.classList.add('light')
-      root.classList.remove('dark')
-    } else {
-      root.classList.remove('dark', 'light')
-    }
-    localStorage.setItem('theme', theme)
+    root.classList.toggle('dark', theme === 'dark')
+    root.classList.toggle('light', theme === 'light')
   }, [theme])
 
   if (!authed) {
@@ -48,7 +46,7 @@ export default function SiteLayout() {
   return (
     <div className="site-layout">
       <ScrollToTop />
-      <Header theme={theme} onThemeChange={setTheme} />
+      <Header theme={theme} onThemeChange={handleThemeChange} />
       <main className="site-main page-container">
         <Outlet />
       </main>

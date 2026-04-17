@@ -28,16 +28,28 @@
   margin-top: var(--space-3);
 }
 
+.story-list {
+  font-family: var(--font-prose);
+  font-size: var(--font-size-xl);
+  line-height: 1.75;
+  color: var(--text);
+  padding-left: var(--space-6);
+}
+
+.story-list-item + .story-list-item {
+  margin-top: var(--space-2);
+}
+
 .story-figure {
   margin: var(--space-3) 0;
 }
 
-.story-figure img {
+.story-figure img,
+.story-figure svg {
   width: 100%;
   height: auto;
   display: block;
   border-radius: var(--radius-md);
-  border: 1px solid var(--border);
 }
 
 .story-figcaption {

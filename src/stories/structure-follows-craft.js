@@ -1,125 +1,115 @@
-// Copy this file and rename it to your story's slug (e.g. design-systems-at-scale.js)
-// Then import it in src/stories/index.js:
-//   import * as yourStorySlug from './your-story-slug.js'
-//   const allStories = [yourStorySlug, ...]
-
-// To use a hero image:
-//   1. Add a WebP file to src/assets/stories/<slug>/hero.webp
-//   2. Import it: import heroImg from '../assets/stories/<slug>/hero.webp'
-//   3. Set meta.heroImage: heroImg
-
-// outcome vs excerpt vs summary
-//  excerpt => on the Home page card
-//  outcome => specific, measurable result on the Story Header metadata row
-//  summary => full-width band above the body
-
 export const meta = {
   title: 'Structure Follows Craft',
-  slug: 'story-slug',         // must match the filename and URL: /stories/story-slug
-  date: '2024-01',            // YYYY or YYYY-MM format, used for sorting (optional, null skips it in the header)
-  status: 'complete',      // `in progress` | `completed` (optional)
+  slug: 'structure-follows-craft',
+  date: '2023-06',
+  status: 'complete',
   tags: ['Tag One', 'Tag Two'],
   role: 'Design Director',
   outcome: 'One sentence describing measurable impact.',
   excerpt: 'Two to three sentences shown on the home page. Summarize the challenge and result.',
-  featured: false,             // set true on the story you want in the hero slot on home
-  heroImage: null,             // or: import heroImg from '...' and set heroImage: heroImg
+  featured: false,
+  heroImage: null,
 }
 
 export const content = [
   {
     type: 'summary',
-    // Full paragraph shown in the summary band above the story body (italic, large).
-    text: 'A concise framing of the challenge: what was at stake, why it mattered, and what you set out to do.',
-  },
-  {
-    type: 'paragraph',
-    text: 'First body paragraph.',
+    text: 'A 36-person design organization structured around Product Manager alignment was creating two crippling problems. I restructured the org around a matrix model. Within one PI cycle, we fixed the problems.',
   },
   {
     type: 'heading',
     level: 2,
-    text: 'Section Heading',
+    text: 'The Situation',
   },
   {
     type: 'paragraph',
-    text: 'Paragraph under the section heading.',
+    text: `When I took over as design director for Truist's authenticated digital banking organization, I inherited a 36-person team structured around Product Manager alignment. Each designer reported to a design leader who was paired with a Group Product Manager, and individual contributors were assigned to follow their PM's feature area as it evolved.`,
   },
-  // To add an image:
-  // {
-  //   type: 'image',
-  //   src: importedImageVariable,
-  //   alt: 'Descriptive alt text',
-  //   caption: 'Optional caption shown below the image.',
-  // },
-
-  // Timeline — two variants:
-  //   (default)          horizontal desktop, vertical mobile
-  //   variant:'truncated' always horizontal, scrollable, fades on overflow edges
-  // Each item is a quarter group. Each event within the group has its own date.
-  // `quarter` is optional. `date`/`sublabel` on each event are optional.
-  // {
-  //   type: 'timeline',
-  //   items: [
-  //     {
-  //       quarter: 'Q1 2025',
-  //       events: [
-  //         { date: 'Feb 2025', label: 'Brand review' },
-  //         { date: 'Mar 2025', label: 'User study', sublabel: 'App-only; 4 designs' },
-  //       ],
-  //     },
-  //     {
-  //       quarter: 'Q2 2025',
-  //       events: [
-  //         { date: 'May 2025', label: 'Design system shipped' },
-  //       ],
-  //     },
-  //   ],
-  // },
-
-  // Stat cards — value-first layout (default):
-  // Large number at top, bold label below, muted description at bottom.
-  // Omit `color` for default heading color, or use: 'error' | 'warning' | 'success' | 'info'
-  // {
-  //   type: 'stats',
-  //   items: [
-  //     { value: '14', label: 'Studies', description: 'Unmoderated, JD Power and internal metrics.' },
-  //     { value: '50+', label: 'Designs', description: 'Tested, not including the ones we trashed.' },
-  //     { value: '5k+', label: 'Clients', description: 'Supplied the feedback via user studies.' },
-  //   ],
-  // },
-
-  // Before/After comparison — side-by-side (default) or stacked layout.
-  // `layout: 'side-by-side'` shows images in two columns on desktop, stacks on mobile (<640px).
-  // `layout: 'stacked'` always shows images vertically.
-  // `truncate` clips the image at a max-height (px) with a gradient fade and a "Show more" button.
-  //   Set to a number for a specific height, or `true` for the 400px default.
-  // `after: null` (or omit `after`) renders a "Coming soon" placeholder.
-  // `label` on each side defaults to 'Before' / 'After'; set to `null` to hide the label.
-  // {
-  //   type: 'comparison',
-  //   layout: 'side-by-side',
-  //   before: {
-  //     src: importedImageVariable,
-  //     alt: 'Descriptive alt text',
-  //     truncate: 500,
-  //   },
-  //   after: {
-  //     src: importedImageVariable,   // or null for placeholder
-  //     alt: 'Descriptive alt text',
-  //     truncate: 500,
-  //   },
-  //   caption: 'Optional caption shown below the whole block.',
-  // },
-
-  // Stat cards — label-first layout:
-  // Bold label at top, large colored number in middle, muted description at bottom.
-  // {
-  //   type: 'stats',
-  //   variant: 'label-first',
-  //   items: [
-  //     { label: 'Voice of the Customer', value: '10%', description: 'Rated "visual appeal" 1 out of 5 every month.', color: 'error' },
-  //     { label: 'JD Power Ranking', value: '9th', description: 'Consistently low in "visual appeal" every year.', color: 'warning' },
-  //   ],
-  // },
+  {
+    type: 'paragraph',
+    text: `On paper, the logic was sound — designers stay close to the people driving the roadmap. In practice, it was eroding the team.`,
+  },
+  {
+    type: 'inline-svg',
+    name: 'featureChurn',
+    alt: 'The vicious cycle of PM-aligned designer staffing.',
+    caption: null,
+  },
+  {
+    type: 'inline-svg',
+    name: 'coachingChurn',
+    alt: 'The vicious cycle of mis-matched managers.',
+    caption: null,
+  },
+  {
+    type: 'heading',
+    level: 2,
+    text: 'The Challenge',
+  },
+  {
+    type: 'paragraph',
+    text: `Two failure modes emerged gradually, and they were related.`,
+  },
+  {
+    type: 'paragraph',
+    text: `First, PM feature areas were shifting frequently. Truist operates on Program Increment (PI) planning cycles, and PMs regularly rotated ownership of feature areas. Every rotation triggered a designer onboarding — and full feature onboarding takes roughly three months. With rotations happening approximately every six months, designers were spending half their time getting up to speed rather than producing meaningful work.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Second, design quality was declining. Because design leaders were paired to GPMs rather than to disciplines, a UI-specialized leader might be coaching a UX designer, or a content designer might be getting feedback from someone without content expertise. The coaching wasn't landing where it needed to. `,
+  },
+  {
+    type: 'paragraph',
+    text: `Design leaders and I were observing inconsistency across deliverables, PM and stakeholder partners were flagging concerns, and rework cycles were increasing. At our worst point, we had features blocked by partners due to unresolved design concerns — a clear signal that something structural was broken.`,
+  },
+  {
+    type: 'heading',
+    level: 2,
+    text: 'The Decision',
+  },
+  {
+    type: 'paragraph',
+    text: `I landed on a matrixed approach that decoupled two things that had been incorrectly fused: feature alignment and reporting structure. The changes:`,
+  },
+  {
+    type: 'list',
+    items: [
+      `Designers align to feature areas, not to PMs. When a PM rotates, the designer stays. The designer builds deep domain knowledge in their feature space and owns continuity — the PM comes to them.`,
+      `Individual contributors report to a design leader who specializes in their discipline. A UX designer reports to a UX-specialized lead. A UI designer to a UI lead. That leader may or may not be the one partnered with the designer's GPM — and that's intentional.`,
+    ]
+  },
+  {
+    type: 'paragraph',
+    text: `The matrix created two independent axes: feature ownership (horizontal) and craft development (vertical). Neither dilutes the other.`,
+  },
+  {
+    type: 'heading',
+    level: 2,
+    text: 'The Resistance',
+  },
+  {
+    type: 'paragraph',
+    text: `The design leaders pushed back. Some felt the new structure would reduce their authority over their feature area — that if their direct reports were spread across GPM partnerships, they'd lose influence over the work.`,
+  },
+  {
+    type: 'paragraph',
+    text: `I addressed this directly: feature partnership and craft leadership are different kinds of authority, and the matrix gives leaders more of both by making each role explicit. It took a couple of months for the team to internalize that, but the resistance dissolved as the outcomes became visible.`,
+  },
+  {
+    type: 'heading',
+    level: 2,
+    text: 'The Outcome',
+  },
+  {
+    type: 'paragraph',
+    text: `Within one PI cycle the signal was clear. Feature onboarding — previously triggered every six months — became the exception rather than the rule. Designers now only transition to a new feature area when they choose to explore one, not because a PM rotated. The three-month onboarding tax effectively disappeared from our delivery capacity.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Quality improvements showed up in PI demos: for the first time, I was seeing consistent interaction patterns and visual language across screens owned by different designers and different feature teams. Partner complaints dropped. No features were blocked due to design concerns in the PIs that followed the restructure. And perhaps most telling — designers told me they finally felt like they were getting the coaching they actually needed.`,
+  },
+  {
+    type: 'paragraph',
+    text: `A 36-person design organization had been structured for managerial convenience. Restructuring it for craft and continuity changed what it could produce.`,
+  },
 ]

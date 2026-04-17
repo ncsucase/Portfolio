@@ -1,6 +1,7 @@
 import StatCard from './StatCard'
 import Timeline from './Timeline'
 import ComparisonBlock from './ComparisonBlock'
+import * as InlineSvgs from '../assets/inline-svgs'
 import './StoryRenderer.css'
 
 export default function StoryRenderer({ blocks }) {
@@ -39,6 +40,30 @@ export default function StoryRenderer({ blocks }) {
 
           case 'comparison':
             return <ComparisonBlock key={i} block={block} />
+
+          case 'list': {
+            const Tag = block.style === 'unordered' ? 'ul' : 'ol'
+            return (
+              <Tag key={i} className="story-list">
+                {block.items.map((item, j) => (
+                  <li key={j} className="story-list-item">{item}</li>
+                ))}
+              </Tag>
+            )
+          }
+
+          case 'inline-svg': {
+            const Svg = InlineSvgs[block.name]
+            if (!Svg) return null
+            return (
+              <figure key={i} className="story-figure">
+                <Svg aria-label={block.alt ?? ''} role="img" />
+                {block.caption && (
+                  <figcaption className="story-figcaption">{block.caption}</figcaption>
+                )}
+              </figure>
+            )
+          }
 
           default:
             return null

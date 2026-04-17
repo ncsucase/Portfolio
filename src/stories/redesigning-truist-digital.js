@@ -52,7 +52,7 @@ export const content = [
   },
   {
     type: 'paragraph',
-    text: `This wasn't a problem I could solve within my own org. Truist's digital products span personal banking, commercial banking, public sites, commerce, and more — each owned by a different design team. A visual refresh that only touched my domain would be incomplete, inconsistent, and ultimately unconvincing to clients who move across those surfaces.`,
+    text: `This wasn't a problem I could solve within my own org. Truist's digital products span personal banking, wholesale banking, public sites, commerce, and more — each owned by a different design team. A visual refresh that only touched my domain would be incomplete, inconsistent, and ultimately unconvincing to clients who move across those surfaces.`,
   },
   {
     type: 'paragraph',
@@ -68,8 +68,14 @@ export const content = [
     text: `I approached the leaders of peer design teams and made a simple argument: we all share the same client perception problem, and none of us can solve it alone. I invited them to participate voluntarily — no organizational pressure, no top-down directive. Four teams ultimately joined, representing design coverage across Truist's major digital surfaces.`,
   },
   {
+    type: 'inline-svg',
+    name: 'coalition',
+    alt: 'The five teams in the coalition to redesign Truist digital.',
+    caption: null,
+  },
+  {
     type: 'paragraph',
-    text: `The hardest team to bring in was Commercial. They had already begun their own redesign and weren't interested in consuming a shared system — they wanted to own their direction. Rather than pushing, I kept inviting. I held room for their designs in every round of user testing. And I made a specific commitment: we would respect each team's priorities, and no team would be forced to consume the new styles on anyone else's timeline. That assurance mattered. They joined, and their participation made the final system stronger.`,
+    text: `The hardest team to bring in was Wholesale. They had already begun their own redesign and weren't interested in consuming a shared system — they wanted to own their direction. Rather than pushing, I kept inviting. I held room for their designs in every round of user testing. And I made a specific commitment: we would respect each team's priorities, and no team would be forced to consume the new styles on anyone else's timeline. That assurance mattered. They joined, and their participation made the final system stronger.`,
   },
   {
     type: 'heading',
@@ -166,7 +172,7 @@ export const content = [
   },
   {
     type: 'paragraph',
-    text: `The leading indicators are already meaningful: a cross-functional coalition that didn't exist before, a shared design language where there was none, and a Commercial team that came in skeptical and ended up shaping the result.`,
+    text: `The leading indicators are already meaningful: a cross-functional coalition that didn't exist before, a shared design language where there was none, and a Wholesale team that came in skeptical and ended up shaping the result.`,
   },
   {
     type: 'paragraph',
