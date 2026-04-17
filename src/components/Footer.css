@@ -27,8 +27,8 @@
 
 .footer-tagline {
   margin-top: var(--space-3);
-  font-size: var(--font-size-sm);
-  color: var(--text-muted);
+  font-size: var(--font-size-md);
+  color: var(--text);
 }
 
 .footer-links {
@@ -69,7 +69,6 @@
 
 .footer-bottom {
   padding: var(--space-4) var(--page-padding);
-  border-top: 1px solid var(--border);
   font-size: var(--font-size-sm);
   text-align: center;
   color: var(--text-muted);

@@ -6,7 +6,6 @@
 /* Header band */
 .story-header {
   padding: var(--space-8) var(--page-padding);
-  border-bottom: 1px solid var(--border);
 }
 
 .story-header-inner {
@@ -70,19 +69,25 @@
 
 /* Summary band */
 .story-summary-band {
-  background: var(--surface);
+  background: var(--bg-deep);
   padding: var(--space-7) var(--page-padding);
-  border-bottom: 1px solid var(--border);
 }
 
-.story-summary-text {
+.story-summary-inner {
   max-width: var(--prose-width);
   margin: 0 auto;
   font-family: var(--font-prose);
   font-size: clamp(19px, 2.2vw, 22px);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.story-summary-text {
+  font-family: var(--font-prose);
+  font-size: inherit;
   line-height: 1.65;
   color: var(--text-h);
-  font-style: italic;
 }
 
 /* Body */

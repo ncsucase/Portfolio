@@ -18,7 +18,7 @@ export const meta = {
 export const content = [
   {
     type: 'summary',
-    text: `Truist clients felt our digital experiences were dated and unattractive — consistently and measurably. Over one year, I built a cross-enterprise design coalition, sponsored 14 user studies to evaluate over 50 designs with over 5,000 clients, and delivered a new visual system that will be finalized and brand-approved for use across all of Truist's digital products in two months.`,
+    text: `Truist clients felt our digital experiences were dated and unattractive — consistently and measurably. Over two years, I built a cross-enterprise design coalition, sponsored 14 user studies to evaluate over 50 designs with over 5,000 clients, and delivered a new visual system that will be finalized and brand-approved for use across all of Truist's digital products in two months.`,
   },
   {
     type: 'heading',
@@ -29,7 +29,7 @@ export const content = [
     type: 'stats',
     variant: 'label-first',
     items: [
-      { label: 'Voice of the Customer', value: '10%', description: 'Rated "visual appeal" 1 out of 5 every month.', color: 'error' },
+      { label: 'Voice of the Customer', value: '10%', description: 'Rated "visual appeal" 1 out of 5, every month.', color: 'error' },
       { label: 'JD Power Ranking', value: '9th', description: 'Consistently low in "visual appeal" every year.', color: 'error' },
     ],
   },
@@ -89,56 +89,48 @@ export const content = [
     variant: 'truncated',
     items: [
       {
-        quarter: `Q3 2024`,
-        events: [
-          { date: 'Aug 2024', label: 'User Study 1', sublabel: 'App-only; 4 designs' },
-          { date: 'Nov 2024', label: 'User Study 2', sublabel: 'App-only; 4 designs' },
-          { date: 'Dec 2024', label: 'User Study 3', sublabel: 'App-only; 4 designs' },
-        ]
-      },
-      {
         quarter: `Q4 2024`,
         events: [
-          { date: 'Oct 2024', label: 'User Study 4', sublabel: 'App-only; 4 designs' },
-          { date: 'Nov 2024', label: 'User Study 5', sublabel: 'App-only; 4 designs' },
+          { date: 'Oct 1', label: 'User Study 1', sublabel: 'Survey attributes' },
+          { date: 'Oct 21', label: 'User Study 2', sublabel: 'Unmoderated; 5 designs' },
+          { date: 'Nov 11', label: 'User Study 3', sublabel: 'Unmoderated; 4 designs' },
+          { date: 'Nov 25', label: 'User Study 4', sublabel: 'Unmoderated; 5 designs' },
         ]
       },
       {
-        quarter: 'Q1 2025',
+        quarter: `Q1 2025`,
         events: [
-          { date: 'Jan 2025', label: 'Brand Review 1', color: 'accent' },
-          { date: 'Feb 2025', label: 'User Study 6', sublabel: 'App-only; 4 designs'},
-        ],
+          { date: 'Mar 21', label: 'User Study 4', sublabel: 'Unmoderated; 4 designs' },
+        ]
       },
       {
-        quarter: 'Q2 2025',
+        quarter: `Q2 2025`,
         events: [
-          { date: 'Feb 2025', label: 'User Study 7', sublabel: 'App-only; 4 designs'},
-          { date: 'Feb 2025', label: 'User Study 8', sublabel: 'App-only; 4 designs'},
-          { date: 'Jan 2025', label: 'Brand Review 2', color: 'accent' },
-        ],
+          { date: 'Apr 17', label: 'User Study 5', sublabel: 'Unmoderated; 3 designs' },
+          { date: 'May 6', label: 'User Study 5', sublabel: 'Moderated; 2 designs' },
+          { date: 'May 21', label: 'User Study 5', sublabel: 'Unmoderated; 4 designs' },
+        ]
       },
       {
         quarter: 'Q3 2025',
         events: [
-          { date: 'Feb 2025', label: 'User Study 9', sublabel: 'App-only; 4 designs'},
-          { date: 'Feb 2025', label: 'User Study 10', sublabel: 'Web-only; 4 designs'},
+          { date: 'July 11', label: 'Brand Review 1', color: 'accent' },
+          { date: 'Jul 16', label: 'User Study 6', sublabel: 'Unmoderated; 5 designs'},
+          { date: 'Jul 30', label: 'User Study 6', sublabel: 'Unmoderated; 4 designs'},
+          { date: 'Aug 29', label: 'User Study 6', sublabel: 'Unmoderated; 25 designs'},
         ],
       },
       {
-        quarter: 'Q4 2025',
+        quarter: `Q4 2025`,
         events: [
-          { date: 'Feb 2025', label: 'User Study 11', sublabel: 'Web-only; 4 designs'},
-          { date: 'Feb 2025', label: 'User Study 12', sublabel: 'Web-only; 4 designs'},
-        ],
+          { date: 'Nov 5', label: 'User Study 4', sublabel: 'Unmoderated; 17 designs' },
+        ]
       },
       {
-        quarter: 'Q4 2025',
+        quarter: `Q2 2026`,
         events: [
-          { date: 'Feb 2025', label: 'User Study 13', sublabel: 'Web-only; 4 designs'},
-          { date: 'Jan 2025', label: 'Brand Review 2', color: 'accent' },
-          { date: 'Feb 2025', label: 'User Study 14', sublabel: 'Web-only; 4 designs'},
-        ],
+          { date: 'Apr 28', label: 'User Study 4', sublabel: 'Unmoderated; 4 designs' },
+        ]
       },
     ],
   },

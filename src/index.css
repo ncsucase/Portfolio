@@ -1,10 +1,11 @@
 :root {
   /* Colors */
-  --text: rgba(0, 0, 0, 0.7);
+  --text: rgba(0, 0, 0, 0.8);
   --text-h: #000;
   --text-muted: rgba(0, 0, 0, 0.55);
   --bg: #fff;
-  --surface: #f9f8f6;
+  --bg-deep: #F2F2F7;
+  --surface: #fff;
   --border: rgba(0, 0, 0, 0.2);
   --code-bg: #f4f3ec;
   --accent: rgb(175, 82, 222);
@@ -85,8 +86,9 @@
     --text: rgba(255, 255, 255, 0.8);
     --text-h: #fff;
     --text-muted: rgba(255, 255, 255, 0.6);
-    --bg: #16171d;
-    --surface: #1c1d24;
+    --bg: #141415;
+    --bg-deep: #0A0A0B;
+    --surface: #232324;
     --border: rgba(255, 255, 255, 0.25);
     --code-bg: #1f2028;
     --accent: rgb(191, 90, 242);
@@ -108,19 +110,28 @@
 
 /* Manual dark mode toggle */
 html.dark {
-  --text: #9ca3af;
-  --text-h: #f3f4f6;
-  --text-muted: #6b7280;
-  --bg: #16171d;
-  --surface: #1c1d24;
-  --border: #2e303a;
-  --code-bg: #1f2028;
-  --accent: #c084fc;
-  --accent-bg: rgba(192, 132, 252, 0.15);
-  --accent-border: rgba(192, 132, 252, 0.5);
-  --shadow:
-    rgba(0, 0, 0, 0.4) 0 10px 15px -3px,
-    rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
+  --text: rgba(255, 255, 255, 0.8);
+    --text-h: #fff;
+    --text-muted: rgba(255, 255, 255, 0.6);
+    --bg: #141415;
+    --bg-deep: #0A0A0B;
+    --surface: #232324;
+    --border: rgba(255, 255, 255, 0.25);
+    --code-bg: #1f2028;
+    --accent: rgb(191, 90, 242);
+    --accent-bg: rgba(191, 90, 242, 0.15);
+    --accent-border: rgba(191, 90, 242, 0.5);
+
+    /* Status colors — softer for dark backgrounds */
+    --color-error: #FF453A;
+    --color-warning: #FF9F0A;
+    --color-caution: #FFD60A;
+    --color-success: #30D158;
+    --color-info: #66D4CF;
+
+    --shadow:
+      rgba(0, 0, 0, 0.4) 0 10px 15px -3px,
+      rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
 }
 
 body {
@@ -129,13 +140,18 @@ body {
 }
 
 #root {
-  width: var(--content-width);
   max-width: 100%;
   margin: 0 auto;
-  border-inline: 1px solid var(--border);
   min-height: 100svh;
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
+}
+
+.page-container {
+  width: var(--content-width);
+  max-width: 100%;
+  margin-inline: auto;
   box-sizing: border-box;
 }
 
@@ -148,21 +164,24 @@ h3 {
   margin: 0;
 }
 
-h1 {
+h1,
+.heading-1 {
   font-size: var(--heading-1);
   font-weight: 700;
   letter-spacing: -0.03em;
   line-height: 1.1;
 }
 
-h2 {
+h2,
+.heading-2 {
   font-size: var(--heading-2);
   font-weight: 600;
   letter-spacing: -0.02em;
   line-height: 1.2;
 }
 
-h3 {
+h3,
+.heading-3 {
   font-size: var(--heading-3);
   font-weight: 600;
   line-height: 1.3;

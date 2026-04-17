@@ -48,7 +48,10 @@ export default function StoryLayout({ story }) {
 
       {summary && (
         <div className="story-summary-band">
-          <p className="story-summary-text">{summary.text}</p>
+          <div className="story-summary-inner">
+            <h2 className="story-summary-title heading-3">Summary</h2>
+            <p className="story-summary-text">{summary.text}</p>
+          </div>
         </div>
       )}
 

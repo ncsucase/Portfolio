@@ -1,4 +1,10 @@
 const icons = {
+  'arrow-left': {
+    viewBox: '0 0 16 16',
+    content: (
+      <path d="M13 8H3M7 4L3 8l4 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    ),
+  },
   'arrow-right': {
     viewBox: '0 0 16 16',
     content: (

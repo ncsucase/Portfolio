@@ -4,7 +4,7 @@ import Icon from './Icon'
 export default function Footer() {
   return (
     <footer className="site-footer">
-      <div className="footer-inner">
+      <div className="footer-inner page-container">
         <div className="footer-cta">
           <p className="footer-headline">Let's build the future together.</p>
           <p className="footer-tagline">Open for collaboration and design leadership opportunities.</p>

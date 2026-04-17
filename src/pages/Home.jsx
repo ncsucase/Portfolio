@@ -10,7 +10,7 @@ export default function Home() {
 
   return (
     <div className="home">
-      <title>Mikey Cestari — Design Director</title>
+      <title>Mikey Cestari | Design Director</title>
 
       <section className="home-bio">
         <h1>Mikey Cestari</h1>

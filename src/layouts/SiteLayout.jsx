@@ -49,7 +49,7 @@ export default function SiteLayout() {
     <div className="site-layout">
       <ScrollToTop />
       <Header theme={theme} onThemeChange={setTheme} />
-      <main className="site-main">
+      <main className="site-main page-container">
         <Outlet />
       </main>
       <Footer />
