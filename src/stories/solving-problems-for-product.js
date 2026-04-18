@@ -1,125 +1,109 @@
-// Copy this file and rename it to your story's slug (e.g. design-systems-at-scale.js)
-// Then import it in src/stories/index.js:
-//   import * as yourStorySlug from './your-story-slug.js'
-//   const allStories = [yourStorySlug, ...]
-
-// To use a hero image:
-//   1. Add a WebP file to src/assets/stories/<slug>/hero.webp
-//   2. Import it: import heroImg from '../assets/stories/<slug>/hero.webp'
-//   3. Set meta.heroImage: heroImg
-
-// outcome vs excerpt vs summary
-//  excerpt => on the Home page card
-//  outcome => specific, measurable result on the Story Header metadata row
-//  summary => full-width band above the body
-
 export const meta = {
   title: 'Solving Problems for Product',
-  slug: 'story-slug',         // must match the filename and URL: /stories/story-slug
-  date: '2024-01',            // YYYY or YYYY-MM format, used for sorting (optional, null skips it in the header)
-  status: 'complete',      // `in progress` | `completed` (optional)
+  slug: 'solving-problems-for-product',
+  date: '2023',
+  status: 'complete',
   tags: ['Tag One', 'Tag Two'],
   role: 'Design Director',
   outcome: 'One sentence describing measurable impact.',
   excerpt: 'Two to three sentences shown on the home page. Summarize the challenge and result.',
-  featured: false,             // set true on the story you want in the hero slot on home
-  heroImage: null,             // or: import heroImg from '...' and set heroImage: heroImg
+  featured: false,
+  heroImage: null,
 }
 
 export const content = [
   {
     type: 'summary',
     // Full paragraph shown in the summary band above the story body (italic, large).
-    text: 'A concise framing of the challenge: what was at stake, why it mattered, and what you set out to do.',
-  },
-  {
-    type: 'paragraph',
-    text: 'First body paragraph.',
+    text: `The product team responsible for Truist's authenticated banking backlog was managing roughly 400 features across Excel and Rally — manually. Daily cross-checks, broken formulas, lost updates, and no reliable way to share data with stakeholders. I'd solved a similar problem for my own design team and knew I could fix it. I offered. What had been taking one person 20+ hours a week now takes 1–2.`,
   },
   {
     type: 'heading',
     level: 2,
-    text: 'Section Heading',
+    text: 'The Situation',
   },
   {
     type: 'paragraph',
-    text: 'Paragraph under the section heading.',
+    text: `The Product team managing Truist's authenticated banking backlog had a process problem they'd been living with for a long time. Their source of truth was an Excel file — manually maintained, manually cross-checked against Rally, and vulnerable to anyone who opened it and accidentally broke a formula.`,
   },
-  // To add an image:
-  // {
-  //   type: 'image',
-  //   src: importedImageVariable,
-  //   alt: 'Descriptive alt text',
-  //   caption: 'Optional caption shown below the image.',
-  // },
-
-  // Timeline — two variants:
-  //   (default)          horizontal desktop, vertical mobile
-  //   variant:'truncated' always horizontal, scrollable, fades on overflow edges
-  // Each item is a quarter group. Each event within the group has its own date.
-  // `quarter` is optional. `date`/`sublabel` on each event are optional.
-  // {
-  //   type: 'timeline',
-  //   items: [
-  //     {
-  //       quarter: 'Q1 2025',
-  //       events: [
-  //         { date: 'Feb 2025', label: 'Brand review' },
-  //         { date: 'Mar 2025', label: 'User study', sublabel: 'App-only; 4 designs' },
-  //       ],
-  //     },
-  //     {
-  //       quarter: 'Q2 2025',
-  //       events: [
-  //         { date: 'May 2025', label: 'Design system shipped' },
-  //       ],
-  //     },
-  //   ],
-  // },
-
-  // Stat cards — value-first layout (default):
-  // Large number at top, bold label below, muted description at bottom.
-  // Omit `color` for default heading color, or use: 'error' | 'warning' | 'success' | 'info'
-  // {
-  //   type: 'stats',
-  //   items: [
-  //     { value: '14', label: 'Studies', description: 'Unmoderated, JD Power and internal metrics.' },
-  //     { value: '50+', label: 'Designs', description: 'Tested, not including the ones we trashed.' },
-  //     { value: '5k+', label: 'Clients', description: 'Supplied the feedback via user studies.' },
-  //   ],
-  // },
-
-  // Before/After comparison — side-by-side (default) or stacked layout.
-  // `layout: 'side-by-side'` shows images in two columns on desktop, stacks on mobile (<640px).
-  // `layout: 'stacked'` always shows images vertically.
-  // `truncate` clips the image at a max-height (px) with a gradient fade and a "Show more" button.
-  //   Set to a number for a specific height, or `true` for the 400px default.
-  // `after: null` (or omit `after`) renders a "Coming soon" placeholder.
-  // `label` on each side defaults to 'Before' / 'After'; set to `null` to hide the label.
-  // {
-  //   type: 'comparison',
-  //   layout: 'side-by-side',
-  //   before: {
-  //     src: importedImageVariable,
-  //     alt: 'Descriptive alt text',
-  //     truncate: 500,
-  //   },
-  //   after: {
-  //     src: importedImageVariable,   // or null for placeholder
-  //     alt: 'Descriptive alt text',
-  //     truncate: 500,
-  //   },
-  //   caption: 'Optional caption shown below the whole block.',
-  // },
-
-  // Stat cards — label-first layout:
-  // Bold label at top, large colored number in middle, muted description at bottom.
-  // {
-  //   type: 'stats',
-  //   variant: 'label-first',
-  //   items: [
-  //     { label: 'Voice of the Customer', value: '10%', description: 'Rated "visual appeal" 1 out of 5 every month.', color: 'error' },
-  //     { label: 'JD Power Ranking', value: '9th', description: 'Consistently low in "visual appeal" every year.', color: 'warning' },
-  //   ],
-  // },
+  {
+    type: 'paragraph',
+    text: `I noticed it. I didn't own it. But I'd already built a Rally API integration for my own design team and knew the same approach could fix what they were dealing with. I offered to help.`,
+  },
+  {
+    type: 'paragraph',
+    text: `A note on scope: this wasn't in my job description. I built it because I saw the problem, knew I could solve it, and understood that a product team operating more effectively makes the entire design and delivery system better. That instinct — to look beyond your own org and fix what's broken — is how durable cross-functional trust gets built.`,
+  },
+  {
+    type: 'heading',
+    level: 2,
+    text: 'The Problem',
+  },
+  {
+    type: 'paragraph',
+    text: `The backlog manager's daily routine was a study in unsustainable process. Each day she manually checked the Excel file against Rally — feature by feature, across roughly 400 items — looking for mismatches and updating records by hand. When other users broke formulas, she'd fix them. When formulas were too broken to recover, she'd revert to an older version of the file, which meant PMs and GPMs had to try to reconstruct their lost updates from memory.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Beyond the daily maintenance burden, the system had deeper structural problems.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Work sizing estimates couldn't be reliably tracked against actuals — the Product team had no consistent way to compare what they thought something would take against what it actually took, which made improving estimates over time nearly impossible. `,
+  },
+  {
+    type: 'paragraph',
+    text: `Dates pulled from Rally — Program Increments, releases — had to be manually added and maintained in Excel.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Sharing data with line of business partners meant either giving them access to the whole file or building one-off graphs that were already out of date by the time they were shared.`,
+  },
+  {
+    type: 'paragraph',
+    text: `The Excel file wasn't a backlog management tool. It was a second job.`,
+  },
+  {
+    type: 'heading',
+    level: 2,
+    text: 'The Build',
+  },
+  {
+    type: 'paragraph',
+    text: `The solution used the same Rally API foundation I'd built for my design team, adapted to how the product team actually worked. The core components:`,
+  },
+  {
+    type: 'list',
+    items: [
+      `A live sync between Rally and Airtable replaced the manual daily cross-check. Instead of opening each Feature individually, the backlog manager now has a view that automatically surfaces mismatches — the system flags what needs attention rather than requiring her to find it.`,
+      `Permission controls and field types in Airtable eliminated the broken formula problem entirely. Fields are structured so they can't be accidentally overwritten, and there's no formula layer for users to corrupt.`,
+      `Work sizing became trackable for the first time. Estimated sizes and actual sizes from Rally are pulled forward automatically, with mismatches surfaced in a dedicated view. The Product team can now see where their estimates are consistently off and adjust accordingly.`,
+      `Dates — Program Increments, releases — sync automatically from Rally. No one maintains them manually.`,
+    ]
+  },
+  {
+    type: 'paragraph',
+    text: `And where the Excel file had one view, Airtable generates multiple purpose-built views automatically. GPMs can now share exactly the slice of data each stakeholder needs — line of business partners, leadership, engineering — without exposing the entire backlog or building a custom export.`,
+  },
+  {
+    type: 'heading',
+    level: 2,
+    text: 'The Outcome',
+  },
+  {
+    type: 'paragraph',
+    text: `The backlog manager went from 20+ hours a week to 1–2. That's not a productivity improvement — that's a job function transformed. Time that was previously consumed by reconciliation and error recovery is now available for actual product work.`,
+  },
+  {
+    type: 'paragraph',
+    text: `The benefits extended beyond her.`,
+  },
+  {
+    type: 'paragraph',
+    text: `GPMs gained visibility into sizing accuracy they'd never had before. Leadership can now get reliable backlog data on demand. Line of business partners receive clean, targeted views instead of exported spreadsheets.`,
+  },
+  {
+    type: 'paragraph',
+    text: `The system has been running without intervention since launch. No broken formulas, no manual syncs, no lost updates.`,
+  },
 ]

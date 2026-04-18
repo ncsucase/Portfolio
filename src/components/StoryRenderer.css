@@ -52,6 +52,40 @@
   border-radius: var(--radius-md);
 }
 
+.story-columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+  gap: var(--space-5);
+}
+
+.story-column > .story-renderer {
+  gap: var(--space-4);
+}
+
+@media (max-width: 640px) {
+  .story-columns {
+    grid-template-columns: 1fr;
+  }
+}
+
+.story-figure-header {
+  margin-bottom: var(--space-3);
+  text-align: center;
+}
+
+.story-figure-title {
+  font-family: var(--font-heading-2);
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  color: var(--text-h);
+}
+
+.story-figure-subtitle {
+  font-family: var(--font-ui);
+  font-size: var(--font-size-sm);
+  color: var(--text-muted);
+}
+
 .story-figcaption {
   font-family: var(--font-ui);
   font-size: var(--font-size-sm);

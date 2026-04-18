@@ -30,16 +30,21 @@ export const content = [
     text: `On paper, the logic was sound — designers stay close to the people driving the roadmap. In practice, it was eroding the team.`,
   },
   {
-    type: 'inline-svg',
-    name: 'featureChurn',
-    alt: 'The vicious cycle of PM-aligned designer staffing.',
-    caption: null,
-  },
-  {
-    type: 'inline-svg',
-    name: 'coachingChurn',
-    alt: 'The vicious cycle of mis-matched managers.',
-    caption: null,
+    type: 'columns',
+    columns: [
+      [{
+        type: 'inline-svg',
+        name: 'featureChurn',
+        alt: 'The vicious cycle of PM-aligned designer staffing.',
+        caption: null,
+      }],
+      [{
+        type: 'inline-svg',
+        name: 'coachingChurn',
+        alt: 'The vicious cycle of mis-matched managers.',
+        caption: null,
+      }],
+    ],
   },
   {
     type: 'heading',
@@ -79,6 +84,20 @@ export const content = [
     ]
   },
   {
+    type: 'inline-svg',
+    name: 'orgModel1',
+    title: 'Before',
+    subtitle: 'Structurally simple on paper but weak in practice.',
+    alt: 'Org model 1: Design Leader manages all designers in a feature area.',
+  },
+  {
+    type: 'inline-svg',
+    name: 'orgModel2',
+    title: 'After',
+    subtitle: 'Same design leads with matrixed management.',
+    alt: 'Org model 2: Design Leader manages only designers of the same discipline.',
+  },
+  {
     type: 'paragraph',
     text: `The matrix created two independent axes: feature ownership (horizontal) and craft development (vertical). Neither dilutes the other.`,
   },
@@ -111,5 +130,23 @@ export const content = [
   {
     type: 'paragraph',
     text: `A 36-person design organization had been structured for managerial convenience. Restructuring it for craft and continuity changed what it could produce.`,
+  },
+  {
+    type: 'inline-svg',
+    name: 'timeline1',
+    title: 'Before',
+    subtitle: '50% of time spent onboarding.',
+    titleAlign: 'left',
+    alt: 'The vicious cycle of PM-aligned designer staffing.',
+    caption: null,
+  },
+  {
+    type: 'inline-svg',
+    name: 'timeline2',
+    title: 'After',
+    subtitle: 'Onboard once, own it a long time.',
+    titleAlign: 'left',
+    alt: 'The vicious cycle of mis-matched managers.',
+    caption: null,
   },
 ]

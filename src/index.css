@@ -52,7 +52,7 @@
   --heading-feature: clamp(28px, 4vw, 44px);   /* featured card title */
   --heading-2:       clamp(22px, 3vw, 28px);   /* section headings */
   --heading-section: clamp(20px, 2.5vw, 26px); /* in-prose h2 */
-  --heading-3:       18px;                      /* subsection headings */
+  --heading-3:       18px;                     /* subsection headings */
 
   /* Spacing */
   --space-1: 4px;

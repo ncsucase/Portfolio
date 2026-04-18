@@ -2,22 +2,22 @@ const style = `
   .rc-label {
     font-family: var(--font-heading, 'Epilogue', system-ui, sans-serif);
     font-weight: 700;
-    font-size: 22px;
+    font-size: (--font-size-xl);
     letter-spacing: -0.01em;
-    fill: rgba(255, 59, 48, 0.6);
+    fill: var(--text);
     dominant-baseline: central;
   }
   .rc-sublabel {
     font-family: var(--font-heading, 'Epilogue', system-ui, sans-serif);
     font-weight: 400;
-    font-size: 14px;
-    fill: rgba(255, 59, 48, 0.45);
+    font-size: (--font-size-lg);
+    fill: var(--text);
     dominant-baseline: central;
   }
 `
 
 const BOX_X = 20
-const BOX_W = 660
+const BOX_W = 340
 const BOX_H = 86
 const BOX_R = 10
 const GAP = 70
@@ -30,22 +30,26 @@ const boxBottomY = (i) => boxY(i) + BOX_H
 
 // items: [{ label: string, sublabel?: string }]
 export default function CycleDiagram({ items, ...props }) {
+  // Tight viewBox: 16px crop on each side (leaves ~4px pad around content)
+  // Content spans x=20–440, y=20–boxBottomY(N-1)
+  const contentBottom = boxBottomY(items.length - 1)
+  const vbH = contentBottom - 12   // 16 top crop + 4 bottom pad
   return (
     <svg
-      width="820"
-      height="630"
-      viewBox="0 0 820 630"
+      width={428}
+      height={vbH}
+      viewBox={`16 16 428 ${vbH}`}
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       {...props}
     >
       <defs>
         <style>{style}</style>
-        <marker id="rc-arrow-down" markerWidth="8" markerHeight="6" refX="4" refY="6" orient="auto">
-          <polygon points="0 0, 8 0, 4 6" fill="var(--color-error, #FF3B30)" />
+        <marker id="rc-arrow-down" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto">
+          <polygon points="0 0, 8 4, 0 8" fill="var(--color-error, #FF3B30)" />
         </marker>
-        <marker id="rc-arrow-left" markerWidth="6" markerHeight="8" refX="0" refY="4" orient="auto">
-          <polygon points="6 0, 6 8, 0 4" fill="var(--color-error, #FF3B30)" />
+        <marker id="rc-arrow-left" markerWidth="6" markerHeight="8" refX="6" refY="4" orient="auto">
+          <polygon points="0 0, 6 4, 0 8" fill="var(--color-error, #FF3B30)" />
         </marker>
       </defs>
 
@@ -88,7 +92,7 @@ export default function CycleDiagram({ items, ...props }) {
 
       {/* Feedback arrow: right side, last box → first box */}
       <path
-        d={`M ${BOX_RIGHT} ${boxMidY(items.length - 1)} L 760 ${boxMidY(items.length - 1)} L 760 ${boxMidY(0)} L ${BOX_RIGHT + 6} ${boxMidY(0)}`}
+        d={`M ${BOX_RIGHT} ${boxMidY(items.length - 1)} L 440 ${boxMidY(items.length - 1)} L 440 ${boxMidY(0)} L ${BOX_RIGHT + 6} ${boxMidY(0)}`}
         stroke="var(--color-error, #FF3B30)"
         strokeWidth="2"
         strokeLinecap="round"

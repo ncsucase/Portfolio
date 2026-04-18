@@ -50,7 +50,9 @@ export const content = [
   //   type: 'image',
   //   src: importedImageVariable,
   //   alt: 'Descriptive alt text',
-  //   caption: 'Optional caption shown below the image.',
+  //   title: 'Optional title shown above the image.',      // optional
+  //   subtitle: 'Optional subtitle shown above the image.', // optional
+  //   caption: 'Optional caption shown below the image.',   // optional
   // },
 
   // Timeline — two variants:
@@ -110,6 +112,21 @@ export const content = [
   //     truncate: 500,
   //   },
   //   caption: 'Optional caption shown below the whole block.',
+  // },
+
+  // Side-by-side columns — any block types can be nested in each column.
+  // Columns sit side-by-side on desktop and stack vertically on mobile (<640px).
+  // Works with any number of columns; two is most common.
+  // {
+  //   type: 'columns',
+  //   columns: [
+  //     [
+  //       { type: 'image', src: importedImageVariable, alt: 'Left image' },
+  //     ],
+  //     [
+  //       { type: 'image', src: importedImageVariable, alt: 'Right image' },
+  //     ],
+  //   ],
   // },
 
   // Stat cards — label-first layout:

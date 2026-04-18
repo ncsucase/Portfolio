@@ -20,6 +20,12 @@ export default function StoryRenderer({ blocks }) {
           case 'image':
             return (
               <figure key={i} className="story-figure">
+                {(block.title || block.subtitle) && (
+                  <div className="story-figure-header" style={block.titleAlign ? { textAlign: block.titleAlign } : undefined}>
+                    {block.title && <p className="story-figure-title">{block.title}</p>}
+                    {block.subtitle && <p className="story-figure-subtitle">{block.subtitle}</p>}
+                  </div>
+                )}
                 <img
                   src={block.src}
                   alt={block.alt ?? ''}
@@ -52,11 +58,30 @@ export default function StoryRenderer({ blocks }) {
             )
           }
 
+          case 'columns':
+            return (
+              <div key={i} className="story-columns">
+                {block.columns.map((col, j) => (
+                  <div key={j} className="story-column">
+                    {col.map((nestedBlock, k) => (
+                      <StoryRenderer key={k} blocks={[nestedBlock]} />
+                    ))}
+                  </div>
+                ))}
+              </div>
+            )
+
           case 'inline-svg': {
             const Svg = InlineSvgs[block.name]
             if (!Svg) return null
             return (
               <figure key={i} className="story-figure">
+                {(block.title || block.subtitle) && (
+                  <div className="story-figure-header" style={block.titleAlign ? { textAlign: block.titleAlign } : undefined}>
+                    {block.title && <p className="story-figure-title">{block.title}</p>}
+                    {block.subtitle && <p className="story-figure-subtitle">{block.subtitle}</p>}
+                  </div>
+                )}
                 <Svg aria-label={block.alt ?? ''} role="img" />
                 {block.caption && (
                   <figcaption className="story-figcaption">{block.caption}</figcaption>
