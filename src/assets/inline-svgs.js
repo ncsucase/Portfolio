@@ -5,3 +5,5 @@ export { default as orgModel1 } from './stories/structure-follows-craft/OrgDiagr
 export { default as orgModel2 } from './stories/structure-follows-craft/OrgDiagram2.jsx'
 export { default as timeline1 } from './stories/structure-follows-craft/TimelineDiagram1.jsx'
 export { default as timeline2 } from './stories/structure-follows-craft/TimelineDiagram2.jsx'
+export { default as waffleChartBefore } from './stories/solving-problems-for-product/WaffleChartBefore.jsx'
+export { default as waffleChartAfter } from './stories/solving-problems-for-product/WaffleChartAfter.jsx'

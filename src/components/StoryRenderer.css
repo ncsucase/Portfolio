@@ -44,12 +44,15 @@
   margin: var(--space-3) 0;
 }
 
+.story-figure img {
+  border-radius: var(--radius-md);
+}
+
 .story-figure img,
 .story-figure svg {
   width: 100%;
   height: auto;
   display: block;
-  border-radius: var(--radius-md);
 }
 
 .story-columns {

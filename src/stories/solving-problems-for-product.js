@@ -32,7 +32,7 @@ export const content = [
   },
   {
     type: 'paragraph',
-    text: `A note on scope: this wasn't in my job description. I built it because I saw the problem, knew I could solve it, and understood that a product team operating more effectively makes the entire design and delivery system better. That instinct — to look beyond your own org and fix what's broken — is how durable cross-functional trust gets built.`,
+    text: `This wasn't in my job description. I built it because I saw the problem, knew I could solve it, and understood that a product team operating more effectively makes the entire design and delivery system better. That instinct — to look beyond your own org and fix what's broken — is how durable cross-functional trust gets built.`,
   },
   {
     type: 'heading',
@@ -105,5 +105,24 @@ export const content = [
   {
     type: 'paragraph',
     text: `The system has been running without intervention since launch. No broken formulas, no manual syncs, no lost updates.`,
+  },
+  {
+    type: 'columns',
+    columns: [
+      [{ 
+        type: 'inline-svg',
+        align: 'center',
+        name: 'waffleChartBefore',
+        title: 'Before',
+        alt: 'Before: maintenance hours vs work hours',
+      }],
+      [{ 
+        type: 'inline-svg',
+        align: 'center',
+        name: 'waffleChartAfter',
+        title: 'After',
+        alt: 'After: reclaimed work hours',
+      }],
+    ]
   },
 ]

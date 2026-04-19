@@ -19,7 +19,10 @@ export default function StoryRenderer({ blocks }) {
 
           case 'image':
             return (
-              <figure key={i} className="story-figure">
+              <figure 
+                key={i} 
+                className="story-figure"
+              >
                 {(block.title || block.subtitle) && (
                   <div className="story-figure-header" style={block.titleAlign ? { textAlign: block.titleAlign } : undefined}>
                     {block.title && <p className="story-figure-title">{block.title}</p>}
@@ -82,7 +85,9 @@ export default function StoryRenderer({ blocks }) {
                     {block.subtitle && <p className="story-figure-subtitle">{block.subtitle}</p>}
                   </div>
                 )}
-                <Svg aria-label={block.alt ?? ''} role="img" />
+                <div style={block.align ? { display: 'flex', justifyContent: block.align } : undefined}>
+                  <Svg aria-label={block.alt ?? ''} role="img" />
+                </div>
                 {block.caption && (
                   <figcaption className="story-figcaption">{block.caption}</figcaption>
                 )}
