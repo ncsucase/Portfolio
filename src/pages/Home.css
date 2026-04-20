@@ -9,12 +9,14 @@
 }
 
 .home-list {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: max-content 1fr auto;
+  column-gap: var(--space-6);
   margin: 0 var(--space-5);
 }
 
 .home-list-heading {
+  grid-column: 1 / -1;
   padding: var(--space-6) var(--page-padding) var(--space-4);
   font-size: var(--heading-2);
   font-weight: 700;
@@ -44,7 +46,6 @@
   margin: 0 auto;
   width: 100%;
   box-sizing: border-box;
-  border-bottom: 1px solid var(--border);
 }
 
 .home-bio h1 {
@@ -139,6 +140,8 @@
   }
 
   .home-list {
+    display: flex;
+    flex-direction: column;
     margin: 0 var(--space-4);
   }
 }

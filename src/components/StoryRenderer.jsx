@@ -19,22 +19,21 @@ export default function StoryRenderer({ blocks }) {
 
           case 'image':
             return (
-              <figure 
-                key={i} 
-                className="story-figure"
-              >
+              <figure key={i} className="story-figure">
                 {(block.title || block.subtitle) && (
                   <div className="story-figure-header" style={block.titleAlign ? { textAlign: block.titleAlign } : undefined}>
                     {block.title && <p className="story-figure-title">{block.title}</p>}
                     {block.subtitle && <p className="story-figure-subtitle">{block.subtitle}</p>}
                   </div>
                 )}
-                <img
-                  src={block.src}
-                  alt={block.alt ?? ''}
-                  loading="lazy"
-                  decoding="async"
-                />
+                {block.srcSm ? (
+                  <picture>
+                    <source srcSet={block.srcSm} media="(max-width: 640px)" />
+                    <img src={block.src} alt={block.alt ?? ''} loading="lazy" decoding="async" />
+                  </picture>
+                ) : (
+                  <img src={block.src} alt={block.alt ?? ''} loading="lazy" decoding="async" />
+                )}
                 {block.caption && (
                   <figcaption className="story-figcaption">{block.caption}</figcaption>
                 )}

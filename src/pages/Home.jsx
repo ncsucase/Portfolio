@@ -14,17 +14,18 @@ export default function Home() {
 
       <section className="home-bio">
         <h1>Mikey Cestari</h1>
-        <p>I'm a Design Director with experience leading design teams across product, brand, and systems work. I'm focused on building cultures and processes where design has clear impact — where the work is rigorous, the team is trusted, and outcomes are measurable.</p>
-        <p>This site contains some stories from that work: the decisions made, the teams built, and the results that followed.</p>
+        <p>I'm a Design Director leading design at Truist's authenticated digital banking organization — a 44-person team spanning UI, UX, and Content design. I focus on building the structures, processes, and systems that let design teams do their best work and make their impact legible to the people around them.</p>
+        <p>The stories on this site share a common thread: a problem others had accepted, a solution worth building, and results that measured up.</p>
       </section>
 
       <section className="home-section">
         <h2>What I do</h2>
         <ul className="home-skills">
-          <li>Lead and grow design teams</li>
-          <li>Build and scale design systems</li>
-          <li>Partner with product and engineering on strategy</li>
-          <li>Establish design culture and process</li>
+          <li>Lead and grow design orgs across UI, UX, and content disciplines</li>
+          <li>Build workflow systems and tooling that give design teams operational leverage</li>
+          <li>Work across org boundaries to solve shared problems</li>
+          <li>Structure teams for craft quality, not managerial convenience</li>
+          <li>Make design impact measurable in terms engineering and product respect</li>
         </ul>
       </section>
 

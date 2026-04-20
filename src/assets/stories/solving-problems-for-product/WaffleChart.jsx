@@ -1,5 +1,5 @@
 const SQUARE = 32
-const GAP = 4
+const GAP = 6
 const LEGEND_TOP_GAP = 14
 const SWATCH = 16
 const LEGEND_ROW_H = 24
@@ -36,7 +36,9 @@ export default function WaffleChart({ squares, cols = 7, legend = [], ...props }
         `}</style>
       </defs>
 
-      {squares.map((color, idx) => {
+      {squares.map((square, idx) => {
+        const fill = typeof square === 'string' ? square : square.fill
+        const stroke = typeof square === 'string' ? undefined : square.borderColor
         const col = idx % cols
         const row = Math.floor(idx / cols)
         return (
@@ -46,16 +48,19 @@ export default function WaffleChart({ squares, cols = 7, legend = [], ...props }
             y={row * (SQUARE + GAP)}
             width={SQUARE}
             height={SQUARE}
-            fill={color}
+            fill={fill}
+            {...(stroke ? { stroke, strokeWidth: 1 } : {})}
           />
         )
       })}
 
       {legend.map(({ color, label }, i) => {
+        const fill = typeof color === 'string' ? color : color.fill
+        const stroke = typeof color === 'string' ? undefined : color.borderColor
         const y = legendY + i * LEGEND_ROW_H
         return (
           <g key={i}>
-            <rect x={0} y={y} width={SWATCH} height={SWATCH} fill={color} />
+            <rect x={0} y={y} width={SWATCH} height={SWATCH} fill={fill} {...(stroke ? { stroke, strokeWidth: 1 } : {})} />
             <text x={SWATCH + 5} y={y + SWATCH / 2} className="wc-label">{label}</text>
           </g>
         )

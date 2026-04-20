@@ -34,6 +34,7 @@
   line-height: 1.75;
   color: var(--text);
   padding-left: var(--space-6);
+  margin-top: 0;
 }
 
 .story-list-item + .story-list-item {

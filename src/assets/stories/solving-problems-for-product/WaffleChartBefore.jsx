@@ -1,7 +1,7 @@
 import WaffleChart from './WaffleChart.jsx'
 
 const RED = 'var(--color-error)'
-const DARK = 'var(--bg-deep)'
+const DARK  = { fill: 'var(--bg-deep)', borderColor: 'var(--border)' }
 
 // 7×4 = 28 squares: 17 maintenance (red), 11 work (dark)
 const squares = [

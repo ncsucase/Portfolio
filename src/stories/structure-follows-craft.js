@@ -1,12 +1,12 @@
 export const meta = {
   title: 'Structure Follows Craft',
   slug: 'structure-follows-craft',
-  date: '2023-06',
+  date: '2023',
   status: 'complete',
-  tags: ['Tag One', 'Tag Two'],
+  tags: ['Org Design', 'Craft Development', 'Design Leadership', 'Matrix Management'],
   role: 'Design Director',
-  outcome: 'One sentence describing measurable impact.',
-  excerpt: 'Two to three sentences shown on the home page. Summarize the challenge and result.',
+  outcome: `Restructured a 36-person design org from PM alignment to a discipline matrix — eliminating the three-month onboarding tax and ending partner-flagged design quality issues within one PI cycle.`,
+  excerpt: `A 36-person design org structured around PM alignment was spending half its time onboarding rather than producing. I restructured it around a matrix that separated feature ownership from craft development — and within one PI cycle, both problems were gone.`,
   featured: false,
   heroImage: null,
 }
@@ -14,7 +14,7 @@ export const meta = {
 export const content = [
   {
     type: 'summary',
-    text: 'A 36-person design organization structured around Product Manager alignment was creating two crippling problems. I restructured the org around a matrix model. Within one PI cycle, we fixed the problems.',
+    text: `A 36-person design organization structured around PM alignment was generating two compounding problems: designers spending half their time onboarding due to PM rotations, and craft coaching consistently mismatched to discipline. I restructured the org around a matrix model — decoupling feature ownership from reporting structure. Within one PI cycle, the onboarding tax disappeared and partner quality complaints stopped.`,
   },
   {
     type: 'heading',
@@ -112,7 +112,15 @@ export const content = [
   },
   {
     type: 'paragraph',
-    text: `I addressed this directly: feature partnership and craft leadership are different kinds of authority, and the matrix gives leaders more of both by making each role explicit. It took a couple of months for the team to internalize that, but the resistance dissolved as the outcomes became visible.`,
+    text: `I addressed this directly: feature partnership and craft leadership are different kinds of authority, and the matrix gives leaders more of both by making each role explicit. It took a couple of months for the team to internalize that, but the resistance dissolved gradually as the outcomes became visible.`,
+  },
+  {
+    type: 'paragraph',
+    text: `The clearest signal came in our quarterly PI demos — the leaders who had pushed back hardest couldn't help but notice the improvement in design quality and consistency across teams.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Smaller moments reinforced it: designers thanking craft managers for coaching that finally matched their discipline, and design leaders finding they could ask a peer to step in when a situation fell outside their specialty. The matrix made us a better leadership team by making it easier to lean into each other's strengths.`,
   },
   {
     type: 'heading',
@@ -128,16 +136,12 @@ export const content = [
     text: `Quality improvements showed up in PI demos: for the first time, I was seeing consistent interaction patterns and visual language across screens owned by different designers and different feature teams. Partner complaints dropped. No features were blocked due to design concerns in the PIs that followed the restructure. And perhaps most telling — designers told me they finally felt like they were getting the coaching they actually needed.`,
   },
   {
-    type: 'paragraph',
-    text: `A 36-person design organization had been structured for managerial convenience. Restructuring it for craft and continuity changed what it could produce.`,
-  },
-  {
     type: 'inline-svg',
     name: 'timeline1',
     title: 'Before',
     subtitle: '50% of time spent onboarding.',
     titleAlign: 'left',
-    alt: 'The vicious cycle of PM-aligned designer staffing.',
+    alt: 'The disruptive cadence of designers following PMs when they move to a new Feature.',
     caption: null,
   },
   {
@@ -146,7 +150,11 @@ export const content = [
     title: 'After',
     subtitle: 'Onboard once, own it a long time.',
     titleAlign: 'left',
-    alt: 'The vicious cycle of mis-matched managers.',
+    alt: 'The improved cadence of designers staying on a Feature when PMs migrate.',
     caption: null,
+  },
+  {
+    type: 'paragraph',
+    text: `A 36-person design organization had been structured for managerial convenience. Restructuring it for craft and continuity changed what it could produce.`,
   },
 ]

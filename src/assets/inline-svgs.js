@@ -7,3 +7,5 @@ export { default as timeline1 } from './stories/structure-follows-craft/Timeline
 export { default as timeline2 } from './stories/structure-follows-craft/TimelineDiagram2.jsx'
 export { default as waffleChartBefore } from './stories/solving-problems-for-product/WaffleChartBefore.jsx'
 export { default as waffleChartAfter } from './stories/solving-problems-for-product/WaffleChartAfter.jsx'
+export { default as problemFlowchart } from './stories/solving-problems-for-product/ProblemFlowchart.jsx'
+export { default as syncDiagram } from './stories/a-system-built-for-designers/SyncDiagram.jsx'

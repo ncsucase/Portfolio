@@ -2,7 +2,7 @@ import WaffleChart from './WaffleChart.jsx'
 
 const RED   = 'var(--color-error)'
 const GREEN = 'var(--color-success)'
-const DARK  = 'var(--bg-deep)'
+const DARK  = { fill: 'var(--bg-deep)', borderColor: 'var(--border)' }
 
 // 7×4 = 28 squares: 1 maintenance (red), 15 reclaimed (green), 12 work (dark)
 const squares = [
@@ -14,6 +14,7 @@ const squares = [
 
 const legend = [
   { color: GREEN, label: 'reclaimed work hours' },
+  { color: DARK,  label: 'focused work hours' },
 ]
 
 export default function WaffleChartAfter(props) {

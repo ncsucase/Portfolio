@@ -5,12 +5,12 @@ import oldDashboard from '../assets/stories/redesigning-truist-digital/old-dashb
 export const meta = {
   title: 'Redesigning Truist Digital',
   slug: 'redesigning-truist-digital',
-  date: '2026',
+  date: '2024 - present',
   status: 'in progress',
-  tags: ['Brand', 'Research', 'Stakeholder Alignment'],
+  tags: ['Brand', 'User Research', 'Coalition Building', 'Design Systems'],
   role: 'Design Director',
-  outcome: 'New visual foundation for Truist digital.',
-  excerpt: 'No mandate. No top-down directive. Just a shared problem and a case worth making. How I convened five design teams across Truist to redesign the visual foundation of every digital product we own.',
+  outcome: 'Convened a voluntary coalition of 5 design teams across Truist and delivered a brand-approved visual system — built on 13 user studies and 5,000+ client responses — set for enterprise rollout in 2026.',
+  excerpt: 'No mandate. No top-down directive. Just a shared problem and a case worth making. I convened five design teams across Truist — voluntarily — to redesign the visual foundation of every digital product we own.',
   featured: true,
   heroImage: heroImg,
 }
@@ -18,7 +18,7 @@ export const meta = {
 export const content = [
   {
     type: 'summary',
-    text: `Truist clients felt our digital experiences were dated and unattractive — consistently and measurably. Over two years, I built a cross-enterprise design coalition, sponsored 14 user studies to evaluate over 50 designs with over 5,000 clients, and delivered a new visual system that will be finalized and brand-approved for use across all of Truist's digital products in two months.`,
+    text: `Truist clients felt our digital experiences were dated and unattractive — consistently and measurably. Over two years, I built a cross-enterprise design coalition, sponsored 13 user studies to evaluate over 50 designs with over 5,000 clients, and delivered a new visual system that will be finalized and brand-approved for use across all of Truist's digital products in two months.`,
   },
   {
     type: 'heading',
@@ -40,10 +40,6 @@ export const content = [
   {
     type: 'paragraph',
     text: `The root cause was known internally but hadn't been solved: when Truist launched as a merged brand, the digital design guidelines it inherited were not built for the complexity of a modern banking platform. Every design team was doing their best within a system that had never been strong enough to begin with.`,
-  },
-  {
-    type: 'paragraph',
-    text: `I decided to fix it.`,
   },
   {
     type: 'heading',
@@ -88,7 +84,7 @@ export const content = [
   },
   {
     type: 'paragraph',
-    text: `This was where the cat wrangling got real. A working group of designers from competing teams, each with their own stakeholders and priorities, generating new ideas while also killing ones that didn't survive testing. The discipline was keeping every decision tethered to the user data. When opinions surfaced — and they always do — the data was the arbiter. We also navigated multiple rounds of Brand review, which added scrutiny and stakeholder management at the executive level.`,
+    text: `A working group of designers from competing teams — each with their own stakeholders and priorities — had to generate new ideas while also killing ones that didn't survive testing. The discipline was keeping every decision tethered to the user data. When opinions surfaced — and they always do — the data was the arbiter. We also navigated multiple rounds of Brand review, which added scrutiny and stakeholder management at the executive level.`,
   },
   {
     type: 'timeline',
@@ -106,36 +102,36 @@ export const content = [
       {
         quarter: `Q1 2025`,
         events: [
-          { date: 'Mar 21', label: 'User Study 4', sublabel: 'Unmoderated; 4 designs' },
+          { date: 'Mar 21', label: 'User Study 5', sublabel: 'Unmoderated; 4 designs' },
         ]
       },
       {
         quarter: `Q2 2025`,
         events: [
-          { date: 'Apr 17', label: 'User Study 5', sublabel: 'Unmoderated; 3 designs' },
-          { date: 'May 6', label: 'User Study 5', sublabel: 'Moderated; 2 designs' },
-          { date: 'May 21', label: 'User Study 5', sublabel: 'Unmoderated; 4 designs' },
+          { date: 'Apr 17', label: 'User Study 6', sublabel: 'Unmoderated; 3 designs' },
+          { date: 'May 6', label: 'User Study 7', sublabel: 'Moderated; 2 designs' },
+          { date: 'May 21', label: 'User Study 8', sublabel: 'Unmoderated; 4 designs' },
         ]
       },
       {
         quarter: 'Q3 2025',
         events: [
           { date: 'July 11', label: 'Brand Review 1', color: 'accent' },
-          { date: 'Jul 16', label: 'User Study 6', sublabel: 'Unmoderated; 5 designs'},
-          { date: 'Jul 30', label: 'User Study 6', sublabel: 'Unmoderated; 4 designs'},
-          { date: 'Aug 29', label: 'User Study 6', sublabel: 'Unmoderated; 25 designs'},
+          { date: 'Jul 16', label: 'User Study 9', sublabel: 'Unmoderated; 5 designs'},
+          { date: 'Jul 30', label: 'User Study 10', sublabel: 'Unmoderated; 4 designs'},
+          { date: 'Aug 29', label: 'User Study 11', sublabel: 'Unmoderated; 25 designs'},
         ],
       },
       {
         quarter: `Q4 2025`,
         events: [
-          { date: 'Nov 5', label: 'User Study 4', sublabel: 'Unmoderated; 17 designs' },
+          { date: 'Nov 5', label: 'User Study 12', sublabel: 'Unmoderated; 17 designs' },
         ]
       },
       {
         quarter: `Q2 2026`,
         events: [
-          { date: 'Apr 28', label: 'User Study 4', sublabel: 'Unmoderated; 4 designs' },
+          { date: 'Apr 28', label: 'User Study 13', sublabel: 'Unmoderated; 4 designs' },
         ]
       },
     ],
@@ -143,7 +139,7 @@ export const content = [
   {
     type: 'stats',
     items: [
-      { value: '14', label: 'Studies', description: 'Unmoderated, JD Power and internal metrics.' },
+      { value: '13', label: 'Studies', description: 'Included JD Power and internal metrics.' },
       { value: '50+', label: 'Designs', description: 'Tested, not including the ones we trashed.' },
       { value: '5k+', label: 'Clients', description: 'Supplied the feedback via user studies.' },
     ],

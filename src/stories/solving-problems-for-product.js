@@ -3,10 +3,10 @@ export const meta = {
   slug: 'solving-problems-for-product',
   date: '2023',
   status: 'complete',
-  tags: ['Tag One', 'Tag Two'],
+  tags: ['Cross-functional Leadership', 'Workflow Automation', 'Systems Thinking', 'Product Partnership'],
   role: 'Design Director',
-  outcome: 'One sentence describing measurable impact.',
-  excerpt: 'Two to three sentences shown on the home page. Summarize the challenge and result.',
+  outcome: `Reduced a product team's backlog management burden from 20+ hours a week to 1–2 by replacing a fragile Excel process with a live Rally–Airtable sync.`,
+  excerpt: `A product team managing 400+ features across Excel and Rally was spending 20+ hours a week on manual reconciliation. I\'d solved a similar problem for my own team — so I offered to fix it for theirs.`,
   featured: false,
   heroImage: null,
 }
@@ -32,7 +32,7 @@ export const content = [
   },
   {
     type: 'paragraph',
-    text: `This wasn't in my job description. I built it because I saw the problem, knew I could solve it, and understood that a product team operating more effectively makes the entire design and delivery system better. That instinct — to look beyond your own org and fix what's broken — is how durable cross-functional trust gets built.`,
+    text: `This wasn't in my job description. I built it because I saw the problem, knew I could solve it, and understood that a product team operating more effectively makes the entire design and delivery system better.`,
   },
   {
     type: 'heading',
@@ -62,6 +62,12 @@ export const content = [
   {
     type: 'paragraph',
     text: `The Excel file wasn't a backlog management tool. It was a second job.`,
+  },
+  {
+    type: 'inline-svg',
+    name: 'problemFlowchart',
+    alt: 'The daily inefficient process of manually maintaining feature information in Excel.',
+    caption: null,
   },
   {
     type: 'heading',
@@ -103,10 +109,6 @@ export const content = [
     text: `GPMs gained visibility into sizing accuracy they'd never had before. Leadership can now get reliable backlog data on demand. Line of business partners receive clean, targeted views instead of exported spreadsheets.`,
   },
   {
-    type: 'paragraph',
-    text: `The system has been running without intervention since launch. No broken formulas, no manual syncs, no lost updates.`,
-  },
-  {
     type: 'columns',
     columns: [
       [{ 
@@ -124,5 +126,9 @@ export const content = [
         alt: 'After: reclaimed work hours',
       }],
     ]
+  },
+  {
+    type: 'paragraph',
+    text: `The system has been running without intervention since launch. No broken formulas, no manual syncs, no lost updates. When Product teammates have moved to other organizations, they've taken a copy of the system with them — and they advocate for it.`,
   },
 ]
