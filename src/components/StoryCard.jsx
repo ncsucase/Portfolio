@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import Tag from './Tag'
 import Icon from './Icon'
+import CTA from './CTA'
 import './StoryCard.css'
 
 export default function StoryCard({ story, variant = 'compact' }) {
@@ -22,10 +23,10 @@ export default function StoryCard({ story, variant = 'compact' }) {
           <div className="story-card__tags">
             {story.tags.map(t => <Tag key={t} label={t} />)}
           </div>
-          <Link to={`/stories/${story.slug}`} className="story-card__cta">
+          <CTA to={`/stories/${story.slug}`}>
             Read more
             <Icon name="arrow-right" />
-          </Link>
+          </CTA>
         </div>
         {story.heroImage && (
           <div className="story-card__hero-img">

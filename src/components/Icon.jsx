@@ -29,6 +29,65 @@ const icons = {
       </>
     ),
   },
+  'skill-org': {
+    viewBox: '0 0 24 24',
+    content: (
+      <>
+        <circle cx="12" cy="3.5" r="2" stroke="currentColor" strokeWidth="1.5" />
+        <circle cx="5" cy="20.5" r="2" stroke="currentColor" strokeWidth="1.5" />
+        <circle cx="12" cy="20.5" r="2" stroke="currentColor" strokeWidth="1.5" />
+        <circle cx="19" cy="20.5" r="2" stroke="currentColor" strokeWidth="1.5" />
+        <line x1="12" y1="5.5" x2="12" y2="11" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+        <line x1="12" y1="11" x2="5" y2="18.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+        <line x1="12" y1="11" x2="12" y2="18.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+        <line x1="12" y1="11" x2="19" y2="18.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+      </>
+    ),
+  },
+  'skill-gears': {
+    viewBox: '0 0 24 24',
+    content: (
+      <>
+        <circle cx="8.5" cy="8.5" r="2.5" stroke="currentColor" strokeWidth="1.5" />
+        <circle cx="15.5" cy="15.5" r="2.5" stroke="currentColor" strokeWidth="1.5" />
+        <path d="M8.5 3.5v1.5M8.5 13v1.5M3.5 8.5H5m8 0h1.5M5.44 5.44l1.06 1.06m4 4 1.06 1.06M5.44 11.56l1.06-1.06m4-4 1.06-1.06" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+        <path d="M15.5 10.5v1.5M15.5 20v1.5M10.5 15.5H12m8 0h1.5M12.44 12.44l1.06 1.06m4 4 1.06 1.06M12.44 18.56l1.06-1.06m4-4 1.06-1.06" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+      </>
+    ),
+  },
+  'skill-venn': {
+    viewBox: '0 0 24 24',
+    content: (
+      <>
+        <circle cx="8.5" cy="13" r="6" stroke="currentColor" strokeWidth="1.5" />
+        <circle cx="15.5" cy="13" r="6" stroke="currentColor" strokeWidth="1.5" />
+        <circle cx="12" cy="7" r="6" stroke="currentColor" strokeWidth="1.5" />
+      </>
+    ),
+  },
+  'skill-compass': {
+    viewBox: '0 0 24 24',
+    content: (
+      <>
+        <circle cx="12" cy="20" r="1.5" stroke="currentColor" strokeWidth="1.5" />
+        <line x1="12" y1="4" x2="7" y2="18.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+        <line x1="12" y1="4" x2="17" y2="18.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+        <circle cx="12" cy="4" r="1.5" stroke="currentColor" strokeWidth="1.5" />
+        <line x1="8.5" y1="13.5" x2="15.5" y2="13.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+      </>
+    ),
+  },
+  'skill-chart': {
+    viewBox: '0 0 24 24',
+    content: (
+      <>
+        <line x1="3" y1="20" x2="21" y2="20" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+        <rect x="4" y="13" width="3.5" height="7" rx="0.75" stroke="currentColor" strokeWidth="1.5" />
+        <rect x="10.25" y="8" width="3.5" height="12" rx="0.75" stroke="currentColor" strokeWidth="1.5" />
+        <rect x="16.5" y="4" width="3.5" height="16" rx="0.75" stroke="currentColor" strokeWidth="1.5" />
+      </>
+    ),
+  },
 }
 
 export default function Icon({ name, size = '1em', color = 'currentColor' }) {

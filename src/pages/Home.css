@@ -4,41 +4,6 @@
   flex: 1;
 }
 
-.home-hero {
-  /* border-top: 1px solid var(--border); */
-}
-
-.home-list {
-  display: grid;
-  grid-template-columns: max-content 1fr auto;
-  column-gap: var(--space-6);
-  margin: 0 var(--space-5);
-}
-
-.home-list-heading {
-  grid-column: 1 / -1;
-  padding: var(--space-6) var(--page-padding) var(--space-4);
-  font-size: var(--heading-2);
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  color: var(--text-h);
-}
-
-.home-list > .story-card--compact + .story-card--compact {
-  border-top: 1px solid var(--border);
-}
-
-.home-empty {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: var(--space-9) var(--page-padding);
-  font-family: var(--font-ui);
-  font-size: var(--font-size-md);
-  color: var(--text-muted);
-}
-
 /* ── Bio ─────────────────────────────────────────────────── */
 .home-bio {
   display: grid;
@@ -82,11 +47,14 @@
   padding: var(--space-7) var(--space-7);
   padding-right: 42%;
   z-index: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .home-bio-card p {
   font-family: var(--font-prose);
-  font-size: var(--font-size-xl);
+  font-size: var(--heading-section);
   line-height: 1.75;
   color: var(--text);
 }
@@ -106,58 +74,63 @@
 
 .home-section h2 {
   font-family: var(--font-heading);
-  font-size: var(--heading-3);
+  font-size: var(--heading-2);
   font-weight: 600;
   color: var(--text-h);
   margin-bottom: var(--space-4);
 }
 
-/* ── Skills list ─────────────────────────────────────────── */
-.home-skills {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+/* ── Skills grid ─────────────────────────────────────────── */
+.home-section--wide {
+  max-width: var(--content-width);
+}
+
+.home-about {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  gap: var(--space-6);
+}
+
+.home-about-col {
+  width: 60%;
+}
+
+.home-skills-container {
+  width: 40%;
+  border-radius: var(--radius-xl);
+  padding: var(--space-6);
+  border: 1px solid var(--border);
+}
+
+.home-about-prose,
+.home-about-skills {
+  font-family: var(--font-prose);
+  font-size: var(--font-size-xl);
+  margin-top: 0;
+}
+
+.home-about-skills {
+  padding: 0;
+}
+
+.home-about-prose p + p {
+  margin-top: var(--space-3);
+}
+
+.home-about-skills li + li {
+  margin-top: var(--space-6);
+}
+
+.home-about-skills li {
+  display: flex;
+  align-items: flex-start;
   gap: var(--space-3);
 }
 
-.home-skills li {
-  font-family: var(--font-ui);
-  font-size: var(--font-size-md);
-  color: var(--text);
-  padding-left: var(--space-4);
-  position: relative;
-}
-
-.home-skills li::before {
-  content: '—';
-  position: absolute;
-  left: 0;
-  color: var(--text-muted);
-}
-
-/* ── Contact ─────────────────────────────────────────────── */
-.home-contact {
-  border-bottom: none;
-}
-
-.home-links {
-  display: flex;
-  gap: var(--space-5);
-}
-
-.home-link {
-  font-family: var(--font-ui);
-  font-size: var(--font-size-md);
-  font-weight: 500;
-  color: var(--accent);
-  text-decoration: none;
-  transition: opacity 0.15s;
-}
-
-.home-link:hover {
-  opacity: 0.75;
+.home-about-skills li svg {
+  flex-shrink: 0;
+  margin-top: 0.2em;
+  opacity: 0.7;
 }
 
 /* ── Tablet ──────────────────────────────────────────────── */
@@ -173,6 +146,14 @@
 
   .home-bio-card {
     padding-right: var(--space-7);
+  }
+
+  .home-about {
+    flex-direction: column;
+  }
+
+  .home-about-col {
+    width: 100%;
   }
 }
 
@@ -215,13 +196,12 @@
     padding: var(--space-6);
   }
 
-  .home-list-heading {
-    padding: var(--space-3) 0 var(--space-1) 0;
+  .home-about {
+    flex-direction: column;
   }
 
-  .home-list {
-    display: flex;
-    flex-direction: column;
-    margin: 0 var(--space-4);
+  .home-about-col {
+    width: 100%;
   }
+
 }

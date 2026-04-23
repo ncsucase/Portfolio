@@ -4,13 +4,24 @@
   --text-h: #000;
   --text-muted: rgba(0, 0, 0, 0.55);
   --bg: #fff;
-  --bg-deep: #F2F2F7;
+  --bg-deep: #E9E9F1;
   --surface: #fff;
   --border: rgba(0, 0, 0, 0.2);
   --code-bg: #f4f3ec;
-  --accent: rgb(175, 82, 222);
+  --accent: #af52de;
   --accent-bg: rgba(175, 82, 222, 0.1);
   --accent-border: rgba(175, 82, 222, 0.5);
+
+  /* Illustration tones (grayscale scale used in SVG assets) */
+  --c-ink:       #020203;
+  --c-shadow:    #262526;
+  --c-dark:      #454347;
+  --c-mid-dark:  #565757;
+  --c-mid:       #717174;
+  --c-mid-light: #8B898A;
+  --c-muted:     #9C9C9E;
+  --c-light:     #CAC8CA;
+  --c-paper:     #E9E8E9;
 
   /* Status colors */
   --color-error: #FF3B30;
@@ -74,6 +85,7 @@
   --radius-sm: 4px;
   --radius-md: 8px;
   --radius-lg: 12px;
+  --radius-xl: 24px;
 
   font: 18px/1.45 var(--font-ui);
   letter-spacing: 0.18px;
@@ -102,6 +114,17 @@ html.dark {
   --accent: rgb(191, 90, 242);
   --accent-bg: rgba(191, 90, 242, 0.15);
   --accent-border: rgba(191, 90, 242, 0.5);
+
+  /* Illustration tones — inverted for dark backgrounds */
+  --c-ink:       #E9E8E9;
+  --c-shadow:    #CAC8CA;
+  --c-dark:      #9C9C9E;
+  --c-mid-dark:  #8B898A;
+  --c-mid:       #717174;
+  --c-mid-light: #565757;
+  --c-muted:     #454347;
+  --c-light:     #262526;
+  --c-paper:     #020203;
 
   /* Status colors — softer for dark backgrounds */
   --color-error: #FF453A;

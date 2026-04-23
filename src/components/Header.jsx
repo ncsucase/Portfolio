@@ -10,19 +10,18 @@ export default function Header({ theme, onThemeChange }) {
   return (
     <header className="site-header">
       <div className="header-inner page-container">
-        <NavLink to="/" className="site-logo">
-          {isStory && <Icon name="arrow-left" size="0.9em" />}
-          Mikey Cestari
-        </NavLink>
-        {/* <nav className="site-nav" aria-label="Main navigation">
+        <nav className="site-nav" aria-label="Main navigation">
+          <NavLink to="/" className="site-logo">
+            {isStory && <Icon name="arrow-left" size="0.9em" />}
+            Home
+          </NavLink>
           <NavLink
-            to="/"
-            end
+            to="/work"
             className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
           >
             Work
           </NavLink>
-        </nav> */}
+        </nav>
         <ThemeToggle theme={theme} onChange={onThemeChange} />
       </div>
     </header>
