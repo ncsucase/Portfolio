@@ -19,6 +19,7 @@
 .home-bio h1 {
   grid-column: 1;
   grid-row: 1;
+  font-size: var(--heading-display);
   margin-bottom: var(--space-5);
   align-self: center;
 }
@@ -150,6 +151,9 @@
 
 /* ── Skills — even distribution when side-by-side ───────── */
 @media (min-width: 901px) {
+  .home-bio h1 {
+    text-align: left;
+  }
   .home-skills-container {
     display: flex;
     flex-direction: column;
@@ -174,6 +178,10 @@
 @media (max-width: 900px) and (min-width: 641px) {
   .home-bio {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .home-bio h1 {
+    text-align: center;
   }
 
   .home-bio-photo {
