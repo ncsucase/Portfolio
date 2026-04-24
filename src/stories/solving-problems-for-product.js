@@ -1,7 +1,8 @@
 export const meta = {
   title: 'Solving Problems for Product',
   slug: 'solving-problems-for-product',
-  date: '2023',
+  startDate: '2023-03',
+  duration: '3 months',
   status: 'complete',
   tags: ['Cross-functional Leadership', 'Workflow Automation', 'Systems Thinking', 'Product Partnership'],
   role: 'Design Director',

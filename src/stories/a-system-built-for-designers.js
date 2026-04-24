@@ -4,7 +4,8 @@ import dashboardSm from '../assets/stories/a-system-built-for-designers/dashboar
 export const meta = {
   title: 'A System Built for Designers',
   slug: 'a-system-built-for-designers',
-  date: '2020 - present',
+  startDate: '2020-05',
+  duration: 'ongoing',
   status: 'in progress',
   tags: ['Design Operations', 'Workflow Automation', 'Systems Thinking', 'Leadership'],
   role: 'Design Director',

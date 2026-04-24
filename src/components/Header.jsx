@@ -10,9 +10,12 @@ export default function Header({ theme, onThemeChange }) {
   return (
     <header className="site-header">
       <div className="header-inner page-container">
+        <span className="site-logo">Mikey Cestari</span>
         <nav className="site-nav" aria-label="Main navigation">
-          <NavLink to="/" className="site-logo">
-            {isStory && <Icon name="arrow-left" size="0.9em" />}
+          <NavLink
+            to="/"
+            className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
+          >
             Home
           </NavLink>
           <NavLink

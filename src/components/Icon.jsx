@@ -90,7 +90,7 @@ const icons = {
   },
 }
 
-export default function Icon({ name, size = '1em', color = 'currentColor' }) {
+export default function Icon({ name, size = '1em', color }) {
   const icon = icons[name]
   if (!icon) return null
 
@@ -101,7 +101,7 @@ export default function Icon({ name, size = '1em', color = 'currentColor' }) {
       viewBox={icon.viewBox}
       fill="none"
       aria-hidden="true"
-      style={{ color, flexShrink: 0 }}
+      style={color ? { color, flexShrink: 0 } : { flexShrink: 0 }}
     >
       {icon.content}
     </svg>

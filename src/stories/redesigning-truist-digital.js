@@ -5,7 +5,7 @@ import oldDashboard from '../assets/stories/redesigning-truist-digital/old-dashb
 export const meta = {
   title: 'Redesigning Truist Digital',
   slug: 'redesigning-truist-digital',
-  date: '2024 - present',
+  startDate: '2024-09',
   status: 'in progress',
   tags: ['Brand', 'User Research', 'Coalition Building', 'Design Systems'],
   role: 'Design Director',
@@ -102,6 +102,7 @@ export const content = [
       {
         quarter: `Q1 2025`,
         events: [
+          { date: 'Feb 14', label: 'Brand Review 1', color: 'accent' },
           { date: 'Mar 21', label: 'User Study 5', sublabel: 'Unmoderated; 4 designs' },
         ]
       },
@@ -116,7 +117,7 @@ export const content = [
       {
         quarter: 'Q3 2025',
         events: [
-          { date: 'July 11', label: 'Brand Review 1', color: 'accent' },
+          { date: 'Jul 11', label: 'Brand Review 2', color: 'accent' },
           { date: 'Jul 16', label: 'User Study 9', sublabel: 'Unmoderated; 5 designs'},
           { date: 'Jul 30', label: 'User Study 10', sublabel: 'Unmoderated; 4 designs'},
           { date: 'Aug 29', label: 'User Study 11', sublabel: 'Unmoderated; 25 designs'},
@@ -126,6 +127,12 @@ export const content = [
         quarter: `Q4 2025`,
         events: [
           { date: 'Nov 5', label: 'User Study 12', sublabel: 'Unmoderated; 17 designs' },
+        ]
+      },
+      {
+        quarter: `Q1 2026`,
+        events: [
+          { date: 'Mar 6', label: 'Brand Review 3', color: 'accent' },
         ]
       },
       {
@@ -139,9 +146,9 @@ export const content = [
   {
     type: 'stats',
     items: [
-      { value: '13', label: 'Studies', description: 'Included JD Power and internal metrics.' },
-      { value: '50+', label: 'Designs', description: 'Tested, not including the ones we trashed.' },
-      { value: '5k+', label: 'Clients', description: 'Supplied the feedback via user studies.' },
+      { value: '13', label: 'Studies', description: 'Included JD Power and internal metrics.', color: 'accent' },
+      { value: '50+', label: 'Designs', description: 'Tested, not including the ones we trashed.', color: 'accent' },
+      { value: '5k+', label: 'Clients', description: 'Supplied the feedback via user studies.', color: 'accent' },
     ],
   },
   {

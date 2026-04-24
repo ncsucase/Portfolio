@@ -1,6 +1,7 @@
 import './StatCard.css'
 
 const colorVars = {
+  accent:  'var(--accent',
   error:   'var(--color-error)',
   warning: 'var(--color-warning)',
   success: 'var(--color-success)',

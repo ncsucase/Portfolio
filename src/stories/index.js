@@ -16,7 +16,7 @@ const allStories = [
 export function getAllStories() {
   return allStories
     .map(s => s.meta)
-    .sort((a, b) => new Date(b.date) - new Date(a.date))
+    .sort((a, b) => new Date(b.startDate) - new Date(a.startDate))
 }
 
 export function getFeaturedStory() {

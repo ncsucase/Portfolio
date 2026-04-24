@@ -9,7 +9,7 @@ export default function TimelineDiagram2(props) {
         { label: 'Active', sublabel: '12 mo', kind: 'productive', weight: 12 },
       ]}
       markers={[
-        { at: 0, label: 'PM rotates', subtitle: 'Designer onboards' },
+        { at: 0, label: 'PM rotates' },
         { at: 1, label: 'PM rotates', subtitle: 'Designer stays' },
       ]}
       {...props}

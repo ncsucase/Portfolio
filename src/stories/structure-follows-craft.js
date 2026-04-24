@@ -1,7 +1,8 @@
 export const meta = {
   title: 'Structure Follows Craft',
   slug: 'structure-follows-craft',
-  date: '2023',
+  startDate: '2023-01',
+  duration: '1 PI cycle',
   status: 'complete',
   tags: ['Org Design', 'Craft Development', 'Design Leadership', 'Matrix Management'],
   role: 'Design Director',
@@ -35,12 +36,14 @@ export const content = [
       [{
         type: 'inline-svg',
         name: 'featureChurn',
+        title: 'PM Rotations',
         alt: 'The vicious cycle of PM-aligned designer staffing.',
         caption: null,
       }],
       [{
         type: 'inline-svg',
         name: 'coachingChurn',
+        title: 'Mismatched Coaching',
         alt: 'The vicious cycle of mis-matched managers.',
         caption: null,
       }],

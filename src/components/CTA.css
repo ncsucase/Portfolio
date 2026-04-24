@@ -16,7 +16,7 @@
 }
 
 .cta:hover {
-  border-color: var(--text-muted);
-  background: var(--text-h);
+  border-color: var(--accent);
+  background: var(--accent);
   color: var(--bg);
 }

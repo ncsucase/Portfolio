@@ -79,10 +79,10 @@ export default function SyncDiagram(props) {
           display: flex;
           flex-direction: column;
           align-items: center;
-          gap: 12px;
-          padding: 24px 20px;
+          gap: var(--space-4);
+          padding: var(--space-6) var(--space-5);
           border-radius: 16px;
-          background: var(--bg-deep);
+          background: var(--bg);
           border: 1px solid var(--border);
           flex: 1;
           min-width: 0;

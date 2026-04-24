@@ -16,7 +16,8 @@
 export const meta = {
   title: 'Story Title',
   slug: 'story-slug',         // must match the filename and URL: /stories/story-slug
-  date: '2024-01',            // YYYY or YYYY-MM format, used for sorting (optional, null skips it in the header)
+  startDate: '2024-01',       // YYYY-MM format; used for sorting, display ("Jan 2024"), and computing duration for in-progress stories
+  duration: '6 months',       // manual string for completed stories; ignored when status is 'in progress'
   status: 'in progress',      // `in progress` | `complete` (optional)
   tags: ['Tag One', 'Tag Two'],
   role: 'Design Director',

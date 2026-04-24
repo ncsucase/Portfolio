@@ -27,6 +27,7 @@
   grid-column: 2;
   grid-row: 1 / 3;
   display: flex;
+  min-width: 0;
   padding-right: var(--space-6);
   align-items: flex-end;
   justify-content: center;
@@ -35,6 +36,7 @@
 
 .home-bio-photo img {
   width: 100%;
+  max-width: 100%;
   height: auto;
   display: block;
 }
@@ -96,6 +98,7 @@
 }
 
 .home-skills-container {
+  box-sizing: border-box;
   width: 40%;
   border-radius: var(--radius-xl);
   padding: var(--space-6);
@@ -111,6 +114,7 @@
 
 .home-about-skills {
   padding: 0;
+  margin: 0;
 }
 
 .home-about-prose p + p {
@@ -131,6 +135,39 @@
   flex-shrink: 0;
   margin-top: 0.2em;
   opacity: 0.7;
+}
+
+/* ── Skills — center-align icon + text at tablet and up ─── */
+@media (min-width: 641px) {
+  .home-about-skills li {
+    align-items: center;
+  }
+
+  .home-about-skills li svg {
+    margin-top: 0;
+  }
+}
+
+/* ── Skills — even distribution when side-by-side ───────── */
+@media (min-width: 901px) {
+  .home-skills-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .home-about-skills {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .home-about-skills li {
+    flex: 1;
+  }
+
+  .home-about-skills li + li {
+    margin-top: 0;
+  }
 }
 
 /* ── Tablet ──────────────────────────────────────────────── */
