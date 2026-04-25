@@ -15,8 +15,9 @@ function ScrollToTop() {
 
 export default function SiteLayout() {
   const [theme, setTheme] = useState(() => {
-    return localStorage.getItem('theme') ??
-      (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
+    const saved = localStorage.getItem('theme')
+    if (saved === 'light' || saved === 'dark') return saved
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
   })
 
   const handleThemeChange = (newTheme) => {
