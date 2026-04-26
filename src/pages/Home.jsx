@@ -37,6 +37,10 @@ export default function Home() {
               <p>Today my team designs the authenticated web and mobile experiences for Truist's consumer, wealth, and small business clients — over 7 million people managing real money, real decisions, and real stress. That scale makes craft non-negotiable and makes getting the organizational conditions right a business problem, not just a design management one.</p>
               <p>The stories on this site share a common thread: a problem others had accepted, a solution worth building, and results that measured up.</p>
             </div>
+            <CTA to="/work">
+              Read the stories
+              <Icon name="arrow-right" />
+            </CTA>
           </div>
           <div className="home-about-col home-skills-container">
             <h2>What I Do</h2>
@@ -50,10 +54,6 @@ export default function Home() {
             </ul>
           </div>
         </div>
-        <CTA to="/work">
-          Read the stories
-          <Icon name="arrow-right" />
-        </CTA>
       </section>
 
     </div>

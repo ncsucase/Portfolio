@@ -1,3 +1,5 @@
+import CTA from '../components/CTA'
+import Icon from '../components/Icon'
 import StoryRenderer from '../components/StoryRenderer'
 import { getDuration, formatStartDate } from '../utils/getDuration'
 import './StoryLayout.css'
@@ -68,6 +70,13 @@ export default function StoryLayout({ story }) {
       <div className="story-body">
         <StoryRenderer blocks={body} />
       </div>
+
+      <footer className="story-footer">
+        <CTA to="/work">
+          <Icon name="arrow-left" />
+          Back to work stories
+        </CTA>
+      </footer>
     </article>
   )
 }

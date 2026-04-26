@@ -15,19 +15,16 @@ export default function StoryCard({ story, variant = 'compact' }) {
       <div className="story-card story-card--featured">
         <div className="story-card__body">
           <div className="story-card__meta">
-            <span>{formatStartDate(story.startDate)}{story.status && story.status === "in progress" && (
-              <span> - present</span>
-            )}</span>
+            <span>{formatStartDate(story.startDate)}</span>
+            {duration && (
+              <>
+                <span>({duration})</span>
+              </>
+            )}
             {story.status && (
               <>
                 <span className="story-card__dot">•</span>
                 <span className="story-card__status" data-status={story.status}>{story.status}</span>
-              </>
-            )}
-            {duration && (
-              <>
-                <span className="story-card__dot">•</span>
-                <span>{duration}</span>
               </>
             )}
           </div>
@@ -37,7 +34,7 @@ export default function StoryCard({ story, variant = 'compact' }) {
           </div>
           <p className="story-card__excerpt">{story.excerpt}</p>
           <CTA to={`/stories/${story.slug}`}>
-            Read more
+            Read the story
             <Icon name="arrow-right" />
           </CTA>
         </div>
@@ -55,19 +52,16 @@ export default function StoryCard({ story, variant = 'compact' }) {
       <div className="story-card__title">
           <h3>{story.title}</h3>
           <div className="story-card__meta">
-            <span>{formatStartDate(story.startDate)}{story.status && story.status === "in progress" && (
-              <span> - present</span>
-            )}</span>
+            <span>{formatStartDate(story.startDate)}</span>
+            {duration && (
+              <>
+                <span>({duration})</span>
+              </>
+            )}
             {story.status && (
               <>
                 <span className="story-card__dot">•</span>
                 <span className="story-card__status" data-status={story.status}>{story.status}</span>
-              </>
-            )}
-            {duration && (
-              <>
-                <span className="story-card__dot">•</span>
-                <span>{duration}</span>
               </>
             )}
         </div>

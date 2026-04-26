@@ -114,11 +114,32 @@
 
 /* Body */
 .story-body {
-  padding: var(--space-8) var(--page-padding);
+  padding: var(--space-8) var(--page-padding) var(--space-5) var(--page-padding);
   max-width: var(--prose-width);
   margin: 0 auto;
   width: 100%;
   box-sizing: border-box;
+}
+
+/* Footer */
+.story-footer {
+  padding: 0 var(--page-padding);
+  max-width: var(--prose-width);
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.story-back-link {
+  font-family: var(--font-ui);
+  font-size: var(--font-size-sm);
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+.story-back-link:hover {
+  color: var(--text-h);
 }
 
 /* Responsive */

@@ -9,8 +9,8 @@
   --border: rgba(0, 0, 0, 0.2);
   --code-bg: #f4f3ec;
   --accent: #af52de;
-  --accent-bg: rgba(175, 82, 222, 0.1);
-  --accent-border: rgba(175, 82, 222, 0.5);
+  --accent-bg: rgba(175, 82, 222, 0.4);
+  --accent-border: rgba(175, 82, 222, 0.7);
 
   /* Illustration tones (grayscale scale used in SVG assets) */
   --c-ink:       #020203;
@@ -112,7 +112,7 @@ html.dark {
   --border: rgba(255, 255, 255, 0.25);
   --code-bg: #1f2028;
   --accent: rgb(191, 90, 242);
-  --accent-bg: rgba(191, 90, 242, 0.15);
+  --accent-bg: rgba(191, 90, 242, 0.2);
   --accent-border: rgba(191, 90, 242, 0.5);
 
   /* Illustration tones — inverted for dark backgrounds */

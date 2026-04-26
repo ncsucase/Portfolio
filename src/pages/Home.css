@@ -45,7 +45,9 @@
 .home-bio-card {
   grid-column: 1 / -1;
   grid-row: 2;
-  background: var(--bg-deep);
+  /* background: var(--bg-deep); */
+  
+  background: var(--accent-bg);
   border-radius: var(--radius-lg);
   padding: var(--space-7) var(--space-7);
   padding-right: 42%;
@@ -91,7 +93,7 @@
 .home-about {
   display: flex;
   flex-direction: row;
-  gap: var(--space-6);
+  gap: var(--space-8);
 }
 
 .home-about-col {
@@ -111,6 +113,10 @@
   font-family: var(--font-prose);
   font-size: var(--font-size-xl);
   margin-top: 0;
+}
+
+.home-about-prose {
+  margin-bottom: var(--space-5);
 }
 
 .home-about-skills {

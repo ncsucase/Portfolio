@@ -2,7 +2,7 @@ export const meta = {
   title: 'Structure Follows Craft',
   slug: 'structure-follows-craft',
   startDate: '2023-01',
-  duration: '1 PI cycle',
+  duration: '3 months',
   status: 'complete',
   tags: ['Org Design', 'Craft Development', 'Design Leadership', 'Matrix Management'],
   role: 'Design Director',

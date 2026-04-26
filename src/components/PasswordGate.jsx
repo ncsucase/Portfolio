@@ -19,8 +19,11 @@ export default function PasswordGate({ onSuccess }) {
   return (
     <div className="password-gate">
       <div className="password-gate__card">
-        <h1 className="password-gate__title">Mikey Cestari</h1>
-        <p className="password-gate__subtitle">Enter the password to continue.</p>
+        <div className="password-gate__title-area">
+          <h1 className="password-gate__title">Mikey Cestari</h1>
+          <p className="password-gate__subtitle">Design Director</p>
+        </div>
+        <p className="password-gate__instructions">Enter the password to see my portfolio.</p>
         <form className="password-gate__form" onSubmit={handleSubmit} noValidate>
           <div className="password-gate__field">
             <label htmlFor="gate-password" className="password-gate__label">Password</label>
