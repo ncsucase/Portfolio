@@ -1,4 +1,5 @@
 import { NavLink, useLocation } from 'react-router-dom'
+import Logo from '../assets/logo.svg?react'
 import Icon from './Icon'
 import ThemeToggle from './ThemeToggle'
 import './Header.css'
@@ -10,7 +11,9 @@ export default function Header({ theme, onThemeChange }) {
   return (
     <header className="site-header">
       <div className="header-inner page-container">
-        <span className="site-logo">Mikey Cestari</span>
+        <NavLink to="/" className="site-logo">
+          <Logo aria-hidden="true" className="site-logo-mark" />
+        </NavLink>
         <nav className="site-nav" aria-label="Main navigation">
           <NavLink
             to="/"

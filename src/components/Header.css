@@ -19,13 +19,17 @@
   align-items: center;
   gap: var(--space-2);
   font-family: var(--font-heading);
+  font-size: var(--heading-3);
   font-weight: 600;
-  font-size: 16px;
   line-height: 1;
   color: var(--text-h);
   text-decoration: none;
-  margin-right: auto;
   letter-spacing: -0.01em;
+}
+
+.site-logo-mark {
+  height: 1.25em;
+  width: auto;
 }
 
 .site-logo svg {
@@ -36,14 +40,16 @@
   display: flex;
   align-items: center;
   gap: var(--space-5);
+  margin-right: auto;
 }
 
 .nav-link {
   position: relative;
-  font-size: 14px;
-  font-weight: 500;
-  color: var(--text-muted);
+  font-family: var(--font-heading);
+  font-size: var(--heading-3);
+  font-weight: 600;
   text-decoration: none;
+  color: var(--text-h);
   transition: color 0.15s;
 }
 
@@ -81,14 +87,14 @@
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
   background: transparent;
-  color: var(--text-muted);
+  color: var(--text);
   cursor: pointer;
   transition: color 0.15s, border-color 0.15s;
 }
 
 .theme-toggle:hover {
   color: var(--text-h);
-  border-color: var(--text-muted);
+  border-color: var(--accent);
 }
 
 @media (max-width: 640px) {

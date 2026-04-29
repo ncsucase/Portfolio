@@ -4,6 +4,7 @@ import * as redesigningTruistDigital from './redesigning-truist-digital.js'
 import * as structureFollowsCraft from './structure-follows-craft.js'
 import * as aSystemBuiltForDesigners from './a-system-built-for-designers.js'
 import * as solvingProblemsForProduct from './solving-problems-for-product.js'
+import * as aCommonLanguageForPerformance from './a-common-language-for-performance.js'
 
 const allStories = [
   // storySlug,
@@ -11,6 +12,7 @@ const allStories = [
   structureFollowsCraft,
   aSystemBuiltForDesigners,
   solvingProblemsForProduct,
+  aCommonLanguageForPerformance,
 ]
 
 export function getAllStories() {

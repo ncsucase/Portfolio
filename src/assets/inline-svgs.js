@@ -9,3 +9,7 @@ export { default as waffleChartBefore } from './stories/solving-problems-for-pro
 export { default as waffleChartAfter } from './stories/solving-problems-for-product/WaffleChartAfter.jsx'
 export { default as problemFlowchart } from './stories/solving-problems-for-product/ProblemFlowchart.jsx'
 export { default as syncDiagram } from './stories/a-system-built-for-designers/SyncDiagram.jsx'
+export { default as ratingDistBefore    } from './stories/a-common-language-for-performance/RatingDistributionBefore.jsx'
+export { default as ratingDistAfter     } from './stories/a-common-language-for-performance/RatingDistributionAfter.jsx'
+export { default as reviewProcessDiagram } from './stories/a-common-language-for-performance/ReviewProcessDiagram.jsx'
+export { default as ratingScaleDiagram  } from './stories/a-common-language-for-performance/RatingScaleDiagram.jsx'
