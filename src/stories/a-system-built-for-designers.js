@@ -7,7 +7,7 @@ export const meta = {
   startDate: '2020-05',
   duration: 'ongoing',
   status: 'in progress',
-  tags: ['Design Operations', 'Workflow Automation', 'Systems Thinking', 'Leadership'],
+  tags: ['Design Operations', 'Workflow Automation', 'Systems Thinking'],
   role: 'Design Director',
   outcome: 'Built an automated Rally–Airtable sync that gave my team real-time delivery visibility — and earned a mandate to roll it out across two additional design organizations.',
   excerpt: 'Design and engineering teams track work in fundamentally different tools. I built an automated bridge between them that gave my designers a purpose-built system without disrupting our engineering partners — and the results earned a mandate to scale it across two other organizations at Truist.',

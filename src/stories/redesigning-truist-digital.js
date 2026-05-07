@@ -11,7 +11,7 @@ export const meta = {
   role: 'Design Director',
   outcome: 'Convened a voluntary coalition of 5 design teams across Truist and delivered a brand-approved visual system — built on 13 user studies and 5,000+ client responses — set for enterprise rollout in 2026.',
   excerpt: 'No mandate. No top-down directive. Just a shared problem and a case worth making. I convened five design teams across Truist — voluntarily — to redesign the visual foundation of every digital product we own.',
-  featured: true,
+  featured: false,
   heroImage: heroImg,
 }
 

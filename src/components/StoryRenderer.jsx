@@ -94,6 +94,14 @@ export default function StoryRenderer({ blocks }) {
             )
           }
 
+          case 'aside':
+            return (
+              <aside key={i} className="story-aside">
+                {block.label && <p className="story-aside-label">{block.label}</p>}
+                <p className="story-aside-text">{block.text}</p>
+              </aside>
+            )
+
           default:
             return null
         }

@@ -13,3 +13,6 @@ export { default as ratingDistBefore    } from './stories/a-common-language-for-
 export { default as ratingDistAfter     } from './stories/a-common-language-for-performance/RatingDistributionAfter.jsx'
 export { default as reviewProcessDiagram } from './stories/a-common-language-for-performance/ReviewProcessDiagram.jsx'
 export { default as ratingScaleDiagram  } from './stories/a-common-language-for-performance/RatingScaleDiagram.jsx'
+export { default as waffleChartDesign } from './stories/what-designers-should-actually-be-doing/WaffleChartDesign.jsx'
+export { default as waffleChartDev } from './stories/what-designers-should-actually-be-doing/WaffleChartDev.jsx'
+export { default as waffleChartAccessibility } from './stories/what-designers-should-actually-be-doing/WaffleChartAccessibility.jsx'

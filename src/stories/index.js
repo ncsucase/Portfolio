@@ -5,6 +5,7 @@ import * as structureFollowsCraft from './structure-follows-craft.js'
 import * as aSystemBuiltForDesigners from './a-system-built-for-designers.js'
 import * as solvingProblemsForProduct from './solving-problems-for-product.js'
 import * as aCommonLanguageForPerformance from './a-common-language-for-performance.js'
+import * as whatDesignersShuldActuallyBeDoing from './what-designers-should-actually-be-doing.js'
 
 const allStories = [
   // storySlug,
@@ -13,6 +14,7 @@ const allStories = [
   aSystemBuiltForDesigners,
   solvingProblemsForProduct,
   aCommonLanguageForPerformance,
+  whatDesignersShuldActuallyBeDoing,
 ]
 
 export function getAllStories() {

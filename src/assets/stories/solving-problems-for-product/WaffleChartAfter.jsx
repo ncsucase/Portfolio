@@ -1,4 +1,4 @@
-import WaffleChart from './WaffleChart.jsx'
+import WaffleChart from '../../../components/WaffleChart.jsx'
 
 const RED   = 'var(--color-error)'
 const GREEN = 'var(--color-success)'

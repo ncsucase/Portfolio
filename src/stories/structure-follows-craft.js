@@ -4,7 +4,7 @@ export const meta = {
   startDate: '2023-01',
   duration: '3 months',
   status: 'complete',
-  tags: ['Org Design', 'Craft Development', 'Design Leadership', 'Matrix Management'],
+  tags: ['Org Design', 'Craft Development', 'Matrix Management'],
   role: 'Design Director',
   outcome: `Restructured a 36-person design org from PM alignment to a discipline matrix — eliminating the three-month onboarding tax and ending partner-flagged design quality issues within one PI cycle.`,
   excerpt: `A 36-person design org structured around PM alignment was spending half its time onboarding rather than producing. I restructured it around a matrix that separated feature ownership from craft development — and within one PI cycle, both problems were gone.`,
