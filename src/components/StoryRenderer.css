@@ -108,7 +108,7 @@
 
 .story-aside {
   border-left: 2px solid var(--color-info);
-  background: var(--bg-deep);
+  background: var(--bg-info);
   border-radius: var(--radius-md);
   padding: var(--space-4) var(--space-5);
 }
