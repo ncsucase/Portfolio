@@ -136,7 +136,7 @@ export const content = [
   },
   {
     type: 'paragraph',
-    text: `Truist's enterprise technology process isn't hostile to new tools — it's thorough. Risk review, procurement, vendor assessment. I mapped the process early and identified that the critical path isn't the build — it's the vendor contract. An existing Anthropic or AWS Bedrock relationship at the enterprise level unlocks the approval path significantly faster than a net-new procurement.`,
+    text: `Truist's enterprise technology process isn't hostile to new tools — it's thorough. Risk review, procurement, vendor assessment. I mapped the process early and identified that the critical path isn't the build — it's the vendor contract. An existing Anthropic relationship at the enterprise level unlocks the approval path significantly faster than a net-new procurement.`,
   },
   {
     type: 'paragraph',
