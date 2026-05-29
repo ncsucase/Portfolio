@@ -1,5 +1,5 @@
 export const meta = {
-  title: 'What designers should actually be doing',
+  title: 'What Designers Should Actually Be Doing',
   slug: 'what-designers-should-actually-be-doing',         // must match the filename and URL: /stories/story-slug
   startDate: '2026-05',       // YYYY-MM format; used for sorting, display ("Jan 2024"), and computing duration for in-progress stories
   duration: '6 months',       // manual string for completed stories; ignored when status is 'in progress'
@@ -82,7 +82,7 @@ export const content = [
         align: 'center',
         name: 'waffleChartDev',
         title: 'Dev Spec Usefulness',
-        alt: 'Propotion of specs that are useful to developers',
+        alt: 'Proportion of specs that are useful to developers',
       }],
     ]
   },

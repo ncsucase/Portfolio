@@ -6,8 +6,8 @@ export default function Footer() {
     <footer className="site-footer">
       <div className="footer-inner page-container">
         <div className="footer-cta">
-          <p className="footer-headline">Let's build the future together.</p>
-          <p className="footer-tagline">Open for collaboration and design leadership opportunities.</p>
+          <p className="footer-headline">Good design leadership is hard to find.</p>
+          <p className="footer-tagline">I'm available.</p>
         </div>
         <div className="footer-links">
           <a
@@ -20,12 +20,12 @@ export default function Footer() {
             /mikeycestari
           </a>
           <a
-            href="mailto:ncsucase@gmail.com"
+            href="mailto:design@mikeycestari.com"
             className="footer-link"
           >
             {/* <span className="footer-link-icon">@</span> */}
             <Icon name="email" />
-            ncsucase@gmail.com
+            design@mikeycestari.com
           </a>
         </div>
       </div>

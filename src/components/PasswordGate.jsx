@@ -23,7 +23,7 @@ export default function PasswordGate({ onSuccess }) {
           <h1 className="password-gate__title">Mikey Cestari</h1>
           <p className="password-gate__subtitle">Design Director</p>
         </div>
-        <p className="password-gate__instructions">Enter the password to see my portfolio.</p>
+        <p className="password-gate__instructions">You can find the password on my resume.</p>
         <form className="password-gate__form" onSubmit={handleSubmit} noValidate>
           <div className="password-gate__field">
             <label htmlFor="gate-password" className="password-gate__label">Password</label>
