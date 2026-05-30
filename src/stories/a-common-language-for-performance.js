@@ -6,8 +6,8 @@ export const meta = {
   status: 'complete',
   tags: ['Performance Management', 'Calibration', 'People Management'],
   role: 'Design Director',
-  outcome: `Six managers and thirty-five-plus designers aligned to a single performance standard — with a rating distribution that proved it.`,
-  excerpt: `Six managers, thirty-five-plus designers, no shared definition of "performing at level." I built a behavioral rubric that fixed that — and at end of year, ratings ranged from low to high instead of piling up at the top.`,
+  outcome: `Seven managers and thirty-five-plus designers aligned to a single performance standard, with a rating distribution that proved it.`,
+  excerpt: `Seven managers, thirty-five-plus designers, no shared definition of "performing at level." I built a behavioral rubric that fixed that, and at end of year, ratings ranged from low to high instead of piling up at the top.`,
   featured: false,
   heroImage: null,
 }
@@ -16,7 +16,7 @@ export const content = [
   {
     type: 'summary',
     // Full paragraph shown in the summary band above the story body (italic, large).
-    text: `Six managers. Thirty-five-plus designers. Five dimensions of craft. And no shared definition of what "performing at level" actually meant. I built a behavioral rubric with my management team that gave everyone — managers and designers alike — a common language for performance. After two review cycles, the rating distribution told the real story.`,
+    text: `Seven managers. Thirty-five-plus designers. Five dimensions of craft. And no shared definition of what "performing at level" actually meant. I built a behavioral rubric with my management team that gave everyone, managers and designers alike, a common language for performance. After two review cycles, the rating distribution told the real story.`,
   },
   {
     type: 'heading',
@@ -25,7 +25,7 @@ export const content = [
   },
   {
     type: 'paragraph',
-    text: `When you have six or seven managers each evaluating designers independently, you don't have a calibrated organization — you have six or seven different organizations using the same org chart. That was the reality I was managing.`,
+    text: `When you have seven managers each evaluating designers independently, you don't have a calibrated organization. You have seven different organizations using the same org chart. That was the reality I was managing.`,
   },
   {
     type: 'inline-svg',
@@ -39,7 +39,7 @@ export const content = [
   },
   {
     type: 'paragraph',
-    text: `The problem wasn't that my managers lacked judgment. It was that they each had their own mental model of what strong performance looked like — and those models had never been reconciled into a shared one.`,
+    text: `The problem wasn't that my managers lacked judgment. It was that they each had their own mental model of what strong performance looked like, and those models had never been reconciled into a shared one.`,
   },
   {
     type: 'heading',
@@ -69,7 +69,7 @@ export const content = [
   },
   {
     type: 'paragraph',
-    text: `The result covered IC levels from entry level designers to senior principal designers — every rung of the individual contributor ladder.`,
+    text: `The result covered IC levels from entry level designers to senior principal designers, every rung of the individual contributor ladder.`,
   },
   {
     type: 'heading',
@@ -82,7 +82,7 @@ export const content = [
   },
   {
     type: 'paragraph',
-    text: `The conversation is structured around discrepancies. Where did the manager's rating and the designer's self-assessment diverge, and why? That gap is where the most useful growth conversation lives. If a manager scores a designer lower on craft than the designer scored themselves, that's not a failure — it's a calibration point. They work through it, identify specific growth opportunities, and leave the conversation with a shared understanding.`,
+    text: `The conversation is structured around discrepancies. Where did the manager's rating and the designer's self-assessment diverge, and why? That gap is where the most useful growth conversation lives. If a manager scores a designer lower on craft than the designer scored themselves, that's not a failure. It's a calibration point. They work through it, identify specific growth opportunities, and leave the conversation with a shared understanding.`,
   },
   {
     type: 'inline-svg',
@@ -104,7 +104,7 @@ export const content = [
   },
   {
     type: 'paragraph',
-    text: `First, the rating distribution. At end of year, my team's performance ratings used the full scale — not clustered at the top. That's not a normal outcome. In most organizations, managers push most of their team toward the highest rating because there's no shared reference point for what a mid-range rating actually means. When everyone has the same rubric, mid-range ratings carry meaning and managers can defend them. Mine could.`,
+    text: `First, the rating distribution. At end of year, my team's performance ratings used the full scale, not clustered at the top. That's not a normal outcome. In most organizations, managers push most of their team toward the highest rating because there's no shared reference point for what a mid-range rating actually means. When everyone has the same rubric, mid-range ratings carry meaning and managers can defend them. Mine could.`,
   },
   {
     type: 'columns',
@@ -125,10 +125,10 @@ export const content = [
   },
   {
     type: 'paragraph',
-    text: `Second, when the organization went through a round of reductions, I was able to use the rubric to identify low performers clearly and consistently. HR had documented, behavior-grounded evidence to work from. That's not a comfortable thing to say — but it's what a rigorous performance system is supposed to provide when the hardest decisions have to be made.`,
+    text: `Second, when the organization later went through a round of reductions, I was able to use the rubric to identify low performers clearly and consistently. HR had documented, behavior-grounded evidence to work from. That's not a comfortable thing to say, but it's what a rigorous performance system is supposed to provide when the hardest decisions have to be made.`,
   },
   {
     type: 'paragraph',
-    text: `My manager saw both outcomes. The spread of ratings and the quality of the documentation were enough for him to ask me to roll the system out across three additional departments. But we'll save that story for later.`,
+    text: `My manager saw both outcomes. The spread of ratings and the quality of the documentation were enough for him to ask me to roll the system out across three additional departments.`,
   },
 ]

@@ -6,6 +6,7 @@ import * as aSystemBuiltForDesigners from './a-system-built-for-designers.js'
 import * as solvingProblemsForProduct from './solving-problems-for-product.js'
 import * as aCommonLanguageForPerformance from './a-common-language-for-performance.js'
 import * as whatDesignersShuldActuallyBeDoing from './what-designers-should-actually-be-doing.js'
+import * as operationalVisibilityAtScale from './operational-visibility-at-scale.js'
 
 const allStories = [
   // storySlug,
@@ -15,6 +16,7 @@ const allStories = [
   solvingProblemsForProduct,
   aCommonLanguageForPerformance,
   whatDesignersShuldActuallyBeDoing,
+  operationalVisibilityAtScale,
 ]
 
 export function getAllStories() {

@@ -84,63 +84,63 @@ export const content = [
     type: 'paragraph',
     text: `A working group of designers from competing teams, each with their own stakeholders and priorities, had to generate new ideas while also killing ones that didn't survive testing. The discipline was keeping every decision tethered to the user data. When opinions surfaced, and they always do, the data was the arbiter. We also navigated multiple rounds of Brand review, which added scrutiny and stakeholder management at the executive level.`,
   },
-  {
-    type: 'timeline',
-    variant: 'truncated',
-    items: [
-      {
-        quarter: `Q4 2024`,
-        events: [
-          { date: 'Oct 1', label: 'User Study 1', sublabel: 'Survey attributes' },
-          { date: 'Oct 21', label: 'User Study 2', sublabel: 'Unmoderated; 5 designs' },
-          { date: 'Nov 11', label: 'User Study 3', sublabel: 'Unmoderated; 4 designs' },
-          { date: 'Nov 25', label: 'User Study 4', sublabel: 'Unmoderated; 5 designs' },
-        ]
-      },
-      {
-        quarter: `Q1 2025`,
-        events: [
-          { date: 'Feb 14', label: 'Brand Review 1', color: 'accent' },
-          { date: 'Mar 21', label: 'User Study 5', sublabel: 'Unmoderated; 4 designs' },
-        ]
-      },
-      {
-        quarter: `Q2 2025`,
-        events: [
-          { date: 'Apr 17', label: 'User Study 6', sublabel: 'Unmoderated; 3 designs' },
-          { date: 'May 6', label: 'User Study 7', sublabel: 'Moderated; 2 designs' },
-          { date: 'May 21', label: 'User Study 8', sublabel: 'Unmoderated; 4 designs' },
-        ]
-      },
-      {
-        quarter: 'Q3 2025',
-        events: [
-          { date: 'Jul 11', label: 'Brand Review 2', color: 'accent' },
-          { date: 'Jul 16', label: 'User Study 9', sublabel: 'Unmoderated; 5 designs'},
-          { date: 'Jul 30', label: 'User Study 10', sublabel: 'Unmoderated; 4 designs'},
-          { date: 'Aug 29', label: 'User Study 11', sublabel: 'Unmoderated; 25 designs'},
-        ],
-      },
-      {
-        quarter: `Q4 2025`,
-        events: [
-          { date: 'Nov 5', label: 'User Study 12', sublabel: 'Unmoderated; 17 designs' },
-        ]
-      },
-      {
-        quarter: `Q1 2026`,
-        events: [
-          { date: 'Mar 6', label: 'Brand Review 3', color: 'accent' },
-        ]
-      },
-      {
-        quarter: `Q2 2026`,
-        events: [
-          { date: 'Apr 28', label: 'User Study 13', sublabel: 'Unmoderated; 4 designs' },
-        ]
-      },
-    ],
-  },
+  // {
+  //   type: 'timeline',
+  //   variant: 'truncated',
+  //   items: [
+  //     {
+  //       quarter: `Q4 2024`,
+  //       events: [
+  //         { date: 'Oct 1', label: 'User Study 1', sublabel: 'Survey attributes' },
+  //         { date: 'Oct 21', label: 'User Study 2', sublabel: 'Unmoderated; 5 designs' },
+  //         { date: 'Nov 11', label: 'User Study 3', sublabel: 'Unmoderated; 4 designs' },
+  //         { date: 'Nov 25', label: 'User Study 4', sublabel: 'Unmoderated; 5 designs' },
+  //       ]
+  //     },
+  //     {
+  //       quarter: `Q1 2025`,
+  //       events: [
+  //         { date: 'Feb 14', label: 'Brand Review 1', color: 'accent' },
+  //         { date: 'Mar 21', label: 'User Study 5', sublabel: 'Unmoderated; 4 designs' },
+  //       ]
+  //     },
+  //     {
+  //       quarter: `Q2 2025`,
+  //       events: [
+  //         { date: 'Apr 17', label: 'User Study 6', sublabel: 'Unmoderated; 3 designs' },
+  //         { date: 'May 6', label: 'User Study 7', sublabel: 'Moderated; 2 designs' },
+  //         { date: 'May 21', label: 'User Study 8', sublabel: 'Unmoderated; 4 designs' },
+  //       ]
+  //     },
+  //     {
+  //       quarter: 'Q3 2025',
+  //       events: [
+  //         { date: 'Jul 11', label: 'Brand Review 2', color: 'accent' },
+  //         { date: 'Jul 16', label: 'User Study 9', sublabel: 'Unmoderated; 5 designs'},
+  //         { date: 'Jul 30', label: 'User Study 10', sublabel: 'Unmoderated; 4 designs'},
+  //         { date: 'Aug 29', label: 'User Study 11', sublabel: 'Unmoderated; 25 designs'},
+  //       ],
+  //     },
+  //     {
+  //       quarter: `Q4 2025`,
+  //       events: [
+  //         { date: 'Nov 5', label: 'User Study 12', sublabel: 'Unmoderated; 17 designs' },
+  //       ]
+  //     },
+  //     {
+  //       quarter: `Q1 2026`,
+  //       events: [
+  //         { date: 'Mar 6', label: 'Brand Review 3', color: 'accent' },
+  //       ]
+  //     },
+  //     {
+  //       quarter: `Q2 2026`,
+  //       events: [
+  //         { date: 'Apr 28', label: 'User Study 13', sublabel: 'Unmoderated; 4 designs' },
+  //       ]
+  //     },
+  //   ],
+  // },
   {
     type: 'stats',
     items: [
@@ -169,7 +169,7 @@ export const content = [
   },
   {
     type: 'paragraph',
-    text: `That's not a consolation outcome. Our Wealth clients recently praised improvements to the dashboard experience. Visual appeal complaints about our color system, previously a steady signal in VOC, have been effectively silent for over a year. JD Power web ranking improved to 3rd place, up from 9th. The platform is better than it was, and the improvements are grounded in 5,000+ client responses rather than internal preference.`,
+    text: `Our Wealth clients recently praised improvements to the dashboard experience. Visual appeal complaints about our color system, previously a steady signal in VOC, have been effectively silent for over a year. JD Power web ranking improved to 3rd place, up from 9th. The platform is better than it was, and the improvements are grounded in 5,000+ client responses rather than internal preference.`,
   },
   {
     type: 'paragraph',
