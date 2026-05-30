@@ -1,9 +1,16 @@
-import { useState } from 'react'
+import { useState, useRef, useEffect } from 'react'
+import CTA from './CTA'
+import Icon from './Icon'
 import './PasswordGate.css'
 
-export default function PasswordGate({ onSuccess }) {
+export default function PasswordGate({ onSuccess, onDismiss }) {
   const [value, setValue] = useState('')
   const [error, setError] = useState(false)
+  const dialogRef = useRef(null)
+
+  useEffect(() => {
+    dialogRef.current.showModal()
+  }, [])
 
   function handleSubmit(e) {
     e.preventDefault()
@@ -16,33 +23,46 @@ export default function PasswordGate({ onSuccess }) {
     }
   }
 
+  function handleBackdropClick(e) {
+    if (e.target === dialogRef.current) onDismiss()
+  }
+
   return (
-    <div className="password-gate">
+    <dialog
+      ref={dialogRef}
+      className="password-gate"
+      onCancel={onDismiss}
+      onClick={handleBackdropClick}
+    >
       <div className="password-gate__card">
-        <div className="password-gate__title-area">
-          <h1 className="password-gate__title">Mikey Cestari</h1>
-          <p className="password-gate__subtitle">Design Director</p>
+        <div className="password-gate__header">
+          <h1 className="password-gate__title">Want to see my work?</h1>
+          <CTA onClick={onDismiss} className="password-gate__close" aria-label="Close" variant="tertiary">
+            <Icon name="x" />
+          </CTA>
         </div>
-        <p className="password-gate__instructions">You can find the password on my resume.</p>
-        <form className="password-gate__form" onSubmit={handleSubmit} noValidate>
-          <div className="password-gate__field">
-            <label htmlFor="gate-password" className="password-gate__label">Password</label>
-            <input
-              id="gate-password"
-              type="password"
-              className={`password-gate__input${error ? ' password-gate__input--error' : ''}`}
-              value={value}
-              onChange={e => { setValue(e.target.value); setError(false) }}
-              autoComplete="current-password"
-              autoFocus
-            />
-            {error && (
-              <p className="password-gate__error" role="alert">Incorrect password. Try again.</p>
-            )}
-          </div>
-          <button type="submit" className="password-gate__submit">Enter</button>
-        </form>
+        <div className="password-gate__body">
+          <p className="password-gate__instructions">You'll need the password from my resume.</p>
+          <form className="password-gate__form" onSubmit={handleSubmit} noValidate>
+            <div className="password-gate__field">
+              <input
+                id="gate-password"
+                type="password"
+                className={`password-gate__input${error ? ' password-gate__input--error' : ''}`}
+                value={value}
+                onChange={e => { setValue(e.target.value); setError(false) }}
+                autoComplete="current-password"
+                autoFocus
+                aria-label="Password"
+              />
+              {error && (
+                <p className="password-gate__error" role="alert">Incorrect password. Try again.</p>
+              )}
+            </div>
+            <CTA type="submit" variant="primary" className="password-gate__submit">Enter</CTA>
+          </form>
+        </div>
       </div>
-    </div>
+    </dialog>
   )
 }

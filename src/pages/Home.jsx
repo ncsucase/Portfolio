@@ -1,15 +1,5 @@
-import headshot from '../assets/home/Profile-transparent-background.png'
-import CTA from '../components/CTA'
-import Icon from '../components/Icon'
+import headshot from '../assets/heashot.jpg'
 import './Home.css'
-
-const skills = [
-  { label: 'Keep design decisions grounded in user behavior, not internal opinion', icon: 'skill-chart' },
-  { label: 'Lead and grow design orgs across UI, UX, and content disciplines', icon: 'skill-org' },
-  { label: 'Build workflow systems and tooling that give design teams operational leverage', icon: 'skill-gears' },
-  { label: 'Work across org boundaries to solve shared problems', icon: 'skill-venn' },
-  { label: 'Structure teams for craft quality, not managerial convenience', icon: 'skill-compass' },
-]
 
 export default function Home() {
   return (
@@ -17,12 +7,30 @@ export default function Home() {
       <title>Mikey Cestari | Design Director</title>
 
       <section className="home-bio">
-        <h1>Mikey Cestari</h1>
+        <div className="home-bio-text">
+          <span className="home-bio-eyebrow">I'm</span>
+          <h1>Mikey Cestari</h1>
+          <span className="home-bio-role">Design Director</span>
+        </div>
+        <p className="home-bio-description">My background is in behavioral science, not fine arts. The difference shows up in how I think about problems, evidence, and what design is actually for.</p>
         <div className="home-bio-photo">
           <img src={headshot} alt="Mikey Cestari" />
         </div>
-        <div className="home-bio-card">
-          <p>My background is in behavioral science, not fine arts. The difference shows up in how I think about problems, evidence, and what design is actually for.</p>
+      </section>
+
+      <section className="home-stats home-section--wide">
+        <div className="home-stats-grid">
+          {[
+            { value: '40+',  label: 'Team of designers' },
+            { value: '400+', label: 'Features annually' },
+            { value: '7M+',  label: 'Active users' },
+            { value: '+13%', label: 'VOC satisfaction' },
+          ].map(stat => (
+            <div key={stat.label} className="home-stat">
+              <span className="home-stat-value">{stat.value}</span>
+              <span className="home-stat-label">{stat.label}</span>
+            </div>
+          ))}
         </div>
       </section>
 
@@ -31,26 +39,19 @@ export default function Home() {
           <div className="home-about-col">
             <h2>About Me</h2>
             <div className="home-about-prose">
-              <p>I'm a Design Director leading design at Truist's authenticated digital banking organization, a 44-person team spanning UI, UX, and Content design. I focus on building the structures, processes, and systems that let design teams do their best work and make their impact legible to the people around them.</p>
-              <p>I grew into this role through one of the most complex integration challenges in banking history: the BB&T and SunTrust merger that created Truist. Navigating two cultures, two legacy systems, and two design organizations finding common ground shaped how I think about ambiguity, alignment, and what it actually takes to build something durable inside a large institution.</p>
-              <p>Today my team designs the authenticated web and mobile experiences for Truist's consumer, wealth, and small business clients. That's over 7 million people managing real money, real decisions, and real stress. That scale makes craft non-negotiable and makes getting the organizational conditions right a business problem, not just a design management one.</p>
-              <p>The stories on this site share a common thread: a problem others had accepted, a solution worth building, and results that measured up.</p>
+              <p>I grew into this role through one of the most complex integration challenges in banking history: the BB&T and SunTrust merger that created Truist. I've never stopped approaching problems the way my human factors training taught me to: </p>
+              <ol>
+                <li>Identify what's actually broken.</li>
+                <li>Build something testable.</li>
+                <li>Let the evidence decide.</li>
+              </ol>
+              <p>Today that means leading a 44-person design organization building authenticated banking experiences for over 7 million people managing real money, real decisions, and real stress.</p>
             </div>
-            <CTA to="/work">
-              Read the stories
-              <Icon name="arrow-right" />
-            </CTA>
           </div>
           <div className="home-about-col home-skills-container">
-            <h2>What I Do</h2>
-            <ul className="home-about-skills">
-              {skills.map((skill, i) => (
-                <li key={i}>
-                  <Icon name={skill.icon} size="1.5em" color="var(--accent)" />
-                  {skill.label}
-                </li>
-              ))}
-            </ul>
+            <h2>Philosophy</h2>
+            <p>Design thinking works on any problem where humans are involved.</p>
+            <p>I've never thought of design as a visual discipline. Across org structures, performance systems, products, the process is always the same. I think of design as a way of making better decisions under uncertainty, which means "it depends" isn't a hedge. It's where the work starts.</p>
           </div>
         </div>
       </section>

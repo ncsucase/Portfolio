@@ -8,9 +8,18 @@
   --surface: #F6F6F9;
   --border: rgba(0, 0, 0, 0.2);
   --code-bg: #f4f3ec;
-  --accent: #af52de;
-  --accent-bg: rgba(175, 82, 222, 0.4);
-  --accent-border: rgba(175, 82, 222, 0.7);
+  --accent: #008A22;
+  --accent-bg: rgba(0, 138, 34, 0.4);
+  --accent-border: rgba(0, 138, 34, 0.7);
+
+  --modal-bg: rgba(0, 0, 0, 0.45);
+  --modal-blur: 16px;
+
+  /* Frosty */
+  --frosty-bg: rgba(255, 255, 255, 0.65);
+  --frosty-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
+  --frosty-blur: 16px;
+  --frosty-border: 1px solid #fff;
 
   /* Illustration tones (grayscale scale used in SVG assets) */
   --c-ink:       #020203;
@@ -111,9 +120,17 @@ html.dark {
   --surface: #232324;
   --border: rgba(255, 255, 255, 0.25);
   --code-bg: #1f2028;
-  --accent: rgb(191, 90, 242);
-  --accent-bg: rgba(191, 90, 242, 0.2);
-  --accent-border: rgba(191, 90, 242, 0.5);
+  --accent: #30D158;
+  --accent-bg: rgba(48, 209, 88, 0.2);
+  --accent-border: rgba(48, 209, 88, 0.5);
+
+  --modal-bg: rgba(255, 255, 255, 0.05);
+
+  /* Frosty */
+  --frosty-bg: rgba(255, 255, 255, 0.1);
+  --frosty-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
+  --frosty-blur: 16px;
+  --frosty-border: 1px solid #717174;
 
   /* Illustration tones — inverted for dark backgrounds */
   --c-ink:       #E9E8E9;
