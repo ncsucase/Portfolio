@@ -1,6 +1,6 @@
 // Import all story modules here. Add a new line for each story you add.
 // import * as storySlug from './story-slug.js'
-import * as redesigningTruistDigital from './redesigning-truist-digital.js'
+import * as improvingTruistDigital from './improving-truist-digital.js'
 import * as structureFollowsCraft from './structure-follows-craft.js'
 import * as aSystemBuiltForDesigners from './a-system-built-for-designers.js'
 import * as solvingProblemsForProduct from './solving-problems-for-product.js'
@@ -9,7 +9,7 @@ import * as whatDesignersShuldActuallyBeDoing from './what-designers-should-actu
 
 const allStories = [
   // storySlug,
-  redesigningTruistDigital,
+  improvingTruistDigital,
   structureFollowsCraft,
   aSystemBuiltForDesigners,
   solvingProblemsForProduct,
