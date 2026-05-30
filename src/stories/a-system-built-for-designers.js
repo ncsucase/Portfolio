@@ -28,11 +28,11 @@ export const content = [
   },
   {
     type: 'paragraph',
-    text: `When I took over as design director, my team was tracking work in Rally (an enterprise work management tool built around how developers operate) without support. Our development partners tracked everything in Rally with Scrum Master and Product Owner support. `,
+    text: `When I took over as design director, my team was tracking work in Rally (an enterprise work management tool built around how developers operate) without support. Our development partners tracked everything in Rally with Scrum Master and Product Owner support.`,
   },
   {
     type: 'paragraph',
-    text: `Rally works well for engineering when there’s dedicated help like a Scrum Master. For design, it's the wrong shape entirely: the hierarchy, the terminology, the workflow states, none of it maps cleanly to how designers plan, iterate, and deliver.`,
+    text: `Rally works well for engineering when there's dedicated help like a Scrum Master. For design, it's the wrong shape entirely: the hierarchy, the terminology, the workflow states, none of it maps cleanly to how designers plan, iterate, and deliver.`,
   },
   {
     type: 'paragraph',
@@ -113,7 +113,7 @@ export const content = [
   },
   {
     type: 'paragraph',
-    text: `When my scope expanded to lead all of Digital Servicing design, I inherited a larger team with the same fundamental problem. I didn't rebuild the system. I extended it.`
+    text: `When my scope expanded to lead all of Digital Servicing design, the same fundamental problem existed at larger scale. I didn't rebuild the system. I extended it.`
   },
   {
     type: 'paragraph',
@@ -130,13 +130,13 @@ export const content = [
   },
   {
     type: 'paragraph',
-    text: `The research connection adds a layer most design organizations don't have: a documented trail from user insight to shipped feature. That traceability has chnaged how we talk about design's contribution to product decisions. It's no longer a claim we make, it's something we can show.`,
+    text: `The research connection adds a layer most design organizations don't have: a documented trail from user insight to shipped feature. That traceability has changed how we talk about design's contribution to product decisions. It's no longer a claim we make, it's something we can show.`,
   },
   {
     type: 'image',
     src: dashboardLg,
     srcSm: dashboardSm,
     alt: 'The Airtable dashboard built for the design team',
-    caption: `The live Airtable dashboard — accurate, always on, no manual updates.`,
+    caption: `The live Airtable dashboard. Accurate, always on, no manual updates.`,
   },
 ]

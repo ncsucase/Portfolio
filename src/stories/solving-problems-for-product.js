@@ -6,8 +6,8 @@ export const meta = {
   status: 'complete',
   tags: ['Cross-functional Leadership', 'Workflow Automation', 'Systems Thinking', 'Product Partnership'],
   role: 'Design Director',
-  outcome: `Reduced a product team's backlog management burden from 20+ hours a week to 1–2 by replacing a fragile Excel process with a live Rally–Airtable sync.`,
-  excerpt: `A product team managing 400+ features across Excel and Rally was spending 20+ hours a week on manual reconciliation. I\'d solved a similar problem for my own team — so I offered to fix it for theirs.`,
+  outcome: `Reduced a product team's backlog management burden from 20+ hours a week to 1-2 by replacing a fragile Excel process with a live Rally-Airtable sync.`,
+  excerpt: `A product team managing 400+ features across Excel and Rally was spending 20+ hours a week on manual reconciliation. I'd solved a similar problem for my own team, so I offered to fix it for theirs.`,
   featured: false,
   heroImage: null,
 }
@@ -16,7 +16,7 @@ export const content = [
   {
     type: 'summary',
     // Full paragraph shown in the summary band above the story body (italic, large).
-    text: `The product team responsible for Truist's authenticated banking backlog was managing roughly 400 features across Excel and Rally — manually. Daily cross-checks, broken formulas, lost updates, and no reliable way to share data with stakeholders. I'd solved a similar problem for my own design team and knew I could fix it. I offered. What had been taking one person 20+ hours a week now takes 1–2.`,
+    text: `The product team responsible for Truist's authenticated banking backlog was managing roughly 400 features across Excel and Rally, manually. Daily cross-checks, broken formulas, lost updates, and no reliable way to share data with stakeholders. I'd solved a similar problem for my own design team and knew I could fix it. I offered. What had been taking one person 20+ hours a week now takes 1–2.`,
   },
   {
     type: 'heading',
@@ -25,7 +25,7 @@ export const content = [
   },
   {
     type: 'paragraph',
-    text: `The Product team managing Truist's authenticated banking backlog had a process problem they'd been living with for a long time. Their source of truth was an Excel file — manually maintained, manually cross-checked against Rally, and vulnerable to anyone who opened it and accidentally broke a formula.`,
+    text: `The Product team managing Truist's authenticated banking backlog had a process problem they'd been living with for a long time. Their source of truth was an Excel file: manually maintained, manually cross-checked against Rally, and vulnerable to anyone who opened it and accidentally broke a formula.`,
   },
   {
     type: 'paragraph',
@@ -33,7 +33,7 @@ export const content = [
   },
   {
     type: 'paragraph',
-    text: `This wasn't in my job description. I built it because I saw the problem, knew I could solve it, and understood that a product team operating more effectively makes the entire design and delivery system better.`,
+    text: `My role is in design. The product team's backlog process wasn't my problem to solve. But I was already partnering closely with them on roadmap planning and delivery, which is how I noticed it. I'd built enough of the underlying infrastructure for my team to know I could fix it in a few days. Solving problems that make the people around you more effective is part of how I think about a job.`,
   },
   {
     type: 'heading',
@@ -42,7 +42,7 @@ export const content = [
   },
   {
     type: 'paragraph',
-    text: `The backlog manager's daily routine was a study in unsustainable process. Each day she manually checked the Excel file against Rally — feature by feature, across roughly 400 items — looking for mismatches and updating records by hand. When other users broke formulas, she'd fix them. When formulas were too broken to recover, she'd revert to an older version of the file, which meant PMs and GPMs had to try to reconstruct their lost updates from memory.`,
+    text: `The backlog manager's daily routine was a study in unsustainable process. Each day she manually checked the Excel file against Rally, feature by feature, across roughly 400 items, looking for mismatches and updating records by hand. When other users broke formulas, she'd fix them. When formulas were too broken to recover, she'd revert to an older version of the file, which meant PMs and GPMs had to try to reconstruct their lost updates from memory.`,
   },
   {
     type: 'paragraph',
@@ -50,11 +50,11 @@ export const content = [
   },
   {
     type: 'paragraph',
-    text: `Work sizing estimates couldn't be reliably tracked against actuals — the Product team had no consistent way to compare what they thought something would take against what it actually took, which made improving estimates over time nearly impossible. `,
+    text: `Work sizing estimates couldn't be reliably tracked against actuals. The Product team had no consistent way to compare what they thought something would take against what it actually took, which made improving estimates over time nearly impossible. `,
   },
   {
     type: 'paragraph',
-    text: `Dates pulled from Rally — Program Increments, releases — had to be manually added and maintained in Excel.`,
+    text: `Dates pulled from Rally (Program Increments, releases) had to be manually added and maintained in Excel.`,
   },
   {
     type: 'paragraph',
@@ -82,15 +82,15 @@ export const content = [
   {
     type: 'list',
     items: [
-      `A live sync between Rally and Airtable replaced the manual daily cross-check. Instead of opening each Feature individually, the backlog manager now has a view that automatically surfaces mismatches — the system flags what needs attention rather than requiring her to find it.`,
+      `A live sync between Rally and Airtable replaced the manual daily cross-check. Instead of opening each Feature individually, the backlog manager now has a view that automatically surfaces mismatches. The system flags what needs attention rather than requiring her to find it.`,
       `Permission controls and field types in Airtable eliminated the broken formula problem entirely. Fields are structured so they can't be accidentally overwritten, and there's no formula layer for users to corrupt.`,
       `Work sizing became trackable for the first time. Estimated sizes and actual sizes from Rally are pulled forward automatically, with mismatches surfaced in a dedicated view. The Product team can now see where their estimates are consistently off and adjust accordingly.`,
-      `Dates — Program Increments, releases — sync automatically from Rally. No one maintains them manually.`,
+      `Dates (Program Increments, releases) sync automatically from Rally. No one maintains them manually.`,
     ]
   },
   {
     type: 'paragraph',
-    text: `And where the Excel file had one view, Airtable generates multiple purpose-built views automatically. GPMs can now share exactly the slice of data each stakeholder needs — line of business partners, leadership, engineering — without exposing the entire backlog or building a custom export.`,
+    text: `And where the Excel file had one view, Airtable generates multiple purpose-built views automatically. GPMs can now share exactly the slice of data each stakeholder needs: line of business partners, leadership, and engineering, without exposing the entire backlog or building a custom export.`,
   },
   {
     type: 'heading',
@@ -99,7 +99,7 @@ export const content = [
   },
   {
     type: 'paragraph',
-    text: `The backlog manager went from 20+ hours a week to 1–2. That's not a productivity improvement — that's a job function transformed. Time that was previously consumed by reconciliation and error recovery is now available for actual product work.`,
+    text: `The backlog manager went from 20+ hours a week to 1-2. That's not a productivity improvement. That's a job function transformed. Time that was previously consumed by reconciliation and error recovery is now available for actual product work.`,
   },
   {
     type: 'paragraph',
@@ -130,6 +130,6 @@ export const content = [
   },
   {
     type: 'paragraph',
-    text: `The system has been running without intervention since launch. No broken formulas, no manual syncs, no lost updates. When Product teammates have moved to other organizations, they've taken a copy of the system with them — and they advocate for it.`,
+    text: `The system has been running without intervention since launch. No broken formulas, no manual syncs, no lost updates. The backlog manager went from spending most of her week keeping a broken system alive to actually managing the backlog. Two product managers who have since moved to other teams at Truist have replicated it in their new organizations. The clearest sign a system works is when people take it with them.`,
   },
 ]

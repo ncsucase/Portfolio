@@ -22,7 +22,7 @@ export default function Home() {
           <img src={headshot} alt="Mikey Cestari" />
         </div>
         <div className="home-bio-card">
-          <p>I came to design through behavioral science, not fine arts. The difference shows up in how I think about problems, evidence, and what design is actually for.</p>
+          <p>My background is in behavioral science, not fine arts. The difference shows up in how I think about problems, evidence, and what design is actually for.</p>
         </div>
       </section>
 

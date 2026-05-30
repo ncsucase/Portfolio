@@ -173,7 +173,7 @@ export const content = [
   },
   {
     type: 'paragraph',
-    text: `The more durable outcome is the coalition itself. Five teams that previously operated independently now share exploratory work, align on visual direction early, and have a working model for cross-enterprise design collaboration that didn't exist before. That infrastructure will outlast any single project.`,
+    text: `The more lasting outcome is the coalition itself. Five teams that previously operated independently now share exploratory work, align on visual direction early, and have a working model for cross-enterprise design collaboration that didn't exist before. That infrastructure will outlast any single project.`,
   },
   {
     type: 'paragraph',

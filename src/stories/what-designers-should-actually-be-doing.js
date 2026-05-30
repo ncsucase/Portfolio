@@ -16,7 +16,7 @@ export const content = [
   {
     type: 'summary',
     // Full paragraph shown in the summary band above the story body (italic, large).
-    text: `The design-to-dev handoff at Truist relies on a manual translation layer — UI designers interpreting wireframes, selecting components, annotating accessibility requirements, and producing documentation that developers struggle to use. I'm designing an AI-powered spec generation system to replace it. The planning is complete. The POC is next.`,
+    text: `The design-to-dev handoff at Truist relies on a manual translation layer: UI designers interpreting wireframes, selecting components, annotating accessibility requirements, and producing documentation that developers struggle to use. I'm designing an AI-powered spec generation system to replace it. The planning is complete. The POC is next.`,
   },
   {
     type: 'heading',
@@ -25,7 +25,7 @@ export const content = [
   },
   {
     type: 'paragraph',
-    text: `Every feature my team delivers requires a translation step between UX and development. A UX designer completes wireframes. A UI designer then takes those wireframes and does the work of applying the correct Design System components and tokens, documenting responsive behavior across viewports, and annotating every accessibility requirement — semantic roles, ARIA labels, focus order, touch targets — before producing a Figma file developers can reference.`,
+    text: `Every feature my team delivers requires a translation step between UX and development. A UX designer completes wireframes. A UI designer then takes those wireframes and does the work of applying the correct Design System components and tokens, documenting responsive behavior across viewports, and annotating every accessibility requirement (semantic roles, ARIA labels, focus order, touch targets) before producing a Figma file developers can reference.`,
   },
   {
     type: 'paragraph',
@@ -42,15 +42,15 @@ export const content = [
   },
   {
     type: 'paragraph',
-    text: `Three things are happening at the same time that make this worth solving now.`,
+    text: `Three things converged this year that make this worth solving now.`,
   },
   {
     type: 'paragraph',
-    text: `First, a meaningful portion of my UI designer capacity is going to mechanical execution — component selection, token application, annotation — rather than the higher-order work my organization actually needs from design. That's a talent utilization problem disguised as a process problem.`,
+    text: `First, a meaningful portion of my UI designer capacity is going to mechanical execution (component selection, token application, annotation) rather than the higher-order work my organization actually needs from design.`,
   },
   {
     type: 'paragraph',
-    text: `Second, Truist went through a round of layoffs that eliminated the team's internal accessibility specialists. That knowledge had previously compensated for some of the inconsistency in designer annotations. Without it, WCAG 2.1 AA compliance depends on individual designer recall. For a regulated financial institution, that's a risk that compounds quietly until it doesn't.`,
+    text: `Second, Truist went through a round of layoffs that eliminated the team's internal accessibility specialists. That knowledge had previously compensated for some of the inconsistency in designer annotations. Without it, WCAG 2.1 AA compliance depends on individual designer recall. For a regulated financial institution, that's a risk that compounds quietly until an audit or incident make it impossible to ignore.`,
   },
   {
     type: 'paragraph',
@@ -97,11 +97,11 @@ export const content = [
   },
   {
     type: 'paragraph',
-    text: `Developers are users too. So before designing the system, I'm applying the same process I'd apply to any product problem: wireframing the new deliverable — a structured HTML spec — and running user testing with developers to understand whether the proposed output fits how they actually work. What information do they need first? What causes them to re-open a conversation with design? Where does the current Figma artifact break down in practice? That testing shapes the spec format before any generation logic is built.`,
+    text: `Developers are users, too. So before designing the system, I applied the same process I apply to any product problem. I ran co-creation sessions with developers across different roles to understand what the handoff deliverable should actually contain and how they'd navigate it. What information do they need first? What causes them to re-open a conversation with design? Where does the current Figma artifact break down in practice? We're now prototyping two candidate formats and taking those to developers for usability testing before any generation logic is built.`,
   },
   {
     type: 'paragraph',
-    text: `The emerging answer is a document developers can navigate linearly — not a canvas they have to explore. Pixel-perfect, annotated visuals with tappable zones linked to component cards. Explicit interaction and transition documentation. Accessibility annotations generated against a known standard, not from memory. Responsive behavior documented in a layout changes matrix across viewports.`,
+    text: `The answer is a document developers can navigate linearly, not a canvas they have to explore. Pixel-perfect, annotated visuals with tappable zones linked to component cards. Explicit interaction and transition documentation. Accessibility annotations generated against a known standard, not from memory. Responsive behavior documented in a layout changes matrix across viewports.`,
   },
   {
     type: 'aside',
@@ -115,15 +115,19 @@ export const content = [
   },
   {
     type: 'paragraph',
-    text: `The AI layer is what makes this tractable. The system takes a Figma wireframe URL, calls the Figma REST API to retrieve the file structure, and cross-references three documentation sources: the Design System Figma library (structural ground truth), Design System Markdown files (component usage reasoning — already maintained for AI consumption by the DS team), and the team's own Figma pattern library. The agent maps components, generates accessibility annotations, documents responsive overrides, and surfaces open questions as blockers before a developer picks up the work.`,
+    text: `The system handles the mechanical work. Designers handle the judgment calls.`,
   },
   {
     type: 'paragraph',
-    text: `Designers review and correct the output — they don't produce it from scratch. The review interface uses constrained dropdowns populated from the Design System to prevent invalid values. A plain-language input handles corrections the form can't accommodate. Every correction is logged with attribution.`,
+    text: `The AI layer is what makes this tractable. The system takes a Figma wireframe URL, calls the Figma REST API to retrieve the file structure, and cross-references three documentation sources: the Design System Figma library (structural ground truth), Design System Markdown files (component usage reasoning, already maintained for AI consumption by the DS team), and the team's own Figma pattern library. The agent maps components, generates accessibility annotations, documents responsive overrides, and surfaces open questions as blockers before a developer picks up the work.`,
   },
   {
     type: 'paragraph',
-    text: `That attribution data feeds a quality tracking layer. The system surfaces which component categories have above-average error rates, which designers are generating above-average correction volume, and whether the agent is consistently misinterpreting certain wireframe patterns. Those signals go to the design lead and to the Design System team — giving them something they've never had before: a demand-driven signal on which components are being misapplied and which custom patterns are being built around gaps in their library.`,
+    text: `Designers review and correct the output. They don't produce it from scratch. The review interface uses constrained dropdowns populated from the Design System to prevent invalid values. A plain-language input handles corrections the form can't accommodate. Every correction is logged with attribution.`,
+  },
+  {
+    type: 'paragraph',
+    text: `That attribution data feeds a quality tracking layer. The system surfaces which component categories have above-average error rates, which designers are generating above-average correction volume, and whether the agent is consistently misinterpreting certain wireframe patterns. Those signals go to the design lead and to the Design System team, giving them something they've never had before: a demand-driven signal on which components are being misapplied and which custom patterns are being built around gaps in their library.`,
   },
   {
     type: 'heading',
@@ -136,15 +140,15 @@ export const content = [
   },
   {
     type: 'paragraph',
-    text: `Truist's enterprise technology process isn't hostile to new tools — it's thorough. Risk review, procurement, vendor assessment. I mapped the process early and identified that the critical path isn't the build — it's the vendor contract. An existing Anthropic relationship at the enterprise level unlocks the approval path significantly faster than a net-new procurement.`,
+    text: `Truist's enterprise technology process isn't hostile to new tools. It's thorough. Risk review, procurement, vendor assessment. I mapped the process early and identified that the critical path isn't the build. It's the vendor contract. An existing Anthropic relationship at the enterprise level unlocks the approval path significantly faster than a net-new procurement.`,
   },
   {
     type: 'paragraph',
-    text: `I also recognized that a working demo changes every conversation. Rather than entering the approval process with a PRD, I'm building Phase 1 on personal API keys — interactive prototypes that show the spec output, the review interface, the viewport switcher, the quality dashboard. Reviewers and stakeholders at every level respond differently to something they can interact with than to something they can only read about.`,
+    text: `I also recognized that a working demo changes every conversation. Rather than entering the approval process with a PRD, I'm building Phase 1 on personal API keys: interactive prototypes that show the spec output, the review interface, the viewport switcher, the quality dashboard. Reviewers and stakeholders at every level respond differently to something they can interact with than to something they can only read about.`,
   },
   {
     type: 'paragraph',
-    text: `The alignment conversation with the Design System team lead was equally important. The system only works if it has accurate, maintained documentation to draw from — and the DS team had already built Markdown documentation with AI consumption in mind. Rather than asking them to change anything, I framed the partnership around return on that investment: the system makes their documentation directly measurable, and the custom component log gives them a roadmap signal they currently don't have.`,
+    text: `The alignment conversation with the Design System team lead was equally important. The system only works if it has accurate, maintained documentation to draw from. The DS team had already built Markdown documentation with AI consumption in mind. Rather than asking them to change anything, I framed the partnership around return on that investment: the system makes their documentation directly measurable, and the custom component log gives them a roadmap signal they currently don't have.`,
   },
   {
     type: 'heading',
@@ -157,11 +161,7 @@ export const content = [
   },
   {
     type: 'paragraph',
-    text: `The capacity that's currently absorbed by mechanical execution belongs somewhere else: understanding users, identifying the right problems to solve, and finding the right ways to solve them before a feature reaches implementation. That's where design creates organizational value — not in producing annotation documentation that a well-designed system can handle.`,
-  },
-  {
-    type: 'paragraph',
-    text: `What becomes possible when designers aren't spending multi-day stretches on spec production: more time in discovery before features are defined, more frequent usability testing on what's already in market, earlier participation in roadmap conversations rather than downstream consumption of them. None of that is possible when the people best positioned to do it are busy doing something a system can do instead.`,
+    text: `The capacity currently absorbed by mechanical execution belongs somewhere else: understanding users, identifying the right problems, and finding the right solutions before a feature reaches implementation. When designers aren't spending multi-day stretches on spec production, that time goes into discovery before features are defined, usability testing on what's already in the market, and earlier participation in roadmap conversations rather than downstream consumption of them. That's where design creates organizational value. Not in producing documentation that a well-designed system can handle.`,
   },
   {
     type: 'heading',
@@ -170,10 +170,10 @@ export const content = [
   },
   {
     type: 'paragraph',
-    text: `The planning is complete. Interactive prototypes exist. The PRD is written. The organizational alignment conversations are underway. The POC is next.`,
+    text: `The planning is complete. Interactive prototypes exist. The PRD is written. The organizational alignment conversations are underway. The POC is being scoped around what's currently approvable. Enterprise AI tool approvals at Truist take 12 to 18 months, and the approval pipeline has slowed further while the organization works through broader AI governance questions. I'm building what I can with what's accessible now and sequencing the rest against the approval timeline.`,
   },
   {
     type: 'paragraph',
-    text: `I'm publishing this now — before it's built — because I think it illustrates something specific about how I approach AI: not as a trend to integrate, but as a tool to reach for when a real problem has a shape that fits what it can do. Manual, knowledge-intensive, high-volume, error-prone, with clear source material and a defined output to generate. That's the shape.`,
+    text: `I'm publishing this now, before it's built, because I think it illustrates something specific about how I approach AI: not as a trend to integrate, but as a tool to reach for when a real problem has a shape that fits what it can do. Manual, knowledge-intensive, high-volume, error-prone, with clear source material and a defined output to generate. That's the shape.`,
   },
 ]

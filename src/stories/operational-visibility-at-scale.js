@@ -7,7 +7,7 @@ export const meta = {
   tags: ['Design Operations', 'Workflow Automation', 'Systems Thinking', 'Org Design'],
   role: 'Design Director',
   outcome: 'One sentence describing measurable impact.',
-  excerpt: 'My manager saw what operational visibility looked like and asked me to build it for two other design organizations. What looked like a rollout turned out to be a design problem.',
+  excerpt: `My manager saw what I'd built and asked me to replicate it across two other design organizations. What looked like a rollout turned out to be a design problem.`,
   featured: false,             // set true on the story you want in the hero slot on home
   heroImage: null,             // or: import heroImg from '...' and set heroImage: heroImg
 }
@@ -25,7 +25,7 @@ export const content = [
   },
   {
     type: 'paragraph',
-    text: `My manager had seen what operational visibility looked like when it works. When he asked the design leadership team about capacity and delivery health, I had answers in the room. My peers followed up days later. That gap was enough for him to ask me to build the same capability across his two other design organizations.`,
+    text: `My manager had seen what operational visibility looked like when it works. When he asked the design leadership team about capacity and delivery health, I had answers in the room. My peers followed up days later. That gap was enough for him to ask me to replicate what I'd built across two other design organizations he oversees.`,
   },
   {
     type: 'paragraph',
@@ -63,7 +63,14 @@ export const content = [
   },
   {
     type: 'paragraph',
-    text: `The system I built for my team works because it's shaped around how my team operates. Extending it to two other orgs meant solving two problems simultaneously: each team needed something that fit their specific structure, and my manager needed rollup views that worked consistently across all three organizations.`,
+    text: `The system I built for my team works because it's shaped around how my team operates. Extending it to two other orgs meant solving two problems simultaneously:`,
+  },
+  {
+    type: 'list',
+    items: [
+      `Each team needed something that fit their specific structure.`,
+      `My manager needed rollup views that worked consistently across all three organizations.`
+    ]
   },
   {
     type: 'paragraph',
@@ -90,6 +97,6 @@ export const content = [
   },
   {
     type: 'paragraph',
-    text: `I'm publishing this before the rollout is complete because it illustrates something specific about how I approach a task like this. My manager asked me to replicate a system that was already solving a real problem. My peers couldn't answer operational questions on the spot, and he knew it. That was reason enough. The discovery interviews revealed the problem was deeper than anyone knew. Treating the rollout as a design problem rather than a deployment is what made the difference.`,
+    text: `The rollout isn't finished. I'm writing this now because the most interesting part isn't the system. It's what happened when I treated a deployment task like a design problem.`,
   },
 ]

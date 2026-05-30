@@ -35,7 +35,7 @@ export const content = [
   },
   {
     type: 'paragraph',
-    text: `The signals were hard to ignore. When I compared notes with my managers on the same designer, I'd get meaningfully different reads. Managers had vastly different opinions on each other's designers when we discussed the team. Promotion decisions were difficult to defend with consistency. And designers were surprised by their review scores, or told me they didn't understand what it would actually take to get to the next level — not because their managers weren't telling them, but because the bar wasn't defined precisely enough for anyone to communicate it clearly.`,
+    text: `The signals were hard to ignore. When I compared notes with my managers on the same designer, I'd get meaningfully different reads. Managers had vastly different opinions on each other's designers when we discussed the team. Promotion decisions were difficult to defend with consistency. And designers were surprised by their review scores, or told me they didn't understand what it would actually take to get to the next level. Not because their managers weren't telling them, but because the bar wasn't defined precisely enough for anyone to communicate it clearly.`,
   },
   {
     type: 'paragraph',
@@ -113,13 +113,13 @@ export const content = [
         type: 'inline-svg',
         name: 'ratingDistBefore',
         title: 'Ratings Before',
-        alt: 'Rating distribution before the rubric — all ratings clustered at the high end',
+        alt: 'Rating distribution before the rubric, all ratings clustered at the high end',
       }],
       [{
         type: 'inline-svg',
         name: 'ratingDistAfter',
         title: 'Ratings After',
-        alt: 'Rating distribution after the rubric — ratings spread across the full scale',
+        alt: 'Rating distribution after the rubric, ratings spread across the full scale',
       }],
     ],
   },
@@ -129,6 +129,6 @@ export const content = [
   },
   {
     type: 'paragraph',
-    text: `My manager saw both outcomes. The spread of ratings and the quality of the documentation were enough for him to ask me to roll the system out across three additional departments.`,
+    text: `My manager saw both outcomes. The spread of ratings and the quality of the documentation were enough for him to ask me to roll the system out across three additional departments. That's what a rigorous performance system is supposed to do.`,
   },
 ]
