@@ -4,11 +4,12 @@ import StoryRenderer from '../components/StoryRenderer'
 import { getDuration, formatStartDate } from '../utils/getDuration'
 import './StoryLayout.css'
 
-export default function StoryLayout({ story }) {
+export default function StoryLayout({ story, backTo = '/work', backLabel = 'Back to work stories' }) {
   const { meta, content } = story
   const duration = meta.status === 'in progress'
     ? getDuration(meta.startDate)
     : meta.duration || null;
+  const displayDate = meta.startDate || meta.date || null;
   const summary = content.find(b => b.type === 'summary')
   const body = content.filter(b => b.type !== 'summary')
 
@@ -24,10 +25,10 @@ export default function StoryLayout({ story }) {
                 <dd className="story-status" data-status={meta.status}>{meta.status}</dd>
               </div>
             )}
-            {meta.startDate && (
+            {displayDate && (
               <div className="story-meta-item">
-                <dt>Start Date</dt>
-                <dd>{formatStartDate(meta.startDate)}</dd>
+                <dt>{meta.startDate ? 'Start Date' : 'Date'}</dt>
+                <dd>{formatStartDate(displayDate)}</dd>
               </div>
             )}
             {duration && (
@@ -42,7 +43,7 @@ export default function StoryLayout({ story }) {
                 <dd>{meta.role}</dd>
               </div>
             )}
-            {meta.tags.length > 0 && (
+            {meta.tags?.length > 0 && (
               <div className="story-meta-item story-meta-item--tags">
                 <dt>Tags</dt>
                 <dd>{meta.tags.join(', ')}</dd>
@@ -72,9 +73,9 @@ export default function StoryLayout({ story }) {
       </div>
 
       <footer className="story-footer">
-        <CTA to="/work">
+        <CTA to={backTo}>
           <Icon name="arrow-left" />
-          Back to work stories
+          {backLabel}
         </CTA>
       </footer>
     </article>

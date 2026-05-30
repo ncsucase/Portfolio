@@ -13,6 +13,7 @@ export default function Header({ theme, onThemeChange }) {
       <div className="header-inner page-container">
         <NavLink to="/" className="site-logo">
           <Logo aria-hidden="true" className="site-logo-mark" />
+          <span className="site-logo-name">Mikey Cestari</span>
         </NavLink>
         <nav className="site-nav" aria-label="Main navigation">
           <NavLink
@@ -20,6 +21,12 @@ export default function Header({ theme, onThemeChange }) {
             className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
           >
             Home
+          </NavLink>
+          <NavLink
+            to="/perspectives"
+            className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
+          >
+            Perspectives
           </NavLink>
           <NavLink
             to="/work"

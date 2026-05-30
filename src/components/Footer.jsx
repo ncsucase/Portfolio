@@ -1,13 +1,18 @@
 import './Footer.css'
 import Icon from './Icon'
 
-export default function Footer() {
+export default function Footer({ authed }) {
+  const headline = authed
+    ? 'Like what you see?'
+    : 'Good design leadership is hard to find.'
+  const tagline = authed ? "Let's talk." : "I'm available."
+
   return (
     <footer className="site-footer">
       <div className="footer-inner page-container">
         <div className="footer-cta">
-          <p className="footer-headline">Good design leadership is hard to find.</p>
-          <p className="footer-tagline">I'm available.</p>
+          <p className="footer-headline">{headline}</p>
+          <p className="footer-tagline">{tagline}</p>
         </div>
         <div className="footer-links">
           <a

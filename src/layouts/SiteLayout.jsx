@@ -2,8 +2,8 @@ import { useState, useEffect } from 'react'
 import { Outlet, useLocation } from 'react-router-dom'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import { useAuth } from '../contexts/AuthContext'
 import './SiteLayout.css'
-import PasswordGate from '../components/PasswordGate'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -14,6 +14,8 @@ function ScrollToTop() {
 }
 
 export default function SiteLayout() {
+  const { authed } = useAuth()
+
   const [theme, setTheme] = useState(() => {
     const saved = localStorage.getItem('theme')
     if (saved === 'light' || saved === 'dark') return saved
@@ -25,24 +27,11 @@ export default function SiteLayout() {
     localStorage.setItem('theme', newTheme)
   }
 
-  const [authed, setAuthed] = useState(() => {
-    return sessionStorage.getItem('site-authed') === 'true'
-  })
-
   useEffect(() => {
     const root = document.documentElement
     root.classList.toggle('dark', theme === 'dark')
     root.classList.toggle('light', theme === 'light')
   }, [theme])
-
-  if (!authed) {
-    return (
-      <PasswordGate onSuccess={() => {
-        sessionStorage.setItem('site-authed', 'true')
-        setAuthed(true)
-      }} />
-    )
-  }
 
   return (
     <div className="site-layout">
@@ -51,7 +40,7 @@ export default function SiteLayout() {
       <main className="site-main page-container">
         <Outlet />
       </main>
-      <Footer />
+      <Footer authed={authed} />
     </div>
   )
 }
