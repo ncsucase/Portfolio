@@ -2,17 +2,13 @@ import './Footer.css'
 import Icon from './Icon'
 
 export default function Footer({ authed }) {
-  const headline = authed
-    ? 'Like what you see?'
-    : 'Good design leadership is hard to find.'
-  const tagline = authed ? "Let's talk." : "I'm available."
 
   return (
     <footer className="site-footer">
       <div className="footer-inner page-container">
         <div className="footer-cta">
-          <p className="footer-headline">{headline}</p>
-          <p className="footer-tagline">{tagline}</p>
+          <p className="footer-headline">Good design leadership is hard to find.</p>
+          {authed && <p className="footer-tagline">I'm available.</p>}
         </div>
         <div className="footer-links">
           <a
@@ -24,14 +20,14 @@ export default function Footer({ authed }) {
             <Icon name="linkedin" /> 
             /mikeycestari
           </a>
-          <a
+          {authed && <a
             href="mailto:design@mikeycestari.com"
             className="footer-link"
           >
             {/* <span className="footer-link-icon">@</span> */}
             <Icon name="email" />
             design@mikeycestari.com
-          </a>
+          </a>}
         </div>
       </div>
       <div className="footer-bottom">

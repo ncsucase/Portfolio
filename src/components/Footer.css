@@ -23,6 +23,7 @@
   letter-spacing: -0.03em;
   line-height: 1.1;
   color: var(--text-h);
+  max-width: 650px;
 }
 
 .footer-tagline {

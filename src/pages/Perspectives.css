@@ -21,7 +21,7 @@
 .perspectives-subheading {
   font-family: var(--font-ui);
   font-size: var(--font-size-lg);
-  color: var(--text-muted);
+  color: var(--text);
   max-width: 55ch;
 }
 
