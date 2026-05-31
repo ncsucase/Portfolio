@@ -2,11 +2,11 @@
 // Then add it to src/perspectives/index.js
 
 export const meta = {
-  title: 'What Users Ask For Is Not Always What They Want',
-  slug: 'what-users-ask-for-is-not-always-what-they-want',       // must match the filename (without .js)
+  title: 'What users say vs. what users do',
+  slug: 'what-users-say-vs-what-users-do',       // must match the filename (without .js)
   date: '2026-05',       // YYYY-MM
   tags: [],
-  excerpt: `Users know when they're feeling frustrated. But they can't reliably tell you what to do about it.`,    // 1–2 sentences shown on the Perspectives listing page
+  excerpt: null,    // 1–2 sentences shown on the Perspectives listing page
   readTime: 3, // estimated read time in minutes (number), e.g. 3
 }
 
@@ -30,7 +30,7 @@ export const content = [
   },
   {
     type: 'paragraph',
-    text: `Customization is one of the most consistently requested features in user feedback, and one of the least used. Even when users know it's available. Research published in *Human Communication Research* found that most users rely on default interface features without ever exploring customization options, with power users being the exception.[[1]] We've seen the same pattern repeatedly at Truist. Clients say they want control over their dashboard layout. When we've given it to them, most never touch it. The defaults are what they live with.`,
+    text: `Customization is one of the most consistently requested features in user feedback, and one of the least used. Even when users know it's available. Research published in *Human Communication Research* found that most users rely on default interface features without ever exploring customization options, with power users being the exception.[[1]] We've seen the same pattern at Truist. VOC complaints about customization stopped when we improved its discoverability. Utilization didn't change. Clients weren't askign for more control over their experience. They were telling us the defaults weren't working for them.`,
   },
   {
     type: 'paragraph',
@@ -69,6 +69,6 @@ export const content = [
   {
     type: 'footnote',
     id: 1,
-    text: `Sundar, S.S. & Marathe, S.S. (2010). Personalization vs. Customization: The Importance of Agency, Privacy, and Power Usage. *Human Communication Research*, 36(3).`,
+    text: `Sundar, S.S. & Marathe, S.S. (2010). [Personalization vs. Customization: The Importance of Agency, Privacy, and Power Usage](https://doi.org/10.1111/j.1468-2958.2010.01377.x). *Human Communication Research*, 36(3).`,
   },
 ]

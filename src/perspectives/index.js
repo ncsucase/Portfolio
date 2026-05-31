@@ -1,10 +1,12 @@
 // Import all perspective modules here. Add a new line for each perspective you add.
 import * as whenUsersWillScrollPastTheFold from './when-users-will-scroll-past-the-fold'
-import * as whatUsersAskForIsNotAlwaysWhatTheysWant from './what-users-ask-for-is-not-always-what-they-want.js'
+import * as whatUsersSayVsWhatUsersDo from './what-users-say-vs-what-users-do.js'
+import * as stopCountingClicks from './stop-counting-clicks'
 
 const allPerspectives = [
   whenUsersWillScrollPastTheFold,
-  whatUsersAskForIsNotAlwaysWhatTheysWant,
+  whatUsersSayVsWhatUsersDo,
+  stopCountingClicks,
 ]
 
 export function getAllPerspectives() {

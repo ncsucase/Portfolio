@@ -50,8 +50,8 @@ export default function Home() {
           </div>
           <div className="home-about-col home-skills-container">
             <h2>Philosophy</h2>
-            <p>Design thinking works on any problem where humans are involved.</p>
-            <p>I've never thought of design as a visual discipline. Across org structures, performance systems, products, the process is always the same. I think of design as a way of making better decisions under uncertainty, which means "it depends" isn't a hedge. It's where the work starts.</p>
+            <p>Design is not a visual discipline. Design thinking isn't just for designers.</p>
+            <p>Design applies to anything where humans are involved.</p>
           </div>
         </div>
       </section>
