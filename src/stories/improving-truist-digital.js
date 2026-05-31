@@ -12,6 +12,7 @@ export const meta = {
   excerpt: `No mandate. No top-down directive. Just a shared problem and a case worth making. I convened five design teams across Truist to tackle a visual appeal problem no single team could solve alone. We let the evidence decide what we built.`,
   featured: false,
   heroImage: heroImg,
+  readTime: 4,
 }
 
 export const content = [

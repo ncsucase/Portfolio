@@ -10,6 +10,7 @@ export const meta = {
   excerpt: `A product team managing 400+ features across Excel and Rally was spending 20+ hours a week on manual reconciliation. I'd solved a similar problem for my own team, so I offered to fix it for theirs.`,
   featured: false,
   heroImage: null,
+  readTime: 3,
 }
 
 export const content = [

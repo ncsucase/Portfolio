@@ -142,3 +142,24 @@
     margin-top: var(--space-2);
   }
 }
+
+.story-inline-link {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.story-footnote-ref {
+  font-family: var(--font-ui);
+  font-size: 0.7em;
+  font-weight: 500;
+  color: var(--accent);
+  text-decoration: none;
+  line-height: 0;
+  vertical-align: super;
+  padding: 0 1px;
+}
+
+.story-footnote-ref:hover {
+  text-decoration: underline;
+}

@@ -10,6 +10,7 @@ export const meta = {
   excerpt: `Spec production isn't where designers create value. I'm replacing the execution layer with an AI-powered system and redirecting that capacity toward the work only designers can do.`,
   featured: true,             // set true on the story you want in the hero slot on home
   heroImage: null,             // or: import heroImg from '...' and set heroImage: heroImg
+  readTime: 5,
 }
 
 export const content = [

@@ -1,8 +1,9 @@
 // Import all perspective modules here. Add a new line for each perspective you add.
 // import * as perspectiveSlug from './perspective-slug.js'
+import * as whenUsersWillScrollPastTheFold from './when-users-will-scroll-past-the-fold'
 
 const allPerspectives = [
-  // perspectiveSlug,
+  whenUsersWillScrollPastTheFold,
 ]
 
 export function getAllPerspectives() {

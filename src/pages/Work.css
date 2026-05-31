@@ -27,13 +27,9 @@
 
 .work-list {
   display: grid;
-  grid-template-columns: max-content 1fr auto;
-  column-gap: var(--space-6);
-  margin: 0 var(--space-5);
-}
-
-.work-list > .story-card--compact + .story-card--compact {
-  border-top: 1px solid var(--border);
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-6);
+  padding: 0 var(--page-padding) var(--space-8);
 }
 
 .work-empty {
@@ -52,8 +48,7 @@
     padding: var(--space-6) var(--space-4) var(--space-4);
   }
   .work-list {
-    display: flex;
-    flex-direction: column;
-    margin: 0 var(--space-4);
+    grid-template-columns: 1fr;
+    padding: 0 var(--space-4) var(--space-8);
   }
 }

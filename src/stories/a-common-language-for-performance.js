@@ -6,17 +6,18 @@ export const meta = {
   status: 'complete',
   tags: ['Performance Management', 'Calibration', 'People Management'],
   role: 'Design Director',
-  outcome: `Seven managers and thirty-five-plus designers aligned to a single performance standard, with a rating distribution that proved it.`,
-  excerpt: `Seven managers, thirty-five-plus designers, no shared definition of "performing at level." I built a behavioral rubric that fixed that, and at end of year, ratings ranged from low to high instead of piling up at the top.`,
+  outcome: `Seven managers and 38 designers aligned to a single performance standard, with a rating distribution that proved it.`,
+  excerpt: `Seven managers, 38 designers, no shared definition of "performing at level." I built a behavioral rubric that fixed that, and at end of year, ratings ranged from low to high instead of piling up at the top.`,
   featured: false,
   heroImage: null,
+  readTime: 3,
 }
 
 export const content = [
   {
     type: 'summary',
     // Full paragraph shown in the summary band above the story body (italic, large).
-    text: `Seven managers. Thirty-five-plus designers. Five dimensions of craft. And no shared definition of what "performing at level" actually meant. I built a behavioral rubric with my management team that gave everyone, managers and designers alike, a common language for performance. After two review cycles, the rating distribution told the real story.`,
+    text: `Seven managers. Thirty-eight designers. Five dimensions of craft. And no shared definition of what "performing at level" actually meant. I built a behavioral rubric with my management team that gave everyone, managers and designers alike, a common language for performance. After two review cycles, the rating distribution told the real story.`,
   },
   {
     type: 'heading',

@@ -4,13 +4,35 @@ import ComparisonBlock from './ComparisonBlock'
 import * as InlineSvgs from '../assets/inline-svgs'
 import './StoryRenderer.css'
 
+const INLINE_PATTERN = /(\[\[\d+\]\]|\[[^\]]+\]\([^)]+\)|\*\*[^*]+\*\*|\*[^*]+\*)/g
+
+export function renderInlineText(text) {
+  const parts = text.split(INLINE_PATTERN)
+  return parts.map((part, i) => {
+    const fnMatch = part.match(/^\[\[(\d+)\]\]$/)
+    if (fnMatch) {
+      const n = fnMatch[1]
+      return <sup key={i}><a id={`fn-ref-${n}`} href={`#fn-${n}`} className="story-footnote-ref">{n}</a></sup>
+    }
+    const linkMatch = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/)
+    if (linkMatch) {
+      return <a key={i} href={linkMatch[2]} className="story-inline-link" target="_blank" rel="noopener noreferrer">{linkMatch[1]}</a>
+    }
+    const boldMatch = part.match(/^\*\*([^*]+)\*\*$/)
+    if (boldMatch) return <strong key={i}>{boldMatch[1]}</strong>
+    const emMatch = part.match(/^\*([^*]+)\*$/)
+    if (emMatch) return <em key={i}>{emMatch[1]}</em>
+    return part
+  })
+}
+
 export default function StoryRenderer({ blocks }) {
   return (
     <div className="story-renderer">
       {blocks.map((block, i) => {
         switch (block.type) {
           case 'paragraph':
-            return <p key={i} className="story-p">{block.text}</p>
+            return <p key={i} className="story-p">{renderInlineText(block.text)}</p>
 
           case 'heading':
             return block.level === 2

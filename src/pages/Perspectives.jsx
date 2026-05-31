@@ -1,8 +1,5 @@
-import { Link } from 'react-router-dom'
 import { getAllPerspectives } from '../perspectives/index.js'
-import Icon from '../components/Icon'
-import Tag from '../components/Tag'
-import { formatStartDate } from '../utils/getDuration'
+import StoryCard from '../components/StoryCard'
 import './Perspectives.css'
 
 export default function Perspectives() {
@@ -19,40 +16,15 @@ export default function Perspectives() {
         </p>
       </section>
 
-      {perspectives.length === 0 ? (
-        <section className="perspectives-empty">
-          <p>Perspectives coming soon.</p>
+      {perspectives.length > 0 ? (
+        <section className="perspectives-list">
+          {perspectives.map(story => (
+            <StoryCard key={story.slug} story={story} />
+          ))}
         </section>
       ) : (
-        <section className="perspectives-list">
-          {perspectives.map(p => (
-            <Link
-              key={p.slug}
-              to={`/perspectives/${p.slug}`}
-              className="story-card story-card--compact perspective-card"
-            >
-              <div className="story-card__title">
-                <h3>{p.title}</h3>
-                <div className="story-card__meta">
-                  <span>{formatStartDate(p.date)}</span>
-                </div>
-              </div>
-              <div className="story-card__body">
-                {p.excerpt && (
-                  <p className="story-card__excerpt">{p.excerpt}</p>
-                )}
-                {p.tags?.length > 0 && (
-                  <div className="story-card__tags">
-                    {p.tags.map(t => <Tag key={t} label={t} />)}
-                  </div>
-                )}
-              </div>
-              <div className="story-card__cta">
-                Read
-                <Icon name="arrow-right" size="18px" />
-              </div>
-            </Link>
-          ))}
+        <section className="perspectives-empty">
+          <p>Perspectives coming soon.</p>
         </section>
       )}
     </div>

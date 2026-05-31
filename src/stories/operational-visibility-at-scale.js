@@ -10,6 +10,7 @@ export const meta = {
   excerpt: `My manager saw what I'd built and asked me to replicate it across two other design organizations. What looked like a rollout turned out to be a design problem.`,
   featured: false,             // set true on the story you want in the hero slot on home
   heroImage: null,             // or: import heroImg from '...' and set heroImage: heroImg
+  readTime: 3,
 }
 
 export const content = [

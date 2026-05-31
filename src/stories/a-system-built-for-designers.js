@@ -9,10 +9,11 @@ export const meta = {
   status: 'complete',
   tags: ['Design Operations', 'Workflow Automation', 'Systems Thinking'],
   role: 'Design Director',
-  outcome: 'Built an automated Rally–Airtable sync that gave my team real-time delivery visibility, extended it to a 40-person org without rebuilding it, and connected design work directly to the user research that shaped it.',
-  excerpt: 'Design and engineering teams track work in fundamentally different tools. I built an automated bridge between them that gave my designers a purpose-built system without disrupting our engineering partners. Then extended it to a larger org when my scope expanded.',
+  outcome: 'Built an automated Rally-Airtable sync that gave my team real-time delivery visibility, extended it to a 40-person org without rebuilding it, and connected design work directly to the user research that shaped it.',
+  excerpt: 'Design and engineering teams track work in different tools. I built an automated bridge between them that gave my designers a purpose-built system without disrupting our engineering partners. Then extended it to a larger org when my scope expanded.',
   featured: false,
   heroImage: null,
+  readTime: 3,
 }
 
 export const content = [

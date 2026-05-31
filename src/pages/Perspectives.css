@@ -27,13 +27,9 @@
 
 .perspectives-list {
   display: grid;
-  grid-template-columns: max-content 1fr auto;
-  column-gap: var(--space-6);
-  margin: 0 var(--space-5);
-}
-
-.perspectives-list > .story-card--compact + .story-card--compact {
-  border-top: 1px solid var(--border);
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-6);
+  padding: 0 var(--page-padding) var(--space-8);
 }
 
 .perspectives-empty {
@@ -53,8 +49,7 @@
   }
 
   .perspectives-list {
-    display: flex;
-    flex-direction: column;
-    margin: 0 var(--space-4);
+    grid-template-columns: 1fr;
+    padding: 0 var(--space-4) var(--space-8);
   }
 }

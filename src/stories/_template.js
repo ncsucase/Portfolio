@@ -25,6 +25,7 @@ export const meta = {
   excerpt: 'Two to three sentences shown on the home page. Summarize the challenge and result.',
   featured: false,             // set true on the story you want in the hero slot on home
   heroImage: null,             // or: import heroImg from '...' and set heroImage: heroImg
+  readTime: null,              // estimated read time in minutes (number), e.g. 5
 }
 
 export const content = [

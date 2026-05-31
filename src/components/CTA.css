@@ -49,3 +49,14 @@
   background: var(--accent-bg);
   color: var(--text-h);
 }
+
+/* Quaternary */
+.cta--quaternary {
+  background: transparent;
+  border: 2px solid transparent;
+  color: var(--accent);
+}
+
+.cta--quaternary:hover {
+  /* background: var(--accent-bg); */
+}

@@ -19,12 +19,12 @@ export default function Work() {
       {stories.length > 0 ? (
         <section className="work-list">
           {stories.map(story => (
-            <StoryCard key={story.slug} story={story} variant="compact" />
+            <StoryCard key={story.slug} story={story} />
           ))}
         </section>
       ) : (
         <section className="work-empty">
-          <p>Stories coming soon.</p>
+          <p>Work stories coming soon.</p>
         </section>
       )}
     </div>

@@ -1,6 +1,6 @@
 import CTA from '../components/CTA'
 import Icon from '../components/Icon'
-import StoryRenderer from '../components/StoryRenderer'
+import StoryRenderer, { renderInlineText } from '../components/StoryRenderer'
 import { getDuration, formatStartDate } from '../utils/getDuration'
 import './StoryLayout.css'
 
@@ -11,7 +11,8 @@ export default function StoryLayout({ story, backTo = '/work', backLabel = 'Back
     : meta.duration || null;
   const displayDate = meta.startDate || meta.date || null;
   const summary = content.find(b => b.type === 'summary')
-  const body = content.filter(b => b.type !== 'summary')
+  const footnotes = content.filter(b => b.type === 'footnote').sort((a, b) => a.id - b.id)
+  const body = content.filter(b => b.type !== 'summary' && b.type !== 'footnote')
 
   return (
     <article className="story-layout">
@@ -63,7 +64,7 @@ export default function StoryLayout({ story, backTo = '/work', backLabel = 'Back
         <div className="story-summary-band">
           <div className="story-summary-inner">
             <h2 className="story-summary-title heading-2">Summary</h2>
-            <p className="story-summary-text">{summary.text}</p>
+            <p className="story-summary-text">{renderInlineText(summary.text)}</p>
           </div>
         </div>
       )}
@@ -71,6 +72,20 @@ export default function StoryLayout({ story, backTo = '/work', backLabel = 'Back
       <div className="story-body">
         <StoryRenderer blocks={body} />
       </div>
+
+      {footnotes.length > 0 && (
+        <section className="story-footnotes">
+          <h2 className="story-footnotes-title">Notes</h2>
+          <ol className="story-footnotes-list">
+            {footnotes.map(fn => (
+              <li key={fn.id} id={`fn-${fn.id}`} className="story-footnote-item">
+                {renderInlineText(fn.text)}
+                <a href={`#fn-ref-${fn.id}`} className="story-footnote-backlink" aria-label="Back to reference">↑</a>
+              </li>
+            ))}
+          </ol>
+        </section>
+      )}
 
       <footer className="story-footer">
         <CTA to={backTo}>
