@@ -95,8 +95,8 @@ export default function SyncDiagram(props) {
           text-align: center;
         }
         .sd-card-img {
-          width: 88px;
-          height: 88px;
+          width: 88px !important;
+          height: 88px !important;
           object-fit: contain;
         }
         .sd-card-label {
@@ -125,9 +125,13 @@ export default function SyncDiagram(props) {
             margin: 0 auto;
             overflow: hidden;
           }
+          .sd-card {
+            padding: var(--space-4);
+            gap: 0;
+          }
           .sd-card .sd-card-img {
-            width: 72px;
-            height: 72px;
+            width: 56px !important;
+            height: 56px !important;
           }
           .sd-arrows-h {
             display: none;

@@ -1,4 +1,4 @@
-import heroImg from '../assets/stories/redesigning-truist-digital/hero.webp'
+import heroImg from '../assets/stories/improving-truist-digital/hero.webp'
 
 export const meta = {
   title: 'Improving Truist Digital',
@@ -145,9 +145,9 @@ export const content = [
   {
     type: 'stats',
     items: [
-      { value: '13', label: 'Studies', description: 'Included JD Power and internal metrics.', color: 'accent' },
-      { value: '50+', label: 'Designs', description: 'Tested, not including the ones we trashed.', color: 'accent' },
-      { value: '5k+', label: 'Clients', description: 'Supplied the feedback via user studies.', color: 'accent' },
+      { value: '13', label: 'Studies', description: 'Included JD Power and internal metrics.' },
+      { value: '50+', label: 'Designs', description: 'Tested, not including the ones we trashed.' },
+      { value: '5k+', label: 'Clients', description: 'Supplied the feedback via user studies.' },
     ],
   },
   {
