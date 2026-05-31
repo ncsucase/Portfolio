@@ -12,7 +12,7 @@ export default function Work() {
       <section className="work-header">
         <h1 className="work-heading">Work</h1>
         <p className="work-subheading">
-          Stories about my work.
+          Problems worth solving, solutions worth building, results that measured up.
         </p>
       </section>
 

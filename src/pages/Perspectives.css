@@ -22,7 +22,7 @@
   font-family: var(--font-ui);
   font-size: var(--font-size-lg);
   color: var(--text);
-  max-width: 55ch;
+  max-width: 40ch;
 }
 
 .perspectives-list {

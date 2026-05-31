@@ -22,7 +22,7 @@
   font-family: var(--font-ui);
   font-size: var(--font-size-lg);
   color: var(--text);
-  max-width: 55ch;
+  max-width: 40ch;
 }
 
 .work-list {
@@ -48,6 +48,9 @@
 }
 
 @media (max-width: 640px) {
+  .work-header {
+    padding: var(--space-6) var(--space-4) var(--space-4);
+  }
   .work-list {
     display: flex;
     flex-direction: column;
