@@ -4,7 +4,7 @@
 export const meta = {
   title: `When Users Will (and Won't) Scroll Past the Fold`,
   slug: 'when-users-will-scroll-past-the-fold',       // must match the filename (without .js)
-  date: '',       // YYYY-MM
+  date: '2026-05',       // YYYY-MM
   tags: [],
   excerpt: ``,    // 1–2 sentences shown on the Perspectives listing page
   readTime: 2,

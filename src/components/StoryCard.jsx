@@ -3,13 +3,13 @@ import Icon from './Icon'
 import { getDuration, formatStartDate } from '../utils/getDuration'
 import './StoryCard.css'
 
-export default function StoryCard({ story }) {
+export default function StoryCard({ story, basePath = 'stories' }) {
   const duration = story.status === 'in progress'
     ? getDuration(story.startDate)
     : story.duration || null;
 
   return (
-    <Link to={`/stories/${story.slug}`} className="story-card">
+    <Link to={`/${basePath}/${story.slug}`} className="story-card">
       <div className="story-card__header">
         <div className="story-card__meta">
           <span>{formatStartDate(story.startDate)}</span>
