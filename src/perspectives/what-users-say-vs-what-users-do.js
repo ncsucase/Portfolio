@@ -30,7 +30,7 @@ export const content = [
   },
   {
     type: 'paragraph',
-    text: `Customization is one of the most consistently requested features in user feedback, and one of the least used. Even when users know it's available. Research published in *Human Communication Research* found that most users rely on default interface features without ever exploring customization options, with power users being the exception.[[1]] We've seen the same pattern at Truist. VOC complaints about customization stopped when we improved its discoverability. Utilization didn't change. Clients weren't askign for more control over their experience. They were telling us the defaults weren't working for them.`,
+    text: `Customization is one of the most consistently requested features in user feedback, and one of the least used. Even when users know it's available. Research published in *Human Communication Research* found that most users rely on default interface features without ever exploring customization options, with power users being the exception.[[1]] We've seen the same pattern at Truist. VOC complaints about customization stopped when we improved its discoverability. Utilization didn't change. Clients weren't asking for more control over their experience. They were telling us the defaults weren't working for them.`,
   },
   {
     type: 'paragraph',
