@@ -19,7 +19,7 @@ export default function Perspectives() {
       {perspectives.length > 0 ? (
         <section className="perspectives-list">
           {perspectives.map(story => (
-            <StoryCard key={story.slug} story={story} basePath="perspectives" />
+            <StoryCard key={story.slug} story={story} basePath="perspectives" showTags />
           ))}
         </section>
       ) : (

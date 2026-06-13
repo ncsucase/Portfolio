@@ -5,7 +5,7 @@ export const meta = {
   title: 'What users say vs. what users do',
   slug: 'what-users-say-vs-what-users-do',       // must match the filename (without .js)
   date: '2026-05',       // YYYY-MM
-  tags: [],
+  tags: ['Design'],
   excerpt: null,    // 1–2 sentences shown on the Perspectives listing page
   readTime: 3, // estimated read time in minutes (number), e.g. 3
 }

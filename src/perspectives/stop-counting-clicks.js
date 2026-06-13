@@ -2,7 +2,7 @@ export const meta = {
   title: `Why counting clicks misses the point`,
   slug: 'stop-counting-clicks',
   date: '2026-05',
-  tags: [],
+  tags: ['Design'],
   excerpt: null,
   readTime: 3,
 }

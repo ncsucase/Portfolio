@@ -77,7 +77,7 @@
 }
 
 .story-status[data-status="in progress"] {
-  color: var(--color-warning);
+  color: var(--color-caution);
 }
 
 .story-status[data-status="complete"] {

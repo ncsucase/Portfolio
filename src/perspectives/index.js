@@ -3,12 +3,18 @@ import * as whenUsersWillScrollPastTheFold from './when-users-will-scroll-past-t
 import * as whatUsersSayVsWhatUsersDo from './what-users-say-vs-what-users-do.js'
 import * as stopCountingClicks from './stop-counting-clicks'
 import * as unavailableIsntTheSameAsGone from './unavailable-isnt-the-same-as-gone.js'
+import * as dangerousEnoughToCollaborate from './dangerous-enough-to-collaborate.js'
+import * as earnTheRoomBeforeYouAdvocate from './earn-the-room-before-you-advocate.js'
+import * as researchInformsYouDecide from './research-informs-you-decide.js'
 
 const allPerspectives = [
   whenUsersWillScrollPastTheFold,
   whatUsersSayVsWhatUsersDo,
   stopCountingClicks,
   unavailableIsntTheSameAsGone,
+  dangerousEnoughToCollaborate,
+  earnTheRoomBeforeYouAdvocate,
+  researchInformsYouDecide,
 ]
 
 export function getAllPerspectives() {
