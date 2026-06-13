@@ -2,11 +2,13 @@
 import * as whenUsersWillScrollPastTheFold from './when-users-will-scroll-past-the-fold'
 import * as whatUsersSayVsWhatUsersDo from './what-users-say-vs-what-users-do.js'
 import * as stopCountingClicks from './stop-counting-clicks'
+import * as unavailableIsntTheSameAsGone from './unavailable-isnt-the-same-as-gone.js'
 
 const allPerspectives = [
   whenUsersWillScrollPastTheFold,
   whatUsersSayVsWhatUsersDo,
   stopCountingClicks,
+  unavailableIsntTheSameAsGone,
 ]
 
 export function getAllPerspectives() {
