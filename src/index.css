@@ -16,7 +16,7 @@
   --modal-blur: 16px;
 
   /* Frosty */
-  --frosty-bg: rgba(255, 255, 255, 0.65);
+  --frosty-bg: rgba(255, 255, 255, 0.75);
   --frosty-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
   --frosty-blur: 16px;
   --frosty-border: 1px solid #fff;
@@ -127,8 +127,8 @@ html.dark {
   --modal-bg: rgba(255, 255, 255, 0.05);
 
   /* Frosty */
-  --frosty-bg: rgba(255, 255, 255, 0.1);
-  --frosty-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
+  --frosty-bg: rgba(255, 255, 255, 0.2);
+  --frosty-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
   --frosty-blur: 16px;
   --frosty-border: 1px solid #717174;
 
