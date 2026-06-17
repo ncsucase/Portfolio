@@ -7,6 +7,7 @@ import Work from './pages/Work'
 import Story from './pages/Story'
 import Perspectives from './pages/Perspectives'
 import PerspectiveStory from './pages/PerspectiveStory'
+import NotFound from './pages/NotFound'
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
             <Route path="work" element={<Work />} />
             <Route path="stories/:slug" element={<Story />} />
           </Route>
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </AuthProvider>
