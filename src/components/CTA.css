@@ -10,13 +10,42 @@
   font-weight: 500;
   text-decoration: none;
   cursor: pointer;
+  outline: none;
+  border: none;
+  /* Glass */
+  background: linear-gradient(
+    to bottom right,
+    var(--border) 0%,
+    var(--bg) 33%,
+    var(--bg) 66%,
+    var(--border) 100%
+  );
+  box-shadow: var(--shadow-glass);
+  position: relative;
+  isolation: isolate;
+  /* Animation */
   transition: border-color 0.15s, background 0.15s, color 0.15s;
+}
+
+.cta::before {
+  content: '';
+  position: absolute;
+  inset: 2px; /* border width */
+  border-radius: inherit;
+  background: var(--bg-deep);
+  z-index: -1;
+  /* Animation */
+  transition: border-color 0.15s, background 0.15s, color 0.15s;
+}
+
+.cta:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
 }
 
 /* Primary */
 .cta--primary {
   background: var(--accent);
-  border: 2px solid transparent;
   color: var(--bg);
 }
 
@@ -26,15 +55,15 @@
 
 /* Secondary (default) */
 .cta--secondary {
-  background: transparent;
-  border: 2px solid var(--text-h);
   color: var(--text-h);
 }
 
 .cta--secondary:hover {
-  border-color: var(--accent);
-  background: var(--accent);
   color: var(--bg);
+}
+
+.cta--secondary:hover::before {
+  background: var(--accent);
 }
 
 /* Tertiary */

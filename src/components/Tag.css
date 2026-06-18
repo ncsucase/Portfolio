@@ -7,8 +7,7 @@
   line-height: normal;
   text-transform: uppercase;
   padding: var(--space-1) var(--space-2);
-  border-radius: var(--radius-sm);
-  background: var(--surface);
+  border-radius: var(--radius-full);
   color: var(--text-muted);
   border: 1px solid var(--border);
   white-space: nowrap;

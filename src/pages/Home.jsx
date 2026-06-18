@@ -50,7 +50,7 @@ export default function Home() {
           </div>
           <div className="home-about-col home-skills-container">
             <h2>Philosophy</h2>
-            <p>Design is not a visual discipline and design thinking isn't just for designers. Design applies to anything where humans are involved.</p>
+            <p>Design is not a visual discipline. It applies to anything where humans are involved.</p>
           </div>
         </div>
       </section>

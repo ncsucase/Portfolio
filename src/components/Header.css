@@ -86,12 +86,6 @@
   height: var(--space-6);
   padding: 0 var(--space-2);
   gap: var(--space-1);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-md);
-  background: transparent;
-  color: var(--text);
-  cursor: pointer;
-  transition: color 0.15s, border-color 0.15s;
 }
 
 .theme-toggle:hover {

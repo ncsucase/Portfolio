@@ -4,7 +4,7 @@ export default function ThemeToggle({ theme, onChange }) {
 
   return (
     <button
-      className="theme-toggle"
+      className="cta cta--secondary theme-toggle"
       aria-label={label}
       title={label}
       onClick={() => onChange(next)}

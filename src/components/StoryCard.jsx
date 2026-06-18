@@ -33,7 +33,7 @@ export default function StoryCard({ story, basePath = 'stories', showTags = fals
         {story.readTime && (
           <span className="story-card__read-time">{story.readTime} minute read</span>
         )}
-        <span className="cta cta--quaternary story-card__cta">
+        <span className="story-card__cta">
           Read <Icon name="arrow-right" />
         </span>
       </div>

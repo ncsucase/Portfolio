@@ -139,7 +139,7 @@
 .home-about {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   gap: var(--space-8);
 }
 

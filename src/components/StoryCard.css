@@ -3,17 +3,40 @@
   flex-direction: column;
   gap: var(--space-3);
   padding: var(--space-5);
-  background: var(--surface);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow);
   text-decoration: none;
   color: inherit;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.15s, color 0.15s;
+  /* Glass */
+  position: relative;
+  isolation: isolate;
+  background: linear-gradient(
+    to bottom right,
+    var(--border) 0%,
+    var(--bg) 33%,
+    var(--bg) 66%,
+    var(--border) 100%
+  );
+  box-shadow: var(--shadow-glass);
+}
+
+.story-card::before {
+  content: '';
+  position: absolute;
+  inset: 1px;
+  border-radius: inherit;
+  background: var(--bg-deep); /* solid fill covering the interior */
+  z-index: -1;
 }
 
 .story-card:hover {
   box-shadow: var(--shadow-bold);
   transform: translateY(-2px);
+
+  background: linear-gradient(180deg, var(--bg) 0%, var(--bg-deep) 100%);
+  box-shadow: var(--shadow-glass-hover);
+
 }
 
 .story-card__header {
@@ -86,4 +109,11 @@
   font-family: var(--font-ui);
   font-size: var(--font-size-sm);
   color: var(--text-muted);
+}
+
+.story-card__cta {
+  display: flex;
+  gap: var(--space-2);
+  align-items: center;
+  color: var(--accent);
 }
