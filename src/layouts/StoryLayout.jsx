@@ -1,5 +1,6 @@
 import CTA from '../components/CTA'
 import Icon from '../components/Icon'
+import Tag from '../components/Tag'
 import StoryRenderer, { renderInlineText } from '../components/StoryRenderer'
 import { getDuration, formatStartDate } from '../utils/getDuration'
 import './StoryLayout.css'
@@ -23,10 +24,20 @@ export default function StoryLayout({ story, backTo = '/work', backLabel = 'Back
             {meta.status && (
               <div className="story-meta-item">
                 <dt>Status</dt>
-                <dd className="story-status" data-status={meta.status}>
-                  <Icon name={meta.status === 'complete' ? 'check-circle' : 'hourglass'} />
-                  {meta.status}
-                </dd>
+                {meta.status !== "complete" && (
+                  <dd className="story-status" data-status={meta.status}>
+                    <Tag variant="caution">
+                      <Icon name="hourglass" />
+                      {meta.status}
+                    </Tag>
+                  </dd>
+                )}
+                {meta.status === "complete" && (
+                  <dd className="story-status" data-status={meta.status}>
+                    <Icon name="check-circle" />
+                    <span className="story-status-text">{meta.status}</span>
+                  </dd>
+                )}
               </div>
             )}
             {displayDate && (

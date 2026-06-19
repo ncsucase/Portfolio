@@ -1,5 +1,7 @@
 .tag {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
   font-family: var(--font-ui);
   font-size: var(--font-size-xs);
   font-weight: 500;

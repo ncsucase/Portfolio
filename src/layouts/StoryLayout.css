@@ -79,6 +79,10 @@
   text-transform: capitalize;
 }
 
+.story-status-text {
+  color: var(--text);
+}
+
 .story-status[data-status="in progress"] {
   color: var(--color-caution);
 }
