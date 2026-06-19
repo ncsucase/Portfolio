@@ -1,11 +1,11 @@
-// Copy this file and rename it to your-perspective-slug.js
+﻿// Copy this file and rename it to your-perspective-slug.js
 // Then add it to src/perspectives/index.js
 
 export const meta = {
   title: '',
   slug: '',       // must match the filename (without .js)
   date: '',       // YYYY-MM
-  tags: [],
+  theme: '',
   excerpt: '',    // 1–2 sentences shown on the Perspectives listing page
   readTime: null, // estimated read time in minutes (number), e.g. 3
 }

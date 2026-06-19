@@ -1,4 +1,4 @@
-import dashboardLg from '../assets/stories/a-system-built-for-designers/dashboard-lg.webp'
+﻿import dashboardLg from '../assets/stories/a-system-built-for-designers/dashboard-lg.webp'
 import dashboardSm from '../assets/stories/a-system-built-for-designers/dashboard-sm.webp'
 
 export const meta = {
@@ -7,8 +7,7 @@ export const meta = {
   startDate: '2020-05',
   duration: '2 years',
   status: 'complete',
-  tags: ['Design Operations', 'Workflow Automation', 'Systems Thinking'],
-  role: 'Design Director',
+  contribution: 'Systems & Automation',
   outcome: 'Built an automated Rally-Airtable sync that gave my team real-time delivery visibility, extended it to a 40-person org without rebuilding it, and connected design work directly to the user research that shaped it.',
   excerpt: 'Design and engineering teams track work in different tools. I built an automated bridge between them that gave my designers a purpose-built system without disrupting our engineering partners. Then extended it to a larger org when my scope expanded.',
   featured: false,

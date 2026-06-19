@@ -24,7 +24,11 @@
   position: relative;
   isolation: isolate;
   /* Animation */
-  transition: border-color 0.15s, background 0.15s, color 0.15s;
+  transition: border-color 0.15s, background 0.15s, color 0.15s, box-shadow 0.15s;
+}
+
+.cta:hover {
+  box-shadow: var(--shadow-glass-outer-hover);
 }
 
 .cta::before {
@@ -46,12 +50,24 @@
 
 /* Primary */
 .cta--primary {
+  color: var(--text-on-accent);
+  background: linear-gradient(
+    to bottom right,
+    var(--accent-border) 0%,
+    var(--bg) 33%,
+    var(--bg) 66%,
+    var(--accent-border) 100%
+  );
+  box-shadow: var(--shadow-accent);
+}
+
+.cta--primary::before {
   background: var(--accent);
-  color: var(--bg);
 }
 
 .cta--primary:hover {
-  background: var(--accent-border);
+  background: var(--accent);
+  box-shadow: var(--shadow-accent-hover);
 }
 
 /* Secondary (default) */
@@ -61,6 +77,7 @@
 
 .cta--secondary:hover {
   color: var(--bg);
+  box-shadow: var(--shadow-accent-hover);
 }
 
 .cta--secondary:hover::before {
@@ -78,6 +95,7 @@
   border-color: var(--border);
   background: var(--accent-bg);
   color: var(--text-h);
+  box-shadow: var(--shadow-accent-hover);
 }
 
 /* Quaternary */

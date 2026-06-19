@@ -23,39 +23,36 @@ export default function StoryLayout({ story, backTo = '/work', backLabel = 'Back
             {meta.status && (
               <div className="story-meta-item">
                 <dt>Status</dt>
-                <dd className="story-status" data-status={meta.status}>{meta.status}</dd>
+                <dd className="story-status" data-status={meta.status}>
+                  <Icon name={meta.status === 'complete' ? 'check-circle' : 'hourglass'} />
+                  {meta.status}
+                </dd>
               </div>
             )}
             {displayDate && (
               <div className="story-meta-item">
                 <dt>{meta.startDate ? 'Start Date' : 'Date'}</dt>
-                <dd>{formatStartDate(displayDate)}</dd>
+                <dd><Icon name="calendar" />{formatStartDate(displayDate)}</dd>
               </div>
             )}
             {duration && (
               <div className="story-meta-item">
                 <dt>Duration</dt>
-                <dd>{duration}</dd>
+                <dd><Icon name="time-refresh" />{duration}</dd>
               </div>
             )}
-            {meta.role && (
-              <div className="story-meta-item story-meta-item--role">
-                <dt>Role</dt>
-                <dd>{meta.role}</dd>
+            {meta.contribution && (
+              <div className="story-meta-item story-meta-item--contribution">
+                <dt>Contribution</dt>
+                <dd><Icon name="person" />{meta.contribution}</dd>
               </div>
             )}
-            {meta.tags?.length > 0 && (
-              <div className="story-meta-item story-meta-item--tags">
-                <dt>Tags</dt>
-                <dd>{meta.tags.join(', ')}</dd>
+            {meta.theme && (
+              <div className="story-meta-item story-meta-item--theme">
+                <dt>Theme</dt>
+                <dd>{meta.theme}</dd>
               </div>
             )}
-            {/* {meta.outcome && (
-              <div className="story-meta-item story-meta-item--outcome">
-                <dt>Outcome</dt>
-                <dd>{meta.outcome}</dd>
-              </div>
-            )} */}
           </dl>
         </div>
       </header>

@@ -1,5 +1,6 @@
 import './Tag.css'
 
-export default function Tag({ label }) {
-  return <span className="tag">{label}</span>
+export default function Tag({ children, variant }) {
+  const cls = ['tag', variant && `tag--${variant}`].filter(Boolean).join(' ')
+  return <span className={cls}>{children}</span>
 }

@@ -1,11 +1,10 @@
-export const meta = {
+﻿export const meta = {
   title: 'Solving Problems for Product',
   slug: 'solving-problems-for-product',
   startDate: '2023-03',
   duration: '3 months',
   status: 'complete',
-  tags: ['Cross-functional Leadership', 'Workflow Automation', 'Systems Thinking', 'Product Partnership'],
-  role: 'Design Director',
+  contribution: 'Systems & Automation',
   outcome: `Reduced a product team's backlog management burden from 20+ hours a week to 1-2 by replacing a fragile Excel process with a live Rally-Airtable sync.`,
   excerpt: `A product team managing 400+ features across Excel and Rally was spending 20+ hours a week on manual reconciliation. I'd solved a similar problem for my own team, so I offered to fix it for theirs.`,
   featured: false,

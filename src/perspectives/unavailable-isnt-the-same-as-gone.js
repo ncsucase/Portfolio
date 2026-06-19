@@ -1,8 +1,8 @@
-export const meta = {
+﻿export const meta = {
   title: `Unavailable isn't the same as gone`,
   slug: 'unavailable-isnt-the-same-as-gone',
   date: '2026-06',
-  tags: ['Design'],
+  theme: 'Design',
   excerpt: null,
   readTime: 3,
 }

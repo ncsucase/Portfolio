@@ -70,6 +70,9 @@
   font-size: 14px;
   color: var(--text-h);
   margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
 
 .story-status {
@@ -222,8 +225,5 @@
   .story-meta {
     gap: var(--space-4);
   }
-
-  .story-meta-item--role {
-    width: 100%;
-  }
+  
 }

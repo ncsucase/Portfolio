@@ -127,7 +127,7 @@ export default function CoalitionDiagram(props) {
         <text x="993" y="187" textAnchor="middle" className="card-subtitle">My team</text>
 
         <rect x="60" y="281" width="1050" height="8" rx="4" fill="#E7EBEF" filter="url(#lineShadow)"/>
-        <text x="634" y="330" textAnchor="middle" className="chart-title">Coalition to redesign Truist digital</text>
+        <text x="585" y="330" textAnchor="middle" className="chart-title">Coalition to redesign Truist digital</text>
       </svg>
 
       {/* ── Vertical layout ── */}
@@ -217,7 +217,7 @@ export default function CoalitionDiagram(props) {
         <text x="300" y="1006" textAnchor="middle" className="card-subtitle">My team</text>
 
         <rect x="48" y="1096" width="504" height="8" rx="4" fill="#E7EBEF" filter="url(#lineShadow-v)"/>
-        <text x="320" y="1145" textAnchor="middle" className="chart-title">Coalition to redesign Truist digital</text>
+        <text x="295" y="1145" textAnchor="middle" className="chart-title">Coalition to redesign Truist digital</text>
       </svg>
 
     </>

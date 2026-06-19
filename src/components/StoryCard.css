@@ -29,12 +29,13 @@
   background: var(--bg-deep); /* solid fill covering the interior */
   box-shadow: var(--shadow-glass-inner);
   z-index: -1;
+  transition: box-shadow 0.2s ease, background 0.15s;
 }
 
 .story-card:hover {
   box-shadow: var(--shadow-bold);
   transform: translateY(-2px);
-  background: linear-gradient(180deg, var(--bg) 0%, var(--bg-deep) 100%);
+  /* background: linear-gradient(180deg, var(--bg) 0%, var(--bg-deep) 100%); */
   box-shadow: var(--shadow-glass-outer-hover);
 }
 
@@ -47,6 +48,14 @@
   justify-content: space-between;
   align-items: flex-start;
   gap: var(--space-3);
+}
+
+.story-card__meta-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--space-2);
+  margin-left: auto;
 }
 
 .story-card__meta {

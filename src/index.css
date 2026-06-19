@@ -4,13 +4,14 @@
   --text-h: #000;
   --text-muted: rgba(0, 0, 0, 0.55);
   --bg: #fff;
-  --bg-deep: #F7F7F7;
+  --bg-deep: #F2F2F2;
   --surface: #fff;
   --border: rgba(0, 0, 0, 0.1);
   --code-bg: #f4f3ec;
   --accent: #008A22;
   --accent-bg: rgba(0, 138, 34, 0.4);
   --accent-border: rgba(0, 138, 34, 0.7);
+  --text-on-accent: #fff;
 
   --modal-bg: rgba(0, 0, 0, 0.45);
   --modal-blur: 16px;
@@ -35,19 +36,19 @@
   /* Status colors */
   --color-error: #FF3B30;
   --text-on-error: rgba(0, 0, 0, 0.8);
-  --bg-error: rgba(255, 59, 48, 0.15);
+  --bg-error: rgba(255, 59, 48, 0.35);
   --color-warning: #FF9500;
   --text-on-warning: rgba(0, 0, 0, 0.8);
-  --bg-warning: rgba(255, 149, 0, 0.15);
+  --bg-warning: rgba(255, 149, 0, 0.35);
   --color-caution: #FFCC00;
-  --text-on-caution: rgba(0, 0, 0, 0.8);
-  --bg-caution: rgba(255, 204, 0, 0.15);
+  --text-on-caution: rgba(0, 0, 0, 1);
+  --bg-caution: rgba(255, 204, 0, 0.35);
   --color-success: #34C759;
   --text-on-success: rgba(0, 0, 0, 0.8);
-  --bg-success: rgba(52, 199, 89, 0.15);
+  --bg-success: rgba(52, 199, 89, 0.35);
   --color-info: #00C7BE;
   --text-on-info: rgba(0, 0, 0, 0.8);
-  --bg-info: rgba(0, 199, 190, 0.15);
+  --bg-info: rgba(0, 199, 190, 0.35);
 
   --shadow:rgba(0, 0, 0, 0.1) 0 2px 8px 0px;
   --shadow-bold: rgba(0, 0, 0, 0.1) 0 4px 16px 0px;
@@ -55,6 +56,8 @@
   --shadow-glass-outer-hover: 8px 8px 16px rgba(0, 0, 0, 0.15);
   --shadow-glass-inner: inset 8px 8px 8px rgba(0, 0, 0, 0.05);
   --shadow-glass-inner-hover: inset 0 0 8px rgba(0, 0, 0, 0.05);
+  --shadow-accent: 8px 8px 8px rgba(0, 138, 34, 0.15);
+  --shadow-accent-hover: 8px 8px 8px rgba(0, 138, 34, 0.25);
 
   /* Fonts */
   --font-heading: 'Epilogue', system-ui, sans-serif;
@@ -121,13 +124,14 @@ html.dark {
   --text-h: #fff;
   --text-muted: rgba(255, 255, 255, 0.6);
   --bg: #1F1F1F;
-  --bg-deep: #262626;
+  --bg-deep: #2B2B2B;
   --surface: #232324;
   --border: rgba(255, 255, 255, 0.2);
   --code-bg: #1f2028;
   --accent: #30D158;
   --accent-bg: rgba(48, 209, 88, 0.2);
   --accent-border: rgba(48, 209, 88, 0.5);
+  --text-on-accent: #1F1F1F;
 
   --modal-bg: rgba(255, 255, 255, 0.05);
 
@@ -150,18 +154,29 @@ html.dark {
 
   /* Status colors — softer for dark backgrounds */
   --color-error: #FF453A;
-  --bg-error: rgba(255, 69, 58, 0.15);
+  --bg-error: rgba(255, 69, 58, 0.25);
+  --text-on-error: rgba(255, 255, 255, 0.8);
   --color-warning: #FF9F0A;
-  --bg-warning: rgba(255, 159, 10, 0.15);
+  --bg-warning: rgba(255, 159, 10, 0.25);
+  --text-on-warning: rgba(255, 255, 255, 0.8);
   --color-caution: #FFD60A;
-  --bg-caution: rgba(255, 214, 10, 0.15);
+  --bg-caution: rgba(255, 214, 10, 0.25);
+  --text-on-caution: rgba(255, 255, 255, 0.8);
   --color-success: #30D158;
-  --bg-success: rgba(48, 209, 88, 0.15);
+  --bg-success: rgba(48, 209, 88, 0.25);
+  --text-on-success: rgba(255, 255, 255, 0.8);
   --color-info: #66D4CF;
-  --bg-info: rgba(102, 212, 207, 0.15);
+  --bg-info: rgba(102, 212, 207, 0.25);
+  --text-on-info: rgba(255, 255, 255, 0.8);
 
   --shadow:rgba(0, 0, 0, 0.8) 0 2px 8px 0px;
   --shadow-bold: rgba(0, 0, 0, 0.8) 0 4px 16px 0px;
+  --shadow-glass-outer: 8px 8px 8px rgba(0, 0, 0, 0.25);
+  --shadow-glass-outer-hover: 8px 8px 16px rgba(0, 0, 0, 0.50);
+  --shadow-glass-inner: inset 8px 8px 8px rgba(0, 0, 0, 0.20);
+  --shadow-glass-inner-hover: inset 0 0 8px rgba(0, 0, 0, 0.20);
+  --shadow-accent: 8px 8px 8px rgba(48, 209, 88, 0.15);
+  --shadow-accent-hover: 8px 8px 16px rgba(48, 209, 88, 0.3);
 }
 
 body {
@@ -251,4 +266,35 @@ a {
 :focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 3px;
+}
+
+/* Tag status variants */
+.tag.tag--error {
+  color: var(--text-on-error);
+  background: var(--bg-error);
+  border-color: var(--color-error);
+}
+
+.tag.tag--warning {
+  color: var(--text-on-warning);
+  background: var(--bg-warning);
+  border-color: var(--color-warning);
+}
+
+.tag.tag--caution {
+  color: var(--text-on-caution);
+  background: var(--bg-caution);
+  border-color: var(--color-caution);
+}
+
+.tag.tag--success {
+  color: var(--text-on-success);
+  background: var(--bg-success);
+  border-color: var(--color-success);
+}
+
+.tag.tag--info {
+  color: var(--text-on-info);
+  background: var(--bg-info);
+  border-color: var(--color-info);
 }

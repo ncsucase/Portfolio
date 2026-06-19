@@ -1,4 +1,4 @@
-import heroImg from '../assets/stories/improving-truist-digital/hero.webp'
+﻿import heroImg from '../assets/stories/improving-truist-digital/hero.webp'
 
 export const meta = {
   title: 'Improving Truist Digital',
@@ -6,8 +6,7 @@ export const meta = {
   startDate: '2024-09',
   duration: '2 years',
   status: 'complete',
-  tags: ['Brand', 'User Research', 'Coalition Building', 'Design Systems'],
-  role: 'Design Director',
+  contribution: 'Strategic Influence',
   outcome: `Convened a voluntary coalition of 5 design teams, drove measurable visual improvements across Truist's digital products, and built a cross-enterprise design partnership that outlasted the project that created it.`,
   excerpt: `No mandate. No top-down directive. Just a shared problem and a case worth making. I convened five design teams across Truist to tackle a visual appeal problem no single team could solve alone. We let the evidence decide what we built.`,
   featured: false,

@@ -94,6 +94,54 @@ const icons = {
       </>
     ),
   },
+  'check-circle': {
+    viewBox: '0 0 24 24',
+    content: (
+      <>
+        <circle cx="12" cy="12" r="9" stroke="currentColor" strokeWidth="1.5" />
+        <path d="M8 12l3 3 5-6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+      </>
+    ),
+  },
+  'hourglass': {
+    viewBox: '0 0 24 24',
+    content: (
+      <>
+        <path d="M6 3h12M6 21h12M6 3L12 12L6 21M18 3L12 12L18 21" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M12 12L6 21H18L12 12Z" fill="currentColor" />
+      </>
+    ),
+  },
+  'calendar': {
+    viewBox: '0 0 24 24',
+    content: (
+      <>
+        <rect x="3" y="5" width="18" height="17" rx="2" stroke="currentColor" strokeWidth="1.5" />
+        <line x1="3" y1="11" x2="21" y2="11" stroke="currentColor" strokeWidth="1.5" />
+        <line x1="8" y1="3" x2="8" y2="7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+        <line x1="16" y1="3" x2="16" y2="7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+      </>
+    ),
+  },
+  'time-refresh': {
+    viewBox: '0 0 24 24',
+    content: (
+      <>
+        <circle cx="12" cy="12" r="9" stroke="currentColor" strokeWidth="1.5" />
+        <line x1="12" y1="12" x2="9.75" y2="15.9" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+        <line x1="12" y1="12" x2="12" y2="6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+      </>
+    ),
+  },
+  'person': {
+    viewBox: '0 0 24 24',
+    content: (
+      <>
+        <circle cx="12" cy="7.5" r="4" stroke="currentColor" strokeWidth="1.5" />
+        <path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+      </>
+    ),
+  },
 }
 
 export default function Icon({ name, size = '1em', color }) {

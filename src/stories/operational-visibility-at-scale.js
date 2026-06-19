@@ -1,11 +1,10 @@
-export const meta = {
+﻿export const meta = {
   title: 'Operational Visibility at Scale',
   slug: 'operational-visibility-at-scale',         // must match the filename and URL: /stories/story-slug
   startDate: '2026-01',       // YYYY-MM format; used for sorting, display ("Jan 2024"), and computing duration for in-progress stories
   duration: '6 months',       // manual string for completed stories; ignored when status is 'in progress'
   status: 'in progress',      // `in progress` | `complete` (optional)
-  tags: ['Design Operations', 'Workflow Automation', 'Systems Thinking', 'Org Design'],
-  role: 'Design Director',
+  contribution: 'Operations & Scale',
   outcome: 'One sentence describing measurable impact.',
   excerpt: `My manager saw what I'd built and asked me to replicate it across two other design organizations. What looked like a rollout turned out to be a design problem.`,
   featured: false,             // set true on the story you want in the hero slot on home

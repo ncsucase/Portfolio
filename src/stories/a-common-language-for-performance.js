@@ -1,11 +1,10 @@
-export const meta = {
+﻿export const meta = {
   title: 'A Common Language for Performance',
   slug: 'a-common-language-for-performance',
   startDate: '2025-03',
   duration: '9 months',
   status: 'complete',
-  tags: ['Performance Management', 'Calibration', 'People Management'],
-  role: 'Design Director',
+  contribution: 'People Leadership',
   outcome: `Seven managers and 38 designers aligned to a single performance standard, with a rating distribution that proved it.`,
   excerpt: `Seven managers, 38 designers, no shared definition of "performing at level." I built a behavioral rubric that fixed that, and at end of year, ratings ranged from low to high instead of piling up at the top.`,
   featured: false,

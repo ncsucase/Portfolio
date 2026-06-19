@@ -1,11 +1,11 @@
-// Copy this file and rename it to your-perspective-slug.js
+﻿// Copy this file and rename it to your-perspective-slug.js
 // Then add it to src/perspectives/index.js
 
 export const meta = {
   title: 'Be dangerous enough to collaborate',
   slug: 'dangerous-enough-to-collaborate',       // must match the filename (without .js)
   date: '2026-06',       // YYYY-MM
-  tags: ['Leadership'],
+  theme: 'Leadership',
   excerpt: '',    // 1–2 sentences shown on the Perspectives listing page
   readTime: 3, // estimated read time in minutes (number), e.g. 3
 }

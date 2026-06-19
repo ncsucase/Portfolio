@@ -1,4 +1,4 @@
-// Copy this file and rename it to your story's slug (e.g. design-systems-at-scale.js)
+﻿// Copy this file and rename it to your story's slug (e.g. design-systems-at-scale.js)
 // Then import it in src/stories/index.js:
 //   import * as yourStorySlug from './your-story-slug.js'
 //   const allStories = [yourStorySlug, ...]
@@ -19,8 +19,8 @@ export const meta = {
   startDate: '2024-01',       // YYYY-MM format; used for sorting, display ("Jan 2024"), and computing duration for in-progress stories
   duration: '6 months',       // manual string for completed stories; ignored when status is 'in progress'
   status: 'in progress',      // `in progress` | `complete` (optional)
-  tags: ['Tag One', 'Tag Two'],
-  role: 'Design Director',
+  theme: ['Tag One', 'Tag Two'],
+  contribution: 'Design Director',
   outcome: 'One sentence describing measurable impact.',
   excerpt: 'Two to three sentences shown on the home page. Summarize the challenge and result.',
   featured: false,             // set true on the story you want in the hero slot on home

@@ -1,11 +1,11 @@
-// Copy this file and rename it to your-perspective-slug.js
+﻿// Copy this file and rename it to your-perspective-slug.js
 // Then add it to src/perspectives/index.js
 
 export const meta = {
   title: `When users will (and won't) scroll past the fold`,
   slug: 'when-users-will-scroll-past-the-fold',       // must match the filename (without .js)
   date: '2026-05',       // YYYY-MM
-  tags: ['Design'],
+  theme: 'Design',
   excerpt: null,    // 1–2 sentences shown on the Perspectives listing page
   readTime: 2,
 }

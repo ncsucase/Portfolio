@@ -1,11 +1,10 @@
-export const meta = {
+﻿export const meta = {
   title: 'What Designers Should Actually Be Doing',
   slug: 'what-designers-should-actually-be-doing',         // must match the filename and URL: /stories/story-slug
   startDate: '2026-05',       // YYYY-MM format; used for sorting, display ("Jan 2024"), and computing duration for in-progress stories
   duration: '6 months',       // manual string for completed stories; ignored when status is 'in progress'
   status: 'in progress',      // `in progress` | `complete` (optional)
-  tags: ['AI', 'Workflow Automation', 'Systems Thinking', 'Design Ops'],
-  role: 'Design Director',
+  contribution: 'Systems & Automation',
   outcome: 'One sentence describing measurable impact.',
   excerpt: `Spec production isn't where designers create value. I'm replacing the execution layer with an AI-powered system and redirecting that capacity toward the work only designers can do.`,
   featured: true,             // set true on the story you want in the hero slot on home
