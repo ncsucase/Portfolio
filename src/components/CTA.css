@@ -20,7 +20,7 @@
     var(--bg) 66%,
     var(--border) 100%
   );
-  box-shadow: var(--shadow-glass);
+  box-shadow: var(--shadow-glass-outer);
   position: relative;
   isolation: isolate;
   /* Animation */
@@ -33,6 +33,7 @@
   inset: 2px; /* border width */
   border-radius: inherit;
   background: var(--bg-deep);
+  box-shadow: var(--shadow-glass-inner);
   z-index: -1;
   /* Animation */
   transition: border-color 0.15s, background 0.15s, color 0.15s;

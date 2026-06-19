@@ -18,7 +18,7 @@
     var(--bg) 66%,
     var(--border) 100%
   );
-  box-shadow: var(--shadow-glass);
+  box-shadow: var(--shadow-glass-outer);
 }
 
 .story-card::before {
@@ -27,16 +27,19 @@
   inset: 1px;
   border-radius: inherit;
   background: var(--bg-deep); /* solid fill covering the interior */
+  box-shadow: var(--shadow-glass-inner);
   z-index: -1;
 }
 
 .story-card:hover {
   box-shadow: var(--shadow-bold);
   transform: translateY(-2px);
-
   background: linear-gradient(180deg, var(--bg) 0%, var(--bg-deep) 100%);
-  box-shadow: var(--shadow-glass-hover);
+  box-shadow: var(--shadow-glass-outer-hover);
+}
 
+.story-card:hover::before {
+  box-shadow: var(--shadow-glass-inner-hover);
 }
 
 .story-card__header {

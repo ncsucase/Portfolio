@@ -51,8 +51,10 @@
 
   --shadow:rgba(0, 0, 0, 0.1) 0 2px 8px 0px;
   --shadow-bold: rgba(0, 0, 0, 0.1) 0 4px 16px 0px;
-  --shadow-glass: 8px 8px 8px rgba(0, 0, 0, 0.05), inset 8px 8px 8px rgba(0, 0, 0, 0.05);
-  --shadow-glass-hover: 8px 8px 16px rgba(0, 0, 0, 0.15), inset 0px 0px 8px rgba(0, 0, 0, 0.05);
+  --shadow-glass-outer: 8px 8px 8px rgba(0, 0, 0, 0.05);
+  --shadow-glass-outer-hover: 8px 8px 16px rgba(0, 0, 0, 0.15);
+  --shadow-glass-inner: inset 8px 8px 8px rgba(0, 0, 0, 0.05);
+  --shadow-glass-inner-hover: inset 0 0 8px rgba(0, 0, 0, 0.05);
 
   /* Fonts */
   --font-heading: 'Epilogue', system-ui, sans-serif;
