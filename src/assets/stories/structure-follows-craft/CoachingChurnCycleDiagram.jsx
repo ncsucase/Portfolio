@@ -1,4 +1,4 @@
-import CycleDiagram from './CycleDiagram.jsx'
+import CycleDiagram from '../../../components/diagrams/CycleDiagram.jsx'
 
 const items = [
   { label: 'Design leader coaches', sublabel: 'Outside their discipline' },

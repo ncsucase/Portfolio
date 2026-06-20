@@ -1,4 +1,4 @@
-import OrgDiagram from './OrgDiagram.jsx'
+import OrgDiagram from '../../../components/diagrams/OrgDiagram.jsx'
 
 export default function OrgDiagram2(props) {
   return (

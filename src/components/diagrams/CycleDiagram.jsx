@@ -1,22 +1,4 @@
-const style = `
-  .rc-label {
-    font-family: var(--font-heading, 'Epilogue', system-ui, sans-serif);
-    font-weight: 700;
-    font-size: var(--font-size-xl);
-    letter-spacing: -0.01em;
-    fill: var(--text);
-    dominant-baseline: central;
-    text-anchor: middle;
-  }
-  .rc-sublabel {
-    font-family: var(--font-heading, 'Epilogue', system-ui, sans-serif);
-    font-weight: 400;
-    font-size: var(--font-size-lg);
-    fill: var(--text);
-    dominant-baseline: central;
-    text-anchor: middle;
-  }
-`
+import { diagramStyles } from './diagramStyles.js'
 
 const BOX_X = 20
 const BOX_W = 340
@@ -32,10 +14,8 @@ const boxBottomY = (i) => boxY(i) + BOX_H
 
 // items: [{ label: string, sublabel?: string }]
 export default function CycleDiagram({ items, ...props }) {
-  // Tight viewBox: 16px crop on each side (leaves ~4px pad around content)
-  // Content spans x=20–440, y=20–boxBottomY(N-1)
   const contentBottom = boxBottomY(items.length - 1)
-  const vbH = contentBottom - 12   // 16 top crop + 4 bottom pad
+  const vbH = contentBottom - 12
   return (
     <svg
       width={428}
@@ -43,25 +23,26 @@ export default function CycleDiagram({ items, ...props }) {
       viewBox={`16 16 428 ${vbH}`}
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      style={{ maxWidth: '100%', height: 'auto' }}
       {...props}
     >
       <defs>
-        <style>{style}</style>
-        <marker id="rc-arrow-down" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto">
-          <polygon points="0 0, 8 4, 0 8" fill="var(--color-error, #FF3B30)" />
+        <style>{diagramStyles}</style>
+        <marker id="cd-arrow-down" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto">
+          <polygon points="0 0, 8 4, 0 8" fill="var(--color-error)" />
         </marker>
-        <marker id="rc-arrow-left" markerWidth="6" markerHeight="8" refX="6" refY="4" orient="auto">
-          <polygon points="0 0, 6 4, 0 8" fill="var(--color-error, #FF3B30)" />
+        <marker id="cd-arrow-left" markerWidth="6" markerHeight="8" refX="6" refY="4" orient="auto">
+          <polygon points="0 0, 6 4, 0 8" fill="var(--color-error)" />
         </marker>
 
-        <radialGradient id="rc-grad-error" cx="0" cy="0" r="1"
+        <radialGradient id="cd-grad-error" cx="0" cy="0" r="1"
           gradientUnits="objectBoundingBox"
           gradientTransform="translate(1 1) rotate(-135) scale(1.414)">
           <stop stopColor="var(--color-error)"/>
           <stop offset="1" stopColor="var(--color-warning)"/>
         </radialGradient>
 
-        <filter id="rc-filter-error" x="-20%" y="-20%" width="140%" height="140%"
+        <filter id="cd-filter-error" x="-20%" y="-20%" width="140%" height="140%"
           colorInterpolationFilters="sRGB">
           <feFlood floodOpacity="0" result="BackgroundImageFix"/>
           <feColorMatrix in="SourceAlpha" type="matrix"
@@ -83,7 +64,6 @@ export default function CycleDiagram({ items, ...props }) {
         </filter>
       </defs>
 
-      {/* Boxes */}
       {items.map((_, i) => (
         <rect
           key={i}
@@ -92,43 +72,40 @@ export default function CycleDiagram({ items, ...props }) {
           width={BOX_W}
           height={BOX_H}
           rx={BOX_R}
-          fill="url(#rc-grad-error)"
-          filter="url(#rc-filter-error)"
+          fill="url(#cd-grad-error)"
+          filter="url(#cd-filter-error)"
         />
       ))}
 
-      {/* Labels */}
       {items.map(({ label, sublabel }, i) => (
         sublabel ? (
           <g key={i}>
-            <text x={CX} y={boxMidY(i) - 12} className="rc-label">{label}</text>
-            <text x={CX} y={boxMidY(i) + 14} className="rc-sublabel">{sublabel}</text>
+            <text x={CX} y={boxMidY(i) - 12} className="dg-label">{label}</text>
+            <text x={CX} y={boxMidY(i) + 14} className="dg-sublabel">{sublabel}</text>
           </g>
         ) : (
-          <text key={i} x={CX} y={boxMidY(i)} className="rc-label">{label}</text>
+          <text key={i} x={CX} y={boxMidY(i)} className="dg-label">{label}</text>
         )
       ))}
 
-      {/* Down arrows between boxes */}
       {items.slice(0, -1).map((_, i) => (
         <line
           key={i}
           x1={CX} y1={boxBottomY(i) + 2}
           x2={CX} y2={boxY(i + 1) - 6}
-          stroke="var(--color-error, #FF3B30)"
+          stroke="var(--color-error)"
           strokeWidth="2"
-          markerEnd="url(#rc-arrow-down)"
+          markerEnd="url(#cd-arrow-down)"
         />
       ))}
 
-      {/* Feedback arrow: right side, last box → first box */}
       <path
         d={`M ${BOX_RIGHT} ${boxMidY(items.length - 1)} L 440 ${boxMidY(items.length - 1)} L 440 ${boxMidY(0)} L ${BOX_RIGHT + 6} ${boxMidY(0)}`}
-        stroke="var(--color-error, #FF3B30)"
+        stroke="var(--color-error)"
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
-        markerEnd="url(#rc-arrow-left)"
+        markerEnd="url(#cd-arrow-left)"
       />
     </svg>
   )

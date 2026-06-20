@@ -45,9 +45,6 @@ const USE_W = W - 2 * PAD
 const SEG_H = 52
 const SEG_R = 6
 
-const segFill = (kind) =>
-  kind === 'onboarding' ? 'var(--bg-deep)' : 'var(--bg-success)'
-
 // segments: [{ label?, sublabel?, kind: 'onboarding'|'productive', weight }]
 // markers:  [{ at: number, label: string, subtitle?: string }]
 //   at — segment index; marker appears at the left edge of that segment
@@ -80,25 +77,87 @@ export default function TimelineDiagram({ segments, markers = [], ...props }) {
         <clipPath id={clipId}>
           <rect x={PAD} y={SEG_Y} width={USE_W} height={SEG_H} rx={SEG_R} />
         </clipPath>
+
+        {/* Success gradient — matches WaffleChart neu-grad-success */}
+        <radialGradient id={`${uid}grad`} cx="0" cy="0" r="1"
+          gradientUnits="objectBoundingBox"
+          gradientTransform="translate(1 1) rotate(-135) scale(1.8)">
+          <stop stopColor="var(--color-success)"/>
+          <stop offset="1" stopColor="var(--color-caution)"/>
+        </radialGradient>
+
+        {/* Success glow filter — matches WaffleChart neu-filter-success */}
+        <filter id={`${uid}glow`} x="-20%" y="-20%" width="140%" height="140%"
+          colorInterpolationFilters="sRGB">
+          <feFlood floodOpacity="0" result="BackgroundImageFix"/>
+          <feColorMatrix in="SourceAlpha" type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+          <feOffset dx="2" dy="2"/>
+          <feGaussianBlur stdDeviation="1"/>
+          <feComposite in2="hardAlpha" operator="out"/>
+          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+          <feColorMatrix in="SourceAlpha" type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+          <feOffset dx="2" dy="2"/>
+          <feGaussianBlur stdDeviation="4"/>
+          <feComposite in2="hardAlpha" operator="out"/>
+          <feColorMatrix type="matrix"
+            values="0 0 0 0 0.204 0 0 0 0 0.780 0 0 0 0 0.349 0 0 0 0.4 0"/>
+          <feBlend mode="normal" in2="effect1_dropShadow" result="effect2_dropShadow"/>
+          <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow" result="shape"/>
+        </filter>
+
+        {/* Inset shadow filter for gray base rect */}
+        <filter id={`${uid}inset`} x="0" y="0" width="100%" height="100%"
+          colorInterpolationFilters="sRGB">
+          <feComponentTransfer in="SourceAlpha" result="invAlpha">
+            <feFuncA type="table" tableValues="1 0"/>
+          </feComponentTransfer>
+          {/* Dark shadow: inset 4px 4px 6px rgba(0,0,0,0.15) */}
+          <feOffset dx="4" dy="4" in="invAlpha" result="off1"/>
+          <feGaussianBlur stdDeviation="3" in="off1" result="blur1"/>
+          <feComposite in="blur1" in2="SourceAlpha" operator="in" result="shape1"/>
+          <feFlood floodColor="black" floodOpacity="0.15" result="col1"/>
+          <feComposite in="col1" in2="shape1" operator="in" result="darkShadow"/>
+          {/* Light highlight: inset -1px -1px 2px rgba(255,255,255,0.8) */}
+          <feOffset dx="-1" dy="-1" in="invAlpha" result="off2"/>
+          <feGaussianBlur stdDeviation="1" in="off2" result="blur2"/>
+          <feComposite in="blur2" in2="SourceAlpha" operator="in" result="shape2"/>
+          <feFlood floodColor="white" floodOpacity="0.8" result="col2"/>
+          <feComposite in="col2" in2="shape2" operator="in" result="lightHighlight"/>
+          <feMerge>
+            <feMergeNode in="SourceGraphic"/>
+            <feMergeNode in="darkShadow"/>
+            <feMergeNode in="lightHighlight"/>
+          </feMerge>
+        </filter>
       </defs>
 
-      {/* Segments clipped to rounded bar shape */}
+      {/* Gray base — full-width neumorphic background */}
+      <rect
+        x={PAD} y={SEG_Y}
+        width={USE_W} height={SEG_H}
+        rx={SEG_R}
+        fill="var(--bg-deep)"
+        stroke="var(--border)"
+        strokeWidth="1"
+        filter={`url(#${uid}inset)`}
+      />
+
+      {/* Green productive segments on top, clipped to bar shape */}
       <g clipPath={`url(#${clipId})`}>
-        {segments.map((seg, i) => (
-          <rect
-            key={i}
-            x={xAt(i)} y={SEG_Y}
-            width={wAt(i)} height={SEG_H}
-            fill={segFill(seg.kind)}
-          />
-        ))}
-        {segments.map((_, i) => (
-          <line
-            key={`div${i}`}
-            x1={xAt(i)} y1={SEG_Y} x2={xAt(i)} y2={SEG_Y + SEG_H}
-            stroke="var(--border)" strokeWidth="1.5"
-          />
-        ))}
+        {segments.map((seg, i) =>
+          seg.kind !== 'onboarding' ? (
+            <rect
+              key={i}
+              x={xAt(i)} y={SEG_Y}
+              width={wAt(i)} height={SEG_H}
+              fill={`url(#${uid}grad)`}
+              filter={`url(#${uid}glow)`}
+            />
+          ) : null
+        )}
       </g>
 
       {/* Segment labels (inside bar) */}
