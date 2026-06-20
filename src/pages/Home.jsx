@@ -42,8 +42,8 @@ export default function Home() {
               <p>I grew into this role through one of the most complex integration challenges in banking history: the BB&T and SunTrust merger that created Truist. I've never stopped approaching problems the way my human factors training taught me to: </p>
               <ol>
                 <li>Identify what's actually broken.</li>
-                <li>Build something testable.</li>
-                <li>Let the evidence decide.</li>
+                <li>Reduce uncertainty and challenge your assumptions.</li>
+                <li>Decide with what you have.</li>
               </ol>
               <p>Today that means leading a 44-person design organization building authenticated banking experiences for over 7 million people managing real money, real decisions, and real stress.</p>
             </div>
