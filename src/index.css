@@ -34,6 +34,7 @@
   --bg: #fff;
   --bg-deep: #EBEBEB;
   --surface: #fff;
+  --surface-glass: #fff;
   --border: rgba(0, 0, 0, 0.1);
   --code-bg: #f4f3ec;
   --accent: #008A22;
@@ -93,7 +94,7 @@
   --shadow:rgba(0, 0, 0, 0.1) 0 2px 8px 0px;
   --shadow-bold: rgba(0, 0, 0, 0.1) 0 4px 16px 0px;
   --shadow-glass-outer: 8px 8px 8px rgba(0, 0, 0, 0.05);
-  --shadow-glass-outer-hover: 8px 8px 16px rgba(0, 0, 0, 0.15);
+  --shadow-glass-outer-hover: 8px 8px 16px rgba(0, 0, 0, 0.10);
   --shadow-glass-inner: inset 8px 8px 8px rgba(0, 0, 0, 0.05);
   --shadow-glass-inner-hover: inset 0 0 8px rgba(0, 0, 0, 0.05);
   --shadow-accent: 8px 8px 8px rgba(0, 138, 34, 0.15);

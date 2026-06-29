@@ -26,7 +26,7 @@
   position: absolute;
   inset: 1px;
   border-radius: inherit;
-  background: var(--bg-deep); /* solid fill covering the interior */
+  background: var(--surface-glass); /* solid fill covering the interior */
   box-shadow: var(--shadow-glass-inner);
   z-index: -1;
   transition: box-shadow 0.2s ease, background 0.15s;
