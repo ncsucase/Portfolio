@@ -204,6 +204,7 @@ html.dark {
   --bg: #1F1F1F;
   --bg-deep: #333333;
   --surface: #595959;
+  --surface-glass: #1F1F1F;
   --border: rgba(255, 255, 255, 0.2);
   --code-bg: #1f2028;
   --accent: #30D158;
