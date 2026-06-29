@@ -1,0 +1,56 @@
+<svg width="200" height="200" viewBox="-12 -12 224 224" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="200" height="200" fill="var(--bg)"/>
+    <rect width="572" height="848" transform="translate(-47 -285)" fill="var(--bg-deep)"/>
+    <rect width="264" height="1439" transform="translate(-32 -267)" fill="var(--bg)"/>
+    <text xml:space="preserve" fill="var(--text)" font-family="Epilogue" font-size="26" font-weight="bold" letter-spacing="0em" style="white-space:pre"><tspan x="75.5" y="97.715">90%</tspan></text>
+    <text xml:space="preserve" fill="var(--text)" font-family="Epilogue" font-size="11" letter-spacing="0em" style="white-space:pre"><tspan x="62.23" y="118.552">Requirements
+</tspan><tspan x="83.457" y="129.552">at risk</tspan></text>
+    <g filter="url(#filter0_ii_ab)">
+        <path fill="var(--bg-deep)"
+            d="M200 100c0 55.228-44.772 100-100 100S0 155.228 0 100 44.772 0 100 0s100 44.772 100 100m-163.146 0c0 34.875 28.271 63.146 63.146 63.146s63.146-28.271 63.146-63.146S134.875 36.854 100 36.854 36.854 65.125 36.854 100" />
+    </g>
+    <g filter="url(#filter1_dd_ab)">
+        <path fill="url(#paint0_radial_ab)"
+            d="M100 4c0-2.21 1.792-4.008 3.999-3.92a100.001 100.001 0 1 1-65.966 21.434c1.734-1.37 4.241-.967 5.54.82l16.96 23.344c1.298 1.787.892 4.279-.81 5.688a63.147 63.147 0 1 0 44.275-14.386c-2.205-.14-3.998-1.917-3.998-4.126z" />
+    </g>
+    <defs>
+        <radialGradient id="paint0_radial_ab" cx="0" cy="0" r="1"
+            gradientTransform="rotate(225 141.421 58.579)scale(282.843)"
+            gradientUnits="userSpaceOnUse">
+            <stop style="stop-color: var(--color-error)"/>
+            <stop offset="1" style="stop-color: var(--color-warning)"/>
+        </radialGradient>
+        <filter id="filter1_dd_ab" x="-4" y="-4" width="216" height="216" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+            <feOffset in="hardAlpha" dx="2" dy="2" result="offset1"/>
+            <feGaussianBlur in="offset1" stdDeviation="4" result="blur1"/>
+            <feFlood flood-color="var(--arc-glow-red)" result="glowColor"/>
+            <feComposite in="glowColor" in2="blur1" operator="in" result="coloredShadow"/>
+            <feBlend mode="normal" in="coloredShadow" in2="BackgroundImageFix" result="dropShadow"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="dropShadow" result="shape"/>
+        </filter>
+        <filter id="filter0_ii_ab" x="-4" y="-4" width="208" height="208" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+
+            <!-- Inner shadow 1: dark, bottom-right -->
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha1"/>
+            <feOffset in="hardAlpha1" dx="4" dy="4" result="offset1"/>
+            <feGaussianBlur in="offset1" stdDeviation="4" result="blur1"/>
+            <feComposite in="blur1" in2="hardAlpha1" operator="arithmetic" k2="-1" k3="1" result="innerMask1"/>
+            <feFlood flood-color="var(--ring-inner-shadow)" result="shadowColor1"/>
+            <feComposite in="shadowColor1" in2="innerMask1" operator="in" result="coloredShadow1"/>
+            <feBlend mode="normal" in="coloredShadow1" in2="shape" result="effect1_innerShadow_ab"/>
+
+            <!-- Inner shadow 2: light, top-left highlight -->
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha2"/>
+            <feOffset in="hardAlpha2" dx="-4" dy="-4" result="offset2"/>
+            <feGaussianBlur in="offset2" stdDeviation="4" result="blur2"/>
+            <feComposite in="blur2" in2="hardAlpha2" operator="arithmetic" k2="-1" k3="1" result="innerMask2"/>
+            <feFlood flood-color="var(--ring-inner-highlight)" result="shadowColor2"/>
+            <feComposite in="shadowColor2" in2="innerMask2" operator="in" result="coloredShadow2"/>
+            <feBlend mode="normal" in="coloredShadow2" in2="effect1_innerShadow_ab" result="effect2_innerShadow_ab"/>
+        </filter>
+    </defs>
+</svg>

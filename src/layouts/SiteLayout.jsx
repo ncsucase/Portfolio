@@ -1,20 +1,19 @@
 import { useState, useEffect } from 'react'
-import { Outlet, useLocation } from 'react-router-dom'
+import { useOutlet, useLocation } from 'react-router-dom'
+import { AnimatePresence, motion } from 'framer-motion'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import { useAuth } from '../contexts/AuthContext'
 import './SiteLayout.css'
 
-function ScrollToTop() {
-  const { pathname } = useLocation()
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [pathname])
-  return null
+function AnimatedOutlet() {
+  const [outlet] = useState(useOutlet())
+  return outlet
 }
 
 export default function SiteLayout() {
   const { authed } = useAuth()
+  const location = useLocation()
 
   const [theme, setTheme] = useState(() => {
     const saved = localStorage.getItem('theme')
@@ -35,10 +34,19 @@ export default function SiteLayout() {
 
   return (
     <div className="site-layout">
-      <ScrollToTop />
       <Header theme={theme} onThemeChange={handleThemeChange} />
       <main className="site-main page-container">
-        <Outlet />
+        <AnimatePresence mode="wait" onExitComplete={() => window.scrollTo(0, 0)}>
+          <motion.div
+            key={location.pathname}
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -8 }}
+            transition={{ duration: 0.2, ease: 'easeInOut' }}
+          >
+            <AnimatedOutlet />
+          </motion.div>
+        </AnimatePresence>
       </main>
       <Footer authed={authed} />
     </div>

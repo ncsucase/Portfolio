@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="373" height="94" fill="none" viewBox="0 0 373 94">
+    <path fill="var(--border)" d="M15 72a2 2 0 0 1 2-2h341a2 2 0 1 1 0 4H17a2 2 0 0 1-2-2" />
+    <text xml:space="preserve" fill="var(--text)" font-family="Epilogue" font-size="16"
+        letter-spacing="0em" style="white-space:pre"><tspan x=".305" y="90.44">Low</tspan></text>
+    <text xml:space="preserve" fill="var(--text)" font-family="Epilogue" font-size="16"
+        letter-spacing="0em" style="white-space:pre"><tspan x="339.109" y="90.44">High</tspan></text>
+    <circle cx="172" cy="53" r="8" fill="url(#dot_rdb)" />
+    <circle cx="190" cy="53" r="8" fill="url(#dot_rdb)" />
+    <circle cx="208" cy="53" r="8" fill="url(#dot_rdb)" />
+    <circle cx="226" cy="53" r="8" fill="url(#dot_rdb)" />
+    <circle cx="244" cy="53" r="8" fill="url(#dot_rdb)" />
+    <circle cx="262" cy="53" r="8" fill="url(#dot_rdb)" />
+    <circle cx="280" cy="53" r="8" fill="url(#dot_rdb)" />
+    <circle cx="298" cy="53" r="8" fill="url(#dot_rdb)" />
+    <circle cx="316" cy="53" r="8" fill="url(#dot_rdb)" />
+    <circle cx="334" cy="53" r="8" fill="url(#dot_rdb)" />
+    <circle cx="352" cy="53" r="8" fill="url(#dot_rdb)" />
+    <circle cx="181" cy="38" r="8" fill="url(#dot_rdb)" />
+    <circle cx="199" cy="38" r="8" fill="url(#dot_rdb)" />
+    <circle cx="217" cy="38" r="8" fill="url(#dot_rdb)" />
+    <circle cx="235" cy="38" r="8" fill="url(#dot_rdb)" />
+    <circle cx="253" cy="38" r="8" fill="url(#dot_rdb)" />
+    <circle cx="271" cy="38" r="8" fill="url(#dot_rdb)" />
+    <circle cx="289" cy="38" r="8" fill="url(#dot_rdb)" />
+    <circle cx="307" cy="38" r="8" fill="url(#dot_rdb)" />
+    <circle cx="325" cy="38" r="8" fill="url(#dot_rdb)" />
+    <circle cx="343" cy="38" r="8" fill="url(#dot_rdb)" />
+    <circle cx="189" cy="23" r="8" fill="url(#dot_rdb)" />
+    <circle cx="207" cy="23" r="8" fill="url(#dot_rdb)" />
+    <circle cx="225" cy="23" r="8" fill="url(#dot_rdb)" />
+    <circle cx="243" cy="23" r="8" fill="url(#dot_rdb)" />
+    <circle cx="261" cy="23" r="8" fill="url(#dot_rdb)" />
+    <circle cx="279" cy="23" r="8" fill="url(#dot_rdb)" />
+    <circle cx="297" cy="23" r="8" fill="url(#dot_rdb)" />
+    <circle cx="315" cy="23" r="8" fill="url(#dot_rdb)" />
+    <circle cx="333" cy="23" r="8" fill="url(#dot_rdb)" />
+    <circle cx="252" cy="8" r="8" fill="url(#dot_rdb)" />
+    <circle cx="270" cy="8" r="8" fill="url(#dot_rdb)" />
+    <circle cx="288" cy="8" r="8" fill="url(#dot_rdb)" />
+    <circle cx="306" cy="8" r="8" fill="url(#dot_rdb)" />
+    <circle cx="324" cy="8" r="8" fill="url(#dot_rdb)" />
+    <defs>
+        <radialGradient id="dot_rdb" cx="-0.2" cy="-0.2" r="1"
+            gradientUnits="objectBoundingBox"
+            gradientTransform="scale(2.8)">
+            <stop style="stop-color: var(--color-caution)" />
+            <stop offset="1" style="stop-color: var(--color-success)" />
+        </radialGradient>
+    </defs>
+</svg>

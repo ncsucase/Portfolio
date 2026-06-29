@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="361" height="90" fill="none" viewBox="0 0 361 90">
+    <path fill="var(--bg)" d="M0 0h361v90H0z" />
+    <path stroke="var(--border)" d="M1 0v87M181 0v87M271 69v18" />
+    <text xml:space="preserve" fill="var(--text)" font-family="Epilogue" font-size="13"
+        letter-spacing="0em" style="white-space:pre"><tspan x="4.5" y="10.107">PM rotates</tspan></text>
+    <text xml:space="preserve" fill="var(--text)" font-family="Epilogue" font-size="13"
+        letter-spacing="0em" style="white-space:pre"><tspan x="184.5" y="10.107">PM rotates</tspan></text>
+    <g filter="url(#a_ert)">
+        <rect width="360" height="48" x=".5" y="21" fill="var(--bg-deep)" rx="8" />
+    </g>
+    <rect width="360" height="48" x=".5" y="21" stroke="var(--border)" stroke-linecap="round" rx="8" />
+    <rect width="90" height="48" x="90.5" y="21" fill="url(#b_ert)" rx="8" />
+    <rect width="90" height="48" x="270.5" y="21" fill="url(#c_ert)" rx="8" />
+    <text xml:space="preserve" fill="var(--text)" font-family="Epilogue" font-size="13"
+        letter-spacing="0em" style="white-space:pre"><tspan x="4.5" y="87.108">3 mo</tspan></text>
+    <path stroke="var(--border)" d="M91 69v18" />
+    <text xml:space="preserve" fill="var(--text)" font-family="Epilogue" font-size="13"
+        letter-spacing="0em" style="white-space:pre"><tspan x="94.5" y="87.108">6 mo</tspan></text>
+    <text xml:space="preserve" fill="var(--text)" font-family="Epilogue" font-size="13"
+        letter-spacing="0em" style="white-space:pre"><tspan x="184.5" y="87.108">9 mo</tspan></text>
+    <text xml:space="preserve" fill="var(--text)" font-family="Epilogue" font-size="13"
+        letter-spacing="0em" style="white-space:pre"><tspan x="274.5" y="87.108">12 mo</tspan></text>
+    <defs>
+        <radialGradient id="b_ert" cx="0" cy="0" r="1"
+            gradientTransform="matrix(-120 -64 120 -64 180.5 69)" gradientUnits="userSpaceOnUse">
+            <stop style="stop-color: var(--color-success)" />
+            <stop offset="1" style="stop-color: var(--color-caution)" />
+        </radialGradient>
+        <radialGradient id="c_ert" cx="0" cy="0" r="1"
+            gradientTransform="matrix(-120 -64 120 -64 360.5 69)" gradientUnits="userSpaceOnUse">
+            <stop style="stop-color: var(--color-success)" />
+            <stop offset="1" style="stop-color: var(--color-caution)" />
+        </radialGradient>
+        <filter id="a_ert" width="366" height="54" x="-1" y="19.5" color-interpolation-filters="sRGB"
+            filterUnits="userSpaceOnUse">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+            <feColorMatrix in="SourceAlpha" result="hardAlpha"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+            <feOffset dx="4" dy="4" />
+            <feGaussianBlur stdDeviation="3" />
+            <feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic" result="innerMask1" />
+            <feFlood flood-color="var(--ring-inner-shadow)" result="shadowColor" />
+            <feComposite in="shadowColor" in2="innerMask1" operator="in" result="innerShadow" />
+            <feBlend in="innerShadow" in2="shape" result="afterShadow" />
+            <feColorMatrix in="SourceAlpha" result="hardAlpha2"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+            <feOffset dx="-1" dy="-1" />
+            <feGaussianBlur stdDeviation="1" />
+            <feComposite in2="hardAlpha2" k2="-1" k3="1" operator="arithmetic" result="innerMask2" />
+            <feFlood flood-color="var(--ring-inner-highlight)" result="highlightColor" />
+            <feComposite in="highlightColor" in2="innerMask2" operator="in" result="innerHighlight" />
+            <feBlend in="innerHighlight" in2="afterShadow" />
+        </filter>
+    </defs>
+</svg>

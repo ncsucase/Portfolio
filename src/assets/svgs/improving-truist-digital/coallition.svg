@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="567" height="142" fill="none" viewBox="0 0 567 142">
+    <path fill="var(--bg)" d="M0 0h567v142H0z" />
+    <path fill="var(--border)"
+        d="M3.55 124.55a2 2 0 0 1 2-2h558.656a2 2 0 1 1 0 4H5.55a2 2 0 0 1-2-2" />
+    <g filter="url(#a_cd)">
+        <rect width="100" height="100" x="3.55" y="41.818" fill="url(#b_cd)" rx="8"
+            shape-rendering="crispEdges" transform="rotate(-22.5 3.55 41.818)" />
+        <text xml:space="preserve" fill="var(--text-on-vibrant)" font-family="Epilogue" font-size="15"
+            letter-spacing="0em" style="white-space:pre" transform="rotate(-22.5 209.723 -29.374)"><tspan x="3.833" y="11.662">Wholesale</tspan></text>
+    </g>
+    <g filter="url(#glow-green_cd)">
+        <rect width="100" height="100" x="138.206" y="18.878" fill="url(#d_cd)" rx="8"
+            shape-rendering="crispEdges" />
+        <text xml:space="preserve" fill="var(--text-on-vibrant)" font-family="Epilogue" font-size="15"
+            letter-spacing="0em" style="white-space:pre"><tspan x="163.443" y="65.54">Design </tspan><tspan x="161.355" y="80.54">System</tspan></text>
+    </g>
+    <g filter="url(#glow-green_cd)">
+        <rect width="100" height="100" x="242.206" y="18.878" fill="url(#f_cd)" rx="8"
+            shape-rendering="crispEdges" />
+        <text xml:space="preserve" fill="var(--text-on-vibrant)" font-family="Epilogue" font-size="15"
+            letter-spacing="0em" style="white-space:pre"><tspan x="251.681" y="73.04">Commerce</tspan></text>
+    </g>
+    <g filter="url(#glow-green_cd)">
+        <rect width="100" height="100" x="346.206" y="18.878" fill="url(#h_cd)" rx="8"
+            shape-rendering="crispEdges" />
+        <text xml:space="preserve" fill="var(--text-on-vibrant)" font-family="Epilogue" font-size="15"
+            letter-spacing="0em" style="white-space:pre"><tspan x="374.226" y="65.54">Public </tspan><tspan x="377.734" y="80.54">Sites</tspan></text>
+    </g>
+    <g filter="url(#glow-green_cd)">
+        <rect width="100" height="100" x="450.206" y="18.878" fill="url(#j_cd)" rx="8"
+            shape-rendering="crispEdges" />
+        <text xml:space="preserve" fill="var(--text-on-vibrant)" font-family="Epilogue" font-size="15"
+            letter-spacing="0em" style="white-space:pre"><tspan x="479.537" y="65.54">Retail</tspan></text>
+        <text xml:space="preserve" fill="var(--text-on-vibrant)" fill-opacity=".55" font-family="Epilogue"
+            font-size="10" letter-spacing="0em" style="white-space:pre"><tspan x="479.469" y="81.153">My team</tspan></text>
+    </g>
+    <defs>
+        <radialGradient id="b_cd" cx="0" cy="0" r="1"
+            gradientTransform="rotate(224.913 81.083 49.51)scale(141.333)"
+            gradientUnits="userSpaceOnUse">
+            <stop style="stop-color:var(--color-warning)" />
+            <stop offset="1" style="stop-color:var(--color-caution)" />
+        </radialGradient>
+        <radialGradient id="d_cd" cx="0" cy="0" r="1"
+            gradientTransform="rotate(225 143.723 10.105)scale(188.562)"
+            gradientUnits="userSpaceOnUse">
+            <stop style="stop-color:var(--color-success)" />
+            <stop offset="1" style="stop-color:var(--color-caution)" />
+        </radialGradient>
+        <radialGradient id="f_cd" cx="0" cy="0" r="1"
+            gradientTransform="rotate(225 195.723 -11.434)scale(188.562)"
+            gradientUnits="userSpaceOnUse">
+            <stop style="stop-color:var(--color-success)" />
+            <stop offset="1" style="stop-color:var(--color-caution)" />
+        </radialGradient>
+        <radialGradient id="h_cd" cx="0" cy="0" r="1"
+            gradientTransform="rotate(225 247.723 -32.973)scale(188.562)"
+            gradientUnits="userSpaceOnUse">
+            <stop style="stop-color:var(--color-success)" />
+            <stop offset="1" style="stop-color:var(--color-caution)" />
+        </radialGradient>
+        <radialGradient id="j_cd" cx="0" cy="0" r="1"
+            gradientTransform="rotate(225 299.723 -54.512)scale(188.562)"
+            gradientUnits="userSpaceOnUse">
+            <stop style="stop-color:var(--color-success)" />
+            <stop offset="1" style="stop-color:var(--color-caution)" />
+        </radialGradient>
+        <filter id="a_cd" width="146.656" height="146.656" x="-2.45" y="-2.45"
+            color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feColorMatrix in="SourceAlpha" result="hardAlpha"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+            <feOffset dx="2" dy="2" in="hardAlpha" result="offset1" />
+            <feGaussianBlur in="offset1" result="blur1" stdDeviation="4" />
+            <feComposite in="blur1" in2="hardAlpha" operator="out" result="shadowMask" />
+            <feFlood flood-color="var(--arc-glow-orange)" result="glowColor" />
+            <feComposite in="glowColor" in2="shadowMask" operator="in" result="coloredShadow" />
+            <feBlend in="coloredShadow" in2="BackgroundImageFix" result="dropShadow" />
+            <feBlend in="SourceGraphic" in2="dropShadow" result="shape" />
+        </filter>
+        <filter id="glow-green_cd" x="-0.06" y="-0.06" width="1.16" height="1.16"
+            filterUnits="objectBoundingBox" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feColorMatrix in="SourceAlpha" result="hardAlpha"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+            <feOffset dx="2" dy="2" in="hardAlpha" result="offset1" />
+            <feGaussianBlur in="offset1" result="blur1" stdDeviation="4" />
+            <feComposite in="blur1" in2="hardAlpha" operator="out" result="shadowMask" />
+            <feFlood flood-color="var(--arc-glow-green)" result="glowColor" />
+            <feComposite in="glowColor" in2="shadowMask" operator="in" result="coloredShadow" />
+            <feBlend in="coloredShadow" in2="BackgroundImageFix" result="dropShadow" />
+            <feBlend in="SourceGraphic" in2="dropShadow" result="shape" />
+        </filter>
+    </defs>
+</svg>

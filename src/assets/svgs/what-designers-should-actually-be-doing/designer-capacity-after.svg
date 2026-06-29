@@ -1,0 +1,55 @@
+<svg width="200" height="200" viewBox="-12 -12 224 224" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="200" height="200" fill="var(--bg)"/>
+    <rect width="572" height="848" transform="translate(-47 -755)" fill="var(--bg-deep)"/>
+    <rect width="264" height="1439" transform="translate(-32 -737)" fill="var(--bg)"/>
+    <text xml:space="preserve" fill="var(--text)" font-family="Epilogue" font-size="26" font-weight="bold" letter-spacing="0em" style="white-space:pre"><tspan x="75.5" y="97.715">20%</tspan></text>
+    <text xml:space="preserve" fill="var(--text)" font-family="Epilogue" font-size="11" letter-spacing="0em" style="white-space:pre"><tspan x="59" y="118.552">Execution work</tspan></text>
+    <g filter="url(#filter0_ii_dca)">
+        <path fill="var(--bg-deep)"
+            d="M200 100c0 55.228-44.772 100-100 100S0 155.228 0 100 44.772 0 100 0s100 44.772 100 100m-163.146 0c0 34.875 28.271 63.146 63.146 63.146s63.146-28.271 63.146-63.146S134.875 36.854 100 36.854 36.854 65.125 36.854 100" />
+    </g>
+    <g filter="url(#filter1_dd_dca)">
+        <path fill="url(#paint0_radial_dca)"
+            d="M100 8c0-4.418 3.588-8.033 7.992-7.68a100 100 0 0 1 84.34 61.277c1.697 4.08-.633 8.608-4.835 9.973l-19.833 6.445c-4.202 1.365-8.67-.964-10.555-4.96a63.14 63.14 0 0 0-49.13-35.695c-4.383-.558-7.979-4.088-7.979-8.506z" />
+    </g>
+    <defs>
+        <radialGradient id="paint0_radial_dca" cx="0" cy="0" r="1"
+            gradientTransform="rotate(225 141.421 58.579)scale(377.124)"
+            gradientUnits="userSpaceOnUse">
+            <stop style="stop-color: var(--color-success)"/>
+            <stop offset="1" style="stop-color: var(--color-caution)"/>
+        </radialGradient>
+        <filter id="filter1_dd_dca" x="-4" y="-4" width="216" height="216" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+            <feOffset in="hardAlpha" dx="2" dy="2" result="offset1"/>
+            <feGaussianBlur in="offset1" stdDeviation="4" result="blur1"/>
+            <feFlood flood-color="var(--arc-glow-green)" result="glowColor"/>
+            <feComposite in="glowColor" in2="blur1" operator="in" result="coloredShadow"/>
+            <feBlend mode="normal" in="coloredShadow" in2="BackgroundImageFix" result="dropShadow"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="dropShadow" result="shape"/>
+        </filter>
+        <filter id="filter0_ii_dca" x="-4" y="-4" width="208" height="208" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+
+            <!-- Inner shadow 1: dark, bottom-right -->
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha1"/>
+            <feOffset in="hardAlpha1" dx="4" dy="4" result="offset1"/>
+            <feGaussianBlur in="offset1" stdDeviation="4" result="blur1"/>
+            <feComposite in="blur1" in2="hardAlpha1" operator="arithmetic" k2="-1" k3="1" result="innerMask1"/>
+            <feFlood flood-color="var(--ring-inner-shadow)" result="shadowColor1"/>
+            <feComposite in="shadowColor1" in2="innerMask1" operator="in" result="coloredShadow1"/>
+            <feBlend mode="normal" in="coloredShadow1" in2="shape" result="effect1_innerShadow_dca"/>
+
+            <!-- Inner shadow 2: light, top-left highlight -->
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha2"/>
+            <feOffset in="hardAlpha2" dx="-4" dy="-4" result="offset2"/>
+            <feGaussianBlur in="offset2" stdDeviation="4" result="blur2"/>
+            <feComposite in="blur2" in2="hardAlpha2" operator="arithmetic" k2="-1" k3="1" result="innerMask2"/>
+            <feFlood flood-color="var(--ring-inner-highlight)" result="shadowColor2"/>
+            <feComposite in="shadowColor2" in2="innerMask2" operator="in" result="coloredShadow2"/>
+            <feBlend mode="normal" in="coloredShadow2" in2="effect1_innerShadow_dca" result="effect2_innerShadow_dca"/>
+        </filter>
+    </defs>
+</svg>

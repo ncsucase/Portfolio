@@ -73,7 +73,8 @@ export const content = [
   },
   {
     type: 'inline-svg',
-    name: 'syncDiagram',
+    name: 'airtableRallySyncDiagram',
+    mobileVariant: 'airtableRallySyncDiagramMobile',
     alt: 'Airtable and Rally connected bidirectionally through a custom sync layer built by Mikey.',
     caption: null,
   },

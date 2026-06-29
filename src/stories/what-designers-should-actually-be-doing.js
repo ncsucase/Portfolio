@@ -63,26 +63,26 @@ export const content = [
   {
     type: 'columns',
     columns: [
-      [{ 
+      [{
         type: 'inline-svg',
-        align: 'center',
-        name: 'waffleChartDesign',
-        title: 'Designer Capacity',
-        alt: 'Designer capacity on execution vs thinking',
+        name: 'designerCapacityBefore',
+        title: `Designer Capacity`,
+        alt: 'Chart showing designer capacity before...',
+        maxWidth: `200px`,
       }],
-      [{ 
+      [{
         type: 'inline-svg',
-        align: 'center',
-        name: 'waffleChartAccessibility',
-        title: 'Accessibility Coverage',
-        alt: 'Reliable and unreliable annotations due to lack of experts',
+        name: 'accessibilityBefore',
+        title: `Accessibility`,
+        alt: 'Chart showing accessibility risk before...',
+        maxWidth: `200px`,
       }],
-      [{ 
+      [{
         type: 'inline-svg',
-        align: 'center',
-        name: 'waffleChartDev',
-        title: 'Dev Spec Usefulness',
-        alt: 'Proportion of specs that are useful to developers',
+        name: 'devSpecBefore',
+        title: `Dev Spec`,
+        alt: 'Chart showing dev spec gaps before...',
+        maxWidth: `200px`,
       }],
     ]
   },
@@ -162,6 +162,32 @@ export const content = [
   {
     type: 'paragraph',
     text: `The capacity currently absorbed by mechanical execution belongs somewhere else: understanding users, identifying the right problems, and finding the right solutions before a feature reaches implementation. When designers aren't spending multi-day stretches on spec production, that time goes into discovery before features are defined, usability testing on what's already in the market, and earlier participation in roadmap conversations rather than downstream consumption of them. That's where design creates organizational value. Not in producing documentation that a well-designed system can handle.`,
+  },
+  {
+    type: 'columns',
+    columns: [
+      [{
+        type: 'inline-svg',
+        name: 'designerCapacityAfter',
+        title: `Designer Capacity`,
+        alt: 'Chart showing designer capacity after...',
+        maxWidth: `200px`,
+      }],
+      [{
+        type: 'inline-svg',
+        name: 'accessibilityAfter',
+        title: `Accessibility`,
+        alt: 'Chart showing accessibility risk after...',
+        maxWidth: `200px`,
+      }],
+      [{
+        type: 'inline-svg',
+        name: 'devSpecAfter',
+        title: `Dev Spec`,
+        alt: 'Chart showing dev spec gaps after...',
+        maxWidth: `200px`,
+      }],
+    ]
   },
   {
     type: 'heading',

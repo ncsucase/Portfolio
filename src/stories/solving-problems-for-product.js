@@ -66,7 +66,7 @@ export const content = [
   },
   {
     type: 'inline-svg',
-    name: 'problemFlowchart',
+    name: 'productRoadmapMaintenanceFlowchart',
     alt: 'The daily inefficient process of manually maintaining feature information in Excel.',
     caption: null,
   },
@@ -115,14 +115,14 @@ export const content = [
       [{ 
         type: 'inline-svg',
         align: 'center',
-        name: 'waffleChartBefore',
+        name: 'productHoursBefore',
         title: 'Before',
         alt: 'Before: maintenance hours vs work hours',
       }],
       [{ 
         type: 'inline-svg',
         align: 'center',
-        name: 'waffleChartAfter',
+        name: 'productHoursAfter',
         title: 'After',
         alt: 'After: reclaimed work hours',
       }],

@@ -1,7 +1,4 @@
-import StatCard from './StatCard'
-import Timeline from './Timeline'
-import ComparisonBlock from './ComparisonBlock'
-import * as InlineSvgs from '../assets/inline-svgs'
+import { InlineSvgs } from '../assets/inline-svgs'
 import './StoryRenderer.css'
 
 const INLINE_PATTERN = /(\[\[\d+\]\]|\[[^\]]+\]\([^)]+\)|\*\*[^*]+\*\*|\*[^*]+\*)/g
@@ -62,15 +59,6 @@ export default function StoryRenderer({ blocks }) {
               </figure>
             )
 
-          case 'stats':
-            return <StatCard key={i} block={block} />
-
-          case 'timeline':
-            return <Timeline key={i} block={block} />
-
-          case 'comparison':
-            return <ComparisonBlock key={i} block={block} />
-
           case 'list': {
             const Tag = block.style === 'unordered' ? 'ul' : 'ol'
             return (
@@ -98,6 +86,7 @@ export default function StoryRenderer({ blocks }) {
           case 'inline-svg': {
             const Svg = InlineSvgs[block.name]
             if (!Svg) return null
+            const MobileSvg = block.mobileVariant ? InlineSvgs[block.mobileVariant] : null
             return (
               <figure key={i} className="story-figure">
                 {(block.title || block.subtitle) && (
@@ -106,8 +95,23 @@ export default function StoryRenderer({ blocks }) {
                     {block.subtitle && <p className="story-figure-subtitle">{block.subtitle}</p>}
                   </div>
                 )}
-                <div style={block.align ? { display: 'flex', justifyContent: block.align } : undefined}>
-                  <Svg aria-label={block.alt ?? ''} role="img" />
+                <div className="story-figure-container" style={{
+                  ...(block.align ? { display: 'flex', justifyContent: block.align } : {}),
+                  ...(block.maxWidth != null ? { maxWidth: block.maxWidth } : {}),
+                  ...(block.minWidth != null ? { minWidth: block.minWidth } : {}),
+                }}>
+                  <Svg aria-label={block.alt ?? ''} role="img" className={MobileSvg ? 'svg-desktop-only' : undefined} />
+                  {MobileSvg && (
+                    <MobileSvg
+                      aria-label={block.alt ?? ''}
+                      role="img"
+                      className="svg-mobile-only"
+                      style={{
+                        ...(block.mobileMaxWidth  != null ? { maxWidth:  block.mobileMaxWidth  } : {}),
+                        ...(block.mobileMaxHeight != null ? { maxHeight: block.mobileMaxHeight } : {}),
+                      }}
+                    />
+                  )}
                 </div>
                 {block.caption && (
                   <figcaption className="story-figcaption">{block.caption}</figcaption>

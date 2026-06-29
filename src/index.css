@@ -1,10 +1,38 @@
 :root {
   /* Colors */
+  --color-blue: #007AFF;
+  --color-brown: #A2845E;
+  --color-cyan: #00C0E8;
+  --color-green: #34C759;
+  --color-indigo: #5856D6;
+  --color-mint: #00C7BE;
+  --color-orange: #FF9500;
+  --color-pink: #FF2D55;
+  --color-purple: #AF52DE;
+  --color-red: #FF3B30;
+  --color-teal: #30B0C7;
+  --color-yellow: #FFCC00;
+
+  /* Color SVG shadows */
+  --arc-glow-blue: color-mix(in srgb, var(--color-blue) 40%, transparent);
+  --arc-glow-brown: color-mix(in srgb, var(--color-brown) 35%, transparent);
+  --arc-glow-cyan: color-mix(in srgb, var(--color-cyan) 35%, transparent);
+  --arc-glow-green: color-mix(in srgb, var(--color-green) 40%, transparent);
+  --arc-glow-indigo: color-mix(in srgb, var(--color-indigo) 35%, transparent);
+  --arc-glow-mint: color-mix(in srgb, var(--color-mint) 35%, transparent);
+  --arc-glow-orange: color-mix(in srgb, var(--color-orange) 40%, transparent);
+  --arc-glow-pink: color-mix(in srgb, var(--color-pink) 35%, transparent);
+  --arc-glow-purple: color-mix(in srgb, var(--color-purple) 35%, transparent);
+  --arc-glow-red: color-mix(in srgb, var(--color-red) 40%, transparent);
+  --arc-glow-teal: color-mix(in srgb, var(--color-teal) 35%, transparent);
+  --arc-glow-yellow: color-mix(in srgb, var(--color-yellow) 35%, transparent);
+
+  /* Semantic Colors */
   --text: rgba(0, 0, 0, 0.8);
   --text-h: #000;
   --text-muted: rgba(0, 0, 0, 0.55);
   --bg: #fff;
-  --bg-deep: #F2F2F2;
+  --bg-deep: #EBEBEB;
   --surface: #fff;
   --border: rgba(0, 0, 0, 0.1);
   --code-bg: #f4f3ec;
@@ -13,43 +41,55 @@
   --accent-border: rgba(0, 138, 34, 0.7);
   --text-on-accent: #fff;
 
+
+  /* Modal styles */
   --modal-bg: rgba(0, 0, 0, 0.45);
   --modal-blur: 16px;
 
-  /* Frosty */
-  --frosty-bg: rgba(255, 255, 255, 0.75);
-  --frosty-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
-  --frosty-blur: 16px;
-  --frosty-border: 1px solid #fff;
-
-  /* Illustration tones (grayscale scale used in SVG assets) */
-  --c-ink:       #020203;
-  --c-shadow:    #262526;
-  --c-dark:      #454347;
-  --c-mid-dark:  #565757;
-  --c-mid:       #717174;
-  --c-mid-light: #8B898A;
-  --c-muted:     #9C9C9E;
-  --c-light:     #CAC8CA;
-  --c-paper:     #E9E8E9;
-
   /* Status colors */
-  --color-error: #FF3B30;
+  --status-bg-alpha: 35%;
+  --color-error: var(--color-red);
   --text-on-error: rgba(0, 0, 0, 0.8);
-  --bg-error: rgba(255, 59, 48, 0.35);
-  --color-warning: #FF9500;
+  --bg-error: color-mix(in srgb, var(--color-error) var(--status-bg-alpha), transparent);
+  --color-warning: var(--color-orange);
   --text-on-warning: rgba(0, 0, 0, 0.8);
-  --bg-warning: rgba(255, 149, 0, 0.35);
-  --color-caution: #FFCC00;
+  --bg-warning: color-mix(in srgb, var(--color-warning) var(--status-bg-alpha), transparent);
+  --color-caution: var(--color-yellow);
   --text-on-caution: rgba(0, 0, 0, 1);
-  --bg-caution: rgba(255, 204, 0, 0.35);
-  --color-success: #34C759;
+  --bg-caution: color-mix(in srgb, var(--color-caution) var(--status-bg-alpha), transparent);
+  --color-success: var(--color-green);
   --text-on-success: rgba(0, 0, 0, 0.8);
-  --bg-success: rgba(52, 199, 89, 0.35);
-  --color-info: #00C7BE;
+  --bg-success: color-mix(in srgb, var(--color-success) var(--status-bg-alpha), transparent);
+  --color-info: var(--color-mint);
   --text-on-info: rgba(0, 0, 0, 0.8);
-  --bg-info: rgba(0, 199, 190, 0.35);
+  --bg-info: color-mix(in srgb, var(--color-info) var(--status-bg-alpha), transparent);
+  --text-on-vibrant: rgba(0, 0, 0, 0.8);
 
+  /* Illustration colors */
+  --hair-black:  #2B2B2B;
+  --hair-brown:  #5F4D3E;
+  --hair-golden: #E9B942;
+  --skin-1: #F0CCBB;
+  --skin-2: #E6B489;
+  --skin-3: #C08B6A;
+  --skin-4: #8C522F;
+  --clothes-plain: #2B2B2B;
+
+  /* Flowchart colors */
+  --flowchart-symbol: #EBEBEB;
+  --flowchart-symbol-shadow: #D9D9D9;
+  --flowchart-line: #000;
+
+  /* Wireframe colors */
+  --wf-text: #DCDCDC;
+  --wf-text-h: #A9A9A9;
+  --wf-strong: #000;
+  --wf-bg: #fff;
+  --wf-border: #DCDCDC;
+  --wf-modal-bg: rgba(0, 0, 0, 0.5);
+  --wf-interactive: #0088FF;
+
+  /* Shadows */
   --shadow:rgba(0, 0, 0, 0.1) 0 2px 8px 0px;
   --shadow-bold: rgba(0, 0, 0, 0.1) 0 4px 16px 0px;
   --shadow-glass-outer: 8px 8px 8px rgba(0, 0, 0, 0.05);
@@ -58,12 +98,20 @@
   --shadow-glass-inner-hover: inset 0 0 8px rgba(0, 0, 0, 0.05);
   --shadow-accent: 8px 8px 8px rgba(0, 138, 34, 0.15);
   --shadow-accent-hover: 8px 8px 8px rgba(0, 138, 34, 0.25);
+  --ring-inner-shadow: rgba(0, 0, 0, 0.15);
+  --ring-inner-highlight: rgba(255, 255, 255, 0.2);
 
   /* Fonts */
   --font-heading: 'Epilogue', system-ui, sans-serif;
   --font-ui: 'Inter', system-ui, sans-serif;
   --font-prose: 'Newsreader', Georgia, serif;
   --mono: ui-monospace, Consolas, monospace;
+
+  /* Font Weights */
+  --font-weight-light: 100;
+  --font-weight-regular: 400;
+  --font-weight-semi: 600;
+  --font-weight-heavy: 900;
 
   /* Font size scale */
   --font-size-2xs: 10px;  /* micro labels: timeline dates, quarter markers */
@@ -120,12 +168,41 @@
 }
 
 html.dark {
+  /* Colors */
+  --color-blue: #0A84FF;
+  --color-brown: #AC8E68;
+  --color-cyan: #64D2FF;
+  --color-green: #30D158;
+  --color-indigo: #5E5CE6;
+  --color-mint: #66D4CF;
+  --color-orange: #FF9F0A;
+  --color-pink: #FF375F;
+  --color-purple: #BF5AF2;
+  --color-red: #FF453A;
+  --color-teal: #40C8E0;
+  --color-yellow: #FFD60A;
+
+  /* Color SVG shadows */
+  --arc-glow-blue: color-mix(in srgb, var(--color-blue) 40%, transparent);
+  --arc-glow-brown: color-mix(in srgb, var(--color-brown) 35%, transparent);
+  --arc-glow-cyan: color-mix(in srgb, var(--color-cyan) 35%, transparent);
+  --arc-glow-green: color-mix(in srgb, var(--color-green) 40%, transparent);
+  --arc-glow-indigo: color-mix(in srgb, var(--color-indigo) 35%, transparent);
+  --arc-glow-mint: color-mix(in srgb, var(--color-mint) 35%, transparent);
+  --arc-glow-orange: color-mix(in srgb, var(--color-orange) 50%, transparent);
+  --arc-glow-pink: color-mix(in srgb, var(--color-pink) 35%, transparent);
+  --arc-glow-purple: color-mix(in srgb, var(--color-purple) 35%, transparent);
+  --arc-glow-red: color-mix(in srgb, var(--color-red) 80%, transparent);
+  --arc-glow-teal: color-mix(in srgb, var(--color-teal) 35%, transparent);
+  --arc-glow-yellow: color-mix(in srgb, var(--color-yellow) 35%, transparent);
+
+  /* Semantic Colors */
   --text: rgba(255, 255, 255, 0.8);
   --text-h: #fff;
   --text-muted: rgba(255, 255, 255, 0.6);
   --bg: #1F1F1F;
-  --bg-deep: #2B2B2B;
-  --surface: #232324;
+  --bg-deep: #333333;
+  --surface: #595959;
   --border: rgba(255, 255, 255, 0.2);
   --code-bg: #1f2028;
   --accent: #30D158;
@@ -133,42 +210,48 @@ html.dark {
   --accent-border: rgba(48, 209, 88, 0.5);
   --text-on-accent: #1F1F1F;
 
+  /* Modal styles */
   --modal-bg: rgba(255, 255, 255, 0.05);
 
-  /* Frosty */
-  --frosty-bg: rgba(255, 255, 255, 0.2);
-  --frosty-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
-  --frosty-blur: 16px;
-  --frosty-border: 1px solid #717174;
-
-  /* Illustration tones — inverted for dark backgrounds */
-  --c-ink:       #E9E8E9;
-  --c-shadow:    #CAC8CA;
-  --c-dark:      #9C9C9E;
-  --c-mid-dark:  #8B898A;
-  --c-mid:       #717174;
-  --c-mid-light: #565757;
-  --c-muted:     #454347;
-  --c-light:     #262526;
-  --c-paper:     #020203;
-
   /* Status colors — softer for dark backgrounds */
-  --color-error: #FF453A;
-  --bg-error: rgba(255, 69, 58, 0.25);
+  --status-bg-alpha: 25%;
   --text-on-error: rgba(255, 255, 255, 0.8);
-  --color-warning: #FF9F0A;
-  --bg-warning: rgba(255, 159, 10, 0.25);
+  --arc-glow-red: rgba(255, 120, 50, 0.5);
   --text-on-warning: rgba(255, 255, 255, 0.8);
-  --color-caution: #FFD60A;
-  --bg-caution: rgba(255, 214, 10, 0.25);
+  --arc-glow-orange: rgba(255, 180, 50, 0.5);
   --text-on-caution: rgba(255, 255, 255, 0.8);
-  --color-success: #30D158;
-  --bg-success: rgba(48, 209, 88, 0.25);
+  --arc-glow-yellow: rgba(255, 210, 50, 0.5);
   --text-on-success: rgba(255, 255, 255, 0.8);
-  --color-info: #66D4CF;
-  --bg-info: rgba(102, 212, 207, 0.25);
+  --arc-glow-green: rgba(50, 210, 100, 0.5);
   --text-on-info: rgba(255, 255, 255, 0.8);
+  --text-on-vibrant: rgba(0, 0, 0, 0.8);
+  --arc-glow-mint: rgba(100, 210, 205, 0.5);
 
+  /* Illustration colors */
+  --hair-black:  #1F1F1F;
+  --hair-brown:  #5F4D3E;
+  --hair-golden: #E9B942;
+  --skin-1: #F0CCBB;
+  --skin-2: #E6B489;
+  --skin-3: #C08B6A;
+  --skin-4: #8C522F;
+  --clothes-plain: #E9E8E9;
+
+  /* Flowchart colors */
+  --flowchart-symbol: #333333;
+  --flowchart-symbol-shadow: #595959;
+  --flowchart-line: #fff;
+
+  /* Wireframe colors */
+  --wf-text: #848484;
+  --wf-text-h: #C8C8C8;
+  --wf-bg: #1f1f1f;
+  --wf-strong: #fff;
+  --wf-border: #848484;
+  --wf-modal-bg: rgba(255, 255, 255, 0.3);
+  --wf-interactive: #0088FF;
+
+  /* Shadows */
   --shadow:rgba(0, 0, 0, 0.8) 0 2px 8px 0px;
   --shadow-bold: rgba(0, 0, 0, 0.8) 0 4px 16px 0px;
   --shadow-glass-outer: 8px 8px 8px rgba(0, 0, 0, 0.25);
@@ -177,6 +260,8 @@ html.dark {
   --shadow-glass-inner-hover: inset 0 0 8px rgba(0, 0, 0, 0.20);
   --shadow-accent: 8px 8px 8px rgba(48, 209, 88, 0.15);
   --shadow-accent-hover: 8px 8px 16px rgba(48, 209, 88, 0.3);
+  --ring-inner-shadow: rgba(0, 0, 0, 0.60);
+  --ring-inner-highlight: rgba(255, 255, 255, 0.08);
 }
 
 body {

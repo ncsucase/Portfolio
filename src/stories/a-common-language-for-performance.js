@@ -29,8 +29,10 @@ export const content = [
   },
   {
     type: 'inline-svg',
-    name: 'ratingScaleDiagram',
-    title: 'Manager Mental Models of the Same Designer',
+    name: 'mentalModelsOfADesigner',
+    mobileVariant: 'mentalModelsOfADesignerMobile',
+    mobileMaxWidth: '362px',
+    title: 'Mental Models of the Same Designer',
     alt: 'Rating scale diagram: Managers each have a different idea of what it means to be a strong designer.',
   },
   {
@@ -86,7 +88,8 @@ export const content = [
   },
   {
     type: 'inline-svg',
-    name: 'reviewProcessDiagram',
+    name: 'collaborativeRatingProcess',
+    mobileVariant: 'collaborativeRatingProcessMobile',
     alt: 'Process diagram: Designer and Manager each rate independently with the rubric, meet to discuss discrepancies, and leave with a consistent growth plan',
   },
   {
@@ -111,13 +114,13 @@ export const content = [
     columns: [
       [{
         type: 'inline-svg',
-        name: 'ratingDistBefore',
+        name: 'ratingsDistributionBefore',
         title: 'Ratings Before',
         alt: 'Rating distribution before the rubric, all ratings clustered at the high end',
       }],
       [{
         type: 'inline-svg',
-        name: 'ratingDistAfter',
+        name: 'ratingsDistributionAfter',
         title: 'Ratings After',
         alt: 'Rating distribution after the rubric, ratings spread across the full scale',
       }],

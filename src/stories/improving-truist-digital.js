@@ -25,14 +25,6 @@ export const content = [
     text: 'The Situation',
   },
   {
-    type: 'stats',
-    variant: 'label-first',
-    items: [
-      { label: 'Voice of the Customer', value: '10%', description: 'Rated "visual appeal" 1 out of 5, every month.', color: 'error' },
-      { label: 'JD Power Ranking', value: '9th', description: 'Consistently low in "visual appeal" every year.', color: 'error' },
-    ],
-  },
-  {
     type: 'paragraph',
     text: `Truist has consistently ranked low in JD Power's Visual Appeal category for digital banking. Our own Voice of Customer data told the same story in plain language: clients described our authenticated experience as dated and unattractive. In our monthly client survey, 10% of respondents gave us the lowest possible rating for visual appeal on a five-point scale. This was a steady, unmistakable signal that wasn't moving on its own.`,
   },
@@ -64,7 +56,8 @@ export const content = [
   },
   {
     type: 'inline-svg',
-    name: 'coalition',
+    name: 'coallition',
+    mobileVariant: 'coallitionMobile',
     alt: 'The five teams in the coalition to improve Truist digital.',
   },
   {
@@ -141,14 +134,6 @@ export const content = [
   //     },
   //   ],
   // },
-  {
-    type: 'stats',
-    items: [
-      { value: '13', label: 'Studies', description: 'Included JD Power and internal metrics.' },
-      { value: '50+', label: 'Designs', description: 'Tested, not including the ones we trashed.' },
-      { value: '5k+', label: 'Clients', description: 'Supplied the feedback via user studies.' },
-    ],
-  },
   {
     type: 'heading',
     level: 2,
