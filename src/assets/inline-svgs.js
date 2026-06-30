@@ -20,6 +20,12 @@ import AirtableRallySyncDiagramMobile from './svgs/a-system-built-for-designers/
 import Coallition from './svgs/improving-truist-digital/coallition.svg?react'
 import CoallitionMobile from './svgs/improving-truist-digital/coallition-mobile.svg?react'
 
+// mobile check deposit
+import McdFlowBeforeUsaa from './svgs/mobile-check-deposit/mcd-flow-before-usaa.svg?react'
+import McdFlowAfterUsaa from './svgs/mobile-check-deposit/mcd-flow-after-usaa.svg?react'
+import McdTimeline from './svgs/mobile-check-deposit/mcd-timeline.svg?react'
+import McdTimelineMobile from './svgs/mobile-check-deposit/mcd-timeline-mobile.svg?react'
+
 // solving problems for product
 import ProductRoadmapMaintenanceFlowchart from './svgs/solving-problems-for-product/product-roadmap-maintenance-flowchart.svg?react'
 import ProductHoursBefore from './svgs/solving-problems-for-product/product-hours-before.svg?react'
@@ -60,6 +66,12 @@ export const InlineSvgs = {
   // improving truist digital
   coallition: Coallition,
   coallitionMobile: CoallitionMobile,
+
+  // mobile check deposit
+  mcdFlowBeforeUsaa: McdFlowBeforeUsaa,
+  mcdFlowAfterUsaa: McdFlowAfterUsaa,
+  mcdTimeline: McdTimeline,
+  mcdTimelineMobile: McdTimelineMobile,
 
   // solving problems for product
   productRoadmapMaintenanceFlowchart: ProductRoadmapMaintenanceFlowchart,

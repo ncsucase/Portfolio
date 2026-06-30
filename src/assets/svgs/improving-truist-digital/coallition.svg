@@ -31,8 +31,8 @@
             shape-rendering="crispEdges" />
         <text xml:space="preserve" fill="var(--text-on-vibrant)" font-family="Epilogue" font-size="15"
             letter-spacing="0em" style="white-space:pre"><tspan x="479.537" y="65.54">Retail</tspan></text>
-        <text xml:space="preserve" fill="var(--text-on-vibrant)" fill-opacity=".55" font-family="Epilogue"
-            font-size="10" letter-spacing="0em" style="white-space:pre"><tspan x="479.469" y="81.153">My team</tspan></text>
+        <text xml:space="preserve" fill="var(--text-on-vibrant)" fill-opacity=".6" font-family="Epilogue"
+            font-size="11" letter-spacing="0em" style="white-space:pre"><tspan x="476" y="81.153">My team</tspan></text>
     </g>
     <defs>
         <radialGradient id="b_cd" cx="0" cy="0" r="1"

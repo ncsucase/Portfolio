@@ -88,7 +88,8 @@
   --wf-bg: #fff;
   --wf-border: #DCDCDC;
   --wf-modal-bg: rgba(0, 0, 0, 0.5);
-  --wf-interactive: #0088FF;
+  --wf-interactive: var(--color-blue);
+  --truist-purple: #442669;
 
   /* Shadows */
   --shadow:rgba(0, 0, 0, 0.1) 0 2px 8px 0px;
@@ -251,7 +252,8 @@ html.dark {
   --wf-strong: #fff;
   --wf-border: #848484;
   --wf-modal-bg: rgba(255, 255, 255, 0.3);
-  --wf-interactive: #0088FF;
+  --wf-interactive: var(--color-blue);
+  --truist-purple: #4D2C77;
 
   /* Shadows */
   --shadow:rgba(0, 0, 0, 0.8) 0 2px 8px 0px;

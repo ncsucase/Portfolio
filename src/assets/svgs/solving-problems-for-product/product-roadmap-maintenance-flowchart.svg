@@ -1,76 +1,46 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="312" height="519" fill="none" viewBox="0 0 312 519">
-    <path fill="var(--bg)" d="M0 0h312v519H0z" />
-    <path fill="var(--bg-deep)"
-        d="M-47-48a2 2 0 0 1 2-2h818a2 2 0 0 1 2 2v1154c0 1.1-.895 2-2 2H-45c-1.105 0-2-.9-2-2z" />
-    <path fill="#fff" fill-opacity=".1"
-        d="M-45-50v1h818v-2H-45zm820 2h-1v1154h2V-48zm-2 1156v-1H-45v2h818zm-820-2h1V-48h-2v1154zm2 2v-1c-.552 0-1-.45-1-1h-2c0 1.66 1.343 3 3 3zm820-2h-1c0 .55-.448 1-1 1v2c1.657 0 3-1.34 3-3zM773-50v1a1 1 0 0 1 1 1h2a3 3 0 0 0-3-3zm-818 0v-1a3 3 0 0 0-3 3h2a1 1 0 0 1 1-1z" />
-    <path fill="var(--bg)" d="M-32-32h376v1122H-32z" />
-    <rect width="140" height="92" x="172" y="414" fill="var(--bg-deep)" rx="8" />
+<svg xmlns="http://www.w3.org/2000/svg" width="340" height="519" fill="none" viewBox="0 0 340 519">
+    <path fill="var(--bg)" d="M0 0h340v519H0z" />
+    <rect width="160" height="92" x="180" y="414" fill="var(--flowchart-symbol)" rx="8" />
     <text xml:space="preserve" fill="var(--text-h)" font-family="Epilogue" font-size="15"
-        letter-spacing="0em" style="white-space:pre">
-        <tspan x="194.598" y="449.163">Revert to old </tspan>
-        <tspan x="214.871" y="464.162">version</tspan>
-    </text>
-    <text xml:space="preserve" fill="var(--text)" fill-opacity=".55" font-family="Epilogue" font-size="10"
-        letter-spacing="0em" style="white-space:pre">
-        <tspan x="179.393" y="487.275">PMs reconstruct updates</tspan>
-    </text>
-    <rect width="140" height="92" x="172" y="208" fill="var(--bg-deep)" rx="8" />
-    <text xml:space="preserve" fill="var(--text)" font-family="Epilogue" font-size="15"
-        letter-spacing="0em" style="white-space:pre">
-        <tspan x="204.595" y="243.163">Fix broken </tspan>
-        <tspan x="209.473" y="258.162">formulas</tspan>
-    </text>
-    <text xml:space="preserve" fill="var(--text)" fill-opacity=".55" font-family="Epilogue" font-size="10"
-        letter-spacing="0em" style="white-space:pre">
-        <tspan x="186.434" y="281.275">Other users overwrote</tspan>
-    </text>
-    <rect width="140" height="92" y="300" fill="var(--bg-deep)" rx="8" />
-    <text xml:space="preserve" fill="var(--text)" font-family="Epilogue" font-size="15"
-        letter-spacing="0em" style="white-space:pre">
-        <tspan x="43.223" y="335.163">Update </tspan>
-        <tspan x="40.703" y="350.162">records</tspan>
-    </text>
-    <text xml:space="preserve" fill="var(--text)" fill-opacity=".55" font-family="Epilogue" font-size="10"
-        letter-spacing="0em" style="white-space:pre">
-        <tspan x="15.986" y="373.275">By hand, hope it holds</tspan>
-    </text>
-    <path fill="var(--text)"
-        d="M69.293 300.707a1 1 0 0 0 1.414 0l6.364-6.364a1 1 0 1 0-1.414-1.414L70 298.586l-5.657-5.657a1 1 0 1 0-1.414 1.414zM70 274h-1v26h2v-26zM70.707 391.293a1 1 0 0 0-1.414 0l-6.364 6.364a1 1 0 1 0 1.414 1.414L70 393.414l5.657 5.657a1 1 0 1 0 1.414-1.414zM70 392h-1v26h2v-26zM90 253h-1v2h1v-2m82.707 1.707a1 1 0 0 0 0-1.414l-6.364-6.364a.999.999 0 1 0-1.414 1.414l5.657 5.657-5.657 5.657a.999.999 0 1 0 1.414 1.414zM90 254v1h82v-2H90zM139.293 345.293a1 1 0 0 0 0 1.414l6.364 6.364a.999.999 0 1 0 1.414-1.414L141.414 346l5.657-5.657a.999.999 0 1 0-1.414-1.414zM222 347h1v-2h-1v2m-82-1v1h82v-2h-82z" />
-    <rect width="31" height="31" x="48" y="253.92" fill="var(--bg-deep)" rx="4"
-        transform="rotate(-45 48 253.92)" />
-    <rect width="140" height="92" fill="var(--bg-deep)" rx="8" />
-    <text xml:space="preserve" fill="var(--text)" font-family="Epilogue" font-size="15"
-        letter-spacing="0em" style="white-space:pre">
-        <tspan x="29.629" y="42.663">Open Excel </tspan>
-        <tspan x="37.605" y="57.663">and Rally</tspan>
-    </text>
-    <rect width="140" height="92" y="116" fill="var(--bg-deep)" rx="8" />
-    <text xml:space="preserve" fill="var(--text)" font-family="Epilogue" font-size="15"
-        letter-spacing="0em" style="white-space:pre">
-        <tspan x="26.392" y="151.163">Check each </tspan>
-        <tspan x="41.56" y="166.162">Feature</tspan>
-    </text>
-    <text xml:space="preserve" fill="var(--text)" fill-opacity=".55" font-family="Epilogue" font-size="10"
-        letter-spacing="0em" style="white-space:pre">
-        <tspan x="19.238" y="189.275">~400 items, manually</tspan>
-    </text>
-    <path fill="var(--text)"
-        d="M69.293 234.707a1 1 0 0 0 1.414 0l6.364-6.364a1 1 0 1 0-1.414-1.414L70 232.586l-5.657-5.657a1 1 0 1 0-1.414 1.414zM70 208h-1v26h2v-26zM241.293 414.707a1 1 0 0 0 1.414 0l6.364-6.364a.999.999 0 1 0-1.414-1.414L242 412.586l-5.657-5.657a.999.999 0 1 0-1.414 1.414zM242 366h-1v48h2v-48z" />
-    <rect width="31" height="31" x="220" y="346" fill="var(--bg-deep)" rx="4"
-        transform="rotate(-45 220 346)" />
-    <path fill="var(--text)"
-        d="M241.293 326.707a1 1 0 0 0 1.414 0l6.364-6.364a.999.999 0 1 0-1.414-1.414L242 324.586l-5.657-5.657a.999.999 0 1 0-1.414 1.414zM242 300h-1v26h2v-26zM69.293 116.707a1 1 0 0 0 1.414 0l6.364-6.364a1 1 0 1 0-1.414-1.414L70 114.586l-5.657-5.657a1 1 0 1 0-1.414 1.414zM70 92h-1v24h2V92zM70 418h102zm102 101H82c-7.18 0-13-5.82-13-13h2c0 6.075 4.925 11 11 11h90zm-90 0c-7.18 0-13-5.82-13-13v-88h2v88c0 6.075 4.925 11 11 11zm90-101v100zM172 506h70zm71 0c0 7.18-5.82 13-13 13h-58v-2h58c6.075 0 11-4.925 11-11zm-71 12v-12zm71-12c0 7.18-5.82 13-13 13v-2c6.075 0 11-4.925 11-11z" />
+        letter-spacing="0em" style="white-space:pre"><tspan x="212.598" y="443.663">Revert to old </tspan><tspan x="232.871" y="458.663">version</tspan></text>
+    <text xml:space="preserve" fill="var(--text-muted)" font-family="Epilogue" font-size="11"
+        letter-spacing="0em" style="white-space:pre"><tspan x="214.963" y="474.552">PMs reconstruct </tspan><tspan x="237.543" y="485.552">updates</tspan></text>
+    <rect width="160" height="92" x="180" y="208" fill="var(--flowchart-symbol)" rx="8" />
+    <text xml:space="preserve" fill="var(--text-h)" font-family="Epilogue" font-size="15"
+        letter-spacing="0em" style="white-space:pre"><tspan x="222.595" y="243.163">Fix broken </tspan><tspan x="227.473" y="258.163">formulas</tspan></text>
+    <text xml:space="preserve" fill="var(--text-muted)" font-family="Epilogue" font-size="11"
+        letter-spacing="0em" style="white-space:pre"><tspan x="198.877" y="274.052">Other users overwrote</tspan></text>
+    <rect width="160" height="92" y="300" fill="var(--flowchart-symbol)" rx="8" />
+    <text xml:space="preserve" fill="var(--text-h)" font-family="Epilogue" font-size="15"
+        letter-spacing="0em" style="white-space:pre"><tspan x="22.051" y="342.663">Update records</tspan></text>
+    <text xml:space="preserve" fill="var(--text-muted)" font-family="Epilogue" font-size="11"
+        letter-spacing="0em" style="white-space:pre"><tspan x="20.585" y="358.552">By hand, hope it holds</tspan></text>
+    <path fill="var(--flowchart-line)"
+        d="M79.293 300.707a1 1 0 0 0 1.414 0l6.364-6.364a1 1 0 1 0-1.414-1.414L80 298.586l-5.657-5.657a1 1 0 1 0-1.414 1.414zM80 273h-1v27h2v-27zM80.707 391.293a1 1 0 0 0-1.414 0l-6.364 6.364a1 1 0 1 0 1.414 1.414L80 393.414l5.657 5.657a1 1 0 1 0 1.414-1.414zM80 392h-1v26h2v-26zM99 253h-1v2h1v-2m81.707 1.707a1 1 0 0 0 0-1.414l-6.364-6.364a.999.999 0 1 0-1.414 1.414l5.657 5.657-5.657 5.657a.999.999 0 1 0 1.414 1.414zM99 254v1h81v-2H99zM159.293 345.293a1 1 0 0 0 0 1.414l6.364 6.364a.999.999 0 1 0 1.414-1.414L161.414 346l5.657-5.657a.999.999 0 1 0-1.414-1.414zM241 347h1v-2h-1v2m-81-1v1h81v-2h-81z" />
+    <rect width="31" height="31" x="58" y="253.92" fill="var(--flowchart-symbol)" rx="4"
+        transform="rotate(-45 58 253.92)" />
+    <rect width="160" height="92" fill="var(--flowchart-symbol)" rx="8" />
+    <text xml:space="preserve" fill="var(--text-h)" font-family="Epilogue" font-size="15"
+        letter-spacing="0em" style="white-space:pre"><tspan x="23.875" y="42.663">Open Excel and </tspan><tspan x="63.359" y="57.663">Rally</tspan></text>
+    <rect width="160" height="92" y="116" fill="var(--flowchart-symbol)" rx="8" />
+    <text xml:space="preserve" fill="var(--text-h)" font-family="Epilogue" font-size="15"
+        letter-spacing="0em" style="white-space:pre"><tspan x="36.392" y="151.163">Check each </tspan><tspan x="51.56" y="166.163">Feature</tspan></text>
+    <text xml:space="preserve" fill="var(--text-muted)" font-family="Epilogue" font-size="11"
+        letter-spacing="0em" style="white-space:pre"><tspan x="24.162" y="182.052">~400 items, manually</tspan></text>
+    <path fill="var(--flowchart-line)"
+        d="M259.293 414.707a1 1 0 0 0 1.414 0l6.364-6.364a.999.999 0 1 0-1.414-1.414L260 412.586l-5.657-5.657a.999.999 0 1 0-1.414 1.414zM260 364h-1v50h2v-50z" />
+    <rect width="31" height="31" x="238" y="346" fill="var(--flowchart-symbol)" rx="4"
+        transform="rotate(-45 238 346)" />
+    <path fill="var(--flowchart-line)"
+        d="M79.293 116.707a1 1 0 0 0 1.414 0l6.364-6.364a1 1 0 1 0-1.414-1.414L80 114.586l-5.657-5.657a1 1 0 1 0-1.414 1.414zM80 92h-1v24h2V92zM80 418h92zm92 101H92c-7.18 0-13-5.82-13-13h2c0 6.075 4.925 11 11 11h80zm-80 0c-7.18 0-13-5.82-13-13v-88h2v88c0 6.075 4.925 11 11 11zm80-101v100zM172 506h80zm81 0c0 7.18-5.82 13-13 13h-68v-2h68c6.075 0 11-4.925 11-11zm-81 12v-12zm81-12c0 7.18-5.82 13-13 13v-2c6.075 0 11-4.925 11-11z" />
     <path fill="var(--color-warning)"
-        d="M129.268 244c.77-1.333 2.694-1.333 3.464 0l7.794 13.5c.77 1.333-.192 3-1.732 3h-15.588c-1.54 0-2.502-1.667-1.732-3z" />
+        d="M135 244c.77-1.333 2.694-1.333 3.464 0l7.794 13.5c.77 1.333-.192 3-1.732 3h-15.588c-1.54 0-2.502-1.667-1.732-3z" />
     <text xml:space="preserve" fill="var(--text-on-vibrant)" font-family="Epilogue" font-size="13" font-weight="bold"
-        letter-spacing="0em" style="white-space:pre">
-        <tspan x="129.039" y="258.108">!</tspan>
-    </text>
+        letter-spacing="0em" style="white-space:pre"><tspan x="135" y="258.108">!</tspan></text>
     <path fill="var(--color-warning)"
-        d="M240.268 379c.77-1.333 2.694-1.333 3.464 0l7.794 13.5c.77 1.333-.192 3-1.732 3h-15.588c-1.54 0-2.502-1.667-1.732-3z" />
+        d="M258.268 379c.77-1.333 2.694-1.333 3.464 0l7.794 13.5c.77 1.333-.192 3-1.732 3h-15.588c-1.54 0-2.502-1.667-1.732-3z" />
     <text xml:space="preserve" fill="var(--text-on-vibrant)" font-family="Epilogue" font-size="13" font-weight="bold"
-        letter-spacing="0em" style="white-space:pre">
-        <tspan x="240.205" y="392.649">!</tspan>
-    </text>
+        letter-spacing="0em" style="white-space:pre"><tspan x="258.205" y="392.649">!</tspan></text>
+    <path fill="var(--flowchart-line)"
+        d="M79.293 234.707a1 1 0 0 0 1.414 0l6.364-6.364a1 1 0 1 0-1.414-1.414L80 232.586l-5.657-5.657a1 1 0 1 0-1.414 1.414zM80 208h-1v26h2v-26zM259.293 326.707a1 1 0 0 0 1.414 0l6.364-6.364a.999.999 0 1 0-1.414-1.414L260 324.586l-5.657-5.657a.999.999 0 1 0-1.414 1.414zM260 300h-1v26h2v-26z" />
 </svg>

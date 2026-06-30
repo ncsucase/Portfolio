@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="340" height="212" fill="none" viewBox="0 0 340 212">
+    <path fill="var(--bg)" d="M0 0h340v212H0z" />
+    <path fill="url(#a_mcdtm)"
+        d="M28.846 14 3 89.699V174h336V89.699l-25.846-8.602-25.846-20.645-26.493 44.731h-25.846l-25.846-8.602-25.2 34.408-25.846 8.602-25.846-24.086-25.846-34.408-25.847-10.323H54.692z" />
+    <path stroke="var(--text)" stroke-linecap="round" stroke-width="2"
+        d="M3 89.699 28.846 14l25.846 56.774H80.54l25.846 10.323 25.846 34.408 25.846 24.086 25.846-8.602 25.2-34.408 25.846 8.602h25.846l26.493-44.731 25.846 20.645L339 89.699" />
+    <mask id="b_mcdtm" width="336" height="39" x="3" y="173" fill="black" maskUnits="userSpaceOnUse">
+        <path fill="white" d="M3 173h336v39H3z" />
+        <path d="M3 174h336v38H3z" />
+    </mask>
+    <path fill="var(--border)" d="M3 174v1h336v-2H3z" mask="url(#b_mcdtm)" />
+    <text xml:space="preserve" fill="var(--text)" font-family="Inter" font-size="11"
+        letter-spacing="0em" style="white-space:pre"><tspan x="6.254" y="188.5">Q1</tspan></text>
+    <text xml:space="preserve" fill="var(--text)" font-family="Inter" font-size="11"
+        letter-spacing="0em" style="white-space:pre"><tspan x="29.48" y="188.5">Q2</tspan></text>
+    <text xml:space="preserve" fill="var(--text)" font-family="Inter" font-size="11"
+        letter-spacing="0em" style="white-space:pre"><tspan x="53.309" y="188.5">Q3</tspan></text>
+    <text xml:space="preserve" fill="var(--text)" font-family="Inter" font-size="11"
+        letter-spacing="0em" style="white-space:pre"><tspan x="77.282" y="188.5">Q4</tspan></text>
+    <text xml:space="preserve" fill="var(--text)" font-family="Inter" font-size="11"
+        letter-spacing="0em" style="white-space:pre"><tspan x="3" y="209.5">2023</tspan></text>
+    <mask id="c_mcdtm" fill="white">
+        <path d="M99 174h96v38H99z" />
+    </mask>
+    <path fill="var(--border)" d="M99 212h1v-38h-2v38z" mask="url(#c_mcdtm)" />
+    <text xml:space="preserve" fill="var(--text)" font-family="Inter" font-size="11"
+        letter-spacing="0em" style="white-space:pre"><tspan x="106.254" y="188.5">Q1</tspan></text>
+    <text xml:space="preserve" fill="var(--text)" font-family="Inter" font-size="11"
+        letter-spacing="0em" style="white-space:pre"><tspan x="128.147" y="188.5">Q2</tspan></text>
+    <text xml:space="preserve" fill="var(--text)" font-family="Inter" font-size="11"
+        letter-spacing="0em" style="white-space:pre"><tspan x="150.642" y="188.5">Q3</tspan></text>
+    <text xml:space="preserve" fill="var(--text)" font-family="Inter" font-size="11"
+        letter-spacing="0em" style="white-space:pre"><tspan x="173.282" y="188.5">Q4</tspan></text>
+    <text xml:space="preserve" fill="var(--text)" font-family="Inter" font-size="11"
+        letter-spacing="0em" style="white-space:pre"><tspan x="103" y="209.5">2024</tspan></text>
+    <mask id="d_mcdtm" fill="white">
+        <path d="M195 174h96v38h-96z" />
+    </mask>
+    <path fill="var(--border)" d="M195 212h1v-38h-2v38z" mask="url(#d_mcdtm)" />
+    <text xml:space="preserve" fill="var(--text)" font-family="Inter" font-size="11"
+        letter-spacing="0em" style="white-space:pre"><tspan x="202.254" y="188.5">Q1</tspan></text>
+    <text xml:space="preserve" fill="var(--text)" font-family="Inter" font-size="11"
+        letter-spacing="0em" style="white-space:pre"><tspan x="224.147" y="188.5">Q2</tspan></text>
+    <text xml:space="preserve" fill="var(--text)" font-family="Inter" font-size="11"
+        letter-spacing="0em" style="white-space:pre"><tspan x="246.642" y="188.5">Q3</tspan></text>
+    <text xml:space="preserve" fill="var(--text)" font-family="Inter" font-size="11"
+        letter-spacing="0em" style="white-space:pre"><tspan x="269.282" y="188.5">Q4</tspan></text>
+    <text xml:space="preserve" fill="var(--text)" font-family="Inter" font-size="11"
+        letter-spacing="0em" style="white-space:pre"><tspan x="199" y="209.5">2025</tspan></text>
+    <mask id="e_mcdtm" fill="white">
+        <path d="M291 174h48v38h-48z" />
+    </mask>
+    <path fill="var(--border)" d="M291 212h1v-38h-2v38z" mask="url(#e_mcdtm)" />
+    <text xml:space="preserve" fill="var(--text)" font-family="Inter" font-size="11"
+        letter-spacing="0em" style="white-space:pre"><tspan x="298.254" y="188.5">Q1</tspan></text>
+    <text xml:space="preserve" fill="var(--text)" font-family="Inter" font-size="11"
+        letter-spacing="0em" style="white-space:pre"><tspan x="321.48" y="188.5">Q2</tspan></text>
+    <text xml:space="preserve" fill="var(--text)" font-family="Inter" font-size="11"
+        letter-spacing="0em" style="white-space:pre"><tspan x="295" y="209.5">2026</tspan></text>
+    <text xml:space="preserve" fill="var(--text)" font-family="Epilogue" font-size="11"
+        letter-spacing="0em" style="white-space:pre"><tspan x="208.062" y="55.937">Tech upgrade</tspan></text>
+    <path stroke="var(--text)" stroke-dasharray="3 3" stroke-linecap="round" d="M276.5 58.5v15" />
+    <circle cx="276.5" cy="79.347" r="5.5" fill="url(#f_mcdtm)" />
+    <text xml:space="preserve" fill="var(--text)" font-family="Epilogue" font-size="11"
+        letter-spacing="0em" style="white-space:pre"><tspan x="104.832" y="70.937">Tech instability</tspan></text>
+    <path stroke="var(--text)" stroke-dasharray="3 3" stroke-linecap="round" d="M180.5 74.5v51" />
+    <circle cx="180.5" cy="131.5" r="5.5" fill="url(#g_mcdtm)" />
+    <text xml:space="preserve" fill="var(--text)" font-family="Epilogue" font-size="11"
+        letter-spacing="0em" style="white-space:pre"><tspan x="7" y="106.937">Features removed</tspan></text>
+    <path stroke="var(--text)" stroke-dasharray="3 3" stroke-linecap="round" d="M12.5 66.884v31" />
+    <circle cx="12.5" cy="61.116" r="5.5" fill="url(#h_mcdtm)" />
+    <text xml:space="preserve" fill="var(--text)" font-family="Epilogue" font-size="11"
+        letter-spacing="0em" style="white-space:pre"><tspan x="32" y="8.553">Immediate funds availability</tspan></text>
+    <path stroke="var(--text)" stroke-dasharray="3 3" stroke-linecap="round" d="M37.5 11.884v15" />
+    <circle cx="37.5" cy="32.5" r="5.5" fill="url(#i_mcdtm)" />
+    <text xml:space="preserve" fill="var(--text)" font-family="Epilogue" font-size="11"
+        letter-spacing="0em" style="white-space:pre"><tspan x="55" y="36.553">Reduce auto-capture
+</tspan><tspan x="55" y="47.553">timeout to 8s</tspan></text>
+    <path stroke="var(--text)" stroke-dasharray="3 3" stroke-linecap="round" d="M60.5 50.5v15" />
+    <circle cx="60.5" cy="71.5" r="5.5" fill="url(#j_mcdtm)" />
+    <text xml:space="preserve" fill="var(--text)" font-family="Epilogue" font-size="11"
+        letter-spacing="0em" style="white-space:pre"><tspan x=".943" y="138.705">Restore live feedback
+</tspan><tspan x="29.346" y="149.705">&amp; history images </tspan></text>
+    <path stroke="var(--text)" stroke-dasharray="3 3" stroke-linecap="round" d="M113.5 98.653v31" />
+    <circle cx="113.5" cy="92.5" r="5.5" fill="url(#k_mcdtm)" />
+    <text xml:space="preserve" fill="var(--text)" font-family="Epilogue" font-size="11"
+        letter-spacing="0em" style="white-space:pre"><tspan x="202" y="136.705">Restore image preview </tspan></text>
+    <path stroke="var(--text)" stroke-dasharray="3 3" stroke-linecap="round" d="M207.5 104.653v23" />
+    <circle cx="207.5" cy="98.5" r="5.5" fill="url(#l_mcdtm)" />
+    <text xml:space="preserve" fill="var(--text)" font-family="Epilogue" font-size="11"
+        letter-spacing="0em" style="white-space:pre"><tspan x="191.462" y="20.937">Redesign start screen</tspan></text>
+    <path stroke="var(--text)" stroke-dasharray="3 3" stroke-linecap="round" d="M306.5 23.5v47" />
+    <circle cx="306.5" cy="76.5" r="5.5" fill="url(#m_mcdtm)" />
+    <defs>
+        <radialGradient id="f_mcdtm" cx="0" cy="0" r="1"
+            gradientTransform="rotate(224.913 158.535 -15.855)scale(15.5466)"
+            gradientUnits="userSpaceOnUse">
+            <stop style="stop-color: var(--color-warning)" />
+            <stop offset="1" style="stop-color: var(--color-caution)" />
+        </radialGradient>
+        <radialGradient id="g_mcdtm" cx="0" cy="0" r="1"
+            gradientTransform="rotate(45 -64.595 274.244)scale(15.5563)"
+            gradientUnits="userSpaceOnUse">
+            <stop style="stop-color: var(--color-warning)" />
+            <stop offset=".803" style="stop-color: var(--color-error)" />
+        </radialGradient>
+        <radialGradient id="h_mcdtm" cx="0" cy="0" r="1"
+            gradientTransform="rotate(45 -63.634 36.258)scale(15.5563)"
+            gradientUnits="userSpaceOnUse">
+            <stop style="stop-color: var(--color-warning)" />
+            <stop offset=".803" style="stop-color: var(--color-error)" />
+        </radialGradient>
+        <radialGradient id="i_mcdtm" cx="0" cy="0" r="1"
+            gradientTransform="rotate(224.913 29.353 10.114)scale(15.5466)"
+            gradientUnits="userSpaceOnUse">
+            <stop style="stop-color: var(--color-warning)" />
+            <stop offset="1" style="stop-color: var(--color-caution)" />
+        </radialGradient>
+        <radialGradient id="j_mcdtm" cx="0" cy="0" r="1"
+            gradientTransform="rotate(45 -52.169 99.39)scale(15.5563)"
+            gradientUnits="userSpaceOnUse">
+            <stop style="stop-color: var(--color-caution)" />
+            <stop offset=".788" style="stop-color: var(--color-success)" />
+        </radialGradient>
+        <radialGradient id="k_mcdtm" cx="0" cy="0" r="1"
+            gradientTransform="rotate(45 -51.018 173.868)scale(15.5563)"
+            gradientUnits="userSpaceOnUse">
+            <stop style="stop-color: var(--color-caution)" />
+            <stop offset=".788" style="stop-color: var(--color-success)" />
+        </radialGradient>
+        <radialGradient id="l_mcdtm" cx="0" cy="0" r="1"
+            gradientTransform="rotate(45 -11.26 290.336)scale(15.5563)"
+            gradientUnits="userSpaceOnUse">
+            <stop style="stop-color: var(--color-caution)" />
+            <stop offset=".788" style="stop-color: var(--color-success)" />
+        </radialGradient>
+        <radialGradient id="m_mcdtm" cx="0" cy="0" r="1"
+            gradientTransform="rotate(45 64.795 398.84)scale(15.5563)"
+            gradientUnits="userSpaceOnUse">
+            <stop style="stop-color: var(--color-caution)" />
+            <stop offset=".788" style="stop-color: var(--color-success)" />
+        </radialGradient>
+        <linearGradient id="a_mcdtm" x1="171" x2="171" y1="14" y2="174" gradientUnits="userSpaceOnUse">
+            <stop style="stop-color: var(--bg-deep)" />
+            <stop offset="1" style="stop-color: var(--bg-deep)" stop-opacity="0" />
+        </linearGradient>
+    </defs>
+</svg>

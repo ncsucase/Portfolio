@@ -97,6 +97,8 @@ Assigned suffixes:
 - `_prt` — pm-rotates-timeline.svg
 - `_ars` — airtable-rally-sync-diagram.svg
 - `_arsm` — airtable-rally-sync-diagram-mobile.svg
+- `_mcdt` — mcd-timeline.svg
+- `_mcdtm` — mcd-timeline-mobile.svg
 
 ### Filter pattern — single soft pass only
 Figma exports a double-pass filter (stdDeviation=1 tight + stdDeviation=4 soft). The tight pass causes jagged anti-aliasing on circles and arcs. **Remove it — use only the stdDeviation=4 pass.**
@@ -145,3 +147,5 @@ Use the `style` attribute — bare `stop-color="var(...)"` does not work in most
 - ✅ a-system-built-for-designers/airtable-rally-sync-diagram-mobile.svg (suffix: _arsm)
 - ✅ structure-follows-craft/pm-rotations-flowchart.svg
 - ✅ structure-follows-craft/mismatched-coaching-flowchart.svg
+- ✅ mobile-check-deposit/mcd-timeline.svg (suffix: _mcdt)
+- ✅ mobile-check-deposit/mcd-timeline-mobile.svg (suffix: _mcdtm)

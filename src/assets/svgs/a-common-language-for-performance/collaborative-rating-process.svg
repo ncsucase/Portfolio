@@ -1,31 +1,31 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="480" height="219" fill="none" viewBox="0 0 480 219">
-    <path fill="var(--bg)" d="M0 0h480v219H0z" />
-    <rect width="140" height="92" x="340" y="63.5" fill="var(--bg-deep)" rx="8" />
-    <text xml:space="preserve" fill="var(--text)" fill-opacity=".55" font-family="Epilogue" font-size="10"
-        letter-spacing="0em" style="white-space:pre"><tspan x="388.247" y="87.775">Designer</tspan></text>
-    <text xml:space="preserve" fill="var(--text)" font-family="Epilogue" font-size="15"
-        letter-spacing="0em" style="white-space:pre"><tspan x="369.534" y="113.663">Consistent </tspan><tspan x="366.384" y="128.662">growth plan</tspan></text>
-    <path fill="var(--text)"
-        d="M340.707 110.207a1 1 0 0 0 0-1.414l-6.364-6.364a.999.999 0 1 0-1.414 1.414l5.657 5.657-5.657 5.657a.999.999 0 1 0 1.414 1.414zM316 109.5v1h24v-2h-24z" />
-    <rect width="140" height="92" x="176" y="63.5" fill="var(--bg-deep)" rx="8" />
-    <text xml:space="preserve" fill="var(--text)" fill-opacity=".55" font-family="Epilogue" font-size="10"
-        letter-spacing="0em" style="white-space:pre"><tspan x="197.367" y="87.775">Manager + Designer</tspan></text>
-    <text xml:space="preserve" fill="var(--text)" font-family="Epilogue" font-size="15"
-        letter-spacing="0em" style="white-space:pre"><tspan x="200.443" y="113.663">Discrepancy </tspan><tspan x="197.125" y="128.662">conversation</tspan></text>
-    <path fill="var(--text)"
-        d="M176.707 110.207a1 1 0 0 0 0-1.414l-6.364-6.364a.999.999 0 1 0-1.414 1.414l5.657 5.657-5.657 5.657a.999.999 0 1 0 1.414 1.414zM164 109.5v1h12v-2h-12zM152 63.5h12zm12 47c-7.18 0-13-5.82-13-13h2c0 6.075 4.925 11 11 11zm0 0c-7.18 0-13-5.82-13-13v-34h2v34c0 6.075 4.925 11 11 11zm0-47v46z" />
-    <path fill="var(--text)"
-        d="M151 121.5c0-7.18 5.82-13 13-13v2c-6.075 0-11 4.925-11 11zm13 34h-12zm-13 0v-34c0-7.18 5.82-13 13-13v2c-6.075 0-11 4.925-11 11v34zm13-46v46zM140 45c7.18 0 13 5.82 13 13h-2c0-6.075-4.925-11-11-11zm12 47h-12zm-12 0V46zm0-47c7.18 0 13 5.82 13 13v34h-2V58c0-6.075-4.925-11-11-11z" />
-    <path fill="var(--text)"
-        d="M140 127h12zm13 34c0 7.18-5.82 13-13 13v-2c6.075 0 11-4.925 11-11zm-13 12v-46zm13-46v34c0 7.18-5.82 13-13 13v-2c6.075 0 11-4.925 11-11v-34z" />
-    <rect width="140" height="92" fill="var(--bg-deep)" rx="8" />
-    <text xml:space="preserve" fill="var(--text)" fill-opacity=".55" font-family="Epilogue" font-size="10"
-        letter-spacing="0em" style="white-space:pre"><tspan x="48.247" y="24.275">Designer</tspan></text>
-    <text xml:space="preserve" fill="var(--text)" font-family="Epilogue" font-size="15"
-        letter-spacing="0em" style="white-space:pre"><tspan x="33.049" y="50.163">Rates self </tspan><tspan x="16.152" y="65.162">with the rubric</tspan></text>
-    <rect width="140" height="92" y="127" fill="var(--bg-deep)" rx="8" />
-    <text xml:space="preserve" fill="var(--text)" fill-opacity=".55" font-family="Epilogue" font-size="10"
-        letter-spacing="0em" style="white-space:pre"><tspan x="48.603" y="151.275">Manager</tspan></text>
-    <text xml:space="preserve" fill="var(--text)" font-family="Epilogue" font-size="15"
-        letter-spacing="0em" style="white-space:pre"><tspan x="48.862" y="169.663">Rates </tspan><tspan x="19.968" y="184.663">designer with </tspan><tspan x="26.018" y="199.662">same rubric</tspan></text>
+<svg xmlns="http://www.w3.org/2000/svg" width="540" height="219" fill="none" viewBox="0 0 540 219">
+    <path fill="var(--bg)" d="M0 0h540v219H0z" />
+    <rect width="160" height="93" x="380" y="63" fill="var(--flowchart-symbol)" rx="8" />
+    <text xml:space="preserve" fill="var(--text-muted)" font-family="Epilogue" font-size="11"
+        letter-spacing="0em" style="white-space:pre"><tspan x="436.072" y="87.552">Designer</tspan></text>
+    <text xml:space="preserve" fill="var(--text-h)" font-family="Epilogue" font-size="15"
+        letter-spacing="0em" style="white-space:pre"><tspan x="419.534" y="113.663">Consistent </tspan><tspan x="416.384" y="128.662">growth plan</tspan></text>
+    <path fill="var(--flowchart-line)"
+        d="M380.707 110.207a1 1 0 0 0 0-1.414l-6.364-6.364a.999.999 0 1 0-1.414 1.414l5.657 5.657-5.657 5.657a.999.999 0 1 0 1.414 1.414zM356 109.5v1h24v-2h-24z" />
+    <rect width="160" height="93" x="196" y="63" fill="var(--flowchart-symbol)" rx="8" />
+    <text xml:space="preserve" fill="var(--text-muted)" font-family="Epilogue" font-size="11"
+        letter-spacing="0em" style="white-space:pre"><tspan x="222.504" y="87.552">Manager + Designer</tspan></text>
+    <text xml:space="preserve" fill="var(--text-h)" font-family="Epilogue" font-size="15"
+        letter-spacing="0em" style="white-space:pre"><tspan x="230.443" y="113.663">Discrepancy </tspan><tspan x="227.125" y="128.662">conversation</tspan></text>
+    <path fill="var(--flowchart-line)"
+        d="M196.707 110.207a1 1 0 0 0 0-1.414l-6.364-6.364a.999.999 0 1 0-1.414 1.414l5.657 5.657-5.657 5.657a.999.999 0 1 0 1.414 1.414zM184 109.5v1h12v-2h-12zM172 63.5h12zm12 47c-7.18 0-13-5.82-13-13h2c0 6.075 4.925 11 11 11zm0 0c-7.18 0-13-5.82-13-13v-34h2v34c0 6.075 4.925 11 11 11zm0-47v46z" />
+    <path fill="var(--flowchart-line)"
+        d="M171 121.5c0-7.18 5.82-13 13-13v2c-6.075 0-11 4.925-11 11zm13 34h-12zm-13 0v-34c0-7.18 5.82-13 13-13v2c-6.075 0-11 4.925-11 11v34zm13-46v46zM160 45c7.18 0 13 5.82 13 13h-2c0-6.075-4.925-11-11-11zm12 47h-12zm-12 0V46zm0-47c7.18 0 13 5.82 13 13v34h-2V58c0-6.075-4.925-11-11-11z" />
+    <path fill="var(--flowchart-line)"
+        d="M160 127h12zm13 34c0 7.18-5.82 13-13 13v-2c6.075 0 11-4.925 11-11zm-13 12v-46zm13-46v34c0 7.18-5.82 13-13 13v-2c6.075 0 11-4.925 11-11v-34z" />
+    <rect width="160" height="92" fill="var(--flowchart-symbol)" rx="8" />
+    <text xml:space="preserve" fill="var(--text-muted)" font-family="Epilogue" font-size="11"
+        letter-spacing="0em" style="white-space:pre"><tspan x="56.072" y="24.552">Designer</tspan></text>
+    <text xml:space="preserve" fill="var(--text-h)" font-family="Epilogue" font-size="15"
+        letter-spacing="0em" style="white-space:pre"><tspan x="25.669" y="50.163">Rates self with </tspan><tspan x="43.533" y="65.162">the rubric</tspan></text>
+    <rect width="160" height="92" y="127" fill="var(--flowchart-symbol)" rx="8" />
+    <text xml:space="preserve" fill="var(--text-muted)" font-family="Epilogue" font-size="11"
+        letter-spacing="0em" style="white-space:pre"><tspan x="56.464" y="151.552">Manager</tspan></text>
+    <text xml:space="preserve" fill="var(--text-h)" font-family="Epilogue" font-size="15"
+        letter-spacing="0em" style="white-space:pre"><tspan x="24.336" y="177.163">Rates designer </tspan><tspan x="18.638" y="192.162">with same rubric</tspan></text>
 </svg>

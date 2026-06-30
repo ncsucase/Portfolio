@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="204" height="833" fill="none" viewBox="0 0 204 833">
+    <path fill="var(--bg)" d="M0 0h204v833H0z" />
+    <g clip-path="url(#cp1_mfa)">
+        <rect width="100" height="200" x="52" y="2" fill="var(--wf-bg)" rx="16" />
+        <path fill="var(--truist-purple)" d="M52 2h100v24H52z" />
+    <rect width="84" height="12.679" x="60" y="32" fill="var(--wf-text)" rx="6.34" />
+    <rect width="40" height="9.412" x="62" y="33.634" fill="var(--wf-bg)" rx="4.706" />
+    <rect width="48" height="3" x="78" y="50.679" fill="var(--wf-text)" rx="1.5" />
+    <mask id="a_mfa" fill="white">
+        <path d="M52 59.68h100v18.64H52z" />
+    </mask>
+    <path fill="var(--wf-text)" d="M52 59.68v1h100v-2H52z" mask="url(#a_mfa)" />
+    <rect width="38" height="5" x="60" y="66.5" fill="var(--wf-text)" rx="2.5" />
+    <path fill="var(--truist-purple)"
+        d="M144 68.999a.5.5 0 0 0-.158-.352l-2.936-2.842a.42.42 0 0 0-.31-.126.43.43 0 0 0-.223.059.43.43 0 0 0-.161.158.438.438 0 0 0 .076.542l2.654 2.558-2.654 2.56a.444.444 0 0 0-.076.545q.059.1.161.158a.4.4 0 0 0 .223.062.42.42 0 0 0 .31-.13l2.936-2.84a.5.5 0 0 0 .12-.165.5.5 0 0 0 .038-.187" />
+    <mask id="b_mfa" fill="white">
+        <path d="M52 78.32h100v18.642H52z" />
+    </mask>
+    <path fill="var(--wf-text)" d="M52 78.32v1h100v-2H52z" mask="url(#b_mfa)" />
+    <rect width="38" height="5" x="60" y="85.142" fill="var(--wf-text)" rx="2.5" />
+    <path fill="var(--truist-purple)"
+        d="M144 87.64a.5.5 0 0 0-.158-.351l-2.936-2.842a.42.42 0 0 0-.31-.126.43.43 0 0 0-.223.058.43.43 0 0 0-.161.159.438.438 0 0 0 .076.542l2.654 2.557-2.654 2.56a.444.444 0 0 0-.076.546q.059.1.161.158a.4.4 0 0 0 .223.061.42.42 0 0 0 .31-.129l2.936-2.841a.5.5 0 0 0 .12-.164.5.5 0 0 0 .038-.188" />
+    <mask id="c_mfa" fill="white">
+        <path d="M52 96.962h100v18.642H52z" />
+    </mask>
+    <path fill="var(--wf-text)" d="M52 96.962v1h100v-2H52zm100 18.642v-1H52v2h100z" mask="url(#c_mfa)" />
+    <rect width="38" height="5" x="60" y="103.783" fill="var(--wf-text)" rx="2.5" />
+    <path fill="var(--truist-purple)"
+        d="M144 106.282a.5.5 0 0 0-.158-.352l-2.936-2.842a.42.42 0 0 0-.31-.126.43.43 0 0 0-.223.059.44.44 0 0 0-.223.381q0 .181.138.319l2.654 2.558-2.654 2.56a.45.45 0 0 0-.138.32q0 .126.062.225a.43.43 0 0 0 .161.158.4.4 0 0 0 .223.062.42.42 0 0 0 .31-.129l2.936-2.842a.5.5 0 0 0 .12-.164.5.5 0 0 0 .038-.187" />
+    <rect width="24" height="5" x="60" y="121.604" fill="var(--wf-text)" rx="2.5" />
+    <rect width="64" height="3" x="60" y="130.604" fill="var(--wf-text)" rx="1.5" />
+    <rect width="84" height="12" x="60" y="143.604" fill="var(--truist-purple)" stroke="var(--truist-purple)" rx="6" />
+        <rect width="84" height="12" x="60" y="159.604" stroke="var(--truist-purple)" stroke-width="2" rx="6" />
+    </g>
+    <rect width="100" height="200" x="52" y="2" stroke="var(--wf-strong)" stroke-width="4" rx="16" />
+    <path fill="var(--flowchart-line)"
+        d="M101.293 234.707a1 1 0 0 0 1.414 0l6.364-6.364a.999.999 0 1 0-1.414-1.414L102 232.586l-5.657-5.657a1 1 0 1 0-1.414 1.414zM102 202h-1v32h2v-32zM101.293 367.707a1 1 0 0 0 1.414 0l6.364-6.364a.999.999 0 1 0-1.414-1.414L102 365.586l-5.657-5.657a1 1 0 1 0-1.414 1.414zM102 335h-1v32h2v-32zM101.293 500.707a1 1 0 0 0 1.414 0l6.364-6.364a.999.999 0 1 0-1.414-1.414L102 498.586l-5.657-5.657a1 1 0 1 0-1.414 1.414zM102 468h-1v32h2v-32z" />
+    <g clip-path="url(#d_mfa)">
+        <rect width="200" height="100" x="2" y="235" fill="var(--wf-bg)" rx="16" />
+        <text xml:space="preserve" fill="var(--wf-strong)" font-family="SF Pro" font-size="11"
+            font-weight="590" letter-spacing="-.08" style="white-space:pre"><tspan x="26" y="257.41">1</tspan></text>
+        <rect width="138" height="8" x="40" y="249.5" fill="var(--wf-text)" rx="4" />
+        <text xml:space="preserve" fill="var(--wf-strong)" font-family="SF Pro" font-size="11"
+            font-weight="590" letter-spacing="-.08" style="white-space:pre"><tspan x="26" y="274.41">2</tspan></text>
+        <rect width="138" height="8" x="40" y="266.5" fill="var(--wf-text)" rx="4" />
+        <text xml:space="preserve" fill="var(--wf-strong)" font-family="SF Pro" font-size="11"
+            font-weight="590" letter-spacing="-.08" style="white-space:pre"><tspan x="26" y="291.41">3</tspan></text>
+        <rect width="138" height="8" x="40" y="283.5" fill="var(--wf-text)" rx="4" />
+        <path fill="var(--truist-purple)" d="M2 311h200v24H2z" />
+        <rect width="43" height="14" x="80.5" y="316" stroke="var(--wf-bg)" stroke-width="2" rx="7" />
+    </g>
+    <rect width="200" height="100" x="2" y="235" stroke="var(--wf-strong)" stroke-width="4" rx="16" />
+    <g clip-path="url(#e_mfa)">
+        <rect width="200" height="100" x="2" y="368" fill="var(--wf-bg)" rx="16" />
+        <path stroke="var(--wf-border)" stroke-width="2" d="M31 381h142v48H31z" />
+        <path fill="var(--truist-purple)" d="M2 444h200v24H2z" />
+        <rect width="32" height="16" x="158" y="447" fill="var(--color-success)" rx="8" />
+        <rect width="14" height="12" x="174" y="449" fill="var(--wf-bg)" rx="6" />
+    </g>
+    <rect width="200" height="100" x="2" y="368" stroke="var(--wf-strong)" stroke-width="4" rx="16" />
+    <g clip-path="url(#cp4_mfa)">
+        <rect width="196" height="96" x="4" y="503" fill="var(--wf-modal-bg)" rx="14" />
+        <path stroke="var(--wf-bg)" stroke-width="2" d="M31 518h142v48H31z" />
+        <rect width="85" height="24" x="59.5" y="530" fill="#00C3D0" rx="12" />
+        <text xml:space="preserve" fill="var(--text-on-vibrant)" font-family="Epilogue" font-size="15"
+            letter-spacing="0em" style="white-space:pre"><tspan x="67.51" y="546.163">Captured</tspan></text>
+        <path fill="var(--truist-purple)" d="M6 573h192v24H6z" />
+        <rect width="43" height="14" x="80.5" y="577" stroke="var(--wf-bg)" stroke-width="2" rx="7" />
+    </g>
+    <rect width="196" height="96" x="4" y="503" stroke="var(--wf-strong)" stroke-width="4" rx="14" />
+    <text xml:space="preserve" fill="var(--text)" font-family="Epilogue" font-size="11"
+        letter-spacing="0em" style="white-space:pre"><tspan x="129" y="359.552">No feedback</tspan></text>
+    <text xml:space="preserve" fill="var(--text)" font-family="Epilogue" font-size="11"
+        letter-spacing="0em" style="white-space:pre"><tspan x="132" y="228.552">Instructions</tspan></text>
+    <text xml:space="preserve" fill="var(--text)" font-family="Epilogue" font-size="11"
+        letter-spacing="0em" style="white-space:pre"><tspan x="144" y="493.552">No quality</tspan></text>
+    <text xml:space="preserve" fill="var(--text)" font-family="Epilogue" font-size="11"
+        letter-spacing="0em" style="white-space:pre"><tspan x="118" y="675.552">Feedback </tspan><tspan x="118" y="686.552">after failure</tspan></text>
+    <g clip-path="url(#f_mfa)">
+        <rect width="100" height="200" x="2" y="633" fill="var(--wf-bg)" rx="16" />
+        <path fill="var(--truist-purple)" d="M6 637h92v24H6z" />
+        <rect width="74" height="22" x="15" y="668" fill="var(--wf-bg)" rx="3" />
+        <rect width="74" height="22" x="15" y="668" stroke="var(--color-error)" stroke-width="2" rx="3" />
+        <text xml:space="preserve" fill="var(--color-error)" font-family="Epilogue" font-size="15"
+            letter-spacing="0em" style="white-space:pre"><tspan x="34.019" y="683.163">Error</tspan></text>
+        <rect width="76" height="11.472" x="14" y="697" fill="var(--wf-text)" rx="5.736" />
+        <rect width="36" height="8.471" x="16" y="698.501" fill="var(--wf-bg)" rx="4.235" />
+        <rect width="48" height="3" x="28" y="714.472" fill="var(--wf-text)" rx="1.5" />
+        <mask id="g_mfa" fill="white">
+            <path d="M6 723.472h92v19H6z" />
+        </mask>
+        <path fill="var(--wf-text)" d="M6 723.472v1h92v-2H6z" mask="url(#g_mfa)" />
+        <rect width="38" height="5" x="14" y="730.472" fill="var(--wf-text)" rx="2.5" />
+        <use href="#chevron_mfa" x="86" y="729.472" />
+        <mask id="h_mfa" fill="white">
+            <path d="M6 742.472h92v19H6z" />
+        </mask>
+        <path fill="var(--wf-text)" d="M6 742.472v1h92v-2H6z" mask="url(#h_mfa)" />
+        <rect width="38" height="5" x="14" y="749.472" fill="var(--wf-text)" rx="2.5" />
+        <use href="#chevron_mfa" x="86" y="748.472" />
+        <mask id="i_mfa" fill="white">
+            <path d="M6 761.472h92v19H6z" />
+        </mask>
+        <path fill="var(--wf-text)" d="M6 761.472v1h92v-2H6zm92 19v-1H6v2h92z" mask="url(#i_mfa)" />
+        <rect width="38" height="5" x="14" y="768.472" fill="var(--wf-text)" rx="2.5" />
+        <use href="#chevron_mfa" x="86" y="767.472" />
+        <rect width="24" height="5" x="14" y="786.472" fill="var(--wf-text)" rx="2.5" />
+        <rect width="64" height="3" x="14" y="795.472" fill="var(--wf-text)" rx="1.5" />
+        <rect width="76" height="12" x="14" y="808.472" fill="var(--truist-purple)" stroke="var(--truist-purple)" rx="6" />
+        <rect width="76" height="12" x="14" y="824.472" stroke="var(--truist-purple)" stroke-width="2" rx="6" />
+    </g>
+    <rect width="96" height="196" x="4" y="635" stroke="var(--wf-strong)" stroke-width="4" rx="14" />
+    <path fill="var(--flowchart-line)"
+        d="M51.293 633.707a1 1 0 0 0 1.414 0l6.364-6.364a1 1 0 1 0-1.414-1.414L52 631.586l-5.657-5.657a1 1 0 1 0-1.414 1.414zM52 601h-1v32h2v-32z" />
+    <defs>
+        <clipPath id="cp1_mfa">
+            <rect width="100" height="200" x="52" y="2" fill="white" rx="16" />
+        </clipPath>
+        <clipPath id="cp4_mfa">
+            <rect width="196" height="96" x="4" y="503" fill="white" rx="14" />
+        </clipPath>
+        <clipPath id="d_mfa">
+            <rect width="200" height="100" x="2" y="235" fill="white" rx="16" />
+        </clipPath>
+        <clipPath id="e_mfa">
+            <rect width="200" height="100" x="2" y="368" fill="white" rx="16" />
+        </clipPath>
+        <clipPath id="f_mfa">
+            <rect width="100" height="200" x="2" y="633" fill="white" rx="16" />
+        </clipPath>
+        <path id="chevron_mfa" fill="var(--wf-text)" d="M3.84961 3.31934C3.84766 3.25098 3.83398 3.18848 3.80859 3.13184C3.7832 3.0752 3.74414 3.02051 3.69141 2.96777L0.755859 0.125977C0.671875 0.0419922 0.568359 0 0.445312 0C0.363281 0 0.289062 0.0195312 0.222656 0.0585938C0.154297 0.0976562 0.100586 0.150391 0.0615234 0.216797C0.0205078 0.283203 0 0.357422 0 0.439453C0 0.560547 0.0458984 0.666992 0.137695 0.758789L2.79199 3.31641L0.137695 5.87695C0.0458984 5.9707 0 6.07715 0 6.19629C0 6.28027 0.0205078 6.35547 0.0615234 6.42188C0.100586 6.48828 0.154297 6.54102 0.222656 6.58008C0.289062 6.62109 0.363281 6.6416 0.445312 6.6416C0.568359 6.6416 0.671875 6.59863 0.755859 6.5127L3.69141 3.6709C3.74609 3.61816 3.78613 3.56348 3.81152 3.50684C3.83691 3.44824 3.84961 3.38574 3.84961 3.31934Z" />
+    </defs>
+</svg>
