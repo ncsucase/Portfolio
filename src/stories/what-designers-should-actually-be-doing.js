@@ -1,22 +1,21 @@
 ﻿export const meta = {
-  title: 'What Designers Should Actually Be Doing',
-  slug: 'what-designers-should-actually-be-doing',         // must match the filename and URL: /stories/story-slug
+  title: 'What Designers Should Actually Be Doing',         // must match the filename and URL: /stories/story-slug
+  slug: 'what-designers-should-actually-be-doing',
   startDate: '2026-05',       // YYYY-MM format; used for sorting, display ("Jan 2024"), and computing duration for in-progress stories
   duration: '6 months',       // manual string for completed stories; ignored when status is 'in progress'
   status: 'in progress',      // `in progress` | `complete` (optional)
   contribution: 'Systems & Automation',
-  outcome: 'One sentence describing measurable impact.',
-  excerpt: `Spec production isn't where designers create value. I'm replacing the execution layer with an AI-powered system and redirecting that capacity toward the work only designers can do.`,
+  outcome: 'Redirected the effort from a single spec-generation tool to documented design judgment that grounds every AI tool touching design work, starting with the dev handoff.',
+  excerpt: `What started as a tool to generate developer specs became something bigger: documenting the contextual judgment that makes design good, so any AI tool in the org, ours or dev's, can draw on it.`,
   featured: true,             // set true on the story you want in the hero slot on home
   heroImage: null,             // or: import heroImg from '...' and set heroImage: heroImg
-  readTime: 5,
+  readTime: 6,
 }
 
 export const content = [
   {
     type: 'summary',
-    // Full paragraph shown in the summary band above the story body (italic, large).
-    text: `The design-to-dev handoff at Truist relies on a manual translation layer: UI designers interpreting wireframes, selecting components, annotating accessibility requirements, and producing documentation that developers struggle to use. I'm designing an AI-powered spec generation system to replace it. The planning is complete. The POC is next.`,
+    text: `I set out to build one tool: an AI system that would generate developer specs from Figma wireframes and close the handoff gap between UX and dev. Building it with our dev partners surfaced a bigger problem than the one I started with. This is the story of what changed, why, and what I'm building instead.`,
   },
   {
     type: 'heading',
@@ -42,19 +41,19 @@ export const content = [
   },
   {
     type: 'paragraph',
-    text: `Three things converged this year that make this worth solving now.`,
+    text: `Three things converged this year that made this worth solving.`,
   },
   {
     type: 'paragraph',
-    text: `First, a meaningful portion of my UI designer capacity is going to mechanical execution (component selection, token application, annotation) rather than the higher-order work my organization actually needs from design.`,
+    text: `First, a meaningful portion of my UI designer capacity was going to mechanical execution (component selection, token application, annotation) rather than the higher-order work my organization actually needs from design.`,
   },
   {
     type: 'paragraph',
-    text: `Second, Truist went through a round of layoffs that eliminated the team's internal accessibility specialists. That knowledge had previously compensated for some of the inconsistency in designer annotations. Without it, WCAG 2.1 AA compliance depends on individual designer recall. For a regulated financial institution, that's a risk that compounds quietly until an audit or incident make it impossible to ignore.`,
+    text: `Second, Truist went through a round of layoffs that eliminated the team's internal accessibility specialists. That knowledge had previously compensated for some of the inconsistency in designer annotations. Without it, WCAG 2.1 AA compliance depends on individual designer recall. For a regulated financial institution, that's a risk that compounds quietly until an audit or incident makes it impossible to ignore.`,
   },
   {
     type: 'paragraph',
-    text: `Third, developers aren't finding Figma files useful. No structured interaction documentation, unclear screen relationships, and the friction of navigating a canvas to find the information they need. Rework cycles increase as a result.`,
+    text: `Third, developers weren't finding Figma files useful. No structured interaction documentation, unclear screen relationships, and the friction of navigating a canvas to find the information they need. Rework cycles increase as a result.`,
   },
   {
     type: 'paragraph',
@@ -89,45 +88,112 @@ export const content = [
   {
     type: 'heading',
     level: 2,
-    text: 'The Approach',
+    text: 'The Original Plan',
   },
   {
     type: 'paragraph',
-    text: `I didn't start with the technology. I started with the question of what the handoff process should actually produce, and who it should serve.`,
+    text: `The plan I started with was narrow and mechanical, and I want to name the assumptions in it plainly, because the pivot only makes sense against what I originally believed.`,
+  },
+  {
+    type: 'list',
+    items: [
+      `We'd pull wireframe structure directly from Figma through its REST API.`,
+      `The output was a single structured spec document, generated once, that would replace the need for developers to open Figma at all.`,
+      `The win was mechanization: take a slow manual process and make an AI system do it instead.`,
+    ]
   },
   {
     type: 'paragraph',
-    text: `Developers are users, too. So before designing the system, I applied the same process I apply to any product problem. I ran co-creation sessions with developers across different roles to understand what the handoff deliverable should actually contain and how they'd navigate it. What information do they need first? What causes them to re-open a conversation with design? Where does the current Figma artifact break down in practice? We're now prototyping two candidate formats and taking those to developers for usability testing before any generation logic is built.`,
-  },
-  {
-    type: 'paragraph',
-    text: `The answer is a document developers can navigate linearly, not a canvas they have to explore. Pixel-perfect, annotated visuals with tappable zones linked to component cards. Explicit interaction and transition documentation. Accessibility annotations generated against a known standard, not from memory. Responsive behavior documented in a layout changes matrix across viewports.`,
-  },
-  {
-    type: 'aside',
-    label: 'Why not generate code directly?',
-    text: `My developer leads don't want it and the reasons are practical. Generated front-end code doesn't account for backend constraints, service calls, or iframe scenarios. And if developers can copy/paste it, they will, which means it won't be reviewed properly. A spec that explains intent is more useful than code that approximates it.`
+    text: `All three turned out to be wrong, or at least incomplete.`,
   },
   {
     type: 'heading',
     level: 2,
-    text: 'The System',
+    text: 'What Changed',
   },
   {
     type: 'paragraph',
-    text: `The system handles the mechanical work. Designers handle the judgment calls.`,
+    text: `Truist won't allow API-level access to Figma. That constraint alone forced a redesign: instead of pulling structure programmatically, we have to structure our Figma files so the right information comes out cleanly in a JSON export, then get that translated correctly downstream. No shortcut around it.`,
   },
   {
     type: 'paragraph',
-    text: `The AI layer is what makes this tractable. The system takes a Figma wireframe URL, calls the Figma REST API to retrieve the file structure, and cross-references three documentation sources: the Design System Figma library (structural ground truth), Design System Markdown files (component usage reasoning, already maintained for AI consumption by the DS team), and the team's own Figma pattern library. The agent maps components, generates accessibility annotations, documents responsive overrides, and surfaces open questions as blockers before a developer picks up the work.`,
+    text: `At the same time, our dev partners weren't waiting on us. They're already building their own AI tooling on GitLab Duo, code generation agents that take a design export and produce a first draft of working code, plus a way to QA that code against our visuals. What they needed from design wasn't a polished narrative spec document. It was clean, well-structured export data their tooling could ingest reliably.`,
   },
   {
     type: 'paragraph',
-    text: `Designers review and correct the output. They don't produce it from scratch. The review interface uses constrained dropdowns populated from the Design System to prevent invalid values. A plain-language input handles corrections the form can't accommodate. Every correction is logged with attribution.`,
+    text: `Meanwhile, the other half of the original problem hadn't moved at all. PMs, QA, and stakeholders outside design still voice the same frustration with Figma as a review tool. AI didn't change that. And when I raised replacing our standard deliverable, dev's first instinct was to ask us to keep producing it anyway. Not because it works for them, but because they hadn't seen a working alternative yet. That's not an argument for keeping it. It's the reason this project exists.`,
+  },
+  {
+    type: 'heading',
+    level: 2,
+    text: 'The Room',
   },
   {
     type: 'paragraph',
-    text: `That attribution data feeds a quality tracking layer. The system surfaces which component categories have above-average error rates, which designers are generating above-average correction volume, and whether the agent is consistently misinterpreting certain wireframe patterns. Those signals go to the design lead and to the Design System team, giving them something they've never had before: a demand-driven signal on which components are being misapplied and which custom patterns are being built around gaps in their library.`,
+    text: `Underneath the technical problem was a people problem. Across Truist, most teams approaching AI were convinced it could do someone else's job. Not their own. That belief produces a predictable dynamic: hoarding instead of sharing, defensiveness instead of collaboration, everyone protecting the parts of their process an AI tool might need visibility into. Our dev partnership had the early signs of the same pattern.`,
+  },
+  {
+    type: 'paragraph',
+    text: `I treated it as a design problem, the same as any client-facing one. What's the goal? Who are the actual users of this collaboration? What are the constraints? What does "good" look like for both sides? That's the part of design that has nothing to do with pixels, and it's the part most useful when the thing you're designing is a working relationship, not a screen.`,
+  },
+  {
+    type: 'paragraph',
+    text: `I opened the meeting by naming the elephant directly: "We're not trying to use AI to take away jobs. We want to experiment and see if we can use AI to improve the connection between our teams." That single reframe moved the room from hoarding and defensive to sharing and collaborative.`,
+  },
+  {
+    type: 'heading',
+    level: 2,
+    text: 'The Split',
+  },
+  {
+    type: 'paragraph',
+    text: `What came out of that meeting was two workstreams, not one, because dev's AI tooling and our human stakeholders needed different things from us:`,
+  },
+  {
+    type: 'list',
+    items: [
+      `Figma files structured so the right information surfaces correctly in the JSON export and gets translated into the right values by dev's AI tooling. This is the machine-to-machine problem.`,
+      `A deliverable made for non-designers as the primary artifact. Not a Figma file they have to be trained to read. This is the human problem, and it exists independent of AI.`,
+    ]
+  },
+  {
+    type: 'aside',
+    label: 'Why not solve this with one deliverable?',
+    text: `Because the two audiences want different things from it. Dev's AI tooling needs structured, unambiguous data. A human stakeholder needs a document they can read and act on without learning Figma. Optimizing one deliverable for both audiences is how we ended up with a spec nobody was happy with in the first place.`
+  },
+  {
+    type: 'paragraph',
+    text: `Dev's leaders left that meeting excited about both workstreams, which told me the split was the right read of the problem, not just mine.`,
+  },
+  {
+    type: 'heading',
+    level: 2,
+    text: 'The Bigger Realization',
+  },
+  {
+    type: 'paragraph',
+    text: `Working through the first workstream forced a harder question underneath both of them: what makes a design decision good, stated precisely enough that an AI system could learn and repeat it?`,
+  },
+  {
+    type: 'paragraph',
+    text: `My original framing treated AI as something that fills the execution gap between design intent and dev output. Narrow, mechanical, bounded to one handoff. What building it revealed is that AI is only as good as the context it's given, and context is exactly what design's expertise is. A pattern that's good in one flow is wrong in another. That judgment doesn't live in a component library. It lives in the reasoning designers apply every time they choose one pattern over another for a specific user, in a specific context, under specific constraints.`,
+  },
+  {
+    type: 'paragraph',
+    text: `That reframes what design's actual asset is here. Not a Figma file reformatted into something friendlier. Not a spec document AI happens to be good at generating. The documented judgment about what's good, in our domain, at this bank, for these users. That's the thing worth building for AI to draw from. A point solution fixes one handoff. Documented design judgment scales to every AI tool anyone in the org points at design work, not just this one.`,
+  },
+  {
+    type: 'heading',
+    level: 2,
+    text: 'The Pivot',
+  },
+  {
+    type: 'paragraph',
+    text: `I redirected my design leaders. Instead of continuing to build toward a single-purpose spec tool, they're documenting what makes good design decisions in our domain: patterns, the nuances that distinguish similar-looking solutions, the reasoning behind exceptions to the Design System, the tradeoffs that never made it into a component library because they lived in someone's head.`,
+  },
+  {
+    type: 'paragraph',
+    text: `That documentation is the next-generation Design System. Not a library of components. A trained context that lets any AI tool, dev's, ours, whatever comes next, produce work that's actually good in our context, not just technically assembled from the right pieces. Good design in one context can be a bad decision in another. AI's whole limitation is that it doesn't know the difference unless someone teaches it. Design is the discipline that already understands that difference. It's the natural teacher.`,
   },
   {
     type: 'heading',
@@ -136,32 +202,20 @@ export const content = [
   },
   {
     type: 'paragraph',
-    text: `Building the system is the tractable part. Getting it approved at a major bank requires a different kind of design work.`,
+    text: `Dev owns the code generation layer. It runs on GitLab Duo, already approved and in use on their side. What they need from design is a reliable translation layer: files structured so the export means what it should, and a partner who can diagnose it when the translation breaks.`,
   },
   {
     type: 'paragraph',
-    text: `Truist's enterprise technology process isn't hostile to new tools. It's thorough. Risk review, procurement, vendor assessment. I mapped the process early and identified that the critical path isn't the build. It's the vendor contract. An existing Anthropic relationship at the enterprise level unlocks the approval path significantly faster than a net-new procurement.`,
-  },
-  {
-    type: 'paragraph',
-    text: `I also recognized that a working demo changes every conversation. Rather than entering the approval process with a PRD, I'm building Phase 1 on personal API keys: interactive prototypes that show the spec output, the review interface, the viewport switcher, the quality dashboard. Reviewers and stakeholders at every level respond differently to something they can interact with than to something they can only read about.`,
-  },
-  {
-    type: 'paragraph',
-    text: `The alignment conversation with the Design System team lead was equally important. The system only works if it has accurate, maintained documentation to draw from. The DS team had already built Markdown documentation with AI consumption in mind. Rather than asking them to change anything, I framed the partnership around return on that investment: the system makes their documentation directly measurable, and the custom component log gives them a roadmap signal they currently don't have.`,
+    text: `The heavier organizational lift is the documentation effort. Getting design leaders to externalize judgment they've never had to write down before is slower and harder than it sounds. It's one thing to make a good call in a design review. It's another to articulate why it was good clearly enough that someone, or something, else can apply the same reasoning next time.`,
   },
   {
     type: 'heading',
     level: 2,
-    text: 'What This is Actually For',
+    text: 'What This Is Actually For',
   },
   {
     type: 'paragraph',
-    text: `When the system is running, the goal isn't a smaller design team. It's a better-used one.`,
-  },
-  {
-    type: 'paragraph',
-    text: `The capacity currently absorbed by mechanical execution belongs somewhere else: understanding users, identifying the right problems, and finding the right solutions before a feature reaches implementation. When designers aren't spending multi-day stretches on spec production, that time goes into discovery before features are defined, usability testing on what's already in the market, and earlier participation in roadmap conversations rather than downstream consumption of them. That's where design creates organizational value. Not in producing documentation that a well-designed system can handle.`,
+    text: `The goal was never a smaller design team, and it still isn't. But the scope of what "better-used" means got bigger. Designer capacity still moves toward discovery, usability testing, and earlier participation in roadmap conversations as mechanical execution gets absorbed elsewhere. What's different is that the documented judgment behind that execution doesn't stay locked inside one tool. It's available to whatever AI system in the org next needs to know what good design looks like here.`,
   },
   {
     type: 'columns',
@@ -196,10 +250,14 @@ export const content = [
   },
   {
     type: 'paragraph',
-    text: `The planning is complete. Interactive prototypes exist. The PRD is written. The organizational alignment conversations are underway. The POC is being scoped around what's currently approvable. Enterprise AI tool approvals at Truist take 12 to 18 months, and the approval pipeline has slowed further while the organization works through broader AI governance questions. I'm building what I can with what's accessible now and sequencing the rest against the approval timeline.`,
+    text: `Both workstreams with dev are underway: file structuring for the JSON export, and early prototyping on a non-designer deliverable. In parallel, my leaders are documenting the patterns and nuances that define good design in our domain, the first version of the context an AI system would need to apply that judgment consistently.`,
   },
   {
     type: 'paragraph',
-    text: `I'm publishing this now, before it's built, because I think it illustrates something specific about how I approach AI: not as a trend to integrate, but as a tool to reach for when a real problem has a shape that fits what it can do. Manual, knowledge-intensive, high-volume, error-prone, with clear source material and a defined output to generate. That's the shape.`,
+    text: `I started this project assuming I knew the shape of the solution. What told me I had the wrong scope was asking the same questions I'd ask about any user problem: what's the goal, who's actually affected, what are the constraints, what does good look like? That's how you find out whether the problem you scoped is the real one.`,
+  },
+  {
+    type: 'paragraph',
+    text: `We solve problems and make good experiences for humans. That job doesn't change based on whether the tool doing the mechanical work is a person or a model.`,
   },
 ]

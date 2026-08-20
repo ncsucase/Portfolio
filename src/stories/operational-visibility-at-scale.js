@@ -1,15 +1,15 @@
 ﻿export const meta = {
   title: 'Operational Visibility at Scale',
-  slug: 'operational-visibility-at-scale',         // must match the filename and URL: /stories/story-slug
-  startDate: '2026-01',       // YYYY-MM format; used for sorting, display ("Jan 2024"), and computing duration for in-progress stories
-  duration: '6 months',       // manual string for completed stories; ignored when status is 'in progress'
-  status: 'in progress',      // `in progress` | `complete` (optional)
+  slug: 'operational-visibility-at-scale',
+  startDate: '2026-01',
+  duration: '8 months',
+  status: 'complete',
   contribution: 'Operations & Scale',
-  outcome: 'One sentence describing measurable impact.',
-  excerpt: `My manager saw what I'd built and asked me to replicate it across two other design organizations. What looked like a rollout turned out to be a design problem.`,
-  featured: false,             // set true on the story you want in the hero slot on home
-  heroImage: null,             // or: import heroImg from '...' and set heroImage: heroImg
-  readTime: 3,
+  outcome: `Extended a Rally-Airtable system to a 20-person sibling design org, reclaiming significant time for their leaders and designers, while eliminating tracking no one was using across all teams involved.`,
+  excerpt: `My manager asked me to replicate my Rally-Airtable system across two other design organizations. What looked like a rollout turned out to be a design problem, and the team that adopted it got real time back while every team involved got data quality they'd never had.`,
+  featured: false,
+  heroImage: null,
+  readTime: 4,
 }
 
 export const content = [
@@ -89,14 +89,49 @@ export const content = [
   {
     type: 'heading',
     level: 2,
-    text: 'The Current State',
+    text: 'The Pilots',
   },
   {
     type: 'paragraph',
-    text: `The proof of concept is complete. One of my own design teams is in active pilot, and a second pilot with one of my sibling organizations starts in a few weeks. Each pilot is as much a test of the change management approach as it is for the system itself. Helping teams understand why eliminating busy work is worth the short-term adjustment is its own design problem.`,
+    text: `I started with one of my own design teams. Their feedback drove a second version of the system. I added a second team, gathered more feedback, made another round of adjustments. Both teams reached a point where they had no further changes to ask for.`,
   },
   {
     type: 'paragraph',
-    text: `The rollout isn't finished. I'm writing this now because the most interesting part isn't the system. It's what happened when I treated a deployment task like a design problem.`,
+    text: `For my own teams, the time impact split by role. Designer time was roughly net neutral. They'd already benefited from the Rally-Airtable sync built years earlier, so there wasn't much manual work left to remove. My leaders were a different story. Quarterly reporting time dropped, and the data feeding those reports was more reliable than anything they'd worked from before.`,
+  },
+  {
+    type: 'heading',
+    level: 2,
+    text: 'The Sibling Org',
+  },
+  {
+    type: 'paragraph',
+    text: `The sibling org, a single team of about 20 designers, was still managing everything manually in Rally. No sync, no automation. When they moved to the shared system, both leaders and designers reclaimed real time. This was the group the original problem statement was written for.`,
+  },
+  {
+    type: 'paragraph',
+    text: `It wasn't a clean handoff. Some of the team pushed back on adopting "Mikey's system." I addressed it directly in a working session: staying in Rally wasn't an option, and moving to Airtable was what would let our leadership get rollups without compiling them by hand. That framing helped some. What actually built trust was what happened after. When they raised specific requests, I didn't make them wait. Changes that reflected their input shipped in hours or days, not the next planning cycle. Being heard and seeing it acted on quickly did more for adoption than the argument did.`,
+  },
+  {
+    type: 'paragraph',
+    text: `The third sibling org, a set of small teams ranging from 1 to 5 designers each, is out of scope for this rollout. Its structure doesn't map to what made the shared architecture work for the 20-person team.`,
+  },
+  {
+    type: 'heading',
+    level: 2,
+    text: 'Cutting What Wasn\u2019t Being Used',
+  },
+  {
+    type: 'paragraph',
+    text: `The discovery interviews had surfaced tracking nobody was reading. Removing it required more than telling teams to stop. I showed them samples of what the new system would surface in its place, so the choice wasn't "give this up" but "trade it for something usable." With that in hand, the negotiation was straightforward, and the unused process was eliminated rather than just relocated into the new system.`,
+  },
+  {
+    type: 'heading',
+    level: 2,
+    text: 'The Outcome',
+  },
+  {
+    type: 'paragraph',
+    text: `My manager now has the centralized view he asked for. He's used it to self-service data requests in conversations with his own leadership, without looping back to me or any of the design leads first.`,
   },
 ]
