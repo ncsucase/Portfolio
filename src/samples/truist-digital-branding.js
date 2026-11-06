@@ -75,16 +75,18 @@ export const content = [
     type: 'paragraph',
     text: `Our platforms have matured. Now we know what we need.`,
   },
-  // TODO: add the reduced background set here so the cut is visible.
-  // {
-  //   type: 'swatches',
-  //   alt: 'New background colors',
-  //   size: 100,
-  //   gap: 16,
-  //   swatches: [
-  //     { hex: '#______', label: '' },
-  //   ],
-  // },
+  {
+    type: 'swatches',
+    alt: 'New background colors',
+    size: 100,
+    gap: 16,
+    swatches: [
+      { hex: '#2E1A47', label: 'Brand hero' },
+      { hex: '#FFFFFF', label: 'Z+1' },
+      { hex: '#F4F3F0', label: 'Z' },
+      { hex: '#E6E3DB', label: 'Z-1' },
+    ],
+  },
   {
     type: 'heading',
     level: 2,
