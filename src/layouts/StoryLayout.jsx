@@ -77,7 +77,7 @@ export default function StoryLayout({ story, backTo = '/work', backLabel = 'Back
         </div>
       )}
 
-      <div className="story-body">
+      <div className={`story-body${summary ? '' : ' story-body--no-summary'}`}>
         <StoryRenderer blocks={body} />
       </div>
 

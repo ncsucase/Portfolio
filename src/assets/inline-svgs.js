@@ -4,6 +4,18 @@
 // 3. Add the named export to InlineSvgs: myVisual: MyVisual
 // 4. Reference it in a story file: { type: 'inline-svg', name: 'myVisual', alt: '...' }
 
+// a better candlestick chart
+import ExampleCandlesBearish from './svgs/a-better-candlestick-chart/example-candles-bearish.svg?react'
+import ExampleCandlesBullish from './svgs/a-better-candlestick-chart/example-candles-bullish.svg?react'
+import NewCandlestickChart from './svgs/a-better-candlestick-chart/new-candlestick-chart.svg?react'
+import TypicalCandlestickChart from './svgs/a-better-candlestick-chart/typical-candlestick-chart.svg?react'
+import ExampleBearishFilled from './svgs/a-better-candlestick-chart/example-bearish-filled.svg?react'
+import ExampleBearishRed from './svgs/a-better-candlestick-chart/example-bearish-red.svg?react'
+import ExampleBullishHollow from './svgs/a-better-candlestick-chart/example-bullish-hollow.svg?react'
+import ExampleBullishGreen from './svgs/a-better-candlestick-chart/example-bullish-green.svg?react'
+import ExampleBullishGradient from './svgs/a-better-candlestick-chart/example-bullish-gradient.svg?react'
+import ExampleBearishGradient from './svgs/a-better-candlestick-chart/example-bearish-gradient.svg?react'
+
 // a common language for performance
 import CollaborativeRatingProcess from './svgs/a-common-language-for-performance/collaborative-rating-process.svg?react'
 import CollaborativeRatingProcessMobile from './svgs/a-common-language-for-performance/collaborative-rating-process-mobile.svg?react'
@@ -50,6 +62,18 @@ import DevSpecBefore from './svgs/what-designers-should-actually-be-doing/dev-sp
 import DevSpecAfter from './svgs/what-designers-should-actually-be-doing/dev-spec-after.svg?react'
 
 export const InlineSvgs = {
+
+  // a better candlestick chart
+  exampleCandlesBearish: ExampleCandlesBearish,
+  exampleCandlesBullish: ExampleCandlesBullish,
+  newCandlestickChart: NewCandlestickChart,
+  typicalCandlestickChart: TypicalCandlestickChart,
+  exampleBearishFilled: ExampleBearishFilled,
+  exampleBearishRed: ExampleBearishRed,
+  exampleBullishHollow: ExampleBullishHollow,
+  exampleBullishGreen: ExampleBullishGreen,
+  exampleBullishGradient: ExampleBullishGradient,
+  exampleBearishGradient: ExampleBearishGradient,
 
   // a common language for performance
   collaborativeRatingProcess: CollaborativeRatingProcess,

@@ -5,6 +5,7 @@ import ProtectedRoute from './components/ProtectedRoute'
 import Home from './pages/Home'
 import Work from './pages/Work'
 import Story from './pages/Story'
+import Sample from './pages/Sample'
 import Perspectives from './pages/Perspectives'
 import PerspectiveStory from './pages/PerspectiveStory'
 import NotFound from './pages/NotFound'
@@ -20,6 +21,7 @@ export default function App() {
           <Route element={<ProtectedRoute />}>
             <Route path="work" element={<Work />} />
             <Route path="stories/:slug" element={<Story />} />
+            <Route path="samples/:slug" element={<Sample />} />
           </Route>
           <Route path="*" element={<NotFound />} />
         </Route>

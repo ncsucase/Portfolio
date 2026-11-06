@@ -1,0 +1,138 @@
+/* Status theming: set block.status to 'caution' (default), 'warning', 'success', 'error' or 'info' */
+.annotated {
+  --ann-color: var(--color-caution);
+  --ann-color-hover: var(--color-caution-hover);
+  --ann-bg: var(--bg-caution);
+  --ann-bg-hover: var(--bg-caution-hover);
+  --ann-glow: var(--arc-glow-yellow);
+}
+.annotated--warning {
+  --ann-color: var(--color-warning);
+  --ann-color-hover: var(--color-warning-hover);
+  --ann-bg: var(--bg-warning);
+  --ann-bg-hover: var(--bg-warning-hover);
+  --ann-glow: var(--arc-glow-orange);
+}
+.annotated--success {
+  --ann-color: var(--color-success);
+  --ann-color-hover: var(--color-success-hover);
+  --ann-bg: var(--bg-success);
+  --ann-bg-hover: var(--bg-success-hover);
+  --ann-glow: var(--arc-glow-green);
+}
+.annotated--error {
+  --ann-color: var(--color-error);
+  --ann-color-hover: var(--color-error-hover);
+  --ann-bg: var(--bg-error);
+  --ann-bg-hover: var(--bg-error-hover);
+  --ann-glow: var(--arc-glow-red);
+}
+.annotated--info {
+  --ann-color: var(--color-info);
+  --ann-color-hover: var(--color-info-hover);
+  --ann-bg: var(--bg-info);
+  --ann-bg-hover: var(--bg-info-hover);
+  --ann-glow: var(--arc-glow-mint);
+}
+
+.annotated-selector {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-3);
+}
+
+.annotated-selector-label {
+  font-family: var(--font-ui);
+  color: var(--text);
+  margin-right: var(--space-1);
+}
+
+.annotated-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  font-family: var(--font-ui);
+  font-size: var(--font-size-sm);
+  color: var(--text-h);
+  background: transparent;
+  border: 1px solid var(--ann-color);
+  border-radius: var(--radius-full);
+  padding: var(--space-1) var(--space-3);
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.annotated-pill:hover { background: var(--ann-bg-hover); }
+.annotated-pill[aria-checked='true'] { background: var(--ann-bg); }
+.annotated-pill:focus-visible { outline: 2px solid var(--ann-color); outline-offset: 2px; }
+
+.annotated-stage {
+  position: relative;
+}
+
+.annotated-trigger {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  margin: -12px 0 0 -12px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: var(--ann-color);
+  cursor: pointer;
+  z-index: 1;
+}
+.annotated-trigger::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: var(--ann-bg-hover);
+  animation: annotated-pulse 2s ease-out infinite;
+  pointer-events: none;
+}
+.annotated-trigger.is-open::before { animation: none; transform: scale(2); opacity: 0.5; }
+.annotated-trigger:hover { background: var(--ann-color-hover); }
+.annotated-trigger:focus-visible { outline: 2px solid var(--text-h); outline-offset: 3px; }
+
+@keyframes annotated-pulse {
+  0%   { transform: scale(1);   opacity: 0.8; }
+  100% { transform: scale(2.6); opacity: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .annotated-trigger::before { animation: none; transform: scale(2); opacity: 0.5; }
+}
+
+.annotated-tooltip {
+  position: absolute;
+  z-index: 2;
+  width: min(330px, 80%);
+  box-sizing: border-box;
+  padding: var(--space-3);
+  background: var(--bg);
+  color: var(--text);
+  border: 1px solid var(--ann-color);
+  border-radius: var(--radius-sm);
+  box-shadow: 0 8px 24px var(--ann-glow);
+}
+.annotated-tooltip p {
+  margin: 0 0 var(--space-3);
+  font-family: var(--font-ui);
+  font-size: var(--font-size-md, 1rem);
+  line-height: 1.4;
+  color: var(--text);
+}
+.annotated-close {
+  padding: 0;
+  background: none;
+  border: 0;
+  color: var(--ann-color);
+  font-family: var(--font-ui);
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.annotated-close:hover { color: var(--ann-color-hover); }
+.annotated-close:focus-visible { outline: 2px solid var(--ann-color); outline-offset: 2px; }

@@ -1,4 +1,7 @@
+import { Link } from 'react-router-dom'
 import { InlineSvgs } from '../assets/inline-svgs'
+import ColorSwatches from './ColorSwatches'
+import AnnotatedImage from './AnnotatedImage'
 import './StoryRenderer.css'
 
 const INLINE_PATTERN = /(\[\[\d+\]\]|\[[^\]]+\]\([^)]+\)|\*\*[^*]+\*\*|\*[^*]+\*)/g
@@ -13,6 +16,10 @@ export function renderInlineText(text) {
     }
     const linkMatch = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/)
     if (linkMatch) {
+      // Internal links stay in-tab via the router so the session-scoped password gate carries over
+      if (linkMatch[2].startsWith('/')) {
+        return <Link key={i} to={linkMatch[2]} className="story-inline-link">{linkMatch[1]}</Link>
+      }
       return <a key={i} href={linkMatch[2]} className="story-inline-link" target="_blank" rel="noopener noreferrer">{linkMatch[1]}</a>
     }
     const boldMatch = part.match(/^\*\*([^*]+)\*\*$/)
@@ -36,7 +43,11 @@ export default function StoryRenderer({ blocks }) {
               ? <h2 key={i} className="story-h2">{block.text}</h2>
               : <h3 key={i} className="story-h3">{block.text}</h3>
 
-          case 'image':
+          case 'image': {
+            // maxHeight needs width:auto so the image keeps its aspect ratio instead of stretching
+            const imgStyle = block.maxHeight != null
+              ? { maxHeight: block.maxHeight, width: 'auto', maxWidth: '100%', margin: '0 auto' }
+              : undefined
             return (
               <figure key={i} className="story-figure">
                 {(block.title || block.subtitle) && (
@@ -45,19 +56,22 @@ export default function StoryRenderer({ blocks }) {
                     {block.subtitle && <p className="story-figure-subtitle">{block.subtitle}</p>}
                   </div>
                 )}
-                {block.srcSm ? (
-                  <picture>
-                    <source srcSet={block.srcSm} media="(max-width: 640px)" />
-                    <img src={block.src} alt={block.alt ?? ''} loading="lazy" decoding="async" />
-                  </picture>
-                ) : (
-                  <img src={block.src} alt={block.alt ?? ''} loading="lazy" decoding="async" />
-                )}
+                <div className="story-figure-container" style={block.maxWidth != null ? { maxWidth: block.maxWidth } : undefined}>
+                  {block.srcSm ? (
+                    <picture>
+                      <source srcSet={block.srcSm} media="(max-width: 640px)" />
+                      <img src={block.src} alt={block.alt ?? ''} loading="lazy" decoding="async" style={imgStyle} />
+                    </picture>
+                  ) : (
+                    <img src={block.src} alt={block.alt ?? ''} loading="lazy" decoding="async" style={imgStyle} />
+                  )}
+                </div>
                 {block.caption && (
                   <figcaption className="story-figcaption">{block.caption}</figcaption>
                 )}
               </figure>
             )
+          }
 
           case 'list': {
             const Tag = block.style === 'unordered' ? 'ul' : 'ol'
@@ -95,12 +109,17 @@ export default function StoryRenderer({ blocks }) {
                     {block.subtitle && <p className="story-figure-subtitle">{block.subtitle}</p>}
                   </div>
                 )}
-                <div className="story-figure-container" style={{
+                <div className={`story-figure-container${block.theme === 'dark' ? ' force-dark story-figure-dark' : ''}`} style={{
                   ...(block.align ? { display: 'flex', justifyContent: block.align } : {}),
                   ...(block.maxWidth != null ? { maxWidth: block.maxWidth } : {}),
                   ...(block.minWidth != null ? { minWidth: block.minWidth } : {}),
                 }}>
-                  <Svg aria-label={block.alt ?? ''} role="img" className={MobileSvg ? 'svg-desktop-only' : undefined} />
+                  <Svg
+                    aria-label={block.alt ?? ''}
+                    role="img"
+                    className={MobileSvg ? 'svg-desktop-only' : undefined}
+                    style={block.maxHeight != null ? { maxHeight: block.maxHeight } : undefined}
+                  />
                   {MobileSvg && (
                     <MobileSvg
                       aria-label={block.alt ?? ''}
@@ -119,6 +138,23 @@ export default function StoryRenderer({ blocks }) {
               </figure>
             )
           }
+
+          case 'annotated-image':
+            return <AnnotatedImage key={i} block={block} />
+
+          case 'swatches':
+            return (
+              <figure key={i} className="story-figure">
+                {(block.title || block.subtitle) && (
+                  <div className="story-figure-header" style={block.titleAlign ? { textAlign: block.titleAlign } : undefined}>
+                    {block.title && <p className="story-figure-title">{block.title}</p>}
+                    {block.subtitle && <p className="story-figure-subtitle">{block.subtitle}</p>}
+                  </div>
+                )}
+                <ColorSwatches swatches={block.swatches} size={block.size} gap={block.gap} align={block.align} label={block.alt} />
+                {block.caption && <figcaption className="story-figcaption">{block.caption}</figcaption>}
+              </figure>
+            )
 
           case 'aside':
             return (

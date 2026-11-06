@@ -49,21 +49,33 @@
 
   /* Status colors */
   --status-bg-alpha: 35%;
+  --status-bg-alpha-hover: 50%;
+  --status-hover-mix: black;
   --color-error: var(--color-red);
   --text-on-error: rgba(0, 0, 0, 0.8);
   --bg-error: color-mix(in srgb, var(--color-error) var(--status-bg-alpha), transparent);
+  --color-error-hover: color-mix(in srgb, var(--color-error) 85%, var(--status-hover-mix));
+  --bg-error-hover: color-mix(in srgb, var(--color-error) var(--status-bg-alpha-hover), transparent);
   --color-warning: var(--color-orange);
   --text-on-warning: rgba(0, 0, 0, 0.8);
   --bg-warning: color-mix(in srgb, var(--color-warning) var(--status-bg-alpha), transparent);
+  --color-warning-hover: color-mix(in srgb, var(--color-warning) 85%, var(--status-hover-mix));
+  --bg-warning-hover: color-mix(in srgb, var(--color-warning) var(--status-bg-alpha-hover), transparent);
   --color-caution: var(--color-yellow);
   --text-on-caution: rgba(0, 0, 0, 1);
   --bg-caution: color-mix(in srgb, var(--color-caution) var(--status-bg-alpha), transparent);
+  --color-caution-hover: color-mix(in srgb, var(--color-caution) 85%, var(--status-hover-mix));
+  --bg-caution-hover: color-mix(in srgb, var(--color-caution) var(--status-bg-alpha-hover), transparent);
   --color-success: var(--color-green);
   --text-on-success: rgba(0, 0, 0, 0.8);
   --bg-success: color-mix(in srgb, var(--color-success) var(--status-bg-alpha), transparent);
+  --color-success-hover: color-mix(in srgb, var(--color-success) 85%, var(--status-hover-mix));
+  --bg-success-hover: color-mix(in srgb, var(--color-success) var(--status-bg-alpha-hover), transparent);
   --color-info: var(--color-mint);
   --text-on-info: rgba(0, 0, 0, 0.8);
   --bg-info: color-mix(in srgb, var(--color-info) var(--status-bg-alpha), transparent);
+  --color-info-hover: color-mix(in srgb, var(--color-info) 85%, var(--status-hover-mix));
+  --bg-info-hover: color-mix(in srgb, var(--color-info) var(--status-bg-alpha-hover), transparent);
   --text-on-vibrant: rgba(0, 0, 0, 0.8);
 
   /* Illustration colors */
@@ -169,7 +181,10 @@
   }
 }
 
-html.dark {
+/* .force-dark pins a subtree to dark tokens regardless of the page theme
+   (e.g. visuals designed for a client's dark-only UI) */
+html.dark,
+.force-dark {
   /* Colors */
   --color-blue: #0A84FF;
   --color-brown: #AC8E68;
@@ -218,6 +233,8 @@ html.dark {
 
   /* Status colors — softer for dark backgrounds */
   --status-bg-alpha: 25%;
+  --status-bg-alpha-hover: 40%;
+  --status-hover-mix: white;
   --text-on-error: rgba(255, 255, 255, 0.8);
   --arc-glow-red: rgba(255, 120, 50, 0.5);
   --text-on-warning: rgba(255, 255, 255, 0.8);
@@ -266,6 +283,18 @@ html.dark {
   --shadow-accent-hover: 8px 8px 16px rgba(48, 209, 88, 0.3);
   --ring-inner-shadow: rgba(0, 0, 0, 0.60);
   --ring-inner-highlight: rgba(255, 255, 255, 0.08);
+}
+
+/* Tokens that alias other tokens resolve where they're declared (:root),
+   so a nested .force-dark must re-declare them to pick up the dark palette */
+.force-dark {
+  color-scheme: dark;
+  --color-error: var(--color-red);
+  --color-warning: var(--color-orange);
+  --color-caution: var(--color-yellow);
+  --color-success: var(--color-green);
+  --color-info: var(--color-mint);
+  color: var(--text);
 }
 
 body {

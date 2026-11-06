@@ -73,6 +73,9 @@ SVGs are imported with `?react` (e.g., `import Foo from './foo.svg?react'`), whi
 | Ring inner highlight | `--ring-inner-highlight` | rgba(255,255,255,0.2) | (inherits) |
 | Text on vibrant/gradient surfaces | `--text-on-vibrant` | rgba(0,0,0,0.8) | rgba(0,0,0,0.8) |
 
+### Dark-only visuals
+For SVGs designed for a dark-only product, still use tokens, and add `theme: 'dark'` to the `inline-svg` block. This applies the `.force-dark` class (dark token values regardless of page theme) and places the SVG on a `--bg` panel so it reads in light mode.
+
 ### ID suffix convention
 Every SVG must use a **unique per-file suffix** on all `id` attributes. All SVGs imported via `?react` share the same DOM — duplicate IDs cause gradients and filters to resolve to the wrong definition.
 
@@ -99,6 +102,16 @@ Assigned suffixes:
 - `_arsm` — airtable-rally-sync-diagram-mobile.svg
 - `_mcdt` — mcd-timeline.svg
 - `_mcdtm` — mcd-timeline-mobile.svg
+- `_ecbe` — example-candles-bearish.svg
+- `_ecbu` — example-candles-bullish.svg
+- `_ncc` — new-candlestick-chart.svg
+- `_tcc` — typical-candlestick-chart.svg (no IDs currently)
+- `_bef` — example-bearish-filled.svg
+- `_beg` — example-bearish-gradient.svg
+- `_ber` — example-bearish-red.svg
+- `_bug` — example-bullish-gradient.svg
+- `_bugn` — example-bullish-green.svg
+- `_buh` — example-bullish-hollow.svg
 
 ### Filter pattern — single soft pass only
 Figma exports a double-pass filter (stdDeviation=1 tight + stdDeviation=4 soft). The tight pass causes jagged anti-aliasing on circles and arcs. **Remove it — use only the stdDeviation=4 pass.**
@@ -149,3 +162,5 @@ Use the `style` attribute — bare `stop-color="var(...)"` does not work in most
 - ✅ structure-follows-craft/mismatched-coaching-flowchart.svg
 - ✅ mobile-check-deposit/mcd-timeline.svg (suffix: _mcdt)
 - ✅ mobile-check-deposit/mcd-timeline-mobile.svg (suffix: _mcdtm)
+- ✅ a-better-candlestick-chart/ — all 10 files tokenized (suffixes: _ecbe, _ecbu, _ncc, _tcc, _bef, _beg, _ber, _bug, _bugn, _buh)
+- ✅ designs/a-better-candlestick-chart/Card-Candlestick.svg (no IDs; imported with `?react`, and SampleCard renders component images inline)

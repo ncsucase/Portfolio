@@ -1,0 +1,87 @@
+.sample-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  height: 160px;
+  padding: 0 0 0 var(--space-5);
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  /* Glass (matches story-card) */
+  position: relative;
+  isolation: isolate;
+  background: linear-gradient(
+    to bottom right,
+    var(--border) 0%,
+    var(--bg) 33%,
+    var(--bg) 66%,
+    var(--border) 100%
+  );
+  box-shadow: var(--shadow-glass-outer);
+}
+
+@media (max-width: 1100px) {
+  .sample-card {
+    height: 120px;
+  }
+}
+
+
+.sample-card::before {
+  content: '';
+  position: absolute;
+  inset: 1px;
+  border-radius: inherit;
+  background: var(--surface-glass);
+  box-shadow: var(--shadow-glass-inner);
+  z-index: -1;
+  transition: box-shadow 0.2s ease;
+}
+
+.sample-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-glass-outer-hover);
+}
+
+.sample-card:hover::before {
+  box-shadow: var(--shadow-glass-inner-hover);
+}
+
+.sample-card__title {
+  flex: 1 1 50%;
+  min-width: 0;
+  margin: 0;
+  font-size: var(--heading-2);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  color: var(--text-h);
+}
+
+.sample-card__image {
+  flex: none;
+  width: auto;
+  max-width: 50%;
+  object-fit: contain;
+}
+
+/* Flush to the bottom-right corner, like a device peeking in */
+.sample-card__image[data-fit="corner"] {
+  height: 70%;
+  align-self: flex-end;
+}
+
+/* Small mark, vertically centered, inset from the right edge */
+.sample-card__image[data-fit="inset"] {
+  height: 52%;
+  margin-right: var(--space-5);
+}
+
+/* Spans the full card height, inset from the right edge */
+.sample-card__image[data-fit="full"] {
+  height: 100%;
+  margin-right: var(--space-2);
+}

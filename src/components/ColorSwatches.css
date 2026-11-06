@@ -1,0 +1,39 @@
+.color-swatches {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3) var(--swatch-gap, 16px);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.color-swatch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  width: var(--swatch-size, 80px);
+  text-align: center;
+}
+
+.color-swatch-chip {
+  width: 100%;
+  aspect-ratio: 1;
+  /* inset border keeps white / near-white swatches visible on any background */
+  box-shadow: inset 0 0 0 1px var(--border);
+}
+
+.color-swatch-hex {
+  margin-top: 4px;
+  font-family: var(--font-heading);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-heavy);
+  color: var(--text);
+}
+
+.color-swatch-name {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-xs);
+  color: var(--text-muted);
+  line-height: 1.2;
+}
