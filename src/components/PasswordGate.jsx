@@ -6,6 +6,7 @@ import './PasswordGate.css'
 export default function PasswordGate({ onSuccess, onDismiss }) {
   const [value, setValue] = useState('')
   const [error, setError] = useState(false)
+  const [revealed, setRevealed] = useState(false)
   const dialogRef = useRef(null)
 
   useEffect(() => {
@@ -37,31 +38,38 @@ export default function PasswordGate({ onSuccess, onDismiss }) {
       <div className="password-gate__card">
         <div className="password-gate__header">
           <h1 className="password-gate__title">Want to see my work?</h1>
-          <CTA onClick={onDismiss} className="password-gate__close" aria-label="Close" variant="tertiary">
-            <Icon name="x" />
-          </CTA>
-        </div>
-        <div className="password-gate__body">
           <p className="password-gate__instructions">You'll need the password from my resume.</p>
-          <form className="password-gate__form" onSubmit={handleSubmit} noValidate>
-            <div className="password-gate__field">
+        </div>
+        <form className="password-gate__form" onSubmit={handleSubmit} noValidate>
+          <div className="password-gate__field">
+            <div className="password-gate__input-wrap">
               <input
                 id="gate-password"
-                type="password"
+                type={revealed ? 'text' : 'password'}
                 className={`password-gate__input${error ? ' password-gate__input--error' : ''}`}
                 value={value}
                 onChange={e => { setValue(e.target.value); setError(false) }}
                 autoComplete="current-password"
                 autoFocus
+                placeholder=" "
                 aria-label="Password"
               />
-              {error && (
-                <p className="password-gate__error" role="alert">Incorrect password. Try again.</p>
-              )}
+              <button
+                type="button"
+                className="password-gate__reveal"
+                onClick={() => setRevealed(r => !r)}
+                aria-label={revealed ? 'Hide password' : 'Show password'}
+                aria-pressed={revealed}
+              >
+                <Icon name={revealed ? 'eye-off' : 'eye'} size="24px" />
+              </button>
             </div>
-            <CTA type="submit" variant="primary" className="password-gate__submit">Enter</CTA>
-          </form>
-        </div>
+            {error && (
+              <p className="password-gate__error" role="alert">Incorrect password. Try again.</p>
+            )}
+          </div>
+          <CTA type="submit" variant="primary" className="password-gate__submit">Enter</CTA>
+        </form>
       </div>
     </dialog>
   )
