@@ -121,11 +121,16 @@
 
 /* Body */
 .story-body {
-  padding: var(--space-8) var(--page-padding) var(--space-5) var(--page-padding);
+  padding: var(--space-8) 0;
   max-width: var(--prose-width);
   margin: 0 auto;
   width: 100%;
   box-sizing: border-box;
+}
+
+/* No summary band: header's bottom padding alone spaces the body (half the usual gap) */
+.story-body--no-summary {
+  padding-top: 0;
 }
 
 /* Footnotes */
@@ -224,6 +229,10 @@
 
   .story-body {
     padding: var(--space-6) var(--space-4);
+  }
+
+  .story-body--no-summary {
+    padding-top: 0;
   }
 
   .story-meta {

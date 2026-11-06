@@ -58,6 +58,14 @@
   margin: 0 auto;
 }
 
+/* Dark-only visual (block.theme: 'dark'): sits on a dark panel so it reads in light mode.
+   Panel uses --bg so SVG fades to --bg blend into it; in dark mode it matches the page. */
+.story-figure .story-figure-dark {
+  background: var(--bg);
+  border-radius: var(--radius-md);
+  padding: var(--space-5);
+}
+
 .story-figure img {
   border-radius: var(--radius-md);
 }

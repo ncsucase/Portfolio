@@ -1,0 +1,79 @@
+<svg width="374" height="213" viewBox="0 0 374 213" fill="none" xmlns="http://www.w3.org/2000/svg">
+<!-- Y-axis labels on the left, matching new-candlestick-chart.svg -->
+<text fill="var(--text-muted)" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="-0.3px"><tspan x="0" y="11.1016">$829.35</tspan></text>
+<text fill="var(--text-muted)" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="-0.3px"><tspan x="0" y="57.1016">$812.74</tspan></text>
+<text fill="var(--text-muted)" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="-0.3px"><tspan x="0" y="101.102">$796.13</tspan></text>
+<text fill="var(--text-muted)" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="-0.3px"><tspan x="0" y="145.102">$779.52</tspan></text>
+<text fill="var(--text-muted)" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="-0.3px"><tspan x="0" y="189.102">$762.91</tspan></text>
+<!-- Plot area offset to clear the y-axis labels (same 55.5px offset as new-candlestick-chart.svg) -->
+<g transform="translate(55.5 0)">
+<path d="M0 188.878H315" stroke-miterlimit="5.75877" stroke="var(--border)"/>
+<path d="M26.9561 120.137L26.9561 158.564" stroke="var(--text-h)"/>
+<rect width="5.28469" height="31.36" transform="translate(24.3418 123.229)" fill="var(--color-error)"/>
+<path d="M58.6641 118.137L58.6641 185" stroke="var(--text-h)"/>
+<rect width="5.28469" height="54.5664" transform="translate(56.0498 123.517)" fill="var(--color-error)"/>
+<path d="M79.8027 52.5049V106.303" stroke="var(--text-h)"/>
+<rect width="5.28469" height="29.0632" transform="translate(77.1885 71.6743)" fill="var(--color-error)"/>
+<path d="M111.511 34.0601V100.923" stroke="var(--text-h)"/>
+<rect width="5.28469" height="27.6675" transform="translate(108.896 39.4399)" fill="var(--color-error)"/>
+<path d="M153.787 42.5137V71.7182" stroke="var(--text-h)"/>
+<rect width="5.28469" height="6.29022" transform="translate(151.174 45.6587)" fill="var(--color-error)"/>
+<path d="M164.357 29.4487V96.3118" stroke="var(--text-h)"/>
+<rect width="5.28469" height="28.436" transform="translate(161.743 51.7363)" fill="var(--color-error)"/>
+<path d="M185.497 75.5615V120.137" stroke="var(--text-h)"/>
+<rect width="5.28469" height="36.3776" transform="translate(182.883 79.1479)" fill="var(--color-error)"/>
+<path d="M196.065 100.923V130.896" stroke="var(--text-h)"/>
+<rect width="5.28469" height="11.6562" transform="translate(193.452 111.469)" fill="var(--color-error)"/>
+<path d="M259.482 86.3208V103.997" stroke="var(--text-h)"/>
+<rect width="5.28469" height="6.91687" transform="translate(256.868 88.6265)" fill="var(--color-error)"/>
+<path d="M280.621 81.7095V97.0803" stroke="var(--text-h)"/>
+<rect width="5.28469" height="12.544" transform="translate(278.007 82.9463)" fill="var(--color-error)"/>
+<path d="M215.091 110.146V177.009" stroke="var(--text-h)"/>
+<rect width="5.28469" height="54.5664" transform="translate(212.477 115.525)" fill="var(--color-error)"/>
+<rect x="4.88477" y="92.4692" width="1.05694" height="39.1956" fill="var(--text-h)"/>
+<rect width="5.28469" height="19.9821" transform="translate(2.77051 101.692)" fill="var(--color-success)"/>
+<path d="M15.9541 86.3208L15.9541 127.054" stroke="var(--text-h)"/>
+<rect width="5.28469" height="27.6675" transform="translate(13.3398 92.4692)" fill="var(--color-success)"/>
+<path d="M47.6621 60.1904L47.6621 127.054" stroke="var(--text-h)"/>
+<rect width="5.28469" height="54.5664" transform="translate(45.0479 65.5703)" fill="var(--color-success)"/>
+<path d="M68.7998 90.9321V157.795" stroke="var(--text-h)"/>
+<rect width="5.28469" height="27.6675" transform="translate(66.1865 96.312)" fill="var(--color-success)"/>
+<path d="M89.9395 25.606V92.4691" stroke="var(--text-h)"/>
+<rect width="5.28469" height="54.5664" transform="translate(87.3252 30.9858)" fill="var(--color-success)"/>
+<path d="M100.509 30.9858V74.7927" stroke="var(--text-h)"/>
+<rect width="5.28469" height="35.7504" transform="translate(97.8945 34.5107)" fill="var(--color-success)"/>
+<path d="M121.647 50.1992V117.062" stroke="var(--text-h)"/>
+<rect width="5.28469" height="29.2046" transform="translate(119.033 64.8013)" fill="var(--color-success)"/>
+<path d="M132.217 22.5322V67.1076" stroke="var(--text-h)"/>
+<rect width="5.28469" height="36.3776" transform="translate(129.604 26.1187)" fill="var(--color-success)"/>
+<path d="M142.786 25.606V53.2735" stroke="var(--text-h)"/>
+<rect width="5.28469" height="22.5792" transform="translate(140.172 27.832)" fill="var(--color-success)"/>
+<path d="M174.495 63.2646V91.7007" stroke="var(--text-h)"/>
+<rect width="5.28469" height="11.5281" transform="translate(171.881 77.0986)" fill="var(--color-success)"/>
+<path d="M206.203 86.3208V117.831" stroke="var(--text-h)"/>
+<rect width="5.28469" height="11.5281" transform="translate(203.589 101.691)" fill="var(--color-success)"/>
+<path d="M227.342 121.674V161.638" stroke="var(--text-h)"/>
+<rect width="5.28469" height="32.6144" transform="translate(224.728 124.889)" fill="var(--color-success)"/>
+<path d="M237.911 99.3862L237.911 127.054" stroke="var(--text-h)"/>
+<rect width="5.28469" height="18.445" transform="translate(235.297 107.072)" fill="var(--color-success)"/>
+<path d="M248.48 88.6265V120.137" stroke="var(--text-h)"/>
+<rect width="5.28469" height="16.1394" transform="translate(245.866 91.7007)" fill="var(--color-success)"/>
+<path d="M290.757 29.4487V96.3118" stroke="var(--text-h)"/>
+<rect width="5.28469" height="54.5664" transform="translate(288.144 34.8286)" fill="var(--color-success)"/>
+<path d="M301.327 27.1431V72.487" stroke="var(--text-h)"/>
+<rect width="5.28469" height="24.5933" transform="translate(298.713 41.7451)" fill="var(--color-success)"/>
+<path d="M311.896 7.16113V59.422" stroke="var(--text-h)"/>
+<rect width="5.28469" height="30.7417" transform="translate(309.282 12.541)" fill="var(--color-success)"/>
+<path d="M37.0918 74.793L37.0918 141.656" stroke="var(--text-h)"/>
+<rect width="5.28469" height="20.7506" transform="translate(34.4785 113.989)" fill="var(--color-success)"/>
+<path d="M269.619 124.139L269.619 128.591" stroke="var(--text-h)"/>
+<rect x="267.505" y="89.5151" width="4.28469" height="34.1232" fill="var(--color-success)"/>
+<rect x="267.505" y="89.5151" width="4.28469" height="34.1232" stroke="var(--color-success)"/>
+<path d="M269.619 85.5522L269.619 89.0151" stroke="var(--color-success)"/>
+<path d="M5 106.425L16.8767 94.2259L27.0068 97.4551L35.3904 88.1262L47.2671 76.2857L57.3973 80.9502L67.1781 83.8206L71.3699 76.2857L84.6438 68.0333L94.774 64.0863L105.603 45.4286L116.432 52.9635L126.212 61.9336L137.74 64.0863L146.822 36.0997L156.603 40.0465L166.384 65.8804L177.562 76.2857L187.342 80.9502L196.774 94.2259L207.253 99.2492L217.034 94.2259L228.212 138L239.39 132.259L248.822 94.2259L258.952 83.8206L269.781 88.1262L279.212 94.2259L290.39 102.12L301.568 80.9502L311 30" stroke-width="2" stroke="var(--text-h)"/>
+<text fill="var(--text-muted)" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="-0.3px"><tspan x="0" y="209.492">3:00 PM</tspan></text>
+<text fill="var(--text-muted)" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="-0.3px"><tspan x="89" y="209.492">3:30 PM</tspan></text>
+<text fill="var(--text-muted)" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="-0.3px"><tspan x="178" y="209.492">4:00 PM</tspan></text>
+<text fill="var(--text-muted)" style="white-space: pre" xml:space="preserve" font-family="Inter" font-size="12" letter-spacing="-0.3px"><tspan x="267" y="209.492">4:30 PM</tspan></text>
+</g>
+</svg>
