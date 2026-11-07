@@ -12,7 +12,9 @@
   cursor: pointer;
   outline: none;
   border: none;
-  /* Glass */
+  /* Glass (small-element): gradient border, flat fill with soft inner edge shading */
+  position: relative;
+  isolation: isolate;
   background: linear-gradient(
     to bottom right,
     var(--border) 0%,
@@ -20,27 +22,24 @@
     var(--bg) 66%,
     var(--border) 100%
   );
-  box-shadow: var(--shadow-glass-outer);
-  position: relative;
-  isolation: isolate;
+  box-shadow: var(--shadow-glass-sm-outer);
   /* Animation */
-  transition: border-color 0.15s, background 0.15s, color 0.15s, box-shadow 0.15s;
-}
-
-.cta:hover {
-  box-shadow: var(--shadow-glass-outer-hover);
+  transition: background 0.15s, color 0.15s, box-shadow 0.15s;
 }
 
 .cta::before {
   content: '';
   position: absolute;
-  inset: 2px; /* border width */
+  inset: 1px; /* border width */
   border-radius: inherit;
-  background: var(--bg-deep);
-  box-shadow: var(--shadow-glass-inner);
+  background: var(--bg);
+  box-shadow: var(--shadow-glass-sm-inner);
   z-index: -1;
-  /* Animation */
-  transition: border-color 0.15s, background 0.15s, color 0.15s;
+  transition: background 0.15s;
+}
+
+.cta:hover {
+  box-shadow: var(--shadow-glass-sm-outer-hover);
 }
 
 .cta:focus-visible {
@@ -63,10 +62,10 @@
 
 .cta--primary::before {
   background: var(--accent);
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.25);
 }
 
 .cta--primary:hover {
-  background: var(--accent);
   box-shadow: var(--shadow-accent-hover);
 }
 
@@ -76,18 +75,31 @@
 }
 
 .cta--secondary:hover {
-  color: var(--bg);
-  box-shadow: var(--shadow-accent-hover);
+  /* White stays white; the darker rim segments become the accent color */
+  background: linear-gradient(
+    to bottom right,
+    var(--accent) 0%,
+    var(--bg) 33%,
+    var(--bg) 66%,
+    var(--accent) 100%
+  );
 }
 
 .cta--secondary:hover::before {
-  background: var(--accent);
+  /* Low-opacity accent over the base fill */
+  background: linear-gradient(var(--accent-bg), var(--accent-bg)), var(--bg);
+}
+
+.cta--tertiary::before,
+.cta--quaternary::before {
+  display: none;
 }
 
 /* Tertiary */
 .cta--tertiary {
   background: transparent;
   border: 2px solid var(--border);
+  box-shadow: none;
   color: var(--text-h);
 }
 
@@ -102,6 +114,7 @@
 .cta--quaternary {
   background: transparent;
   border: 2px solid transparent;
+  box-shadow: none;
   color: var(--accent);
 }
 

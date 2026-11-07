@@ -65,7 +65,43 @@
   transition: background 0.15s;
 }
 .annotated-pill:hover { background: var(--ann-bg-hover); }
-.annotated-pill[aria-checked='true'] { background: var(--ann-bg); }
+
+/* Selected: glass matching .cta secondary hover. White stays white, the darker rim
+   segments and the low-opacity fill take the status color; shadows are tinted too. */
+.annotated-pill[aria-checked='true'] {
+  --ann-shadow: color-mix(in srgb, var(--ann-glow) 60%, transparent);
+  position: relative;
+  isolation: isolate;
+  border-color: transparent;
+  background: linear-gradient(
+    to bottom right,
+    var(--ann-color) 0%,
+    var(--bg) 33%,
+    var(--bg) 66%,
+    var(--ann-color) 100%
+  );
+  box-shadow: 0 6px 14px var(--ann-shadow);
+  transition: background 0.15s, box-shadow 0.15s;
+}
+.annotated-pill[aria-checked='true']::before {
+  content: '';
+  position: absolute;
+  inset: 0; /* sits inside the 1px transparent border, over the gradient rim */
+  border-radius: inherit;
+  background: linear-gradient(var(--ann-bg), var(--ann-bg)), var(--bg);
+  box-shadow: var(--shadow-glass-sm-inner);
+  z-index: -1;
+}
+.annotated-pill[aria-checked='true']:hover {
+  background: linear-gradient(
+    to bottom right,
+    var(--ann-color) 0%,
+    var(--bg) 33%,
+    var(--bg) 66%,
+    var(--ann-color) 100%
+  );
+  box-shadow: 0 8px 20px var(--ann-shadow);
+}
 .annotated-pill:focus-visible { outline: 2px solid var(--ann-color); outline-offset: 2px; }
 
 .annotated-stage {

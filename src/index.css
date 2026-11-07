@@ -110,6 +110,10 @@
   --shadow-glass-outer-hover: 8px 8px 16px rgba(0, 0, 0, 0.10);
   --shadow-glass-inner: inset 8px 8px 8px rgba(0, 0, 0, 0.05);
   --shadow-glass-inner-hover: inset 0 0 8px rgba(0, 0, 0, 0.05);
+  /* Small-element glass (buttons, pills): thin rim, soft edge shading, top-left highlight */
+  --shadow-glass-sm-outer: 0 4px 8px rgba(0, 0, 0, 0.10);
+  --shadow-glass-sm-outer-hover: 0 8px 20px rgba(0, 0, 0, 0.14);
+  --shadow-glass-sm-inner: inset 0 4px 4px rgba(0, 0, 0, 0.1);
   --shadow-accent: 8px 8px 8px rgba(0, 138, 34, 0.15);
   --shadow-accent-hover: 8px 8px 8px rgba(0, 138, 34, 0.25);
   --ring-inner-shadow: rgba(0, 0, 0, 0.15);
@@ -279,6 +283,11 @@ html.dark,
   --shadow-glass-outer-hover: 8px 8px 16px rgba(0, 0, 0, 0.50);
   --shadow-glass-inner: inset 8px 8px 8px rgba(0, 0, 0, 0.20);
   --shadow-glass-inner-hover: inset 0 0 8px rgba(0, 0, 0, 0.20);
+  --shadow-glass-sm-outer: 0 6px 14px rgba(0, 0, 0, 0.35);
+  --shadow-glass-sm-outer-hover: 0 8px 20px rgba(0, 0, 0, 0.50);
+  --shadow-glass-sm-inner:
+    inset 0 0 10px rgba(255, 255, 255, 0.10),
+    inset 0 0 2px rgba(255, 255, 255, 0.12);
   --shadow-accent: 8px 8px 8px rgba(48, 209, 88, 0.15);
   --shadow-accent-hover: 8px 8px 16px rgba(48, 209, 88, 0.3);
   --ring-inner-shadow: rgba(0, 0, 0, 0.60);

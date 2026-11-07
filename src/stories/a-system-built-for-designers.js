@@ -1,4 +1,6 @@
-﻿import dashboardLg from '../assets/stories/a-system-built-for-designers/dashboard-lg.webp'
+﻿import v1Screen from '../assets/stories/a-system-built-for-designers/designer-view-v1.png'
+
+import dashboardLg from '../assets/stories/a-system-built-for-designers/dashboard-lg.webp'
 import dashboardSm from '../assets/stories/a-system-built-for-designers/dashboard-sm.webp'
 
 export const meta = {
@@ -7,9 +9,9 @@ export const meta = {
   startDate: '2020-05',
   duration: '2 years',
   status: 'complete',
-  contribution: 'Systems & Automation',
-  outcome: 'Built an automated Rally-Airtable sync that gave my team real-time delivery visibility, extended it to a 40-person org without rebuilding it, and connected design work directly to the user research that shaped it.',
-  excerpt: 'Design and engineering teams track work in different tools. I built an automated bridge between them that gave my designers a purpose-built system without disrupting our engineering partners. Then extended it to a larger org when my scope expanded.',
+  contribution: 'Product Design', // was 'Systems & Automation'
+  outcome: `Designed a Rally-Airtable integration that routed work to designers automatically, left engineering's tool untouched, and scaled from 8 designers to 40 without a rebuild.`,
+  excerpt: `My designers tracked work in Rally, a tool built for engineering, and couldn't find their own assignments. I designed an integration that brought Rally's data into a workspace shaped for design and routed each new Feature to the right designers automatically. Engineering changed nothing.`,
   featured: false,
   heroImage: null,
   readTime: 3,
@@ -18,30 +20,10 @@ export const meta = {
 export const content = [
   {
     type: 'summary',
-    // Full paragraph shown in the summary band above the story body (italic, large).
-    text: `Design and development teams at Truist track work in fundamentally different ways. Rather than accept that gap, I built an automated bridge between Rally (used by engineering) and Airtable (used by design) using their APIs, giving my team a purpose-built workflow system without asking our development partners to change anything. When my scope expanded to lead all of Digital Servicing design, the system came with me and extended to a 40-person org without a rebuild.`,
+    text: `In 2020, my design team tracked work in Rally, an enterprise tool built around how engineers operate. Designers couldn't find the Features assigned to them. I designed an integration that synced Rally's Feature, PI, and release data into Airtable, routed each new Feature to the right designers automatically, and gave every discipline its own queue. Engineering and Product changed nothing. The system scaled from 8 designers to 40 without a rebuild, and its limits shaped the version that came next.`,
   },
-  {
-    type: 'heading',
-    level: 2,
-    text: 'The Situation',
-  },
-  {
-    type: 'paragraph',
-    text: `When I took over as design director, my team was tracking work in Rally (an enterprise work management tool built around how developers operate) without support. Our development partners tracked everything in Rally with Scrum Master and Product Owner support.`,
-  },
-  {
-    type: 'paragraph',
-    text: `Rally works well for engineering when there's dedicated help like a Scrum Master. For design, it's the wrong shape entirely: the hierarchy, the terminology, the workflow states, none of it maps cleanly to how designers plan, iterate, and deliver.`,
-  },
-  {
-    type: 'paragraph',
-    text: `The standard answer in organizations like this is to pick one system and make everyone adapt to it. That answer creates losers.`,
-  },
-  {
-    type: 'paragraph',
-    text: `I decided to build a better system.`,
-  },
+
+  // ─── The Problem ───────────────────────────────────────────
   {
     type: 'heading',
     level: 2,
@@ -49,77 +31,122 @@ export const content = [
   },
   {
     type: 'paragraph',
-    text: `Two things needed to be true simultaneously:`,
-  },
-  {
-    type: 'list',
-    items: [
-      `My team needed a system that matched how design work actually flows.`,
-      `Our development and product partners needed to see the same data they were already tracking in Rally without having to look in two places`
-    ]
+    text: `When I became design director, my team tracked work in Rally. Engineering used it with Scrum Masters and Product Owners keeping it current. Design had no such support, and Rally's hierarchy, terminology, and workflow states fit how engineers deliver, not how designers plan and iterate.`,
   },
   {
     type: 'paragraph',
-    text: `Manual syncing wasn't viable. Data would go stale, people would stop trusting it, and someone would always be spending time reconciling rather than working. The only durable solution was automation.`,
+    text: `The most basic task failed first: designers couldn't find the Features assigned to them.`,
   },
+  {
+    type: 'paragraph',
+    text: `The usual fix is to pick one tool and make everyone adapt. That creates losers. I set a different constraint: Engineering and Product change nothing.`,
+  },
+
+  // ─── Source of Truth ───────────────────────────────────────
   {
     type: 'heading',
     level: 2,
-    text: 'The Build',
+    text: 'One Source of Truth, Two Workspaces',
   },
   {
     type: 'paragraph',
-    text: `I used the Rally and Airtable APIs to create a live sync between them. Rally remained the source of truth for shared delivery data (sprint assignments, story points, completion status) while Airtable became the design team's operating layer: a purpose-built environment with the right structure, automation, field types, and permissions for how design work actually happens.`,
+    text: `Rally stays the source of truth for delivery. Feature, Program Increment, and release data sync into Airtable automatically, and design data flows back where partners need to see it. Airtable becomes design's working layer, with the structure, fields, and permissions design work needs.`,
   },
   {
     type: 'inline-svg',
     name: 'airtableRallySyncDiagram',
     mobileVariant: 'airtableRallySyncDiagramMobile',
-    alt: 'Airtable and Rally connected bidirectionally through a custom sync layer built by Mikey.',
+    alt: 'Rally and Airtable connected by a two-way sync. Feature, PI, and release data flow into Airtable, and design data flows back to Rally.',
     caption: null,
   },
-  {
-    type: 'paragraph',
-    text: `The sync runs automatically. When something changes in Rally that my team needs to know about, it surfaces in Airtable without anyone having to check. When design-specific data needs to be visible to partners, it flows back. No manual reconciliation. No stale data. No one's time wasted on data hygiene.`,
-  },
-  {
-    type: 'paragraph',
-    text: `The system also solved for something Rally never could: visibility into design-specific health signals. At any point I can pull an accurate picture of how my team is performing, where they're spending their time, what's at risk, and what's behind schedule, without asking anyone to stop what they're doing to run down the details and generate a report.`,
-  },
-  {
-    type: 'paragraph',
-    text: `One capability stood out as particularly valuable: I connected our Airtable directly to the User Research team's Airtable. Linking design work to the specific user studies that informed it. For the first time, we could show which work was shaped by user testing and what that testing found. Discovery wasn't just happening before delivery, it was traceable through it.`
-  },
+
+  // ─── Routing ───────────────────────────────────────────────
   {
     type: 'heading',
     level: 2,
-    text: 'The Recognition',
+    text: 'Assignment Nobody Has to Make',
   },
   {
     type: 'paragraph',
-    text: `The Head of Design noticed. Not because I pitched it. When he asked me questions about my team's workload and delivery health, I could answer them immediately and accurately. My peer design directors couldn't.`,
+    text: `Routing did more for designers than the sync itself. An alignment table records which designers work with which Product Managers. When a Feature syncs in from Rally, the system reads its owner, finds the aligned designers, and assigns it. Nobody assigns work by hand, and no designer goes looking for it.`,
   },
   {
     type: 'paragraph',
-    text: `The moment that crystallized it: he asked the design leadership team how much capacity we were spending on strategy versus business-as-usual work. I pulled the answer up in Airtable during the meeting. My peers took about a week to get back to him.`,
+    text: `Each discipline works from its own queue. Content, UX, and UI designers open their view and find their Features already there, grouped by design due date, with PI, status, and size in one row.`,
   },
+  // VISUAL: annotated v1 Designer View. Anonymize names and Feature names first.
   {
-    type: 'paragraph',
-    text: `That pattern repeated. My team also stopped asking for extra support to manage our tracking (something my peers' teams still needed).`,
+    type: 'annotated-image',
+    group: 'sbd-v1',
+    label: 'Designer view:',
+    status: 'success',
+    options: [
+      { id: 'routing', label: 'How work finds designers' },
+      { id: 'tracking', label: 'What designers track' },
+    ],
+    src: v1Screen,
+    alt: 'First version of the designer view: a UI designer’s Features grouped by design due date, with owner, PI, status, and size columns',
+    // x / y are percentages of the 2576x1406 screenshot. Nudge after placing.
+    tooltips: {
+      routing: [
+        { x: 67.8, y: 20.8, text: 'Owner is the PM for Features from Rally, or a design leader for Features design creates. The alignment table matches each PM to their designers, so a Feature lands in the right queue the moment it syncs.' },
+        { x: 7.2, y: 19.6, text: 'Each discipline has its own queue. Content, UX, and UI designers each open a view with only their work in it.' },
+        { x: 58.7, y: 10.2, text: 'PI and release data sync from Rally. Nobody types them.' },
+      ],
+      tracking: [
+        { x: 89.5, y: 37.9, text: 'Each discipline tracks its own status on the Feature: Not Started, Work in Progress, In Review, Done.' },
+        { x: 78.8, y: 20.8, text: 'Ready for UI flagged the UX handoff. It taught UI designers to wait instead of collaborate, and the next version dropped it.' },
+        { x: 7.5, y: 27.6, text: 'Research I&Is link each Feature to the research behind it.' },
+      ],
+    },
   },
+
+  // ─── Research ──────────────────────────────────────────────
   {
     type: 'heading',
     level: 2,
-    text: 'The Extension',
+    text: 'Linking Work to Research',
   },
   {
     type: 'paragraph',
-    text: `When my scope expanded to lead all of Digital Servicing design, the same fundamental problem existed at larger scale. I didn't rebuild the system. I extended it.`
+    text: `I also connected our base to the User Research team's Airtable. Each Feature links to the studies that informed it, so we can show which work testing shaped and what testing found. Research no longer ends where delivery starts. It stays attached to the work.`,
+  },
+
+  // ─── Limits ────────────────────────────────────────────────
+  {
+    type: 'heading',
+    level: 2,
+    text: 'Where the First Version Fell Short',
   },
   {
     type: 'paragraph',
-    text: `The same Rally-Airtable architecture that worked for an 8-person team scaled to a 40-person organization without structural changes. The extension required mapping the new team's Rally structure and adjusting field configurations, but the core held. That's the test of a well-designed system: it accommodates growth without requiring you to start over.`,
+    text: `Designers were tagged directly to Features, and each discipline had one status column per Feature. Designers couldn't track their own work and progress independently of the Feature they shared.`,
   },
+  {
+    type: 'paragraph',
+    text: `A handoff flag also worked against collaboration. "Ready for UI" turned on when UX marked a Feature done, signaling UI designers to start. Instead, it taught them to wait. UI designers disengaged until UX finished, and UX lost their input while it could still shape the work.`,
+  },
+  {
+    type: 'paragraph',
+    text: `The next version fixed both. Each designer has their own story on every Feature they touch, and the handoff flag is gone. [Operational Visibility at Scale](/stories/operational-visibility-at-scale) covers what that made possible.`,
+  },
+
+  // ─── Scale ─────────────────────────────────────────────────
+  {
+    type: 'heading',
+    level: 2,
+    text: 'From 8 Designers to 40',
+  },
+  {
+    type: 'paragraph',
+    text: `When my scope expanded to all of Digital Servicing design, the system came with me. Extending it from 8 designers to 40 meant mapping the new teams' Rally structure and adjusting fields. The core held.`,
+  },
+  {
+    type: 'paragraph',
+    text: `It also absorbed a reorg. When [I restructured my org](/stories/structure-follows-craft) so designers stayed in their feature areas as PMs rotated, routing needed no rebuild. A design leader swaps the aligned PM in the alignment table, and the new PM's Features start flowing to the designers who stayed.`,
+  },
+
+  // ─── Outcome ───────────────────────────────────────────────
   {
     type: 'heading',
     level: 2,
@@ -127,17 +154,10 @@ export const content = [
   },
   {
     type: 'paragraph',
-    text: `My team has operated on this system since 2020. Work is clearly prioritized, deadlines are visible, and delivery health is accurate without anyone spending time maintaining it. When my manager asks about capacity or throughput, I have the answer before he finishes the question.`,
+    text: `My team has worked from this system since 2020. Work reaches the right designer without anyone routing it, deadlines are visible, and delivery health stays accurate without anyone maintaining it. I answer capacity questions from leadership in the meeting, not a week later.`,
   },
   {
     type: 'paragraph',
-    text: `The research connection adds a layer most design organizations don't have: a documented trail from user insight to shipped feature. That traceability has changed how we talk about design's contribution to product decisions. It's no longer a claim we make, it's something we can show.`,
-  },
-  {
-    type: 'image',
-    src: dashboardLg,
-    srcSm: dashboardSm,
-    alt: 'The Airtable dashboard built for the design team',
-    caption: `The live Airtable dashboard. Accurate, always on, no manual updates.`,
+    text: `The research link adds what most design organizations lack: a documented trail from user insight to shipped feature. Design's contribution to product decisions is no longer a claim. It's a record.`,
   },
 ]
