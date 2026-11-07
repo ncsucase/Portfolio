@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { InlineSvgs } from '../assets/inline-svgs'
 import ColorSwatches from './ColorSwatches'
 import AnnotatedImage from './AnnotatedImage'
+import StoryTable from './StoryTable'
 import './StoryRenderer.css'
 
 const INLINE_PATTERN = /(\[\[\d+\]\]|\[[^\]]+\]\([^)]+\)|\*\*[^*]+\*\*|\*[^*]+\*)/g
@@ -60,10 +61,10 @@ export default function StoryRenderer({ blocks }) {
                   {block.srcSm ? (
                     <picture>
                       <source srcSet={block.srcSm} media="(max-width: 640px)" />
-                      <img src={block.src} alt={block.alt ?? ''} loading="lazy" decoding="async" style={imgStyle} />
+                      <img src={block.src} alt={block.alt ?? ''} loading="lazy" decoding="async" style={imgStyle} className={block.border ? 'story-img-bordered' : undefined} />
                     </picture>
                   ) : (
-                    <img src={block.src} alt={block.alt ?? ''} loading="lazy" decoding="async" style={imgStyle} />
+                    <img src={block.src} alt={block.alt ?? ''} loading="lazy" decoding="async" style={imgStyle} className={block.border ? 'story-img-bordered' : undefined} />
                   )}
                 </div>
                 {block.caption && (
@@ -155,6 +156,9 @@ export default function StoryRenderer({ blocks }) {
                 {block.caption && <figcaption className="story-figcaption">{block.caption}</figcaption>}
               </figure>
             )
+
+          case 'table':
+            return <StoryTable key={i} block={block} />
 
           case 'aside':
             return (

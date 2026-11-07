@@ -43,6 +43,10 @@ import ProductRoadmapMaintenanceFlowchart from './svgs/solving-problems-for-prod
 import ProductHoursBefore from './svgs/solving-problems-for-product/product-hours-before.svg?react'
 import ProductHoursAfter from './svgs/solving-problems-for-product/product-hours-after.svg?react'
 
+// operational visibility at scale
+import SystemArchitecture from './svgs/operational-visibility-at-scale/system-architecture.svg?react'
+import SystemArchitectureMobile from './svgs/operational-visibility-at-scale/system-architecture-mobile.svg?react'
+
 // structure follows craft
 import PmRotationsFlowchart from './svgs/structure-follows-craft/pm-rotations-flowchart.svg?react'
 import MismatchedCoachingFlowchart from './svgs/structure-follows-craft/mismatched-coaching-flowchart.svg?react'
@@ -96,6 +100,10 @@ export const InlineSvgs = {
   mcdFlowAfterUsaa: McdFlowAfterUsaa,
   mcdTimeline: McdTimeline,
   mcdTimelineMobile: McdTimelineMobile,
+
+  // operational visibility at scale
+  systemArchitecture: SystemArchitecture,
+  systemArchitectureMobile: SystemArchitectureMobile,
 
   // solving problems for product
   productRoadmapMaintenanceFlowchart: ProductRoadmapMaintenanceFlowchart,

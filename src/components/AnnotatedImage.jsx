@@ -25,7 +25,7 @@ function useGroupSelection(group, fallback) {
 //   tooltips: { [optionId]: [{ x, y, text }] }   // x / y are % of the image
 // }
 export default function AnnotatedImage({ block }) {
-  const { src, alt, options, tooltips = {}, group = 'default', label, status } = block
+  const { src, alt, options, tooltips = {}, group = 'default', label, status, border } = block
   const [shared, setSelected] = useGroupSelection(group, options[0].id)
   // The shared choice may not exist in this image's options (e.g. 'branding'); fall back to the first.
   const selected = options.some(o => o.id === shared) ? shared : options[0].id
@@ -53,7 +53,7 @@ export default function AnnotatedImage({ block }) {
   const points = tooltips[selected] ?? []
 
   return (
-    <figure className={`story-figure annotated${status ? ` annotated--${status}` : ''}`}>
+    <figure className={`story-figure annotated${status ? ` annotated--${status}` : ''}${border ? ' annotated--bordered' : ''}`}>
       <div className="annotated-selector" role="radiogroup" aria-label={label ?? 'Problems'}>
         {label && <span className="annotated-selector-label">{label}</span>}
         {options.map(o => (

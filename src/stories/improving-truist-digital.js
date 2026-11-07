@@ -10,7 +10,7 @@ export const meta = {
   outcome: `Convened a voluntary coalition of 5 design teams, drove measurable visual improvements across Truist's digital products, and built a cross-enterprise design partnership that outlasted the project that created it.`,
   excerpt: `No mandate. No top-down directive. Just a shared problem and a case worth making. I convened five design teams across Truist to tackle a visual appeal problem no single team could solve alone. We let the evidence decide what we built.`,
   featured: false,
-  heroImage: heroImg,
+  heroImage: false,
   readTime: 4,
 }
 

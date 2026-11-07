@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="355" height="1378" fill="none" viewBox="0 0 355 1378">
+    <path fill="var(--bg)" d="M0 0h355v1378H0z" />
+    <rect width="355" height="252" x="0" y="0" fill="var(--flowchart-symbol-shadow)" rx="8" />
+    <text xml:space="preserve" fill="var(--text-h)" font-family="Epilogue" font-size="11" letter-spacing="0.1em" text-anchor="middle" style="white-space:pre"><tspan x="177.5" y="26">DATA SOURCES</tspan></text>
+    <rect width="160" height="92" x="12" y="44" fill="var(--flowchart-symbol)" rx="8" stroke="var(--flowchart-line)" stroke-opacity="0.7" stroke-width="1.5" stroke-dasharray="5 4" />
+    <text xml:space="preserve" fill="var(--text-h)" font-family="Epilogue" font-size="15" letter-spacing="0em" text-anchor="middle" style="white-space:pre"><tspan x="92" y="85.5">Rally</tspan></text>
+    <text xml:space="preserve" fill="var(--text-muted)" font-family="Epilogue" font-size="11" letter-spacing="0em" text-anchor="middle" style="white-space:pre"><tspan x="92" y="103.5">Product</tspan></text>
+    <rect width="160" height="92" x="183" y="44" fill="var(--flowchart-symbol)" rx="8" />
+    <text xml:space="preserve" fill="var(--text-h)" font-family="Epilogue" font-size="15" letter-spacing="0em" text-anchor="middle" style="white-space:pre"><tspan x="263" y="85.5">Airtable</tspan></text>
+    <text xml:space="preserve" fill="var(--text-muted)" font-family="Epilogue" font-size="11" letter-spacing="0em" text-anchor="middle" style="white-space:pre"><tspan x="263" y="103.5">Design</tspan></text>
+    <rect width="331" height="60" x="12" y="176" fill="var(--flowchart-symbol)" rx="8" />
+    <text xml:space="preserve" fill="var(--text-h)" font-family="Epilogue" font-size="15" letter-spacing="0em" text-anchor="middle" style="white-space:pre"><tspan x="177.5" y="201.5">Features</tspan></text>
+    <text xml:space="preserve" fill="var(--text-muted)" font-family="Epilogue" font-size="11" letter-spacing="0em" text-anchor="middle" style="white-space:pre"><tspan x="177.5" y="219.5">Unified table</tspan></text>
+    <path d="M62 136L62 176M55 169L62 176L69 169" stroke="var(--flowchart-line)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <text xml:space="preserve" fill="var(--text-muted)" font-family="Epilogue" font-size="11" letter-spacing="0em" text-anchor="end" style="white-space:pre"><tspan x="54" y="160">Sync</tspan></text>
+    <path d="M122 176L122 136M129 143L122 136L115 143" stroke="var(--flowchart-line)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <text xml:space="preserve" fill="var(--text-muted)" font-family="Epilogue" font-size="11" letter-spacing="0em" text-anchor="start" style="white-space:pre"><tspan x="130" y="160">Write</tspan></text>
+    <path d="M263 136L263 176M256 169L263 176L270 169" stroke="var(--flowchart-line)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <text xml:space="preserve" fill="var(--text-muted)" font-family="Epilogue" font-size="11" letter-spacing="0em" text-anchor="start" style="white-space:pre"><tspan x="271" y="160">Manual</tspan></text>
+    <path d="M177.5 236L177.5 288M170.5 281L177.5 288L184.5 281" stroke="var(--flowchart-line)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <rect width="160" height="92" x="97.5" y="288" fill="var(--flowchart-symbol)" rx="8" stroke="var(--flowchart-line)" stroke-opacity="0.7" stroke-width="1.5" stroke-dasharray="5 4" />
+    <text xml:space="preserve" fill="var(--text-h)" font-family="Epilogue" font-size="15" letter-spacing="0em" text-anchor="middle" style="white-space:pre"><tspan x="177.5" y="308">Designer</tspan><tspan x="177.5" y="325">Assignment</tspan></text>
+    <text xml:space="preserve" fill="var(--text-muted)" font-family="Epilogue" font-size="11" letter-spacing="0em" text-anchor="middle" style="white-space:pre"><tspan x="177.5" y="343">Owner → Rally Proj →</tspan><tspan x="177.5" y="356">Platform → Team →</tspan><tspan x="177.5" y="369">Role columns</tspan></text>
+    <path d="M177.5 380L177.5 428M170.5 421L177.5 428L184.5 421" stroke="var(--flowchart-line)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <rect width="160" height="92" x="97.5" y="428" fill="var(--flowchart-symbol)" rx="8" />
+    <text xml:space="preserve" fill="var(--text-h)" font-family="Epilogue" font-size="15" letter-spacing="0em" text-anchor="middle" style="white-space:pre"><tspan x="177.5" y="463">Design User Stories</tspan></text>
+    <text xml:space="preserve" fill="var(--text-muted)" font-family="Epilogue" font-size="11" letter-spacing="0em" text-anchor="middle" style="white-space:pre"><tspan x="177.5" y="481">1 per designer</tspan><tspan x="177.5" y="494">per Feature</tspan></text>
+    <path d="M97.5 474H56V846" stroke="var(--flowchart-line)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M56 598L97.5 598M90.5 605L97.5 598L90.5 591" stroke="var(--flowchart-line)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M56 722L97.5 722M90.5 729L97.5 722L90.5 715" stroke="var(--flowchart-line)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M56 846L97.5 846M90.5 853L97.5 846L90.5 839" stroke="var(--flowchart-line)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <rect width="160" height="92" x="97.5" y="552" fill="var(--flowchart-symbol)" rx="8" />
+    <text xml:space="preserve" fill="var(--text-h)" font-family="Epilogue" font-size="15" letter-spacing="0em" text-anchor="middle" style="white-space:pre"><tspan x="177.5" y="587">Blocking</tspan></text>
+    <text xml:space="preserve" fill="var(--text-muted)" font-family="Epilogue" font-size="11" letter-spacing="0em" text-anchor="middle" style="white-space:pre"><tspan x="177.5" y="605">Block toggle,</tspan><tspan x="177.5" y="618">Blocked Log, Blocked Days</tspan></text>
+    <rect width="160" height="92" x="97.5" y="676" fill="var(--flowchart-symbol)" rx="8" stroke="var(--flowchart-line)" stroke-opacity="0.7" stroke-width="1.5" stroke-dasharray="5 4" />
+    <text xml:space="preserve" fill="var(--text-h)" font-family="Epilogue" font-size="15" letter-spacing="0em" text-anchor="middle" style="white-space:pre"><tspan x="177.5" y="704.5">Projections</tspan></text>
+    <text xml:space="preserve" fill="var(--text-muted)" font-family="Epilogue" font-size="11" letter-spacing="0em" text-anchor="middle" style="white-space:pre"><tspan x="177.5" y="722.5">Size x Role =</tspan><tspan x="177.5" y="735.5">Phase Estimates =</tspan><tspan x="177.5" y="748.5">Est. Done Date</tspan></text>
+    <rect width="160" height="92" x="97.5" y="800" fill="var(--flowchart-symbol)" rx="8" stroke="var(--flowchart-line)" stroke-opacity="0.7" stroke-width="1.5" stroke-dasharray="5 4" />
+    <text xml:space="preserve" fill="var(--text-h)" font-family="Epilogue" font-size="15" letter-spacing="0em" text-anchor="middle" style="white-space:pre"><tspan x="177.5" y="822">Phase Kanban</tspan></text>
+    <text xml:space="preserve" fill="var(--text-muted)" font-family="Epilogue" font-size="11" letter-spacing="0em" text-anchor="middle" style="white-space:pre"><tspan x="177.5" y="840">Discover &amp; Iterate,</tspan><tspan x="177.5" y="853">Prepare, Ready for Dev,</tspan><tspan x="177.5" y="866">Rework, Support Rel.,</tspan><tspan x="177.5" y="879">Done</tspan></text>
+    <path d="M257.5 598H299V970" stroke="var(--flowchart-line)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M257.5 722H299" stroke="var(--flowchart-line)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M257.5 846H299" stroke="var(--flowchart-line)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M299 970L257.5 970M264.5 963L257.5 970L264.5 977" stroke="var(--flowchart-line)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <rect width="160" height="92" x="97.5" y="924" fill="var(--flowchart-symbol)" rx="8" stroke="var(--flowchart-line)" stroke-opacity="0.7" stroke-width="1.5" stroke-dasharray="5 4" />
+    <text xml:space="preserve" fill="var(--text-h)" font-family="Epilogue" font-size="15" letter-spacing="0em" text-anchor="middle" style="white-space:pre"><tspan x="177.5" y="959">Measurement</tspan></text>
+    <text xml:space="preserve" fill="var(--text-muted)" font-family="Epilogue" font-size="11" letter-spacing="0em" text-anchor="middle" style="white-space:pre"><tspan x="177.5" y="977">Accuracy, Capacity,</tspan><tspan x="177.5" y="990">Impact, Health</tspan></text>
+    <path d="M177.5 1016L177.5 1064M170.5 1057L177.5 1064L184.5 1057" stroke="var(--flowchart-line)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <rect width="355" height="256" x="0" y="1064" fill="var(--flowchart-symbol-shadow)" rx="8" />
+    <text xml:space="preserve" fill="var(--text-h)" font-family="Epilogue" font-size="11" letter-spacing="0.1em" text-anchor="middle" style="white-space:pre"><tspan x="177.5" y="1090">INTERFACES</tspan></text>
+    <rect width="160" height="92" x="12" y="1108" fill="var(--flowchart-symbol)" rx="8" />
+    <text xml:space="preserve" fill="var(--text-h)" font-family="Epilogue" font-size="15" letter-spacing="0em" text-anchor="middle" style="white-space:pre"><tspan x="92" y="1143">Designer</tspan></text>
+    <text xml:space="preserve" fill="var(--text-muted)" font-family="Epilogue" font-size="11" letter-spacing="0em" text-anchor="middle" style="white-space:pre"><tspan x="92" y="1161">Work queue, grooming,</tspan><tspan x="92" y="1174">phase progression</tspan></text>
+    <rect width="160" height="92" x="183" y="1108" fill="var(--flowchart-symbol)" rx="8" />
+    <text xml:space="preserve" fill="var(--text-h)" font-family="Epilogue" font-size="15" letter-spacing="0em" text-anchor="middle" style="white-space:pre"><tspan x="263" y="1136.5">Operations</tspan></text>
+    <text xml:space="preserve" fill="var(--text-muted)" font-family="Epilogue" font-size="11" letter-spacing="0em" text-anchor="middle" style="white-space:pre"><tspan x="263" y="1154.5">Team health, Feature</tspan><tspan x="263" y="1167.5">actions, triage,</tspan><tspan x="263" y="1180.5">calibration</tspan></text>
+    <rect width="160" height="92" x="12" y="1216" fill="var(--flowchart-symbol)" rx="8" />
+    <text xml:space="preserve" fill="var(--text-h)" font-family="Epilogue" font-size="15" letter-spacing="0em" text-anchor="middle" style="white-space:pre"><tspan x="92" y="1244.5">Portfolio</tspan></text>
+    <text xml:space="preserve" fill="var(--text-muted)" font-family="Epilogue" font-size="11" letter-spacing="0em" text-anchor="middle" style="white-space:pre"><tspan x="92" y="1262.5">Cross-team Features,</tspan><tspan x="92" y="1275.5">Epics, capacity,</tspan><tspan x="92" y="1288.5">metrics</tspan></text>
+    <rect width="160" height="92" x="183" y="1216" fill="var(--flowchart-symbol)" rx="8" />
+    <text xml:space="preserve" fill="var(--text-h)" font-family="Epilogue" font-size="15" letter-spacing="0em" text-anchor="middle" style="white-space:pre"><tspan x="263" y="1244.5">Admin</tspan></text>
+    <text xml:space="preserve" fill="var(--text-muted)" font-family="Epilogue" font-size="11" letter-spacing="0em" text-anchor="middle" style="white-space:pre"><tspan x="263" y="1262.5">Sync sources, phase</tspan><tspan x="263" y="1275.5">estimates,</tspan><tspan x="263" y="1288.5">field mappings</tspan></text>
+    <rect width="28" height="18" x="40" y="1348" fill="var(--flowchart-symbol)" rx="4" />
+    <text xml:space="preserve" fill="var(--text-h)" font-family="Epilogue" font-size="12" letter-spacing="0em" style="white-space:pre"><tspan x="78" y="1361">Shared core</tspan></text>
+    <rect width="28" height="18" x="174" y="1348" fill="var(--flowchart-symbol)" rx="4" stroke="var(--flowchart-line)" stroke-opacity="0.7" stroke-width="1.5" stroke-dasharray="5 4" />
+    <text xml:space="preserve" fill="var(--text-h)" font-family="Epilogue" font-size="12" letter-spacing="0em" style="white-space:pre"><tspan x="212" y="1361">Team-configurable</tspan></text>
+</svg>

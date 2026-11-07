@@ -70,6 +70,12 @@
   border-radius: var(--radius-md);
 }
 
+/* Opt-in border (block.border) */
+.story-figure img.story-img-bordered {
+  box-sizing: border-box;
+  border: 1px solid var(--border);
+}
+
 .story-figure img {
   width: 100%;
   height: auto;
@@ -124,6 +130,85 @@
   color: var(--text-muted);
   margin-top: var(--space-2);
   text-align: center;
+}
+
+/* Table: open layout, no outer frame or vertical rules; hairlines between rows */
+.story-table-frame {
+  position: relative;
+}
+
+.story-table-wrap {
+  overflow-x: auto;
+}
+
+/* Right-edge fade: shown only while there's more table to scroll to */
+.story-table-frame::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 48px;
+  background: linear-gradient(to right, transparent, var(--bg));
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.story-table-frame.has-more-right::after {
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .story-table-frame::after {
+    transition: none;
+  }
+}
+
+.story-table {
+  width: 100%;
+  min-width: 520px;
+  border-collapse: collapse;
+  font-family: var(--font-heading);
+  font-size: var(--font-size-md);
+  line-height: 1.35;
+  color: var(--text);
+  text-align: left;
+}
+
+.story-table th,
+.story-table td {
+  padding: var(--space-4) var(--space-4) var(--space-4) 0;
+  vertical-align: top;
+  font-weight: var(--font-weight-regular);
+}
+
+.story-table thead th {
+  font-weight: var(--font-weight-semi);
+  color: var(--text-h);
+  padding-top: 0;
+}
+
+.story-table tbody tr {
+  border-top: 1px solid var(--border);
+}
+
+/* Header rule: the first body row's top border, heavier and darker than the row rules */
+.story-table tbody tr:first-child {
+  border-top: 2px solid var(--text-muted);
+}
+
+.story-table-sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.story-table th:first-child,
+.story-table td:first-child {
+  width: 22%;
 }
 
 .story-aside {

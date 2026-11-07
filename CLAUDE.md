@@ -162,5 +162,6 @@ Use the `style` attribute — bare `stop-color="var(...)"` does not work in most
 - ✅ structure-follows-craft/mismatched-coaching-flowchart.svg
 - ✅ mobile-check-deposit/mcd-timeline.svg (suffix: _mcdt)
 - ✅ mobile-check-deposit/mcd-timeline-mobile.svg (suffix: _mcdtm)
+- ✅ operational-visibility-at-scale/system-architecture.svg and system-architecture-mobile.svg (no ids, so no suffix needed)
 - ✅ a-better-candlestick-chart/ — all 10 files tokenized (suffixes: _ecbe, _ecbu, _ncc, _tcc, _bef, _beg, _ber, _bug, _bugn, _buh)
 - ✅ designs/a-better-candlestick-chart/Card-Candlestick.svg (no IDs; imported with `?react`, and SampleCard renders component images inline)

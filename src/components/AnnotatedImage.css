@@ -72,6 +72,17 @@
   position: relative;
 }
 
+/* Opt-in border (block.border). Drawn as an overlay so it doesn't shift the
+   % positions of the trigger dots. */
+.annotated--bordered .annotated-stage::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  pointer-events: none;
+}
+
 .annotated-trigger {
   position: absolute;
   width: 24px;
