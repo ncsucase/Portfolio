@@ -24,9 +24,9 @@ import MentalModelsOfADesignerMobile from './svgs/a-common-language-for-performa
 import RatingsDistributionBefore from './svgs/a-common-language-for-performance/ratings-distribution-before.svg?react'
 import RatingsDistributionAfter from './svgs/a-common-language-for-performance/ratings-distribution-after.svg?react'
 
-// a system built for designers
-import AirtableRallySyncDiagram from './svgs/a-system-built-for-designers/airtable-rally-sync-diagram.svg?react'
-import AirtableRallySyncDiagramMobile from './svgs/a-system-built-for-designers/airtable-rally-sync-diagram-mobile.svg?react'
+// design work in an engineering tool
+import AirtableRallySyncDiagram from './svgs/design-work-in-an-engineering-tool/airtable-rally-sync-diagram.svg?react'
+import AirtableRallySyncDiagramMobile from './svgs/design-work-in-an-engineering-tool/airtable-rally-sync-diagram-mobile.svg?react'
 
 // improving truist digital
 import Coallition from './svgs/improving-truist-digital/coallition.svg?react'
@@ -64,6 +64,7 @@ import AccessibilityBefore from './svgs/what-designers-should-actually-be-doing/
 import AccessibilityAfter from './svgs/what-designers-should-actually-be-doing/accessibility-after.svg?react'
 import DevSpecBefore from './svgs/what-designers-should-actually-be-doing/dev-spec-before.svg?react'
 import DevSpecAfter from './svgs/what-designers-should-actually-be-doing/dev-spec-after.svg?react'
+import HandoffBeforeDraft from './svgs/what-designers-should-actually-be-doing/handoff-before-draft.svg?react'
 
 export const InlineSvgs = {
 
@@ -87,7 +88,7 @@ export const InlineSvgs = {
   ratingsDistributionBefore: RatingsDistributionBefore,
   ratingsDistributionAfter: RatingsDistributionAfter,
 
-  // a system built for designers
+  // design work in an engineering tool
   airtableRallySyncDiagram: AirtableRallySyncDiagram,
   airtableRallySyncDiagramMobile: AirtableRallySyncDiagramMobile,
 
@@ -127,5 +128,5 @@ export const InlineSvgs = {
   accessibilityAfter: AccessibilityAfter,
   devSpecBefore: DevSpecBefore,
   devSpecAfter: DevSpecAfter,
-
+  handoffBeforeDraft: HandoffBeforeDraft,
 };
