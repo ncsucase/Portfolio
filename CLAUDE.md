@@ -113,6 +113,8 @@ Assigned suffixes:
 - `_bug` — example-bullish-gradient.svg
 - `_bugn` — example-bullish-green.svg
 - `_buh` — example-bullish-hollow.svg
+- `_ad` — architecture-diagram.svg
+- `_adm` — architecture-diagram-mobile.svg
 
 ### Filter pattern — single soft pass only
 Figma exports a double-pass filter (stdDeviation=1 tight + stdDeviation=4 soft). The tight pass causes jagged anti-aliasing on circles and arcs. **Remove it — use only the stdDeviation=4 pass.**

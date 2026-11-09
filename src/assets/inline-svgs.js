@@ -65,6 +65,8 @@ import AccessibilityAfter from './svgs/what-designers-should-actually-be-doing/a
 import DevSpecBefore from './svgs/what-designers-should-actually-be-doing/dev-spec-before.svg?react'
 import DevSpecAfter from './svgs/what-designers-should-actually-be-doing/dev-spec-after.svg?react'
 import HandoffBeforeDraft from './svgs/what-designers-should-actually-be-doing/handoff-before-draft.svg?react'
+import ArchitectureDiagram from './svgs/what-designers-should-actually-be-doing/architecture-diagram.svg?react'
+import ArchitectureDiagramMobile from './svgs/what-designers-should-actually-be-doing/architecture-diagram-mobile.svg?react'
 
 export const InlineSvgs = {
 
@@ -129,4 +131,6 @@ export const InlineSvgs = {
   devSpecBefore: DevSpecBefore,
   devSpecAfter: DevSpecAfter,
   handoffBeforeDraft: HandoffBeforeDraft,
+  architectureDiagram: ArchitectureDiagram,
+  architectureDiagramMobile: ArchitectureDiagramMobile,
 };

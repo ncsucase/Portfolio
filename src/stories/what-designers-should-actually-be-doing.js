@@ -33,6 +33,7 @@ export const content = [
   {
     type: 'inline-svg',
     name: 'handoffBeforeDraft',
+    title: 'Current Process',
     alt: 'The handoff before: a UX designer completes wireframes, then a UI designer applies the Design System and documents accessibility requirements before producing a Figma file developers can reference',
     maxWidth: `470px`,
   },
@@ -168,6 +169,12 @@ export const content = [
     text: `Because every audience wants something different from it. Dev's AI tooling needs structured, unambiguous data. Dev and QA need specs they can read without learning Figma. Product, LOB, and Legal each need something else again. Optimizing one deliverable for all of them is how we ended up with a spec nobody was happy with. So we separated the data from the presentation: one export, a different view for each audience.`,
   },
   {
+    type: 'inline-svg',
+    name: 'architectureDiagram',
+    mobileVariant: 'architectureDiagramMobile',
+    alt: 'An architecture diagram of the Figma plugin, JSON export, and consuming projects.',
+  },
+  {
     type: 'paragraph',
     text: `Dev's leaders left that meeting excited about both workstreams, which told me the split was the right read of the problem, not just mine.`,
   },
@@ -251,32 +258,33 @@ export const content = [
     type: 'paragraph',
     text: `The goal was never a smaller design team, and it still isn't. But the scope of what "better-used" means got bigger. Designer capacity still moves toward discovery, usability testing, and earlier participation in roadmap conversations as mechanical execution gets absorbed elsewhere. What's different is that the documented judgment behind that execution doesn't stay locked inside one tool. It's available to whatever AI system in the org next needs to know what good design looks like here.`,
   },
-  {
-    type: 'columns',
-    columns: [
-      [{
-        type: 'inline-svg',
-        name: 'designerCapacityAfter',
-        title: `Designer Capacity`,
-        alt: 'Designer capacity after: more time for discovery, testing, and roadmap work',
-        maxWidth: `200px`,
-      }],
-      [{
-        type: 'inline-svg',
-        name: 'accessibilityAfter',
-        title: `Accessibility`,
-        alt: 'Accessibility after: requirements captured in the export instead of recalled by hand',
-        maxWidth: `200px`,
-      }],
-      [{
-        type: 'inline-svg',
-        name: 'devSpecAfter',
-        title: `Dev Spec`,
-        alt: 'Dev spec after: structured specs delivered through the spec viewer',
-        maxWidth: `200px`,
-      }],
-    ]
-  },
+  // Hide these until we have some real data.
+  // {
+  //   type: 'columns',
+  //   columns: [
+  //     [{
+  //       type: 'inline-svg',
+  //       name: 'designerCapacityAfter',
+  //       title: `Designer Capacity`,
+  //       alt: 'Designer capacity after: more time for discovery, testing, and roadmap work',
+  //       maxWidth: `200px`,
+  //     }],
+  //     [{
+  //       type: 'inline-svg',
+  //       name: 'accessibilityAfter',
+  //       title: `Accessibility`,
+  //       alt: 'Accessibility after: requirements captured in the export instead of recalled by hand',
+  //       maxWidth: `200px`,
+  //     }],
+  //     [{
+  //       type: 'inline-svg',
+  //       name: 'devSpecAfter',
+  //       title: `Dev Spec`,
+  //       alt: 'Dev spec after: structured specs delivered through the spec viewer',
+  //       maxWidth: `200px`,
+  //     }],
+  //   ]
+  // },
   {
     type: 'heading',
     level: 2,
