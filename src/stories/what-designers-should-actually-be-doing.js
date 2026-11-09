@@ -5,17 +5,17 @@
   duration: '6 months',       // manual string for completed stories; ignored when status is 'in progress'
   status: 'in progress',      // `in progress` | `complete` (optional)
   contribution: 'Systems & Automation',
-  outcome: 'Redirected the effort from a single spec-generation tool to documented design judgment that grounds every AI tool touching design work, starting with the dev handoff.',
-  excerpt: `What started as a tool to generate developer specs became something bigger: documenting the contextual judgment that makes design good, so any AI tool in the org, ours or dev's, can draw on it.`,
+  outcome: `Wireframed and built the first versions of two AI-built tools, a Figma plugin that exports structured design data and a spec viewer for dev and QA, and set the direction for one design export feeding a viewer for every audience.`,
+  excerpt: `I set out to generate developer specs with AI. Instead, I used AI to build the tools: a Figma plugin that exports structured design data, and a spec viewer that turns it into something dev and QA can use. The plan is one export and a viewer for every audience. Building them showed me design's real AI asset isn't a tool. It's documented judgment.`,
   featured: true,             // set true on the story you want in the hero slot on home
   heroImage: null,             // or: import heroImg from '...' and set heroImage: heroImg
-  readTime: 6,
+  readTime: 7,
 }
 
 export const content = [
   {
     type: 'summary',
-    text: `I set out to build one tool: an AI system that would generate developer specs from Figma wireframes and close the handoff gap between UX and dev. Building it with our dev partners surfaced a bigger problem than the one I started with. This is the story of what changed, why, and what I'm building instead.`,
+    text: `I set out to build one tool: an AI system that would generate developer specs from Figma wireframes. Building it with our dev partners turned it into two. I wireframed and built, with AI, a Figma plugin that exports structured design data and a spec viewer that presents it to dev and QA. My team has carried both forward from there. Building them surfaced a bigger problem than the one I started with. This is the story of what changed, why, and what I'm building instead.`,
   },
   {
     type: 'heading',
@@ -29,6 +29,13 @@ export const content = [
   {
     type: 'paragraph',
     text: `It's a multi-day process per feature. And it's fragile in the way any manual, knowledge-intensive process is fragile: the Design System contains hundreds of components and patterns. No designer holds all of it accurately in their head across every delivery. The spec reflects how well someone remembers, how much time they have, and how tired they are.`,
+  },
+  {
+    type: 'inline-svg',
+    name: 'handoffBeforeDraft',
+    title: 'Current Process',
+    alt: 'The handoff before: a UX designer completes wireframes, then a UI designer applies the Design System and documents accessibility requirements before producing a Figma file developers can reference',
+    maxWidth: `470px`,
   },
   {
     type: 'paragraph',
@@ -66,21 +73,21 @@ export const content = [
         type: 'inline-svg',
         name: 'designerCapacityBefore',
         title: `Designer Capacity`,
-        alt: 'Chart showing designer capacity before...',
+        alt: 'Designer capacity before: UI designer time weighted toward mechanical execution',
         maxWidth: `200px`,
       }],
       [{
         type: 'inline-svg',
         name: 'accessibilityBefore',
         title: `Accessibility`,
-        alt: 'Chart showing accessibility risk before...',
+        alt: 'Accessibility before: WCAG compliance dependent on individual designer recall',
         maxWidth: `200px`,
       }],
       [{
         type: 'inline-svg',
         name: 'devSpecBefore',
         title: `Dev Spec`,
-        alt: 'Chart showing dev spec gaps before...',
+        alt: 'Dev spec before: gaps in interaction documentation and screen relationships',
         maxWidth: `200px`,
       }],
     ]
@@ -113,7 +120,7 @@ export const content = [
   },
   {
     type: 'paragraph',
-    text: `Truist won't allow API-level access to Figma. That constraint alone forced a redesign: instead of pulling structure programmatically, we have to structure our Figma files so the right information comes out cleanly in a JSON export, then get that translated correctly downstream. No shortcut around it.`,
+    text: `Truist won't allow API-level access to Figma. That constraint alone forced a redesign. Instead of pulling structure from outside Figma, I built a plugin that runs inside it and exports the file as structured JSON: components, tokens, responsive behavior, and accessibility annotations. I built the first version with AI, without waiting on an engineering team.`,
   },
   {
     type: 'paragraph',
@@ -159,11 +166,45 @@ export const content = [
   {
     type: 'aside',
     label: 'Why not solve this with one deliverable?',
-    text: `Because the two audiences want different things from it. Dev's AI tooling needs structured, unambiguous data. A human stakeholder needs a document they can read and act on without learning Figma. Optimizing one deliverable for both audiences is how we ended up with a spec nobody was happy with in the first place.`
+    text: `Because every audience wants something different from it. Dev's AI tooling needs structured, unambiguous data. Dev and QA need specs they can read without learning Figma. Product, LOB, and Legal each need something else again. Optimizing one deliverable for all of them is how we ended up with a spec nobody was happy with. So we separated the data from the presentation: one export, a different view for each audience.`,
+  },
+  {
+    type: 'inline-svg',
+    name: 'architectureDiagram',
+    mobileVariant: 'architectureDiagramMobile',
+    alt: 'An architecture diagram of the Figma plugin, JSON export, and consuming projects.',
   },
   {
     type: 'paragraph',
     text: `Dev's leaders left that meeting excited about both workstreams, which told me the split was the right read of the problem, not just mine.`,
+  },
+  { 
+    type: 'heading', 
+    level: 2, 
+    text: 'One Export, Many Viewers' 
+  },
+  {
+    type: 'paragraph',
+    text: `I wireframed and built the first version of both tools with AI. My team has iterated on them since.`,
+  },
+  {
+    type: 'list',
+    items: [
+      `The Figma plugin turns a designer's file into a structured JSON export. Dev's GitLab Duo agents consume it directly. Machine to machine.`,
+      `The spec viewer reads that same export and presents it to dev and QA as a spec they can read and act on, with no Figma canvas to navigate. Machine to human.`,
+    ],
+  },
+  {
+    type: 'paragraph',
+    text: `The proof of concept with our dev partners was the first time they saw a working alternative to the Figma file.`,
+  },
+  {
+    type: 'paragraph',
+    text: `The spec viewer is the first viewer, not the only one. Product, LOB, and Legal each need something different from a design, and today a designer either builds each version by hand or everyone squints at the same Figma file. With one export underneath, each new audience is a new viewer, not new designer hours.`,
+  },
+  {
+    type: 'paragraph',
+    text: `Dev is the first audience on purpose. Their needs are the most detailed and the least forgiving, so if the export holds up for them, it is likely to carry most of what other audiences need. The open question is the rest: rationale, risk, and business intent are what Legal and LOB read for, and they don't live in component data. That gap is where the next section begins.`,
   },
   {
     type: 'heading',
@@ -202,7 +243,7 @@ export const content = [
   },
   {
     type: 'paragraph',
-    text: `Dev owns the code generation layer. It runs on GitLab Duo, already approved and in use on their side. What they need from design is a reliable translation layer: files structured so the export means what it should, and a partner who can diagnose it when the translation breaks.`,
+    text: `Dev owns the code generation layer. It runs on GitLab Duo, already approved and in use on their side. Design owns the translation layer: the plugin that turns a Figma file into an export dev can trust, the viewers built on top of it, and the job of diagnosing it when the translation breaks.`,
   },
   {
     type: 'paragraph',
@@ -217,32 +258,33 @@ export const content = [
     type: 'paragraph',
     text: `The goal was never a smaller design team, and it still isn't. But the scope of what "better-used" means got bigger. Designer capacity still moves toward discovery, usability testing, and earlier participation in roadmap conversations as mechanical execution gets absorbed elsewhere. What's different is that the documented judgment behind that execution doesn't stay locked inside one tool. It's available to whatever AI system in the org next needs to know what good design looks like here.`,
   },
-  {
-    type: 'columns',
-    columns: [
-      [{
-        type: 'inline-svg',
-        name: 'designerCapacityAfter',
-        title: `Designer Capacity`,
-        alt: 'Chart showing designer capacity after...',
-        maxWidth: `200px`,
-      }],
-      [{
-        type: 'inline-svg',
-        name: 'accessibilityAfter',
-        title: `Accessibility`,
-        alt: 'Chart showing accessibility risk after...',
-        maxWidth: `200px`,
-      }],
-      [{
-        type: 'inline-svg',
-        name: 'devSpecAfter',
-        title: `Dev Spec`,
-        alt: 'Chart showing dev spec gaps after...',
-        maxWidth: `200px`,
-      }],
-    ]
-  },
+  // Hide these until we have some real data.
+  // {
+  //   type: 'columns',
+  //   columns: [
+  //     [{
+  //       type: 'inline-svg',
+  //       name: 'designerCapacityAfter',
+  //       title: `Designer Capacity`,
+  //       alt: 'Designer capacity after: more time for discovery, testing, and roadmap work',
+  //       maxWidth: `200px`,
+  //     }],
+  //     [{
+  //       type: 'inline-svg',
+  //       name: 'accessibilityAfter',
+  //       title: `Accessibility`,
+  //       alt: 'Accessibility after: requirements captured in the export instead of recalled by hand',
+  //       maxWidth: `200px`,
+  //     }],
+  //     [{
+  //       type: 'inline-svg',
+  //       name: 'devSpecAfter',
+  //       title: `Dev Spec`,
+  //       alt: 'Dev spec after: structured specs delivered through the spec viewer',
+  //       maxWidth: `200px`,
+  //     }],
+  //   ]
+  // },
   {
     type: 'heading',
     level: 2,
@@ -250,7 +292,7 @@ export const content = [
   },
   {
     type: 'paragraph',
-    text: `Both workstreams with dev are underway: file structuring for the JSON export, and early prototyping on a non-designer deliverable. In parallel, my leaders are documenting the patterns and nuances that define good design in our domain, the first version of the context an AI system would need to apply that judgment consistently.`,
+    text: `This is still in progress. We've completed a proof of concept with our dev partners, and we're refining two things: how accurately the plugin translates Figma into the export, and how familiar the spec viewer feels to the developers and QA engineers using it. Viewers for Product, LOB, and Legal come next. In parallel, my leaders are documenting the patterns and nuances that define good design in our domain, the first version of the context an AI system would need to apply that judgment consistently.`,
   },
   {
     type: 'paragraph',

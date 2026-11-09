@@ -88,6 +88,7 @@ Assigned suffixes:
 - `_ab` — accessibility-before.svg
 - `_dsa` — dev-spec-after.svg
 - `_dsb` — dev-spec-before.svg
+- `_hbd` — handoff-before-draft.svg
 - `_rdb` — ratings-distribution-before.svg
 - `_rda` — ratings-distribution-after.svg
 - `_mmd` — mental-models-of-a-designer.svg
@@ -112,6 +113,8 @@ Assigned suffixes:
 - `_bug` — example-bullish-gradient.svg
 - `_bugn` — example-bullish-green.svg
 - `_buh` — example-bullish-hollow.svg
+- `_ad` — architecture-diagram.svg
+- `_adm` — architecture-diagram-mobile.svg
 
 ### Filter pattern — single soft pass only
 Figma exports a double-pass filter (stdDeviation=1 tight + stdDeviation=4 soft). The tight pass causes jagged anti-aliasing on circles and arcs. **Remove it — use only the stdDeviation=4 pass.**
@@ -156,8 +159,8 @@ Use the `style` attribute — bare `stop-color="var(...)"` does not work in most
 - ✅ structure-follows-craft/matrixed-org-model-mobile.svg (suffix: _momm)
 - ✅ structure-follows-craft/everyone-rotates-timeline.svg (suffix: _ert)
 - ✅ structure-follows-craft/pm-rotates-timeline.svg (suffix: _prt)
-- ✅ a-system-built-for-designers/airtable-rally-sync-diagram.svg (suffix: _ars)
-- ✅ a-system-built-for-designers/airtable-rally-sync-diagram-mobile.svg (suffix: _arsm)
+- ✅ design-work-in-an-engineering-tool/airtable-rally-sync-diagram.svg (suffix: _ars)
+- ✅ design-work-in-an-engineering-tool/airtable-rally-sync-diagram-mobile.svg (suffix: _arsm)
 - ✅ structure-follows-craft/pm-rotations-flowchart.svg
 - ✅ structure-follows-craft/mismatched-coaching-flowchart.svg
 - ✅ mobile-check-deposit/mcd-timeline.svg (suffix: _mcdt)

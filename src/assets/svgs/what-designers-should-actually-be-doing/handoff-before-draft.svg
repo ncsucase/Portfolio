@@ -1,0 +1,84 @@
+<svg width="388" height="650" viewBox="-1 -1 388 650" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <!-- Warning triangle, apex at origin -->
+        <g id="warn_hbd">
+            <path d="M-1.732 0C-.962 -1.333 .962 -1.333 1.732 0L9.526 13.5C10.296 14.833 9.334 16.5 7.794 16.5H-7.794C-9.334 16.5 -10.296 14.833 -9.526 13.5Z" fill="var(--color-warning)"/>
+            <text x="0" y="14.1" text-anchor="middle" fill="var(--text-on-vibrant)" font-family="Epilogue" font-size="13" font-weight="bold">!</text>
+        </g>
+    </defs>
+
+    <!-- Process boxes -->
+    <g fill="var(--bg-deep)">
+        <rect y="0" width="160" height="92" rx="8"/>
+        <rect y="124" width="160" height="92" rx="8"/>
+        <rect y="248" width="160" height="92" rx="8"/>
+        <rect x="200" y="248" width="160" height="92" rx="8"/>
+        <rect y="372" width="160" height="92" rx="8"/>
+        <rect y="556" width="160" height="92" rx="8"/>
+    </g>
+
+    <!-- Connectors -->
+    <g stroke="var(--text)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <!-- Down arrows -->
+        <path d="M80 92V123.5M74 117.5l6 6 6-6"/>
+        <path d="M80 216V247.5M74 241.5l6 6 6-6"/>
+        <path d="M80 340V371.5M74 365.5l6 6 6-6"/>
+        <path d="M80 464V489.5M74 483.5l6 6 6-6"/>
+        <path d="M80 530V555.5M74 549.5l6 6 6-6"/>
+        <!-- Memory → step arrows (pointing left) -->
+        <path d="M215 170H160.5M166.5 164l-6 6 6 6"/>
+        <path d="M215 46H160.5M166.5 40l-6 6 6 6"/>
+        <!-- Rework → Figma arrow -->
+        <path d="M200 294H160.5M166.5 288l-6 6 6 6"/>
+        <!-- Developer → Fix deliverables loop -->
+        <path d="M99 510H263a12 12 0 0 0 12-12V340.5M269 346.5l6-6 6 6" stroke-width="2"/>
+    </g>
+
+    <!-- Warning badges -->
+    <use href="#warn_hbd" x="188" y="160"/>
+    <use href="#warn_hbd" x="188" y="36"/>
+    <use href="#warn_hbd" x="29.5" y="303"/>
+    <use href="#warn_hbd" x="133" y="500"/>
+
+    <!-- Decision diamond -->
+    <rect x="-15.5" y="-15.5" width="31" height="31" rx="4" transform="translate(80 510) rotate(45)" fill="var(--bg-deep)"/>
+
+    <!-- Dashed memory boxes -->
+    <g stroke="var(--text)" stroke-width="1.5" stroke-dasharray="6 6">
+        <path d="M224.847 130.629C225.514 126.797 228.839 124 232.729 124H376.489C381.455 124 385.221 128.478 384.37 133.371L371.153 209.371C370.486 213.203 367.161 216 363.271 216H219.511C214.545 216 210.779 211.522 211.63 206.629Z"/>
+        <path d="M224.847 6.629C225.514 2.797 228.839 0 232.729 0H376.489C381.455 0 385.221 4.478 384.37 9.371L371.153 85.371C370.486 89.203 367.161 92 363.271 92H219.511C214.545 92 210.779 87.522 211.63 82.629Z"/>
+    </g>
+
+    <!-- No-a11y-expert icon -->
+    <path d="M245 98C239.48 98 235 102.48 235 108C235 113.52 239.48 118 245 118C250.52 118 255 113.52 255 108C255 102.48 250.52 98 245 98ZM237 108C237 103.58 240.58 100 245 100C246.85 100 248.55 100.63 249.9 101.69L238.69 112.9C237.63 111.55 237 109.85 237 108ZM245 116C243.15 116 241.45 115.37 240.1 114.31L251.31 103.1C252.37 104.45 253 106.15 253 108C253 112.42 249.42 116 245 116Z" fill="var(--color-error)"/>
+    <path d="M245 104C245.736 104 246.333 103.403 246.333 102.667C246.333 101.93 245.736 101.333 245 101.333C244.263 101.333 243.666 101.93 243.666 102.667C243.666 103.403 244.263 104 245 104Z" fill="var(--text)"/>
+    <path d="M249.666 108.667V107.333C248.64 107.347 247.606 106.833 246.953 106.113L246.093 105.16C245.98 105.033 245.84 104.933 245.686 104.86H245.666C245.433 104.72 245.166 104.653 244.873 104.68C244.173 104.74 243.666 105.36 243.666 106.06V110C243.666 110.733 244.266 111.333 245 111.333H248.333V114.667H249.666V111C249.666 110.267 249.066 109.667 248.333 109.667H246.333V107.367C247.193 108.08 248.5 108.66 249.666 108.667ZM243.666 113.333C242.56 113.333 241.666 112.44 241.666 111.333C241.666 110.46 242.226 109.727 243 109.447V108.067C241.48 108.373 240.333 109.72 240.333 111.333C240.333 113.173 241.826 114.667 243.666 114.667C245.28 114.667 246.626 113.52 246.933 112H245.553C245.28 112.773 244.54 113.333 243.666 113.333Z" fill="var(--text)"/>
+
+    <!-- Labels -->
+    <g font-family="Epilogue" text-anchor="middle" fill="var(--text)">
+        <!-- Titles -->
+        <g font-size="15">
+            <text x="80" y="35.16">UX makes<tspan x="80" dy="15">wireframe</tspan></text>
+            <text x="80" y="148.16">UI translates to<tspan x="80" dy="15">spec</tspan></text>
+            <text x="80" y="273.66">Figma deliverable</text>
+            <text x="280" y="285.16">Fix deliverables</text>
+            <text x="80" y="403.66">Developer builds</text>
+            <text x="80" y="591.16">Push to<tspan x="80" dy="15">production</tspan></text>
+            <text x="296" y="31.66">UX memory</text>
+            <text x="296" y="155.66">UI memory</text>
+        </g>
+        <!-- Descriptions -->
+        <g font-size="11" fill-opacity="0.7">
+            <text x="80" y="66.05">Logic, layout, flow</text>
+            <text x="80" y="179.05">Components, tokens,<tspan x="80" dy="11">responsive, a11y</tspan><tspan x="80" dy="11">annotations</tspan></text>
+            <text x="80" y="289.55">A canvas, not a spec</text>
+            <text x="280" y="301.05">Rework and updates to<tspan x="280" dy="11">answer questions</tspan></text>
+            <text x="80" y="419.55">Hunts the canvas for<tspan x="80" dy="11">flows, states, and</tspan><tspan x="80" dy="11">requirements</tspan></text>
+            <text x="80" y="622.05">Clients finally benefit</text>
+            <text x="296" y="47.55">Patterns, a11y, best<tspan x="296" dy="11">practices, human</tspan><tspan x="296" dy="11">behavior</tspan></text>
+            <text x="296" y="171.55">Hundreds of<tspan x="296" dy="11">components, native</tspan><tspan x="296" dy="11">patterns, a11y rules</tspan></text>
+        </g>
+        <text x="44.5" y="315.22" text-anchor="start" font-size="8" fill-opacity="0.7">Multiple days per feature</text>
+        <text x="261" y="112.16" text-anchor="start" font-size="15" fill="var(--color-error)">No a11y experts</text>
+    </g>
+</svg>

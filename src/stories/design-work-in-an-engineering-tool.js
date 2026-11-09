@@ -1,11 +1,11 @@
-﻿import v1Screen from '../assets/stories/a-system-built-for-designers/designer-view-v1.png'
+﻿import v1Screen from '../assets/stories/design-work-in-an-engineering-tool/designer-view-v1.png'
 
-import dashboardLg from '../assets/stories/a-system-built-for-designers/dashboard-lg.webp'
-import dashboardSm from '../assets/stories/a-system-built-for-designers/dashboard-sm.webp'
+import dashboardLg from '../assets/stories/design-work-in-an-engineering-tool/dashboard-lg.webp'
+import dashboardSm from '../assets/stories/design-work-in-an-engineering-tool/dashboard-sm.webp'
 
 export const meta = {
-  title: 'A System Built for Designers',
-  slug: 'a-system-built-for-designers',
+  title: 'Design Work in an Engineering Tool',
+  slug: 'design-work-in-an-engineering-tool',
   startDate: '2020-05',
   duration: '2 years',
   status: 'complete',

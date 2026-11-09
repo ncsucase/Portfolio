@@ -2,7 +2,7 @@
 // import * as storySlug from './story-slug.js'
 import * as improvingTruistDigital from './improving-truist-digital.js'
 import * as structureFollowsCraft from './structure-follows-craft.js'
-import * as aSystemBuiltForDesigners from './a-system-built-for-designers.js'
+import * as designWorkInAnEngineeringTool from './design-work-in-an-engineering-tool.js'
 import * as solvingProblemsForProduct from './solving-problems-for-product.js'
 import * as aCommonLanguageForPerformance from './a-common-language-for-performance.js'
 import * as whatDesignersShuldActuallyBeDoing from './what-designers-should-actually-be-doing.js'
@@ -13,7 +13,7 @@ const allStories = [
   // storySlug,
   improvingTruistDigital,
   structureFollowsCraft,
-  aSystemBuiltForDesigners,
+  designWorkInAnEngineeringTool,
   solvingProblemsForProduct,
   aCommonLanguageForPerformance,
   whatDesignersShuldActuallyBeDoing,
